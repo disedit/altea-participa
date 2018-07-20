@@ -11,10 +11,10 @@ return [
     'twitter_locale' => 'es',
     'facebook_locale' => 'ca_ES',
     'heading' => 'Tu decideixes en què inverteix l\'Ajuntament!',
-    'subheading' => 'El Govern de [city_name] t\'obri la possibilitat de participar activament en les decisions que més t\'afecten.',
+    'subheading' => 'El Govern d\'Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten.',
     'tweet' => '',
-    'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern de [city_name] t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar [city_name], i el teu vot compta!',
-    'keywords' => '[city_name], ajuntament, ayuntamiento, govern, obert, participacio ciutadana, democracia participativa, [city_name] participa, votació, votación, referendum',
+    'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern d\'Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar Altea, i el teu vot compta!',
+    'keywords' => 'altea, ajuntament, ayuntamiento, govern, obert, participacio ciutadana, democracia participativa, altea participa, votació, votación, referendum',
 
     /*
     |--------------------------------------------------------------------------

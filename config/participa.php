@@ -9,32 +9,32 @@ return [
     */
 
     /* The name of the city */
-    'municipality' => 'Any City',
+    'municipality' => 'Altea',
 
     /* The name of the council */
-    'council_name' => 'Any Council',
+    'council_name' => 'Ajuntament d\'Altea',
 
     /* The council's home page */
-    'council_url' => 'https://anycity.com',
+    'council_url' => 'http://www.altea.es',
 
     /* The council's logo / coat of arms */
     'council_logo' => 'council.png',
 
     /* The e-mail where users can contact for support */
-    'contact_email' => 'participa@disedit.com',
+    'contact_email' => 'dubtes@alteaparticipa.es',
 
     /* The council's address */
-    'contact_address' => 'Pl. Major, 1',
+    'contact_address' => 'Plaza José María Planelles, 1',
 
     /* The council's contact phone */
-    'contact_phone' => '44343242',
+    'contact_phone' => '965 84 13 00',
 
     /* The council's facebook page and app ID */
-    'facebook' => 'https://facebook.com/council',
+    'facebook' => 'https://www.facebook.com/AlteaParticipa/',
     'facebook_app_id' => '180444172483336',
 
     /* The council's twitter account */
-    'twitter' => 'infoDisedit',
+    'twitter' => 'EsAltea',
 
     /*
     |--------------------------------------------------------------------------
@@ -43,16 +43,16 @@ return [
     */
 
     /* Main logo to display on all pages */
-    'logo' => null,
+    'logo' => 'logo.png',
 
     /* Main logo for dark backgrounds */
-    'logo_dark' => null,
+    'logo_dark' => 'logo-dark.png',
 
     /* Navbar: light or colorful */
     'navbar' => 'colorful',
 
     /* Maximum votes a single IP may cast */
-    'max_per_ip' => 20,
+    'max_per_ip' => 10,
 
     /* Maxiumum times a single IP can fail an ID attempt */
     'max_failed_lookups' => 100,
@@ -80,7 +80,7 @@ return [
     'disable_SMS_verification' => false,
 
     /* Primary color of the application */
-    'primary_color' => '#2980b9',
+    'primary_color' => '#10069f',
 
     /* Set up Google Analytics tracking */
     'google_analytics_ID' => 'UA-106217417-1',

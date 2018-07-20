@@ -10,11 +10,11 @@ return [
     'locale' => 'en',
     'twitter_locale' => 'en',
     'facebook_locale' => 'en_GB',
-    'heading' => 'You have a say on the council\'s !',
-    'subheading' => 'The council of [city_name] t\'obri la possibilitat de participar activament en les decisions que més t\'afecten.',
+    'heading' => 'You have a say on the Council\'s decisions!',
+    'subheading' => 'The City Council of Altea lets you take an active part in the decisions that affect you the most.',
     'tweet' => '',
-    'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern de [city_name] t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar [city_name], i el teu vot compta!',
-    'keywords' => '[city_name], council, ayuntamiento, govern, obert, participacio ciutadana, democracia participativa, [city_name] participa, votació, votación, referendum',
+    'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern de Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar Altea, i el teu vot compta!',
+    'keywords' => 'Altea, council, ayuntamiento, govern, obert, participacio ciutadana, democracia participativa, Altea participa, votació, votación, referendum',
 
     /*
     |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ return [
     'voting_places' => 'Polling stations',
     'voting_text' => 'If you need assistance voting, you can go to one of the available assisted polling stations to vote in person.',
     'contact' => 'Need help?',
-    'contact_text' => 'You can direct any questions to <a href="mailto::contact_email">:contact_email</a>.',
+    'contact_text' => 'You can contact us at <a href="mailto::contact_email">:contact_email</a> if you need further assitance.',
     'past_editions' => 'Past polls',
 
     /*
