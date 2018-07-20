@@ -1,0 +1,205 @@
+.navbar {
+  background: $brand-primary;
+  background: $brand-primary-gradient;
+
+  .navbar-brand {
+    font-weight: 700;
+  }
+
+  &.navbar-dark a {
+    color: $white;
+  }
+
+  &-social {
+    margin-right: 1rem;
+
+    .nav-item {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      margin: 0 0.5rem;
+      opacity: 0.75;
+      transition: 0.15s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+
+    .fa, .fab {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-languages {
+    margin: 1rem 0;
+  }
+}
+
+.vote-info {
+  position: relative;
+  background: $gray-lightest;
+  padding: 2rem 0;
+  overflow: hidden;
+  border-bottom: 1px $gray-lighter solid;
+  background-image: url('../images/pattern.svg');
+  background-size: 633px;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+    padding-right: 130px;
+    max-width: 730px;
+  }
+
+  &__intro {
+    padding-right: 130px;
+    font-size: 0.9rem;
+    max-width: 630px;
+  }
+
+  &__action {
+    margin-top: 2rem;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .left-hands,
+  .right-hands {
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  .left-hands {
+    background: url('../images/hands-left.svg');
+    left: -113px;
+    display: none;
+  }
+
+  .right-hands {
+    background: url('../images/hands-right.svg');
+    right: -103px;
+  }
+
+  &.vote-info--compact {
+    h2 {
+      font-size: 1.5rem;
+      padding-right: 110px;
+    }
+
+    .vote-info__intro {
+      display: none;
+    }
+
+    .vote-info__action {
+      display: none;
+    }
+
+    .left-hands,
+    .right-hands {
+      top: -38px;
+      opacity: 0.5;
+      width: 200px;
+      height: 200px;
+    }
+
+    .left-hands {
+      left: -74px;
+    }
+
+    .right-hands {
+      right: -78px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .vote-info {
+    h2 {
+      font-size: 3rem;
+    }
+
+    &__intro {
+      font-size: 1rem;
+    }
+
+    &__action a {
+      font-size: 1.25rem;
+    }
+
+    &.vote-info--compact {
+      h2 {
+        font-size: 1.85rem;
+        padding-right: 0;
+      }
+
+      .vote-info__intro {
+        font-size: 1rem;
+        margin-bottom: 0;
+        display: block;
+      }
+    }
+  }
+}
+
+.calendar {
+  margin-left: auto;
+  background: $white;
+  overflow: hidden;
+  border: 1px rgba(0, 0, 0, 0.15) solid;
+  @include border-radius(0.25rem);
+  text-align: center;
+  width: 140px;
+
+  &__heading {
+    color: $white;
+    background: $brand-primary;
+    padding: 0.15rem;
+  }
+
+  &__dates {
+    font-size: 1.35rem;
+    background: $white;
+  }
+
+  &__month {
+    font-size: 1.15rem;
+  }
+
+  &__date-columns .col:first-child {
+    border-right: 1px rgba(0, 0, 0, 0.15) dashed;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-social {
+    .nav-item {
+      margin: 0;
+    }
+  }
+
+  .navbar-languages {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .vote-info {
+    .left-hands,
+    .right-hands {
+      opacity: 1;
+    }
+
+    .left-hands {
+      display: block;
+    }
+  }
+}

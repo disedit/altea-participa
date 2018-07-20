@@ -1,0 +1,27 @@
+language: php
+
+php:
+  - 7.2
+
+before_script:
+  - cp .env.testing .env
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
+  - php artisan key:generate
+  - php artisan migrate
+  - nvm install stable
+  - npm install npm@latest -g
+  - npm install
+
+before_install:
+  - mysql -e 'CREATE DATABASE wildcard_participa_tests;'
+
+script:
+  - npm run production
+  - phpunit
+
+services:
+  - mysql
+
+notifications:
+  email: false

@@ -1,0 +1,78 @@
+// Variables
+
+// Colors
+$white:  #fff;
+$black:  #000;
+$red:    #e74c3c;
+$orange: #e67e22;
+$yellow: #f1c40f;
+$green:  #2ecc71;
+$blue:   #3133AA;
+$teal:   #5bc0de;
+$pink:   #ff5b77;
+$purple: #7A52BD;
+
+// Grayscale
+$gray-dark:                 #292b2c;
+$gray:                      #464a4c;
+$gray-light:                #636c72;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $blue;
+$brand-success:             $green;
+$brand-info:                $teal;
+$brand-warning:             $orange;
+$brand-danger:              $red;
+$brand-inverse:             $gray-dark;
+$brand-primary-gradient:    linear-gradient(135deg, $blue 0%, $purple 100%);
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded:            true;
+$enable-shadows:            false;
+$enable-gradients:          false;
+$enable-transitions:        true;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:       $gray-lightest;
+$body-color:    $gray-dark;
+$inverse-bg:    $gray-dark;
+$inverse-color: $gray-lighter;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $brand-primary;
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Muli", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;
+
+// Shadows for self-raising cards
+$box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+$box-raised-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+
+$card-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+$card-raised-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
