@@ -65,9 +65,8 @@ class HomeController extends Controller
 
         // If none of the previous conditions are met
         // display the About page as a placeholder before the vote.
-        $options = view('components.options', compact('edition'));
-
-        return view('about', compact('edition', 'pastEditions', 'options'));
+        $page = $this->buildAboutPage();
+        return view('about', compact('edition', 'pastEditions', 'page'));
 
     }
 
@@ -80,9 +79,9 @@ class HomeController extends Controller
     {
         $edition = $this->edition;
         $pastEditions = Edition::pastEditions();
-        $options = view('components.options', compact('edition'));
+        $page = $this->buildAboutPage();
 
-        return view('about', compact('edition', 'pastEditions', 'options'));
+        return view('about', compact('edition', 'pastEditions', 'page'));
     }
 
     /**
@@ -135,5 +134,24 @@ class HomeController extends Controller
         $ip = \App\Limit::ip();
 
         return view('ip_address')->withIp($ip);
+    }
+
+    private function buildAboutPage()
+    {
+        $edition = $this->edition;
+        $options = view('components.options', compact('edition'));
+
+        $templateView = 'editions.' . $edition->id . '_' . config('app.locale', 'ca');
+        $templateViewFallback = 'editions.' . $edition->id . '_' . config('app.fallback_locale', 'ca');
+
+        if(view()->exists($templateView)) {
+            $template = view($templateView, compact('edition'));
+        } elseif(view()->exists($templateViewFallback)) {
+            $template = view($templateViewFallback, compact('edition'));
+        } else {
+            $template = '';
+        }
+
+        return ['options' => $options, 'template' => $template];
     }
 }

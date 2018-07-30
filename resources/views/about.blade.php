@@ -5,7 +5,8 @@
     <div class="col-md-8">
         @php
             $about = $edition->about;
-            $about = str_replace("[options]", $options, $about);
+            $about = str_replace("[template]", $page['template'], $about);
+            $about = str_replace("[options]", $page['options'], $about);
         @endphp
         {!! $about !!}
     </div>
