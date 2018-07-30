@@ -164,7 +164,7 @@
     overflow: hidden;
 
     &:hover {
-      background: lighten($brand-primary, 50%);
+      background: lighten($brand-primary, 60%);
       transform: translateY(-4px);
       box-shadow: $card-raised-shadow;
       border-color: lighten($brand-primary, 10%);
@@ -213,7 +213,7 @@
 .template-2column,
 .template-simple {
   .selected {
-    background: lighten($brand-primary, 50%);
+    background: lighten($brand-primary, 60%);
     box-shadow: inset -4px 0px 0px 0px $brand-primary;
   }
 }

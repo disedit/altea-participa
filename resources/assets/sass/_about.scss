@@ -1,30 +1,66 @@
 .about-block {
   position: relative;
-  margin-left: 4rem;
   margin-bottom: 2rem;
-  border-left: 1px $gray-lighter solid;
-  padding-left: 1.5rem;
-
-  &__icon {
-    position: absolute;
-    top: 0;
-    left: -4rem;
-
-    .fa, .far {
-      font-size: 3rem;
-      color: $brand-primary;
-    }
-  }
+  padding-bottom: 1rem;
+  border-bottom: 2px $gray-lighter solid;
 
   h3 {
-    color: $gray-light;
-    font-size: 1.25rem;
-    margin-top: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
   }
 
-  p {
-    line-height: 200%;
-    text-align: justify;
+  h4 {
+    font-weight: bold;
+    background: lighten($brand-primary, 65%);
+    color: $brand-primary;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  &__thumbnail {
+    width: 150px;
+    float: right;
+  }
+
+  &__outer-thumbnail {
+    display: none;
+  }
+
+  &__highlight {
+    position: relative;
+    background: lighten($brand-primary, 65%);
+    color: $brand-primary;
+    padding: 2rem 2rem 2rem 7rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: lighten($brand-primary, 65%);
+      width: 30px;
+      height: 30px;
+      left: 30px;
+      top: -10px;
+      border-radius: 0.4rem;
+      transform: rotate(45deg);
+    }
+
+    .far {
+      display: block;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      bottom: 2rem;
+      padding-right: 1rem;
+      font-size: 2.5rem;
+      border-right: 3px $brand-primary solid;
+      opacity: 0.25;
+    }
   }
 }
 
@@ -73,7 +109,7 @@
       text-decoration: none;
       box-shadow: 0px 6px 25px -7px rgba(0, 0, 0, 0.5);
       transform: translateY(-3px);
-      background: lighten($brand-primary, 50%);
+      background: lighten($brand-primary, 65%);
       border-color: lighten($brand-primary, 10%);
     }
 
@@ -111,31 +147,22 @@
 	margin-bottom: 0.5rem;
 }
 
-.columns {
-  column-count: 3;
-}
-
-@include media-breakpoint-down(sm) {
-  .about-block {
-    margin-left: 0;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 0;
-    border-left: 0;
-    border-bottom: 1px $gray-lighter solid;
-
-    &__icon {
-      text-align: center;
-      position: static;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-  }
-
+@include media-breakpoint-up(lg) {
   .columns {
     column-count: 2;
+  }
+
+  .about-block {
+    &__thumbnail {
+      float: right;
+      width: 200px;
+    }
+
+    &__outer-thumbnail {
+      display: block;
+      position: absolute;
+      width: 235px;
+      right: -325px;
+    }
   }
 }
