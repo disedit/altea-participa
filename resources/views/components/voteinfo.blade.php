@@ -5,8 +5,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 vote-info__text">
-                    <h2>@lang('participa.heading')</h2>
-                    <p class="vote-info__intro">@lang('participa.subheading')</p>
+                    <h2><span>@lang('participa.heading')</span></h2>
+                    <p class="vote-info__intro"><span>@lang('participa.subheading')</span></p>
 
                     @if(isset($edition))
                         <p class="vote-info__action">

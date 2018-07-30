@@ -1,10 +1,25 @@
 .navbar {
-  background: $brand-primary;
-  background: $brand-primary-gradient;
+  background: transparent;
+  background: rgba(0, 43, 149, 0);
+  transition: 0.2s ease-in-out;
+
+  &.navbar-scrolled,
+  &.navbar-expanded {
+    background: rgba(0, 43, 149, 1);
+
+    .navbar-brand img {
+      width: 150px;
+    }
+  }
 
   .navbar-brand {
     font-weight: 700;
     padding-bottom: 0;
+
+    img {
+      transition: width 0.2s ease-in-out;
+      width: 230px;
+    }
   }
 
   &.navbar-dark a {
@@ -41,33 +56,48 @@
 
 .vote-info {
   position: relative;
-  background: $gray-lightest;
-  padding: 2rem 0;
+  background: $brand-primary;
+  padding: 100px 0 4rem 0;
+  margin-top: -56px;
   overflow: hidden;
-  border-bottom: 1px $gray-lighter solid;
-  background-image: url('../images/pattern.svg');
-  background-size: 633px;
+  background-image: url('../images/altea.jpg');
+  background-size: cover;
+  background-position: center top;
+  color: $white;
 
   h2 {
     font-size: 2rem;
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.5;
     padding-right: 130px;
     max-width: 730px;
+
+    span {
+      box-decoration-break: clone;
+      padding: 0.25rem 0.75rem;
+      background: rgba(0, 43, 149, 0.75);
+      border-radius: 0.25rem;
+    }
   }
 
   &__intro {
     padding-right: 130px;
     font-size: 0.9rem;
     max-width: 630px;
+    line-height: 1.5;
+    margin-top: 1rem;
+
+    span {
+      box-decoration-break: clone;
+      padding: 0.25rem 0.75rem;
+      background: $white;
+      border-radius: 0.25rem;
+      color: $brand-primary;
+    }
   }
 
   &__action {
     margin-top: 2rem;
-
-    a {
-      font-size: 1rem;
-    }
   }
 
   .left-hands,
@@ -86,7 +116,6 @@
   }
 
   .right-hands {
-    background: url('../images/hands-right.svg');
     right: -103px;
   }
 
@@ -106,7 +135,7 @@
 
     .left-hands,
     .right-hands {
-      top: -38px;
+      top: 42px;
       opacity: 0.5;
       width: 200px;
       height: 200px;
@@ -119,6 +148,45 @@
     .right-hands {
       right: -78px;
     }
+
+    .calendar {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.calendar {
+  margin-left: auto;
+  overflow: hidden;
+  border: 2px $white solid;
+  @include border-radius(0.5rem);
+  text-align: center;
+  width: 140px;
+
+  &__heading {
+    color: $white;
+    background: $brand-primary;
+    padding: 0.15rem;
+    border-bottom: 2px $white solid;
+  }
+
+  &__dates {
+    font-size: 1.35rem;
+    padding: 0.5rem;
+    background: $white;
+    color: $brand-primary;
+  }
+
+  &__days {
+    margin-bottom: -0.25rem;
+  }
+
+  &__month {
+    font-size: 1.15rem;
+  }
+
+  &__date-columns .col:first-child {
+    border-right: 1px rgba(0, 0, 0, 0.15) dashed;
   }
 }
 
@@ -129,7 +197,8 @@
     }
 
     &__intro {
-      font-size: 1rem;
+      font-size: 1.25rem;
+      line-height: 1.25;
     }
 
     &__action a {
@@ -137,6 +206,9 @@
     }
 
     &.vote-info--compact {
+      padding-bottom: 2rem;
+      background-position: center;
+
       h2 {
         font-size: 1.85rem;
         padding-right: 0;
@@ -145,38 +217,8 @@
       .vote-info__intro {
         font-size: 1rem;
         margin-bottom: 0;
-        display: block;
       }
     }
-  }
-}
-
-.calendar {
-  margin-left: auto;
-  background: $white;
-  overflow: hidden;
-  border: 1px rgba(0, 0, 0, 0.15) solid;
-  @include border-radius(0.25rem);
-  text-align: center;
-  width: 140px;
-
-  &__heading {
-    color: $white;
-    background: $brand-primary;
-    padding: 0.15rem;
-  }
-
-  &__dates {
-    font-size: 1.35rem;
-    background: $white;
-  }
-
-  &__month {
-    font-size: 1.15rem;
-  }
-
-  &__date-columns .col:first-child {
-    border-right: 1px rgba(0, 0, 0, 0.15) dashed;
   }
 }
 
@@ -189,6 +231,14 @@
 
   .navbar-languages {
     margin: 0;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .vote-info.vote-info--compact {
+    .vote-info__intro {
+      display: block;
+    }
   }
 }
 
