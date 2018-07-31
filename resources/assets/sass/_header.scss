@@ -2,7 +2,6 @@
   background: transparent;
   background: rgba(0, 43, 149, 0);
   transition: 0.2s ease-in-out;
-  animation: fade-in 1.5s ease-in-out;
 
   &.navbar-scrolled,
   &.navbar-expanded {
@@ -11,6 +10,10 @@
     .navbar-brand img {
       width: 150px;
     }
+  }
+
+  &.navbar-full {
+    animation: fade-in 1.5s ease-in-out;
   }
 
   .navbar-brand {
@@ -73,7 +76,6 @@
     line-height: 1.5;
     padding-right: 130px;
     max-width: 730px;
-    animation: slide-up 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 
     span {
@@ -90,7 +92,6 @@
     max-width: 630px;
     line-height: 1.5;
     margin-top: 1.25rem;
-    animation: slide-up 0.75s ease-in-out;
     transition: 0.5s ease-in-out;
 
     span {
@@ -104,12 +105,10 @@
 
   &__action {
     margin-top: 2rem;
-    animation: slide-up 1s ease-in-out;
     transition: 0.5s ease-in-out;
   }
 
   .calendar {
-    animation: fade-in 1.25s ease-in-out;
     transition: 0.5s ease-in-out;
   }
 
@@ -132,6 +131,24 @@
   .right-hands {
     background: url('../images/hands-right.svg');
     right: -103px;
+  }
+
+  &.vote-info--full {
+    h2 {
+      animation: slide-up 0.5s ease-in-out;
+    }
+
+    .vote-info__intro {
+      animation: slide-up 0.75s ease-in-out;
+    }
+
+    .vote-info__action {
+      animation: slide-up 1s ease-in-out;
+    }
+
+    .calendar {
+      animation: fade-in 1.25s ease-in-out;
+    }
   }
 
   &.vote-info--compact {

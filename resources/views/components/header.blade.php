@@ -4,7 +4,7 @@
                     : config('participa.logo');
 @endphp
 
-<nav class="navbar fixed-top navbar-expand-lg {{ (config('participa.navbar') == 'colorful') ? 'navbar-dark' : 'navbar-light' }}">
+<nav class="navbar fixed-top navbar-expand-lg {{ (config('participa.navbar') == 'colorful') ? 'navbar-dark' : 'navbar-light' }}  {{ (!Request::segment(1)) ? 'navbar-full' : 'navbar-compact' }}">
   <a class="navbar-brand" href="/">
       @if($logoUrl)
           <img src="{{ secure_asset('images/' . $logoUrl) }}" alt="{{ config('app.name', 'Participa') }}" width="150" />
