@@ -21,6 +21,7 @@ Route::get('/lang/{language}', 'LanguageController@switchLanguage');
 Auth::routes();
 
 /* Archive */
+Route::get('/archive/2017', 'ArchiveController@archive2017');
 Route::get('/archive/{edition}', 'ArchiveController@results');
 Route::get('/archive/{edition}/about', 'ArchiveController@about');
 

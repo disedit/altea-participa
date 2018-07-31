@@ -1,0 +1,76 @@
+.results-2017 {
+  .results__card {
+    h5 {
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: $gray;
+    }
+
+    &:hover {
+      transform: translateY(0);
+      background: $white;
+      box-shadow: $card-shadow;
+      border: 2px darken($gray-lighter, 10%) solid;
+    }
+  }
+
+  .results__media {
+    img {
+      width: 100px;
+      border-radius: 0.25rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .results__section--other {
+    h6 {
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: $gray;
+    }
+
+    img {
+      border-radius: 0.25rem;
+    }
+  }
+
+  &__press-release {
+    margin: 0 auto;
+    background: lighten($brand-primary, 65%);
+    color: $brand-primary;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+
+    &__eyebrow {
+      display: block;
+      width: 200px;
+      background: $brand-primary;
+      color: $white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &__subtitle {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+  }
+}
