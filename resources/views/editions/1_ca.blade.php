@@ -7,25 +7,113 @@
 </div>
 
 <div class="about-block">
-<h3>La ciutadania decideix</h3>
-<p>Els veïns i veïnes, associacions… han de de fer les seues propostes i enviar-les utilitzant el formulari que està penjat a la web <a href="https://www.alteaparticipa.es">www.alteaparticipa.es</a> i enviar-lo per correu electrónic a <a href="mailto:participacio@altea.es">participacio@altea.es</a> o bé, entregar-lo per registre d’entrada a l’<strong>Oficina d’Atenció al Ciutadà (OAC)</strong> que està ubicat a la planta Baixa de l’<strong>Ajuntament d’Altea</strong> o també a l’<strong>Extensió Administrativa d’Altea la Vella</strong>.  El termini per presentar les propostes finaliza el <strong>30 de setembre</strong>.</p>
-<p>Les iniciatives / propostes / projectes que es presenten hauran de correspondre’s amb inversions municipals i amb la finalitat de fer d’<strong>Altea</strong> un poble millor per a totes i tots.</p>
-<p>Totes i cadascuna de les propostes seran avaluades pels serveis tècnics de l’Ajuntament per tal de comprobar que, de manera estimativa, no superen els límits pressupostaris, que s’ajusten a la viabilitat i que son competències de l’Ajuntament i no del Ministeri o de Conselleria.</p>
-<p>Posteriorment, será el <strong>Consell de Participació Ciutadana</strong> on estan representants tots els Consells Sectorials d’Altea quí decidirá finalment quins <strong>10 projectes</strong> eixiran a votació.</p>
-<p>Prèviament a la votació, s’explicarà un per un tots els projectes que finalment eixiran a votació per tal que la ciutania tinga <strong>tota la informació al seu abast</strong>. Les 10 propostes finalistes, seran explicades per la persona o entitat que l’haja presentada.</p>
-<p>Finalment, seran els ciutadans i ciutadanes els que es pronuncien sobre <strong>quins seran els 3 projectes</strong> que consideren més oportuns que l’Ajuntament d’Altea realitze.</p>
-<p>Tota la informació al voltant dels projectes / propostes es podrá consultar a la web www.alteaarticipa.es.</p>
-<p>La ciutadania decidirá al voltant dels projectes que proposen els veïns.</p>
+    <h3>La ciutadania decideix</h3>
+
+    <div class="phase">
+        <div class="phase__calendar">
+            <div class="calendar">
+                <div class="calendar__heading">Propostes</div>
+                <div class="calendar__dates">
+                    <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
+                    <div class="calendar__month">agost</div>
+                </div>
+            </div>
+        </div>
+        <div class="phase__text">
+            <p>Els veïns i veïnes, associacions… han de de fer les seues propostes i enviar-les utilitzant el formulari que està penjat a la web <a href="https://www.alteaparticipa.es">www.alteaparticipa.es</a> i enviar-lo per correu electrónic a <a href="mailto:participacio@altea.es">participacio@altea.es</a> o bé, entregar-lo per registre d’entrada a l’<strong>Oficina d’Atenció al Ciutadà (OAC)</strong> que està ubicat a la planta Baixa de l’<strong>Ajuntament d’Altea</strong> o també a l’<strong>Extensió Administrativa d’Altea la Vella</strong>.  El termini per presentar les propostes finaliza el <strong>30 de setembre</strong>.</p>
+            <p>Les iniciatives / propostes / projectes que es presenten hauran de correspondre’s amb inversions municipals i amb la finalitat de fer d’<strong>Altea</strong> un poble millor per a totes i tots.</p>
+        </div>
+    </div>
+
+    <div class="phase__path">
+        <img src="/images/path.svg" aria-hidden="true" alt="" />
+    </div>
+
+    <div class="phase">
+        <div class="phase__calendar">
+            <div class="calendar">
+                <div class="calendar__heading">Avaluació</div>
+                <div class="calendar__dates">
+                    <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
+                    <div class="calendar__month">agost</div>
+                </div>
+            </div>
+        </div>
+        <div class="phase__text">
+            <p>Totes i cadascuna de les propostes seran avaluades pels serveis tècnics de l’Ajuntament per tal de comprobar que, de manera estimativa, no superen els límits pressupostaris, que s’ajusten a la viabilitat i que son competències de l’Ajuntament i no del Ministeri o de Conselleria.</p>
+        </div>
+    </div>
+
+    <div class="phase__path mt-0">
+        <img src="/images/path-2.svg" aria-hidden="true" alt="" style="transform: rotate(180deg);" />
+    </div>
+
+    <div class="phase">
+        <div class="phase__calendar">
+            <div class="calendar">
+                <div class="calendar__heading">Consell</div>
+                <div class="calendar__dates">
+                    <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
+                    <div class="calendar__month">agost</div>
+                </div>
+            </div>
+        </div>
+        <div class="phase__text">
+            <p>Posteriorment, será el <strong>Consell de Participació Ciutadana</strong> on estan representants tots els Consells Sectorials d’Altea quí decidirá finalment quins <strong>10 projectes</strong> eixiran a votació.</p>
+        </div>
+    </div>
+
+    <div class="phase__path">
+        <img src="/images/path-2.svg" aria-hidden="true" alt="" style="margin-left: 168px;" />
+    </div>
+
+    <div class="phase">
+        <div class="phase__calendar">
+            <div class="calendar">
+                <div class="calendar__heading">Campanya</div>
+                <div class="calendar__dates">
+                    <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
+                    <div class="calendar__month">agost</div>
+                </div>
+            </div>
+        </div>
+        <div class="phase__text">
+            <p>Prèviament a la votació, s’explicarà un per un tots els projectes que finalment eixiran a votació per tal que la ciutania tinga <strong>tota la informació al seu abast</strong>. Les 10 propostes finalistes, seran explicades per la persona o entitat que l’haja presentada.</p>
+        </div>
+    </div>
+
+    <div class="phase__path">
+        <img src="/images/path.svg" aria-hidden="true" alt="" />
+    </div>
+
+    <div class="phase">
+        <div class="phase__calendar">
+            <div class="calendar calendar--red">
+                <div class="calendar__heading">Votació</div>
+                <div class="calendar__dates">
+                    <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
+                    <div class="calendar__month">agost</div>
+                </div>
+            </div>
+        </div>
+        <div class="phase__text">
+            <p>Finalment, seran els ciutadans i ciutadanes els que es pronuncien sobre <strong>quins seran els 3 projectes</strong> que consideren més oportuns que l’Ajuntament d’Altea realitze.</p>
+            <p>Tota la informació al voltant dels projectes / propostes es podrá consultar a la web <a href="https://www.alteaarticipa.es">www.alteaarticipa.es</a>.</p>
+            <p>La ciutadania decidirá al voltant dels projectes que proposen els veïns.</p>
+        </div>
+    </div>
+
+    <img src="/images/creation.svg" class="about-block__phases-thumbnail" />
 </div>
 
 <div class="about-block">
-<h3>Què anem a decidir?</h3>
-<p class="about-block__highlight"><i class="far fa-question-circle"></i> En aquest procés de participación ciutadana es s’ha de votar les <strong>tres propostes que es consideren millor per al poble d’Altea</strong> amb una inversión máxima de <strong>100.00€</strong>.</p>
+    <h3>Què anem a decidir?</h3>
+    <p class="about-block__highlight"><i class="far fa-question-circle"></i> En aquest procés de participación ciutadana es s’ha de votar les <strong>tres propostes que es consideren millor per al poble d’Altea</strong> amb una inversión máxima de <strong>100.00€</strong>.</p>
 </div>
 
 <div class="about-block">
     <h3>Informació sobre la votació</h3>
-    <img src="/images/choice.svg" class="about-block__outer-thumbnail" />
+    <img src="/images/choice.svg" class="about-block__info-thumbnail" />
     <div class="columns">
         <h4>Qui pot participar a Altea Participa?</h4>
         <p>Podran participar en aquest procés aquelles persones <strong>majors de 16 anys empadronades a Altea</strong>, d’acord al padró de data <strong>01/06/2018</strong>.</p>

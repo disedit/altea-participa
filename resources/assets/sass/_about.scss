@@ -24,7 +24,8 @@
     float: right;
   }
 
-  &__outer-thumbnail {
+  &__info-thumbnail,
+  &__phases-thumbnail {
     display: none;
   }
 
@@ -91,6 +92,60 @@
   }
 }
 
+.phase {
+  display: flex;
+
+  &__calendar {
+    flex-shrink: 0;
+    margin-right: 1rem;
+
+    .calendar {
+      border: 2px $brand-primary solid;
+      width: 100px;
+      margin-top: 3px;
+
+      &__heading {
+        font-size: 0.75rem;
+      }
+
+      &__dates {
+        padding: 0.25rem;
+      }
+
+      &__days {
+        font-size: 1rem;
+      }
+
+      &__month {
+        font-size: 1rem;
+      }
+
+      &.calendar--red {
+        border: 2px $red solid;
+
+        .calendar__dates {
+          color: $red;
+        }
+
+        .calendar__heading {
+          background: $red;
+        }
+      }
+    }
+  }
+
+  &__path {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    opacity: 0.25;
+
+    img {
+      height: 80px;
+    }
+  }
+}
+
 .option {
   &__card {
     width: 100%;
@@ -150,6 +205,7 @@
 @include media-breakpoint-up(lg) {
   .columns {
     column-count: 2;
+    margin-bottom: 1rem;
   }
 
   .about-block {
@@ -158,11 +214,19 @@
       width: 200px;
     }
 
-    &__outer-thumbnail {
+    &__info-thumbnail {
       display: block;
       position: absolute;
       width: 235px;
       right: -325px;
+    }
+
+    &__phases-thumbnail {
+      display: block;
+      position: absolute;
+      width: 285px;
+      right: -325px;
+      bottom: 0;
     }
   }
 }

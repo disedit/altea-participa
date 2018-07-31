@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-lg-8">
         @php
             $about = $edition->about;
             $about = str_replace("[template]", $page['template'], $about);
@@ -10,7 +10,7 @@
         @endphp
         {!! $about !!}
     </div>
-    <div class="col-md-4">
+    <div class="col-lg-4">
         @include('components/sidebar')
     </div>
 </div>
