@@ -131,3 +131,55 @@
         <p>El resultat de la votació es farà públic a aquesta web només concloga el període de votació.</p>
     </div>
 </div>
+
+<div class="about-block">
+    <h3>En l'anterior edició...</h3>
+    <div>
+        <h4>Tres projectes més votats</h4>
+        <div class="row results results-2017 results-2017--compact">
+            <div class="d-flex justify-content-center col-md-4">
+                <div class="results__card">
+                    <span class="results__card__number d-none d-md-inline">1</span>
+                    <h5>Obertura d'un vial per als vianants entre C/Filharmònica i C/Empedrat</h5>
+                    <div class="results__votes">
+                        <div class="results__points">15%</div>
+                        <div class="progress">
+                            <div class="d-flex" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-md-4">
+                <div class="results__card">
+                    <span class="results__card__number d-none d-md-inline">2</span>
+                    <h5>Posada a punt de la Casa de l’Aigua per a poder ser utilitzada en condicions</h5>
+                    <div class="results__votes">
+                        <div class="results__points">14%</div>
+                        <div class="progress">
+                            <div class="d-flex" style="width: 14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-md-4">
+                <div class="results__card">
+                    <span class="results__card__number d-none d-md-inline">3</span>
+                    <h5>Condicionament del solar contigu al conservatori</h5>
+                    <div class="results__votes">
+                        <div class="results__points">13%</div>
+                        <div class="progress">
+                            <div class="d-flex" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/archive/2017" class="results-2017__more"><i class="far fa-chart-bar" aria-hidden="true"></i> Resultats complets de 2017</a>
+</div>

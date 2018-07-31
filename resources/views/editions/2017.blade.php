@@ -231,15 +231,17 @@
 </div>
 
 <div class="results-2017__press-release">
-    <span class="results-2017__press-release__eyebrow">NOTA DE PREMSA</span>
-    <h3>La connexió entre els carrers Filharmònica i Empedrat, projecte més votat al procés participatiu de l’Ajuntament d’Altea</h3>
-    <p class="results-2017__press-release__subtitle">La posada a punt de la Casa de l’Aigua per poder ser utilitzada en condicions i el condicionament del solar contigu al conservatori, els altres dos punts més votats.</p>
-    <p>Enguany per primera vegada s’ha encetat un procés participatiu amb les veïnes i veïns d’Altea perquè decidiren una part de les inversions del pressupost de l’Ajuntament. Un procés encapçalat per la Regidoria de Participació Ciutadana i que pretén que la societat comence a involucrar-se en la presa de decisions del seu poble.</p>
-    <p>En les societats actuals la democràcia representativa és insuficient per a garantir l’eficàcia i l’eficiència en la gestió pública i, cada vegada més, es fa imprescindible incloure els ciutadans i ciutadanes en els processos deliberatius, i decisionals de la gestió del seu Ajuntament.</p>
-    <p>Per començar aquest procés participatiu, la regidoria de Participació Ciutadana va donar a elegir tres dels dotze projectes elegibles en una votació que finalitzava el passat 31 d’octubre.</p>
-    <p>La propostes més votada va ser l’apertura del carrer Filhàrmònica, en segon lloc la posada a punt de la Casa de l’Aigua per poder ser utilitzada en condicions i per últim, El condicionament del solar contigu al conservatori .</p>
-    <p>Mari Laviós, regidora de l’àrea de Participació Ciutadana, vol donar les gràcies a totes aquelles persones que han participat en el procés de votació al mateix temps que espera que en els propers processos la gent participe més, “és difícil conscienciar a la gent que pot i deu decidir en què inverteix una part dels seus pressupostos l’Ajuntament quan abans mai se’ls havia donat eixa oportunitat, i eixa percepció és la que volem treballar perquè canvie”.</p>
-    <p>Des de la regidoria de participació ciutadana ja s’està treballant en els pressupostos participatius de l’any vinent, on el procés es farà d’una manera diferent per poder arribar a molta més gent i que participen en aquest projecte encisador com és el d’Altea Participa.</p>
-    <p>Departament de Comunicació de l’Ajuntament d’Altea</p>
+    <div class="results-2017__press-release__container">
+        <span class="results-2017__press-release__eyebrow">NOTA DE PREMSA</span>
+        <h3>La connexió entre els carrers Filharmònica i Empedrat, projecte més votat al procés participatiu de l’Ajuntament d’Altea</h3>
+        <p class="results-2017__press-release__subtitle">La posada a punt de la Casa de l’Aigua per poder ser utilitzada en condicions i el condicionament del solar contigu al conservatori, els altres dos punts més votats.</p>
+        <p>Enguany per primera vegada s’ha encetat un procés participatiu amb les veïnes i veïns d’Altea perquè decidiren una part de les inversions del pressupost de l’Ajuntament. Un procés encapçalat per la Regidoria de Participació Ciutadana i que pretén que la societat comence a involucrar-se en la presa de decisions del seu poble.</p>
+        <p>En les societats actuals la democràcia representativa és insuficient per a garantir l’eficàcia i l’eficiència en la gestió pública i, cada vegada més, es fa imprescindible incloure els ciutadans i ciutadanes en els processos deliberatius, i decisionals de la gestió del seu Ajuntament.</p>
+        <p>Per començar aquest procés participatiu, la regidoria de Participació Ciutadana va donar a elegir tres dels dotze projectes elegibles en una votació que finalitzava el passat 31 d’octubre.</p>
+        <p>La propostes més votada va ser l’apertura del carrer Filhàrmònica, en segon lloc la posada a punt de la Casa de l’Aigua per poder ser utilitzada en condicions i per últim, El condicionament del solar contigu al conservatori .</p>
+        <p>Mari Laviós, regidora de l’àrea de Participació Ciutadana, vol donar les gràcies a totes aquelles persones que han participat en el procés de votació al mateix temps que espera que en els propers processos la gent participe més, “és difícil conscienciar a la gent que pot i deu decidir en què inverteix una part dels seus pressupostos l’Ajuntament quan abans mai se’ls havia donat eixa oportunitat, i eixa percepció és la que volem treballar perquè canvie”.</p>
+        <p>Des de la regidoria de participació ciutadana ja s’està treballant en els pressupostos participatius de l’any vinent, on el procés es farà d’una manera diferent per poder arribar a molta més gent i que participen en aquest projecte encisador com és el d’Altea Participa.</p>
+        <p>Departament de Comunicació de l’Ajuntament d’Altea</p>
+    </div>
 </div>
 @endsection

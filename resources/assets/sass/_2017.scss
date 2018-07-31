@@ -1,5 +1,7 @@
 .results-2017 {
   .results__card {
+    overflow: hidden;
+
     h5 {
       font-weight: 700;
     }
@@ -14,6 +16,13 @@
       background: $white;
       box-shadow: $card-shadow;
       border: 2px darken($gray-lighter, 10%) solid;
+    }
+
+    &__number {
+      position: absolute;
+      right: 0;
+      font-size: 8rem;
+      color: $gray-lighter;
     }
   }
 
@@ -42,12 +51,16 @@
   }
 
   &__press-release {
-    margin: 0 auto;
     background: lighten($brand-primary, 65%);
     color: $brand-primary;
     padding: 2rem;
     border-radius: 20px;
     margin-top: 2rem;
+
+    &__container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
 
     &__eyebrow {
       display: block;
@@ -71,6 +84,21 @@
       font-weight: 900;
       margin-bottom: 1.5rem;
       font-size: 2rem;
+    }
+  }
+
+  &.results-2017--compact {
+    h5 {
+      font-size: 1.15rem;
+    }
+  }
+
+  &__more {
+    display: block;
+    margin: 2rem 0 0.5rem 0;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }
