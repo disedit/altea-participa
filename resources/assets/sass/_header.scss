@@ -2,6 +2,7 @@
   background: transparent;
   background: rgba(0, 43, 149, 0);
   transition: 0.2s ease-in-out;
+  animation: fade-in 1.5s ease-in-out;
 
   &.navbar-scrolled,
   &.navbar-expanded {
@@ -64,6 +65,7 @@
   background-size: cover;
   background-position: center top;
   color: $white;
+  transition: 0.5s ease-in-out;
 
   h2 {
     font-size: 2rem;
@@ -71,6 +73,8 @@
     line-height: 1.5;
     padding-right: 130px;
     max-width: 730px;
+    animation: slide-up 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 
     span {
       box-decoration-break: clone;
@@ -86,6 +90,8 @@
     max-width: 630px;
     line-height: 1.5;
     margin-top: 1.25rem;
+    animation: slide-up 0.75s ease-in-out;
+    transition: 0.5s ease-in-out;
 
     span {
       box-decoration-break: clone;
@@ -98,6 +104,13 @@
 
   &__action {
     margin-top: 2rem;
+    animation: slide-up 1s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+
+  .calendar {
+    animation: fade-in 1.25s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 
   .left-hands,
