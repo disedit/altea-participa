@@ -4,7 +4,7 @@
         <div class="right-hands"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 vote-info__text">
+                <div class="col-md-12 col-lg-8 vote-info__text">
                     <h2><span>@lang('participa.heading')</span></h2>
                     <p class="vote-info__intro"><span>@lang('participa.subheading')</span></p>
 
@@ -23,7 +23,7 @@
                     @endif
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-lg-4 d-none d-lg-block">
                     @include('components/calendar')
                 </div>
             </div>
