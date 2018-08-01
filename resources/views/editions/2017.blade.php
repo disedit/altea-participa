@@ -9,7 +9,7 @@
     <h4 class="results__section results__section--top">{{ trans_choice('participa.top_results', 3, ['num' => 3]) }}</h4>
 
     <div class="row">
-        <div class="d-flex justify-content-center col-sm-4">
+        <div class="d-flex justify-content-center col-lg-4">
             <div class="results__card">
                 <div class="d-flex">
                     <div class="results__media"><img src="/images/2017/1.jpg" alt="1" /></div>
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center col-sm-4">
+        <div class="d-flex justify-content-center col-lg-4">
             <div class="results__card">
                 <div class="d-flex">
                     <div class="results__media"><img src="/images/2017/2.jpg" alt="2" /></div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center col-sm-4">
+        <div class="d-flex justify-content-center col-lg-4">
             <div class="results__card">
                 <div class="d-flex">
                     <div class="results__media"><img src="/images/2017/3.jpg" alt="3" /></div>
@@ -64,7 +64,7 @@
 
     <h4 class="results__section results__section--other">@lang('participa.other_results')</h4>
 
-    <table class="table table-bordered results__section--other">
+    <table class="table results__section--other">
         <colgroup>
             <col width="40" />
             <col />
