@@ -227,6 +227,10 @@
   }
 }
 
+.lang-es .vote-info h2 {
+  padding-right: 94px;
+}
+
 @include media-breakpoint-up(md) {
   .vote-info {
     h2 {
@@ -248,7 +252,7 @@
       background-position: center;
 
       h2 {
-        font-size: 1.85rem;
+        font-size: 2rem;
         padding-right: 0;
       }
 

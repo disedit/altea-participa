@@ -1,6 +1,6 @@
 export default {
   global: {
-    tweet: ''
+    tweet: 'He votat en què projectes vull que @EsAltea invertisca'
   },
   option: {
     cost: 'Cost',

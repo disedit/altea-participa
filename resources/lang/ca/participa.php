@@ -12,7 +12,7 @@ return [
     'facebook_locale' => 'ca_ES',
     'heading' => 'Tu decideixes en què inverteix l\'Ajuntament!',
     'subheading' => 'El Govern d\'Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten.',
-    'tweet' => '',
+    'tweet' => 'He votat en què projectes vull que @EsAltea invertisca',
     'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern d\'Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar Altea, i el teu vot compta!',
     'keywords' => 'altea, ajuntament, ayuntamiento, govern, obert, participacio ciutadana, democracia participativa, altea participa, votació, votación, referendum',
 
@@ -43,7 +43,7 @@ return [
     'propose_cta' => 'Envia la teua proposta',
     'voting_places' => 'Punts de votació',
     'voting_text' => 'Si necessites ajuda amb la votació, pots dirigir-te a un dels següents punts de votació en persona.',
-    'contact' => 'Dubes o incidències?',
+    'contact' => 'Dubtes o incidències?',
     'contact_text' => 'Ens pots contactar a la següent adreça electrònica: <a href="mailto::contact_email">:contact_email</a>.',
     'past_editions' => 'Votacions anteriors',
 
@@ -106,7 +106,7 @@ return [
     | Months
     |--------------------------------------------------------------------------
     */
-    'months_short' => ['Gen', 'Feb', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Oct', 'Set', 'Nov', 'Des'],
+    'months_short' => ['Gen', 'Feb', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Set', 'Nov', 'Des'],
     'months_long' => ['gener', 'febrer', 'març', 'abril', 'maig', 'juny', 'juliol', 'agost', 'setembre', 'octubre', 'novembre', 'desembre'],
 
 ];

@@ -12,7 +12,7 @@ return [
     'facebook_locale' => 'en_GB',
     'heading' => 'You have a say on the Council\'s decisions!',
     'subheading' => 'The City Council of Altea lets you take an active part in the decisions that affect you the most.',
-    'tweet' => '',
+    'tweet' => 'He votat en què projectes vull que @EsAltea invertisca',
     'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern de Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar Altea, i el teu vot compta!',
     'keywords' => 'Altea, council, ayuntamiento, govern, obert, participacio ciutadana, democracia participativa, Altea participa, votació, votación, referendum',
 
