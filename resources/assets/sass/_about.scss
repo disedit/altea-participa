@@ -13,7 +13,7 @@
     font-weight: bold;
     background: lighten($brand-primary, 65%);
     color: $brand-primary;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 0.4rem;
     margin-top: 0.5rem;
     font-size: 1.25rem;
@@ -205,6 +205,7 @@
 @include media-breakpoint-up(lg) {
   .columns {
     column-count: 2;
+    column-gap: 2rem;
     margin-bottom: 1rem;
   }
 
@@ -217,15 +218,15 @@
     &__info-thumbnail {
       display: block;
       position: absolute;
-      width: 235px;
-      right: -325px;
+      width: 319px;
+      right: -375px;
     }
 
     &__phases-thumbnail {
       display: block;
       position: absolute;
-      width: 285px;
-      right: -325px;
+      width: 319px;
+      right: -372px;
       bottom: 0;
     }
   }
