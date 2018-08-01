@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\URL;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,5 +38,5 @@ Route::get('/admin', 'AdminController@index')->middleware('auth');
 
 /* Force SSL */
 if (env('APP_ENV') === 'production') {
-    URL::forceSchema('https');
+    URL::forceScheme('https');
 }
