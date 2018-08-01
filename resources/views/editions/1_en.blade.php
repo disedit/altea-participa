@@ -1,9 +1,9 @@
 <div class="about-block">
     <h3>Altea imagines, Altea participates</h3>
     <img src="/images/choice-2.svg" class="about-block__thumbnail" aria-hidden="true" alt="" />
-    <p>The <strong>City Council of Altea</strong> believes in democratic regeneration as one of its fundamental pillars. A regeneration that entails giving citizens a voice and bring them closer to the decision-making process. A participation that aims to give the citizens a bigger share of political co-responsability, so they can <strong>“co-govern” their council, their town</strong>.
-    <p>It started last year with the first participatory budget and for this second edition, the process will be broader and easier to take part in.</p>
-    <p><strong>Altea Participa</strong> aims to delve into the real and effective participation of citizens.</p>
+    <p>The <strong>Town Council of Altea</strong> believes in democratic regeneration as one of its fundamental pillars. A regeneration that entails giving citizens a voice and bringing them closer to the decision-making process. A participation that aims to give the citizens a bigger share of political co-responsability, so they can <strong>“co-govern” their council, their town</strong>.
+    <p>It started <a href="/archive/2017">last year</a> with the first participatory budget, and for this second edition, the process will be broader in scope and easier to take part in.</p>
+    <p><strong>Altea Participa</strong> aims to delve into the real and effective participation of its citizens.</p>
 </div>
 
 <div class="about-block">
@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="phase__text">
-            <p>Neighbours and associations may submit their proposals by filling out the Application Form available on this website and e-mailing it to <a href="mailto:participacio@altea.es">participacio@altea.es</a> or by submitting it to the <strong>Oficina d’Atenció al Ciutadà (OAC)</strong> located in the ground floor of the City Council building or alternatively to the <strong>Administrative Extension of Altea la Vella</strong>.  The deadline to submit the proposals is <strong>September 30th</strong>.</p>
-            <p>The initiatives / proposals / projects submitted must fall within the local scope and must aim to make <strong>Altea</strong> a better town for everybody.</p>
+            <p>Neighbours and associations may submit their proposals by filling out the Application Form available on this website and e-mailing it to <a href="mailto:participacio@altea.es">participacio@altea.es</a> or by submitting it to the <strong>Oficina d’Atenció al Ciutadà (OAC)</strong> located in the ground floor of the Town Hall or alternatively to the <strong>Administrative Extension of Altea la Vella</strong>.  The deadline to submit the proposals is <strong>September 30th</strong>.</p>
+            <p>The initiatives / proposals / projects submitted must fall within the local jurisdiction and must aim to make <strong>Altea</strong> a better town for everyone.</p>
         </div>
     </div>
 
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="phase__text">
-            <p>All proposals will be assessed by the Council's technical team to affirm that they roughly do not go over the allocated budget, that they are viable and fall within the jurdisdiction of the Council of Altea and not the State or Regional Governments.</p>
+            <p>All proposals will be assessed by the Council's technical team to confirm that they do not go over the allocated budget, that they are viable in their execution and that they fall within the jurdisdiction of the Council of Altea and not the State or Regional Governments.</p>
         </div>
     </div>
 
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="phase__text">
-            <p>Afterwards, the <strong>Citizen Participation Council</strong>, where all the Sectorial Councils of Altea are represented, will have the final say on which <strong>10 projects</strong> will be put to a vote.</p>
+            <p>Afterwards, the <strong>Citizen Participation Council</strong>, where all the Sectoral Councils of Altea are represented, will decide which <strong>10 projects</strong> will make the cut for the ballot.</p>
         </div>
     </div>
 
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="phase__text">
-            <p>Prior to the vote, each and every one of the projects on the ballot will be explained by the person or association so that the citizens may have <strong>all the information at their disposal</strong>.</p>
+            <p>Prior to the vote, each and every one of the projects on the ballot will be explained by the person or association that put them forward so that the voters may have <strong>all the information at their disposal</strong>.</p>
         </div>
     </div>
 
@@ -97,7 +97,7 @@
             </div>
         </div>
         <div class="phase__text">
-            <p>Lastly, the citizens will have the final say on which <strong>three final projects</strong> they see fit to be carried out by the City Council of Altea.</p>
+            <p>Lastly, the citizens will have the final say on which <strong>three final projects</strong> are carried out by the Town Council of Altea.</p>
             <p>All the information regarding the projects / proposals will be available on <a href="https://www.alteaarticipa.es">www.alteaarticipa.es</a>.</p>
             <p>The citizens of Altea will decide on the projects submitted by their neighbours.</p>
         </div>
@@ -119,7 +119,7 @@
         <p>All citizens who are <strong>16 years of age or older and are registered in Altea</strong>, as per the census on <strong>01/06/2018</strong>.</p>
 
         <h4>What will be voted on?</h4>
-        <p>You may choose up to <strong>3 out of the 10 proposals</strong> previously selected by the <strong>Citizen Participation Council</strong> among the submissions. If more than 3 projects are marked on a ballot, it will be considered a spoilt ballot.</p>
+        <p>You may choose up to <strong>3 out of the 10 proposals</strong> previously selected by the <strong>Citizen Participation Council</strong> from among all the submissions. If more than three projects are crossed on a ballot, it will be considered a spoilt ballot.</p>
 
         <h4>Will I be able to vote online?</h4>
         <p>You may cast your vote online by accessing this website on the polling days from any computer or mobile device. For security reasons, only 3 votes are allowed per IP. You will also have to enter your DNI, NIE or Passport where indicated. Any person who is unable to cast a vote because their ID has already been used or because they want to rectify their vote may go to any of the authorized polling stations and ask a staff member to annul and reacast the ballot after showing a valid form of ID.</p>
@@ -140,7 +140,7 @@
             <div class="d-flex justify-content-center col-md-4">
                 <div class="results__card">
                     <span class="results__card__number d-none d-md-inline">1</span>
-                    <h5>Pedestrian crossing between C/Filharmònica i C/Empedrat</h5>
+                    <h5>Pedestrian road between the Filharmònica and Empedrat streets</h5>
                     <div class="results__votes">
                         <div class="results__points">15%</div>
                         <div class="progress">
@@ -154,7 +154,7 @@
             <div class="d-flex justify-content-center col-md-4">
                 <div class="results__card">
                     <span class="results__card__number d-none d-md-inline">2</span>
-                    <h5>Enabling the Casa de l’Aigua per a poder ser utilitzada en condicions</h5>
+                    <h5>Retrofitting of the Casa de l’Aigua</h5>
                     <div class="results__votes">
                         <div class="results__points">14%</div>
                         <div class="progress">
@@ -168,7 +168,7 @@
             <div class="d-flex justify-content-center col-md-4">
                 <div class="results__card">
                     <span class="results__card__number d-none d-md-inline">3</span>
-                    <h5>Conditioning the lot adjecent to the conservatory</h5>
+                    <h5>Regeneration of the lot adjacent to the conservatory</h5>
                     <div class="results__votes">
                         <div class="results__points">13%</div>
                         <div class="progress">

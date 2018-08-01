@@ -11,9 +11,9 @@ return [
     'twitter_locale' => 'en',
     'facebook_locale' => 'en_GB',
     'heading' => 'You have a say on the Council\'s decisions!',
-    'subheading' => 'The City Council of Altea lets you take an active part in the decisions that affect you the most.',
-    'tweet' => 'He votat en què projectes vull que @EsAltea invertisca',
-    'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern de Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar Altea, i el teu vot compta!',
+    'subheading' => 'The Town Council of Altea lets you take an active part in the decisions that affect you the most.',
+    'tweet' => 'I have voted on which projects I want @EsAltea to invest in',
+    'description' => 'You have a say on the Council\'s decisions. The City Council of Altea lets you take an active part in the decisions that affect you the most.',
     'keywords' => 'Altea, council, ayuntamiento, govern, obert, participacio ciutadana, democracia participativa, Altea participa, votació, votación, referendum',
 
     /*
@@ -22,8 +22,8 @@ return [
     |--------------------------------------------------------------------------
     */
     'calendar_heading' => 'Poll',
-    'help' => 'Help and Support',
-    'is_archive' => 'This poll ended on <strong>:end_date</strong> and is archived. Go to the <a href="/">current poll</a> for information on the current vote.',
+    'help' => 'Help and support',
+    'is_archive' => 'The information shown below belongs to a poll that ended on <strong>:end_date</strong> and is archived. You may go to the <a href="/">latest poll</a> for information on the current vote.',
     'error' => 'Error',
     'vote' => 'Vote',
     'print' => 'Print',
@@ -41,10 +41,10 @@ return [
     'sidebar_dates' => 'From :start_date to :end_date',
     'more_info' => 'More information',
     'propose_cta' => 'Submit your proposal',
-    'voting_places' => 'Polling stations',
-    'voting_text' => 'If you need assistance voting, you can go to one of the available assisted polling stations to vote in person.',
+    'voting_places' => 'In-person voting stations',
+    'voting_text' => 'If you need assistance voting, you may go to one of the following in-person assisted voting stations.',
     'contact' => 'Need help?',
-    'contact_text' => 'You can contact us at <a href="mailto::contact_email">:contact_email</a> if you need further assitance.',
+    'contact_text' => 'You can reach us at <a href="mailto::contact_email">:contact_email</a> if you need further assitance.',
     'past_editions' => 'Past polls',
 
     /*

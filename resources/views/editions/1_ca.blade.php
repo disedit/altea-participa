@@ -2,7 +2,7 @@
     <h3>Altea imagina, Altea participa</h3>
     <img src="/images/choice-2.svg" class="about-block__thumbnail" aria-hidden="true" alt="" />
     <p>L’<strong>Ajuntament d’Altea</strong> ha establert la regeneració democràtica com uns dels seus pilars bàsics. Una regeneració que passa per donar veu als ciutadans i ciutadanes i apropar-los a la pressa de decisions. Una participació que té per finalitat que la ciutania puga assolir majors quotes de corresponsabilitat política, que <strong>“co-governen” el seu ajuntament, el seu poble</strong>.
-    <p>Ja ho vam començar l’any passat amb els primers pressupostos participatius i en aquesta segona edició, el procés de participació ciutadana serà molt més ampli i fàcil.</p>
+    <p>Ja ho vam començar l’<a href="/archive/2017">any passat</a> amb els primers pressupostos participatius i en aquesta segona edició, el procés de participació ciutadana serà molt més ampli i fàcil.</p>
     <p><strong>Altea Participa</strong> pretén aprofundir en la participació real i efectiva de la ciutadania.</p>
 </div>
 
@@ -14,8 +14,8 @@
             <div class="calendar">
                 <div class="calendar__heading">Propostes</div>
                 <div class="calendar__dates">
-                    <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
-                    <div class="calendar__month">agost</div>
+                    <div class="calendar__days"><strong>fins el 30</strong></div>
+                    <div class="calendar__month">setembre</div>
                 </div>
             </div>
         </div>
