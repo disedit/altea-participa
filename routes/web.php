@@ -33,3 +33,8 @@ Route::get('/ballot/{ballotRef}', 'BallotController@ballot');
 
 /* Admin */
 Route::get('/admin', 'AdminController@index')->middleware('auth');
+
+/* Force SSL */
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
