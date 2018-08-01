@@ -17,6 +17,8 @@ Route::get('/propose', 'HomeController@propose');
 Route::get('/booth/{route}', 'HomeController@index');
 Route::get('/my_ip', 'HomeController@myIpAddress');
 Route::get('/lang/{language}', 'LanguageController@switchLanguage');
+Route::redirect('/es', '/lang/es/?home', 301);
+Route::redirect('/en', '/lang/en/?home', 301);
 
 Auth::routes();
 
