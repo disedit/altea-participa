@@ -13,9 +13,8 @@
     font-weight: bold;
     background: lighten($brand-primary, 65%);
     color: $brand-primary;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.4rem;
-    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem -15px;
     font-size: 1.25rem;
   }
 
@@ -210,6 +209,12 @@
   }
 
   .about-block {
+    h4 {
+      padding: 0.5rem 0.75rem;
+      margin-top: 0.5rem;
+      border-radius: 0.4rem;
+    }
+
     &__thumbnail {
       float: right;
       width: 200px;
