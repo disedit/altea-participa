@@ -50,8 +50,10 @@
     </div>
 
     @section('footer')
-        <div class="container">
-            @include('components/footer')
+        <div class="footer-background">
+            <div class="container">
+                @include('components/footer')
+            </div>
         </div>
     @show
 

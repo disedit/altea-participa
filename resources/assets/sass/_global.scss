@@ -1,5 +1,17 @@
 body {
   padding-top: 56px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 77px;
+    background: $brand-primary;
+    z-index: -1;
+  }
 }
 
 hr {
