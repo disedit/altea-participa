@@ -4,6 +4,7 @@
 
     h5 {
       font-weight: 700;
+      padding-right: 1rem;
     }
 
     p {
@@ -23,6 +24,10 @@
       right: 0;
       font-size: 8rem;
       color: $gray-lighter;
+    }
+
+    &.results__card--winner h5 span {
+      box-shadow: inset 0 -5px 0 0 lighten($green, 35%);
     }
   }
 
@@ -47,6 +52,22 @@
 
     img {
       border-radius: 0.25rem;
+    }
+  }
+
+  &__descending-list {
+    padding-left: 1rem;
+
+    li:first-child {
+      opacity: 0.8;
+    }
+
+    li:nth-child(2) {
+      opacity: 0.65;
+    }
+
+    li:last-child {
+      opacity: 0.5;
     }
   }
 
@@ -102,9 +123,9 @@
 
     h6 {
       position: relative;
-      background: lighten($yellow, 30%);
-      color: $orange;
-      border-bottom: 1px $orange solid;
+      background: lighten($green, 35%);
+      color: darken($green, 10%);
+      border-bottom: 1px $green solid;
       font-weight: bold;
       margin: -1rem -1rem 1rem -1rem;
       padding: 0.5rem 1rem;
@@ -120,7 +141,7 @@
         left: 20px;
         height: 20px;
         width: 20px;
-        background: lighten($yellow, 30%);
+        background: lighten($green, 35%);
         @include border-radius(0 0.25rem 0 0);
         transform: rotate(-45deg);
       }
@@ -128,6 +149,10 @@
       span {
         position: relative;
         z-index: 2;
+      }
+
+      small {
+        color: $gray;
       }
     }
   }

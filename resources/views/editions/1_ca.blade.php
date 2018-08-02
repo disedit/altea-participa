@@ -141,9 +141,9 @@
         <h4 class="mb-4">Tres projectes més votats</h4>
         <div class="row results results-2017 results-2017--compact my-3">
             <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
+                <div class="results__card results__card--winner">
                     <span class="results__card__number d-none d-md-inline">1</span>
-                    <h5>Obertura d'un vial per als vianants entre C/Filharmònica i C/Empedrat <i class="far fa-check" aria-hidden="true"></i></h5>
+                    <h5><span>Obertura d'un vial per als vianants entre C/Filharmònica i C/Empedrat</span> <i class="far fa-check" aria-hidden="true"></i></h5>
                     <div class="results__votes">
                         <div class="results__points">15%</div>
                         <div class="progress">
@@ -154,13 +154,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 results-2017__execution">
+            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
                 <div class="results-2017__execution__block">
                     <h6><span><i class="far fa-cogs"></i> En execució</span></h6>
                     En exposició pública i s’ha signat ja l’inici d’adjudicació de l’obra i s’executarà abans que acabe l’any.
                     <hr class="my-3" />
                     <a href="{{ url('/docs/pdf.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
-                    <small class="d-block mt-4">Última actualització: 2 d'agost de 2018</small>
+                    <small class="d-block mt-3">Última actualització: 2 d'agost de 2018</small>
                 </div>
             </div>
             <div class="d-flex justify-content-center col-md-4">
@@ -191,10 +191,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 results-2017__execution">
-                <a href="{{ url('/archive/2017') }}" class="results-2017__execution__block">
-                    <i class="far fa-chart-bar" aria-hidden="true"></i> Resultats complets de 2017
-                </a>
+            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
+                <div class="results-2017__execution__block">
+                    <ol start="4" class="results-2017__descending-list">
+                        <li>Millora de parcs infantils d'Altea i Altea la Vella (12%)</li>
+                        <li>Creació d'un parc infantil en la zona verda de C/ La Trompa</li>
+                        <li>Optimització i reordenació de la xarxa semafórica del municipi</li>
+                    </ol>
+                    <hr class="my-3" />
+                    <a href="{{ url('/archive/2017') }}">
+                        <i class="far fa-chart-bar" aria-hidden="true"></i> Resultats complets de 2017
+                    </a>
+                </div>
             </div>
         </div>
     </div>
