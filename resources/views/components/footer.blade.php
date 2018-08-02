@@ -32,7 +32,7 @@
                         </span>
                     @endif
                 </p>
-                <p>@lang('participa.help'): <a href="mailto:{{ config('participa.contact_email', 'participa@disedit.com') }}">{{ config('participa.contact_email', 'participa@disedit.com') }}</a></p>
+                <p>@lang('participa.help'): <a href="mailto:{{ config('participa.contact_email', 'participa@disedit.com') }}">{{ config('participa.contact_email', 'participa@disedit.com') }}</a> | <a href="{{ url('/legal') }}">@lang('participa.legal')</a></p>
             </address>
         </div>
     </div>

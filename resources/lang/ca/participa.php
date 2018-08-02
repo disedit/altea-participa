@@ -23,6 +23,7 @@ return [
     */
     'calendar_heading' => 'Votació',
     'help' => 'Incidències i ajuda',
+    'legal' => 'Avís legal',
     'is_archive' => 'Aquesta votació va finalitzar el <strong>:end_date</strong> i està arxivada. Ves a l\'<a href="/">edició actual</a> per a consultar la votació en curs.',
     'error' => 'Error',
     'vote' => 'Vota',

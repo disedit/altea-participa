@@ -124,6 +124,16 @@ class HomeController extends Controller
     }
 
     /**
+     * Privacy Policy and other legal texts
+     *
+     * @return \Illuminate\View\View
+     */
+    public function legal(Request $request)
+    {
+        return view('legal');
+    }
+
+    /**
      * Show a user's IP address to assist Support
      * in troubleshooting problems with IP limits.
      *
