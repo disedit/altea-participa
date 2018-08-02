@@ -108,7 +108,10 @@
 
 <div class="about-block">
     <h3>Què anem a decidir?</h3>
-    <p class="about-block__highlight"><i class="far fa-question-circle"></i> En aquest procés de participación ciutadana es s’ha de votar les <strong>tres propostes que es consideren millor per al poble d’Altea</strong> amb una inversión màxima de <strong>100.00€</strong>.</p>
+    <p class="about-block__highlight">
+        <i class="far fa-question-circle"></i>
+        La ciutadania decidirà quines <strong>tres propostes es consideren millor per al poble d’Altea</strong>, amb una inversió máxima de <strong>100.000€</strong>.
+    </p>
 </div>
 
 <div class="about-block">

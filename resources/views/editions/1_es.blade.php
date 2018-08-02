@@ -108,7 +108,10 @@
 
 <div class="about-block">
     <h3>¿Qué vamos a decidir?</h3>
-    <p class="about-block__highlight"><i class="far fa-question-circle"></i> En este proceso de participación ciudadana se tienen que votar las <strong>tres propuestas que se consideren mejores para el pueblo de Altea</strong> con una inversión máxima de <strong>100.000€</strong>.</p>
+    <p class="about-block__highlight">
+        <i class="far fa-question-circle"></i>
+        La ciutadania decidirá qué <strong>tres propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión màxima de <strong>100.000€</strong>.
+    </p>
 </div>
 
 <div class="about-block">

@@ -108,7 +108,10 @@
 
 <div class="about-block">
     <h3>What will be decided?</h3>
-    <p class="about-block__highlight"><i class="far fa-question-circle"></i> In this participatory process, citizens will vote for <strong>three projects that they deem best for Altea</strong> with a combined cost of up to <strong>€100,00</strong>.</p>
+    <p class="about-block__highlight">
+        <i class="far fa-question-circle"></i>
+        Citizens will decide which <strong>three projects they deem best for Altea</strong> with a combined cost of up to <strong>€100,00</strong>.
+    </p>
 </div>
 
 <div class="about-block">
