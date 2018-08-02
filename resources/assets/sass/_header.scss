@@ -117,27 +117,6 @@
     transition: 0.5s ease-in-out;
   }
 
-  .left-hands,
-  .right-hands {
-    width: 250px;
-    height: 250px;
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 0.5;
-    display: none !important;
-  }
-
-  .left-hands {
-    background: url('../images/hands-left.svg');
-    left: -113px;
-    display: none;
-  }
-
-  .right-hands {
-    background: url('../images/hands-right.svg');
-    right: -103px;
-  }
-
   &.vote-info--full {
     h2 {
       animation: slide-up 0.5s ease-in-out;
@@ -157,33 +136,13 @@
   }
 
   &.vote-info--compact {
-    h2 {
-      font-size: 1.5rem;
-      padding-right: 110px;
-    }
+    background-position: center;
+    padding: 37px 0;
 
-    .vote-info__intro {
-      display: none;
-    }
-
+    h2,
+    .vote-info__intro,
     .vote-info__action {
       display: none;
-    }
-
-    .left-hands,
-    .right-hands {
-      top: 42px;
-      opacity: 0.5;
-      width: 200px;
-      height: 200px;
-    }
-
-    .left-hands {
-      left: -74px;
-    }
-
-    .right-hands {
-      right: -78px;
     }
 
     .calendar {
@@ -248,9 +207,6 @@
     }
 
     &.vote-info--compact {
-      padding-bottom: 2rem;
-      background-position: center;
-
       h2 {
         font-size: 2rem;
         padding-right: 0;
@@ -274,24 +230,19 @@
   .navbar-languages {
     margin: 0;
   }
-}
 
-@include media-breakpoint-up(xl) {
   .vote-info.vote-info--compact {
-    .vote-info__intro {
+    padding: 100px 0 2rem 0;
+
+    h2 {
       display: block;
     }
   }
 }
 
-@media only screen and (min-width: 1400px) {
-  .vote-info {
-    .left-hands,
-    .right-hands {
-      opacity: 1;
-    }
-
-    .left-hands {
+@include media-breakpoint-up(xl) {
+  .vote-info.vote-info--compact {
+    .vote-info__intro {
       display: block;
     }
   }

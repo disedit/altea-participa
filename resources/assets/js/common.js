@@ -36,4 +36,4 @@ function setNavbarBackground() {
 }
 
 window.addEventListener('scroll', setNavbarBackground);
-body.addEventListener('load', setNavbarBackground);
+window.addEventListener('DOMContentLoaded', setNavbarBackground, false);
