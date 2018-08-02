@@ -19,6 +19,6 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/admin.scss', 'public/css')
    .copyDirectory('resources/assets/images', 'public/images');
 
-if (mix.config.inProduction) {
+if (mix.inProduction) {
     mix.version();
 }
