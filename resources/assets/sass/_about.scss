@@ -62,6 +62,10 @@
       opacity: 0.25;
     }
   }
+
+  &.about-block--last {
+    border-bottom: 0;
+  }
 }
 
 .options-widget {
