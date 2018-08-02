@@ -159,7 +159,7 @@
                     <h6><span><i class="far fa-cogs"></i> En execució</span></h6>
                     En exposició pública i s’ha signat ja l’inici d’adjudicació de l’obra i s’executarà abans que acabe l’any.
                     <hr class="my-3" />
-                    <a href="{{ url('/docs/pdf.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
+                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
                     <small class="d-block mt-3">Última actualització: 2 d'agost de 2018</small>
                 </div>
             </div>
