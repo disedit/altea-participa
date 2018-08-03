@@ -1,11 +1,11 @@
 .footer-background {
   background-color: $body-bg;
+  border-top: 1px $gray-lighter solid;
+  padding-top: 2rem;
 }
 
 .main-footer {
   padding-bottom: 5rem;
-  padding-top: 2rem;
-  border-top: 1px $gray-lighter solid;
 
   .languages {
     background: $white;
