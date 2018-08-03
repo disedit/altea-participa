@@ -1,8 +1,8 @@
 {
-  "name": "Wildcard Participa",
-  "short_name": "Participa",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "name": "Altea Participa",
+  "short_name": "Altea",
+  "theme_color": "#10069f",
+  "background_color": "#10069f",
   "display": "minimal-ui",
   "orientation": "portrait",
   "scope": "/",
