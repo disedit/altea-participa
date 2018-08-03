@@ -79,7 +79,7 @@ class HomeController extends Controller
     {
         $edition = $this->edition;
         $pastEditions = Edition::pastEditions();
-        $page = $this->buildAboutPage();
+        $page = $edition->buildAboutPage();
 
         return view('about', compact('edition', 'pastEditions', 'page'));
     }
