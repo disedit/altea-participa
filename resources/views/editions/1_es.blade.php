@@ -157,9 +157,9 @@
             <div class="d-flex justify-content-center col-md-6 results-2017__execution">
                 <div class="results-2017__execution__block">
                     <h6><span><i class="far fa-cogs"></i> En ejecución</span></h6>
-                    (frase)
+                    En exposición pública. Inicio de adjudicación de la obra firmado y ejecución prevista antes de que acabe el año.
                     <hr class="my-3" />
-                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
+                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentación adjunta</a>
                     <small class="d-block mt-3">Última actualización: 3 de agosto de 2018</small>
                 </div>
             </div>

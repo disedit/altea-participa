@@ -157,9 +157,9 @@
             <div class="d-flex justify-content-center col-md-6 results-2017__execution">
                 <div class="results-2017__execution__block">
                     <h6><span><i class="far fa-cogs"></i> In the works</span></h6>
-                    (sentence)
+                    On public display. Start of public works contract signed and execution is expected before the end of the year.
                     <hr class="my-3" />
-                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
+                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Attached blueprints</a>
                     <small class="d-block mt-3">Last updated: August 3th, 2018</small>
                 </div>
             </div>

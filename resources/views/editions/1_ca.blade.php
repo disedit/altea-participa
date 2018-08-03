@@ -159,7 +159,7 @@
             <div class="d-flex justify-content-center col-md-6 results-2017__execution">
                 <div class="results-2017__execution__block">
                     <h6><span><i class="far fa-cogs"></i> En execució</span></h6>
-                    En exposició pública, inici d’adjudicació de l’obra signat i execució prevista abans que acabe l’any.
+                    En exposició pública. Inici d’adjudicació de l’obra signat i execució prevista abans que acabe l’any.
                     <hr class="my-3" />
                     <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
                     <small class="d-block mt-3">Última actualització: 2 d'agost de 2018</small>
