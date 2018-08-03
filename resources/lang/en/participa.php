@@ -92,6 +92,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Errors
+    |--------------------------------------------------------------------------
+    */
+    'error_404' => 'Error 404',
+    'error_404_text' => 'The page you were looking for was not found.',
+    'error_503' => 'Maintenance tasks',
+    'error_503_text' => 'We are currently doing some maintenance on this website. Come back in a few minutes.',
+    'error_SMS' => 'Error sending the SMS',
+    'error_ip_limit_exceeded' => 'You have exceeded the amount of votes allowed per IP',
+    'error_lookup_limit_exceeded' => 'You have entered an incorrect ID too many times.',
+    'error_token_expired' => 'Your security token has expired. Refresh your browser and try again.',
+
+    /*
+    |--------------------------------------------------------------------------
     | Months
     |--------------------------------------------------------------------------
     */

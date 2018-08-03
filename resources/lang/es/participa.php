@@ -92,6 +92,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Errors
+    |--------------------------------------------------------------------------
+    */
+    'error_404' => 'Error 404',
+    'error_404_text' => 'No hemos encontrado la página que estabas buscando.',
+    'error_503' => 'Tareas de mantenimiento',
+    'error_503_text' => 'Estamos realizando tareas de mantenimiento. Vuelve en unos minutos.',
+    'error_SMS' => 'Error al enviar el SMS',
+    'error_ip_limit_exceeded' => 'Has sobrepasado el límite de votos que puede emitir una misma IP.',
+    'error_lookup_limit_exceeded' => 'Has introducido un indetificador erróneo demasiadas veces.',
+    'error_token_expired' => 'Tu token de seguridad ha expirado. Refresca la pàgina y vuelve a intentarlo.',
+
+    /*
+    |--------------------------------------------------------------------------
     | Months
     |--------------------------------------------------------------------------
     */
