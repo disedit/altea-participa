@@ -135,15 +135,15 @@
     </div>
 </div>
 
-<div class="about-block">
-    <h3>Last year...</h3>
+<div class="about-block about-block--last">
+    <h3>On last year's edition...</h3>
     <div>
-        <h4>Three most voted projects</h4>
-        <div class="row results results-2017 results-2017--compact">
+        <h4 class="mb-4">Three most voted projects</h4>
+        <div class="row results results-2017 results-2017--compact my-3">
             <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
+                <div class="results__card results__card--winner">
                     <span class="results__card__number d-none d-md-inline">1</span>
-                    <h5>Pedestrian road between the Filharmònica and Empedrat streets</h5>
+                    <h5><span>Pedestrian road between the Filharmònica and Empedrat streets</span> <i class="far fa-check" aria-hidden="true"></i></h5>
                     <div class="results__votes">
                         <div class="results__points">15%</div>
                         <div class="progress">
@@ -152,6 +152,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
+                <div class="results-2017__execution__block">
+                    <h6><span><i class="far fa-cogs"></i> In the works</span></h6>
+                    (sentence)
+                    <hr class="my-3" />
+                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
+                    <small class="d-block mt-3">Last updated: August 3th, 2018</small>
                 </div>
             </div>
             <div class="d-flex justify-content-center col-md-4">
@@ -182,7 +191,19 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
+                <div class="results-2017__execution__block">
+                    <ol start="4" class="results-2017__descending-list">
+                        <li>Improvement of Altea and Altea la Vella's playgrounds (12%)</li>
+                        <li>Creation of a playground in La Trompa stree's green zone</li>
+                        <li>Optimization and reordering of the local traffic light network</li>
+                    </ol>
+                    <hr class="my-3" />
+                    <a href="{{ url('/archive/2017') }}">
+                        <i class="far fa-chart-bar" aria-hidden="true"></i> Complete results from 2017
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <a href="/archive/2017" class="results-2017__more"><i class="far fa-chart-bar" aria-hidden="true"></i> Complete results from 2017</a>
 </div>
