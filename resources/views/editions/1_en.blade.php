@@ -1,6 +1,6 @@
 <div class="about-block">
     <h3>Altea imagines, Altea participates</h3>
-    <img src="/images/choice-2.svg" class="about-block__thumbnail" aria-hidden="true" alt="" />
+    <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" />
     <p>The <strong>Town Council of Altea</strong> believes in democratic regeneration as one of its fundamental pillars. A regeneration that entails giving citizens a voice and bringing them closer to the decision-making process. A participation that aims to give the citizens a bigger share of political co-responsability, so they can <strong>“co-govern” their council, their town</strong>.
     <p>It started <a href="/archive/2017">last year</a> with the first participatory budget, and for this second edition, the process will be broader in scope and easier to take part in.</p>
     <p><strong>Altea Participa</strong> aims to delve into the real and effective participation of its citizens.</p>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="phase__path">
-        <img src="/images/path.svg" aria-hidden="true" alt="" />
+        <img src="/images/path.svg" alt="" />
     </div>
 
     <div class="phase">
@@ -45,7 +45,7 @@
     </div>
 
     <div class="phase__path mt-0">
-        <img src="/images/path-2.svg" aria-hidden="true" alt="" style="transform: rotate(180deg);" />
+        <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
     </div>
 
     <div class="phase">
@@ -64,7 +64,7 @@
     </div>
 
     <div class="phase__path">
-        <img src="/images/path-2.svg" aria-hidden="true" alt="" style="margin-left: 168px;" />
+        <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
     </div>
 
     <div class="phase">
@@ -83,7 +83,7 @@
     </div>
 
     <div class="phase__path">
-        <img src="/images/path.svg" aria-hidden="true" alt="" />
+        <img src="/images/path.svg" alt="" />
     </div>
 
     <div class="phase">
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <img src="/images/creation.svg" class="about-block__phases-thumbnail" />
+    <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" />
 </div>
 
 <div class="about-block">
@@ -116,7 +116,7 @@
 
 <div class="about-block">
     <h3>Information</h3>
-    <img src="/images/choice.svg" class="about-block__info-thumbnail" />
+    <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" />
     <div class="columns">
         <h4>Who can participate?</h4>
         <p>All citizens who are <strong>16 years of age or older and are registered in Altea</strong>, as per the census on <strong>01/06/2018</strong>.</p>

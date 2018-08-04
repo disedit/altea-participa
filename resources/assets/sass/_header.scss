@@ -20,6 +20,13 @@
     font-weight: 700;
     padding-bottom: 0;
 
+    h1 {
+      margin: 0;
+      line-height: 1;
+      font-size: 0;
+      font-weight: normal;
+    }
+
     img {
       transition: width 0.2s ease-in-out;
       width: 15.375rem;

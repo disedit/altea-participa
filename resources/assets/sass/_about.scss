@@ -126,14 +126,14 @@
       }
 
       &.calendar--red {
-        border: 2px $red solid;
+        border: 2px darken($red, 10%) solid;
 
         .calendar__dates {
-          color: $red;
+          color: darken($red, 10%);
         }
 
         .calendar__heading {
-          background: $red;
+          background: darken($red, 10%);
         }
       }
     }

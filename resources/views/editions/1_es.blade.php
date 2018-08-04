@@ -1,6 +1,6 @@
 <div class="about-block">
     <h3>Altea imagina, Altea participa</h3>
-    <img src="/images/choice-2.svg" class="about-block__thumbnail" aria-hidden="true" alt="" />
+    <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" />
     <p>El <strong>Ayuntamiento de Altea</strong> ha establecido la regeneración democrática como uno de sus pilares básicos. Una regeneración que pasa por dar voz a los ciudadanos y ciudadanas y acercarlos a la toma de decisiones. Una participación que tiene por finalidad que la ciudadanía pueda conseguir mayores cotas de corresponsabilidad política, que <strong>“co-gobiernen” su ayuntamiento, su pueblo</strong>.
     <p>Ya lo empezamos el <a href="/archive/2017">año pasado</a> con los primeros presupuestos participativos y en esta segunda edición el proceso de participación ciudadana será mucho más amplio y fácil.</p>
     <p><strong>Altea Participa</strong> pretende profundizar en la participación real y efectiva de la ciudadanía.</p>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="phase__path">
-        <img src="/images/path.svg" aria-hidden="true" alt="" />
+        <img src="/images/path.svg" alt="" />
     </div>
 
     <div class="phase">
@@ -45,7 +45,7 @@
     </div>
 
     <div class="phase__path mt-0">
-        <img src="/images/path-2.svg" aria-hidden="true" alt="" style="transform: rotate(180deg);" />
+        <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
     </div>
 
     <div class="phase">
@@ -64,7 +64,7 @@
     </div>
 
     <div class="phase__path">
-        <img src="/images/path-2.svg" aria-hidden="true" alt="" style="margin-left: 168px;" />
+        <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
     </div>
 
     <div class="phase">
@@ -83,7 +83,7 @@
     </div>
 
     <div class="phase__path">
-        <img src="/images/path.svg" aria-hidden="true" alt="" />
+        <img src="/images/path.svg" alt="" />
     </div>
 
     <div class="phase">
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <img src="/images/creation.svg" class="about-block__phases-thumbnail" />
+    <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" />
 </div>
 
 <div class="about-block">
@@ -116,7 +116,7 @@
 
 <div class="about-block">
     <h3>Información sobre la votación</h3>
-    <img src="/images/choice.svg" class="about-block__info-thumbnail" />
+    <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" />
     <div class="columns">
         <h4>¿Quién puede participar en Altea Participa?</h4>
         <p>Podrán participar en este proceso aquellas personas <strong>mayores de 16 años empadronadas en Altea</strong>, de acuerdo con el padrón a fecha de <strong>01/06/2018</strong>.</p>

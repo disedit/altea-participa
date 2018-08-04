@@ -1,6 +1,6 @@
 <div class="about-block">
     <h3>Altea imagina, Altea participa</h3>
-    <img src="/images/choice-2.svg" class="about-block__thumbnail" aria-hidden="true" alt="" />
+    <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" />
     <p>L’<strong>Ajuntament d’Altea</strong> ha establert la regeneració democràtica com uns dels seus pilars bàsics. Una regeneració que passa per donar veu als ciutadans i ciutadanes i apropar-los a la pressa de decisions. Una participació que té per finalitat que la ciutania puga assolir majors quotes de corresponsabilitat política, que <strong>“co-governen” el seu ajuntament, el seu poble</strong>.
     <p>Ja ho vam començar l’<a href="/archive/2017">any passat</a> amb els primers pressupostos participatius i en aquesta segona edició, el procés de participació ciutadana serà molt més ampli i fàcil.</p>
     <p><strong>Altea Participa</strong> pretén aprofundir en la participació real i efectiva de la ciutadania.</p>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="phase__path">
-            <img src="/images/path.svg" aria-hidden="true" alt="" />
+            <img src="/images/path.svg" alt="" />
         </div>
 
         <div class="phase">
@@ -46,7 +46,7 @@
         </div>
 
         <div class="phase__path mt-0">
-            <img src="/images/path-2.svg" aria-hidden="true" alt="" style="transform: rotate(180deg);" />
+            <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
         </div>
 
         <div class="phase">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="phase__path">
-            <img src="/images/path-2.svg" aria-hidden="true" alt="" style="margin-left: 168px;" />
+            <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
         </div>
 
         <div class="phase">
@@ -84,7 +84,7 @@
         </div>
 
         <div class="phase__path">
-            <img src="/images/path.svg" aria-hidden="true" alt="" />
+            <img src="/images/path.svg" alt="" />
         </div>
 
         <div class="phase">
@@ -105,7 +105,7 @@
         </div>
     </div>
 
-    <img src="/images/creation.svg" class="about-block__phases-thumbnail" />
+    <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" />
 </div>
 
 <div class="about-block">
@@ -118,7 +118,7 @@
 
 <div class="about-block">
     <h3>Informació sobre la votació</h3>
-    <img src="/images/choice.svg" class="about-block__info-thumbnail" />
+    <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" />
     <div class="columns">
         <h4>Qui pot participar a Altea Participa?</h4>
         <p>Podran participar en aquest procés aquelles persones <strong>majors de 16 anys empadronades a Altea</strong>, d’acord al padró de data <strong>01/06/2018</strong>.</p>
@@ -161,7 +161,7 @@
                     <h6><span><i class="far fa-cogs"></i> En execució</span></h6>
                     En exposició pública. Inici d’adjudicació de l’obra signat i execució prevista abans que acabe l’any.
                     <hr class="my-3" />
-                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta</a>
+                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta <span class="badge">PDF</span></a>
                     <small class="d-block mt-3">Última actualització: 2 d'agost de 2018</small>
                 </div>
             </div>

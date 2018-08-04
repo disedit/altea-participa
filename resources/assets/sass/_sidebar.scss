@@ -1,7 +1,6 @@
 /* Sidebar specific variables */
 $sidebar-background: $gray-lighter;
 $sidebar-text: $gray-light;
-$sidebar-text-secondary: lighten($sidebar-text, 15%);
 
 .sidebar {
   position: relative;
@@ -45,7 +44,7 @@ $sidebar-text-secondary: lighten($sidebar-text, 15%);
       top: 0;
       right: 0;
       height: 0.35rem;
-      background: $sidebar-text-secondary;
+      background: $sidebar-text;
     }
   }
 
@@ -89,7 +88,7 @@ $sidebar-text-secondary: lighten($sidebar-text, 15%);
   }
 
   &__secondary {
-    color: $sidebar-text-secondary;
+    color: $sidebar-text;
     font-size: 0.80rem;
     display: block;
   }
