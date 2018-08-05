@@ -1,13 +1,13 @@
-<div class="about-block">
-    <h3>Altea imagines, Altea participates</h3>
+<section aria-labelledby="about-1" class="about-block">
+    <h3 id="about-1">Altea imagines, Altea participates</h3>
     <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" />
-    <p>The <strong>Town Council of Altea</strong> believes in democratic regeneration as one of its fundamental pillars. A regeneration that entails giving citizens a voice and bringing them closer to the decision-making process. A participation that aims to give the citizens a bigger share of political co-responsability, so they can <strong>“co-govern” their council, their town</strong>.
+    <p>The <strong>Town Council of Altea</strong> believes in democratic regeneration as one of its fundamental pillars. A regeneration that entails giving citizens a voice and bringing them closer to the decision-making process. A participation that aims to give the citizens a bigger share of political co-responsability, so they can <strong>“co-govern” their council, their town</strong>.</p>
     <p>It started <a href="/archive/2017">last year</a> with the first participatory budget, and for this second edition, the process will be broader in scope and easier to take part in.</p>
     <p><strong>Altea Participa</strong> aims to delve into the real and effective participation of its citizens.</p>
-</div>
+</section>
 
-<div class="about-block">
-    <h3>Citizens decide</h3>
+<section aria-labelledby="about-2" class="about-block">
+    <h3 id="about-2">Citizens decide</h3>
 
     <div class="phase">
         <div class="phase__calendar">
@@ -104,18 +104,18 @@
     </div>
 
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" />
-</div>
+</section>
 
-<div class="about-block">
-    <h3>What will be decided?</h3>
+<section aria-labelledby="about-3" class="about-block">
+    <h3 id="about-3">What will be decided?</h3>
     <p class="about-block__highlight">
         <i class="far fa-question-circle"></i>
         Citizens will decide which <strong>three projects they deem best for Altea</strong> with a combined cost of up to <strong>€100,00</strong>.
     </p>
-</div>
+</section>
 
-<div class="about-block">
-    <h3>Information</h3>
+<section aria-labelledby="about-4" class="about-block">
+    <h3 id="about-4">Information</h3>
     <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" />
     <div class="columns">
         <h4>Who can participate?</h4>
@@ -133,10 +133,10 @@
         <h4>Results</h4>
         <p>The results of the vote will be made public on this website as soon as the voting period ends.</p>
     </div>
-</div>
+</section>
 
-<div class="about-block about-block--last">
-    <h3>On last year's edition...</h3>
+<section aria-labelledby="about-5" class="about-block about-block--last">
+    <h3 id="about-5">Last year's edition...</h3>
     <div>
         <h4 class="mb-4">Three most voted projects</h4>
         <div class="row results results-2017 results-2017--compact my-3">
@@ -206,4 +206,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

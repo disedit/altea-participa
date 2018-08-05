@@ -1,8 +1,8 @@
 <template>
-  <div :class="'question template-' + question.template">
+  <section :class="'question template-' + question.template" :aria-labelledby="'question-' + question.id">
     <div :class="{ 'heading': true, 'has-number': displayNumber }">
       <span v-if="displayNumber" class="number">{{ number }}</span>
-      <h2>{{ question.question }}</h2>
+      <h2 :id="'question-' + question.id">{{ question.question }}</h2>
       <p class="description">{{ question.description }}</p>
     </div>
     <div :class="{ 'option-group': true, 'list-group': question.template != 'cards' }">
@@ -24,7 +24,7 @@
       </label>
     </div>
     <hr />
-  </div>
+</section>
 </template>
 
 <script>

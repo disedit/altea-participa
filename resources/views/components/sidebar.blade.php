@@ -3,15 +3,15 @@
     $places = (!empty($edition->voting_places)) ? explode("\n", $edition->voting_places) : array();
 @endphp
 
-<div class="sidebar">
-    <div class="sidebar__box sidebar__box--main">
+<aside class="sidebar">
+    <section aria-labelledby="current-poll" class="sidebar__box sidebar__box--main">
         @isset($isArchive)
-            <h4>@lang('participa.poll')</h4>
+            <h3 id="current-poll">@lang('participa.poll')</h3>
         @else
-            <h4>@lang('participa.current_poll')</h4>
+            <h3 id="current-poll">@lang('participa.current_poll')</h3>
         @endif
 
-        <h3>{{ $edition->name }}</h3>
+        <h4>{{ $edition->name }}</h4>
         <p class="sidebar__secondary">@lang('participa.sidebar_dates', ['start_date' => human_date($edition->start_date), 'end_date' => human_date($edition->end_date)])</p>
 
         <div class="sidebar__social-plugins">
@@ -71,11 +71,11 @@
                 </div>
             @endif
         </div>
-    </div>
+    </section>
 
     @if(count($places) > 0)
-        <div class="sidebar__box" v-if="voting_places">
-            <h4>@lang('participa.voting_places')</h4>
+        <section aria-labelledby="voting-places" class="sidebar__box" v-if="voting_places">
+            <h3 id="voting-places">@lang('participa.voting_places')</h3>
             <p class="sidebar__secondary">@lang('participa.voting_text')</p>
             <hr />
             <ul class="sidebar__list">
@@ -99,7 +99,7 @@
                     </li>
                 @endforeach
             </ul>
-        </div>
+        </section>
     @endif
 
     @if(!$edition->isPending())
@@ -107,15 +107,15 @@
         @endcomponent
     @endif
 
-    <div class="sidebar__box">
-        <h4>@lang('participa.contact')</h4>
+    <section aria-labelledby="contact" class="sidebar__box">
+        <h3 id="contact">@lang('participa.contact')</h3>
         <p>@lang('participa.contact_text', ['contact_email' => config('participa.contact_email')])</p>
     </div>
 
     @isset($pastEditions)
         @if(count($pastEditions) > 0)
-            <div class="sidebar__box">
-                <h4>@lang('participa.past_editions')</h4>
+            <section aria-labelledby="past-editions" class="sidebar__box">
+                <h3 id="past-editions">@lang('participa.past_editions')</h3>
 
                 <ul class="sidebar__list">
                 @foreach($pastEditions as $edition)
@@ -133,4 +133,4 @@
     <div>
         {!! $edition->sidebar !!}
     </div>
-</div>
+</aside>

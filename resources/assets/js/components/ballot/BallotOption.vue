@@ -8,10 +8,11 @@
         :disabled="disabled"
         :checked="selected"
         @change="selectOption(option, type)"
-        class="custom-control-input" />
+        class="custom-control-input"
+        :aria-labelledby="'option-' + option.id" />
 
       <span class="custom-control-label">
-        <span class="option-name">{{ option.option }}</span>
+        <span class="option-name" :id="'option-' + option.id">{{ option.option }}</span>
         <span v-if="displayCost && option.cost > 0" class="option-cost">{{ option.cost | formatCurrency }}</span>
       </span>
     </div>

@@ -12,6 +12,9 @@ export default {
     challenge: 'Si piensas que se trata de un error o necesitas ayuda, ponte en contacto con',
     back: 'Vuelve'
   },
+  booth: {
+    label: 'Formulario de votación'
+  },
   booth_identification: {
     heading: 'Identificación',
     subheading: 'Puedes votar si tienes más de <strong>{min_age} años</strong> y estás empadronado en <strong>{municipality}</strong>',

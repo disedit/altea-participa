@@ -1,13 +1,13 @@
-<div class="about-block">
-    <h3>Altea imagina, Altea participa</h3>
+<section aria-labelledby="about-1" class="about-block">
+    <h3 id="about-1">Altea imagina, Altea participa</h3>
     <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" />
-    <p>El <strong>Ayuntamiento de Altea</strong> ha establecido la regeneración democrática como uno de sus pilares básicos. Una regeneración que pasa por dar voz a los ciudadanos y ciudadanas y acercarlos a la toma de decisiones. Una participación que tiene por finalidad que la ciudadanía pueda conseguir mayores cotas de corresponsabilidad política, que <strong>“co-gobiernen” su ayuntamiento, su pueblo</strong>.
+    <p>El <strong>Ayuntamiento de Altea</strong> ha establecido la regeneración democrática como uno de sus pilares básicos. Una regeneración que pasa por dar voz a los ciudadanos y ciudadanas y acercarlos a la toma de decisiones. Una participación que tiene por finalidad que la ciudadanía pueda conseguir mayores cotas de corresponsabilidad política, que <strong>“co-gobiernen” su ayuntamiento, su pueblo</strong>.</p>
     <p>Ya lo empezamos el <a href="/archive/2017">año pasado</a> con los primeros presupuestos participativos y en esta segunda edición el proceso de participación ciudadana será mucho más amplio y fácil.</p>
     <p><strong>Altea Participa</strong> pretende profundizar en la participación real y efectiva de la ciudadanía.</p>
-</div>
+</section>
 
-<div class="about-block">
-    <h3>La ciudadanía decide</h3>
+<section aria-labelledby="about-2" class="about-block">
+    <h3 id="about-2">La ciudadanía decide</h3>
 
     <div class="phase">
         <div class="phase__calendar">
@@ -104,18 +104,18 @@
     </div>
 
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" />
-</div>
+</section>
 
-<div class="about-block">
-    <h3>¿Qué vamos a decidir?</h3>
+<section aria-labelledby="about-3" class="about-block">
+    <h3 id="about-3">¿Qué vamos a decidir?</h3>
     <p class="about-block__highlight">
         <i class="far fa-question-circle"></i>
         La ciutadania decidirá qué <strong>tres propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión màxima de <strong>100.000€</strong>.
     </p>
-</div>
+</section>
 
-<div class="about-block">
-    <h3>Información sobre la votación</h3>
+<section aria-labelledby="about-4" class="about-block">
+    <h3 id="about-4">Información sobre la votación</h3>
     <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" />
     <div class="columns">
         <h4>¿Quién puede participar en Altea Participa?</h4>
@@ -133,10 +133,10 @@
         <h4>Resultado de la votación</h4>
         <p>El resultado de la votación se hará público en esta web tan pronto haya concluído el período de votación.</p>
     </div>
-</div>
+</section>
 
-<div class="about-block about-block--last">
-    <h3>En la anterior edición...</h3>
+<section aria-labelledby="about-5" class="about-block about-block--last">
+    <h3 id="about-5">En la anterior edición...</h3>
     <div>
         <h4 class="mb-4">Tres proyectos más votados</h4>
         <div class="row results results-2017 results-2017--compact my-3">
@@ -206,4 +206,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

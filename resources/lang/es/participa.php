@@ -21,6 +21,8 @@ return [
     | Global
     |--------------------------------------------------------------------------
     */
+    'select_language' => 'Selecciona idioma / Select your language',
+    'current_language' => 'Idioma actual',
     'calendar_heading' => 'Votación',
     'help' => 'Incidencias y ayuda',
     'legal' => 'Aviso legal',

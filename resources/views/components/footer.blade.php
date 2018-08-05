@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer" role="contentinfo">
     <div class="footer-language">
         @include('components/languages')
     </div>
@@ -9,7 +9,7 @@
         </a>
 
         <div class="media-body council-details">
-            <address>
+            <address role="presentation">
                 <h5 class="mt-0">{{ config('participa.council_name', 'Any Council') }}</h5>
                 <p>
                     @if(config('participa.contact_address'))
