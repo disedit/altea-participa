@@ -65,7 +65,7 @@
       z-index: 10;
       position: absolute;
       margin-bottom: 0;
-      color: lighten($gray-light, 25%);
+      color: $gray-light;
       font-size: 1.2rem;
       top: 1.4rem;
       left: 1.2rem;
@@ -93,7 +93,6 @@
       top: 0.8rem;
       left: 1.2rem;
       font-size: 0.9rem;
-      color: $gray-light;
     }
   }
 
