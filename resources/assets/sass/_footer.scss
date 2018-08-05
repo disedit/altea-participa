@@ -5,7 +5,7 @@
 }
 
 .main-footer {
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 
   .languages {
     background: $white;
@@ -18,8 +18,8 @@
     font-weight: 600;
   }
 
-  p:last-child {
-    margin-bottom: 0;
+  p {
+    margin-bottom: 0.5rem;
   }
 
   span {

@@ -13,11 +13,11 @@
                 <h5 class="mt-0">{{ config('participa.council_name', 'Any Council') }}</h5>
                 <p>
                     @if(config('participa.contact_address'))
-                        <span><i class="far fa-map-marker-alt" aria-hidden="true"></i> {{ config('participa.contact_address') }}</span>
+                        <span><i class="far fa-map-marker-alt fa-fw" aria-hidden="true"></i> {{ config('participa.contact_address') }}</span>
                     @endif
 
                     @if(config('participa.contact_phone'))
-                        <span><i class="far fa-phone" aria-hidden="true"></i> {{ config('participa.contact_phone') }}</span>
+                        <span><i class="far fa-phone fa-fw" aria-hidden="true"></i> {{ config('participa.contact_phone') }}</span>
                     @endif
 
                     @if(config('participa.council_url'))
@@ -27,13 +27,23 @@
                         @endphp
                         <span>
                             <a href="{{ config('participa.council_url') }}" target="_blank" rel="noopener" title="{{ config('participa.council_name', 'Any Council') }}">
-                                <i class="far fa-globe" aria-hidden="true"></i> {{ $simpleUrl }}
+                                <i class="far fa-globe fa-fw" aria-hidden="true"></i> {{ $simpleUrl }}
                             </a>
                         </span>
                     @endif
                 </p>
-                <p>@lang('participa.help'): <a href="mailto:{{ config('participa.contact_email', 'participa@disedit.com') }}">{{ config('participa.contact_email', 'participa@disedit.com') }}</a> | <a href="{{ url('/legal') }}">@lang('participa.legal')</a></p>
             </address>
+
+            <p>
+                <i class="far fa-question-circle fa-fw"></i> @lang('participa.help'): <a href="mailto:{{ config('participa.contact_email', 'participa@disedit.com') }}">{{ config('participa.contact_email', 'participa@disedit.com') }}</a> |
+                <a href="{{ url('/legal') }}" style="white-space: nowrap">@lang('participa.legal')</a>
+            </p>
+
+            <div>
+                <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
+                    <img height="32" width="88" src="https://www.w3.org/WAI/wcag21/wcag2.1AA-blue-v.png" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
+                </a>
+            </div>
         </div>
     </div>
 </footer>
