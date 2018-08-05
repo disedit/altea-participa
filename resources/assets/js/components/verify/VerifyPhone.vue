@@ -113,6 +113,7 @@
     created() {
       Bus.$on('VerifyPhoneLoading', (isLoading) => this.isLoading = isLoading);
       Bus.$on('setFlag', (flag) => this.flag = flag);
+      Bus.$on('focusMainButton', this.handleErrorModalClose);
     },
 
     mounted() {
@@ -147,6 +148,14 @@
 
       castBallot() {
         Bus.$emit('castBallot');
+      },
+
+      handleErrorModalClose(errors) {
+        if(errors.hasOwnProperty('SMS_code')) {
+          this.smsCodeFocused = true;
+        } else {
+          this.phoneFocused = true;
+        }
       }
     }
 

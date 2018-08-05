@@ -50,7 +50,7 @@
     methods: {
       close() {
         Bus.$emit('fieldUpdated', 'errors', {});
-        Bus.$emit('focusMainButton');
+        Bus.$emit('focusMainButton', this.errors);
       }
     }
   }

@@ -58,6 +58,7 @@
 
     mounted() {
       Bus.$on('doneSelecting', this.focusID);
+      Bus.$on('focusMainButton', this.focusID);
     },
 
     computed: {
