@@ -35,7 +35,7 @@
     </script>
 
     @section('header')
-        @include('components/header')
+        @include('components/header', ['inPerson' => $inPerson])
         @include('components/voteinfo', ['inPerson' => $inPerson])
     @show
 

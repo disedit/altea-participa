@@ -4,7 +4,10 @@
                     : config('participa.logo');
 @endphp
 
-<nav class="navbar fixed-top navbar-expand-lg {{ (config('participa.navbar') == 'colorful') ? 'navbar-dark' : 'navbar-light' }}  {{ (!Request::segment(1)) ? 'navbar-full' : 'navbar-compact' }}">
+<nav class="navbar fixed-top navbar-expand-lg
+  {{ (config('participa.navbar') == 'colorful') ? 'navbar-dark' : 'navbar-light' }}
+  {{ (!Request::segment(1)) ? 'navbar-full' : 'navbar-compact' }}
+  {{ ($inPerson) ? 'navbar-scrolled' : '' }}">
   <a class="navbar-brand" href="/">
       <h1>
           @if($logoUrl)
