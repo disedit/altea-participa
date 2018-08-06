@@ -41,6 +41,7 @@ export default {
     request_sms_button: 'Envíame el código',
     cast_ballot_button: 'Confirma mi voto',
     country_code: 'Prefijo internacional',
+    modify_phone: 'Modify phone number'
   },
   verify_in_person: {
     button: 'Confirma'

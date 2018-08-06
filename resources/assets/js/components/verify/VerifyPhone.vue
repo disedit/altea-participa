@@ -5,7 +5,7 @@
         <i class="fa fa-mobile-alt" aria-hidden="true"></i> {{ $t('verify_phone.heading') }}
       </h3>
 
-      <p class="subheading">{{ $t('verify_phone.phone_subheading') }}</p>
+      <p class="subheading" id="phoneDescription">{{ $t('verify_phone.phone_subheading') }}</p>
 
       <phone-input
         name="phone"
@@ -23,6 +23,7 @@
         @blur="phoneFocused = false">
           <button v-show="canBeModified" @click="modifyPhone" class="btn btn-edit btn-light btn-sm" type="button">
             <i class="far fa-pencil-alt" aria-hidden="true"></i>
+            <span class="sr-only">{{ $t('verify_phone.modify_phone') }}</span>
           </button>
       </phone-input>
 
@@ -37,9 +38,9 @@
 
     <transition name="slide">
       <form v-if="smsRequested" @submit.prevent="castBallot">
-        <hr />
+        <hr aria-hidden="true" />
 
-        <p class="subheading">{{ $t('verify_phone.code_subheading') }}</p>
+        <p class="subheading" id="codeDescription">{{ $t('verify_phone.code_subheading') }}</p>
 
         <text-input
           name="sms_code"
@@ -52,7 +53,8 @@
           :autofocus="smsCodeFocused"
           @update="updateSMSCode"
           @focus="smsCodeFocused = true"
-          @blur="smsCodeFocused = false" />
+          @blur="smsCodeFocused = false"
+          aria-describedby="codeDescription" />
 
         <verify-flags :flag="flag" />
 

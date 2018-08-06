@@ -2,7 +2,7 @@
   <div :class="{ 'input': true, 'focused': focused, 'has-warning': warning }">
   <label :for="name">
     {{label}}
-    <i v-if="tooltip" class="far fa-question-circle input-tooltip" aria-hidden="true" v-b-tooltip.hover :title="tooltip"></i>
+    <i v-if="tooltip" class="far fa-question-circle input-tooltip" v-b-tooltip.hover :title="tooltip"></i>
   </label>
 
   <input

@@ -1,6 +1,14 @@
 // Variables
 @import "variables";
 
+body {
+  padding-top: 57px;
+
+  &:before {
+    display: none;
+  }
+}
+
 /* Login */
 .login {
   display: flex;
@@ -32,5 +40,12 @@
   .input-group-addon {
     width: 3rem;
     text-align: center;
+  }
+}
+
+/* Dashboard */
+.dashboard {
+  h1 {
+    font-weight: bold;
   }
 }

@@ -9,7 +9,7 @@
         <label :for="name">
           <i v-if="icon" :class="'fa fa-' + icon" aria-hidden="true"></i>
           {{label}}
-          <i v-if="tooltip" class="far fa-question-circle input-tooltip" aria-hidden="true" v-b-tooltip.hover :title="tooltip"></i>
+          <i v-if="tooltip" class="far fa-question-circle input-tooltip" v-b-tooltip.hover :title="tooltip"></i>
         </label>
 
         <input
@@ -25,7 +25,8 @@
           @blur="focused = value ? true : false; $emit('blur');"
           :required="required"
           :disabled="disabled"
-          :class="{ 'form-control form-control-lg': true, 'is-invalid': warning }" />
+          :class="{ 'form-control form-control-lg': true, 'is-invalid': warning }"
+          aria-describedby="phoneDescription" />
 
         <slot></slot>
       </div>

@@ -1,6 +1,5 @@
 <template>
   <b-modal id="errorsModal" ref="errorsModal" @hidden="close" size="lg" :hide-header="true" :visible="anyErrors">
-
     <div class="error">
       <div class="header">
         <i class="far fa-hand-point-down" aria-hidden="true"></i>
@@ -25,7 +24,6 @@
         </button>
       </div>
     </div>
-
   </b-modal>
 </template>
 

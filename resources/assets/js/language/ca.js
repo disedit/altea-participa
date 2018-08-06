@@ -41,6 +41,7 @@ export default {
     request_sms_button: 'Envia\'m el codi',
     cast_ballot_button: 'Confirma el meu vot',
     country_code: 'Prefix internacional',
+    modify_phone: 'Modify phone number'
   },
   verify_in_person: {
     button: 'Confirma'

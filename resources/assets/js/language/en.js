@@ -35,12 +35,13 @@ export default {
     phone_label: 'Mobile',
     code_label: 'SMS Code',
     code_tooltip: 'Numeric code',
-    phone_subheading: 'Enter your mobil number. You will receive an SMS code to authenticate your vote.',
+    phone_subheading: 'Enter your mobile number. You will receive an SMS code to authenticate your vote.',
     code_subheading: 'Type in the code you have received on your mobile phone.',
     code_smalltext: 'The SMS may take some minutes to arrive. Ensure that your phone is on and not out of coverage.',
     request_sms_button: 'Text me the code',
     cast_ballot_button: 'Cast my ballot',
     country_code: 'Country dial code',
+    modify_phone: 'Modify phone number'
   },
   verify_in_person: {
     button: 'Cast your ballot'

@@ -10,7 +10,7 @@
 
         <div class="media-body council-details">
             <address role="presentation">
-                <h5 class="mt-0">{{ config('participa.council_name', 'Any Council') }}</h5>
+                <h3 class="mt-0">{{ config('participa.council_name', 'Any Council') }}</h3>
                 <p>
                     @if(config('participa.contact_address'))
                         <span><i class="far fa-map-marker-alt fa-fw" aria-hidden="true"></i> {{ config('participa.contact_address') }}</span>

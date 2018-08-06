@@ -14,7 +14,7 @@
       @focus="autofocus = true"
       @blur="autofocus = false" />
 
-    <hr />
+    <hr aria-hidden="true" />
 
     <button :class="'btn btn-vote btn-primary btn-lg btn-block' + disabled" type="submit">
       <i v-if="disabled" class="fa fa-spinner-third fa-spin" aria-hidden="true"></i>

@@ -21,7 +21,7 @@
         </div>
 
         <div v-if="docs">
-            <hr />
+            <hr aria-hidden="true" />
             <ul class="sidebar__list">
                 <li class="sidebar__list__item">
                     @if(isset($isArchive) && Request::segment(3) == 'about')
@@ -77,7 +77,7 @@
         <section aria-labelledby="voting-places" class="sidebar__box" v-if="voting_places">
             <h3 id="voting-places">@lang('participa.voting_places')</h3>
             <p class="sidebar__secondary">@lang('participa.voting_text')</p>
-            <hr />
+            <hr aria-hidden="true" />
             <ul class="sidebar__list">
                 @foreach($places as $place)
                     @php
