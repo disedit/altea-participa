@@ -43,20 +43,33 @@
   &-main-links {
     margin-right: 1rem;
 
-    .nav-item {
-      margin: 0.5rem 0;
-    }
-
     a {
+      position: relative;
       display: block;
-      margin: 0 0.75rem;
+      padding: 0.5rem 0.75rem;
       opacity: 0.75;
       transition: 0.15s ease-in-out;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0.75rem;
+        right: 0.75rem;
+        height: 3px;
+        border-radius: 3px;
+        background: $white;
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+      }
 
       &:hover {
         opacity: 1;
         text-decoration: none;
-        box-shadow: 0 2px 0 white;
+
+        &:before {
+          opacity: 1;
+        }
       }
     }
 
@@ -258,11 +271,17 @@
     margin: 0;
   }
 
-  .vote-info.vote-info--compact {
-    padding: 100px 0 2rem 0;
+  .vote-info {
+    &__video {
+      margin: 0;
+    }
 
-    h2 {
-      display: block;
+    &.vote-info--compact {
+      padding: 100px 0 2rem 0;
+
+      h2 {
+        display: block;
+      }
     }
   }
 }

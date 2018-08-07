@@ -3,8 +3,6 @@
 @endphp
 <header class="vote-info {{ (!$compact) ? 'vote-info--full' : 'vote-info--compact' }}" role="banner">
     @if(!$inPerson)
-        <div class="left-hands"></div>
-        <div class="right-hands"></div>
         <div class="container">
             <div class="row">
                 <div class="{{ ($compact) ? 'col-lg-8' : 'col-lg-6' }} vote-info__text">
