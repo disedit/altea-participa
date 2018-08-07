@@ -1,11 +1,13 @@
 .navbar {
   background: transparent;
-  background: rgba(0, 43, 149, 0);
+  background: rgba(16, 6, 159, 0);
   transition: 0.2s ease-in-out;
 
   &.navbar-scrolled,
   &.navbar-expanded {
-    background: rgba(0, 43, 149, 1);
+    background: $brand-primary;
+    background: rgba(16, 6, 159, 1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 
     .navbar-brand img {
       width: 9.375rem;
@@ -79,6 +81,16 @@
   color: $white;
   transition: 0.5s ease-in-out;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(16, 6, 159, 0.8), rgba(16, 6, 159, 0.4));
+  }
+
   h2 {
     font-size: 2rem;
     font-weight: 900;
@@ -90,7 +102,7 @@
       box-decoration-break: clone;
       padding: 0.25rem 0.75rem;
       background: $brand-primary;
-      background: rgba(0, 43, 149, 0.75);
+      background: rgba(16, 6, 159, 0.7);
       border-radius: 0.25rem;
     }
   }
