@@ -73,7 +73,7 @@
     </p>
 </section>
 
-<section aria-labelledby="about-2" class="about-block about-block--calendar">
+<section id="calendar" aria-labelledby="about-2" class="about-block about-block--calendar">
     <h3 id="about-2">La ciutadania decideix</h3>
 
     <div class="phases phases-compact">
@@ -185,7 +185,7 @@
     </a>
 </section>
 
-<section aria-labelledby="about-3" class="about-block">
+<section id="proposals" aria-labelledby="about-3" class="about-block">
     <h3 id="about-3">Què anem a decidir?</h3>
     <p class="about-block__highlight">
         <i class="far fa-question-circle"></i>
@@ -200,7 +200,7 @@
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
 
-<section aria-labelledby="about-4" class="about-block about-block--info">
+<section id="info" aria-labelledby="about-4" class="about-block about-block--info">
     <h3 id="about-4">Informació sobre la votació</h3>
     <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" aria-hidden="true" />
     <div class="columns">
@@ -253,7 +253,7 @@
     </div>
 </section>
 
-<section aria-labelledby="about-5" class="about-block about-block--last">
+<section id="2017" aria-labelledby="about-5" class="about-block about-block--last">
     <h3 id="about-5">En l'anterior edició...</h3>
     <div>
         <h4 class="mb-4">Tres projectes més votats</h4>

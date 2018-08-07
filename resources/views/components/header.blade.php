@@ -2,6 +2,9 @@
     $logoUrl = (config('participa.navbar') == 'colorful')
                     ? config('participa.logo_dark')
                     : config('participa.logo');
+
+    $prelink = (!Request::segment(1) || Request::segment(1) == 'about')
+                    ? '' : url('/about');
 @endphp
 
 <nav class="navbar fixed-top navbar-expand-lg
@@ -23,16 +26,16 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-main-links" role="presentation">
         <li class="nav-item">
-          <a href="#about-2" data-scroll>@lang('participa.nav.calendar')</a>
+          <a href="{{ $prelink }}#calendar" data-scroll>@lang('participa.nav.calendar')</a>
         </li>
         <li class="nav-item">
-          <a href="#about-3" data-scroll>@lang('participa.nav.proposals')</a>
+          <a href="{{ $prelink }}#proposals" data-scroll>@lang('participa.nav.proposals')</a>
         </li>
         <li class="nav-item">
-          <a href="#about-4" data-scroll>@lang('participa.nav.info')</a>
+          <a href="{{ $prelink }}#info" data-scroll>@lang('participa.nav.info')</a>
         </li>
         <li class="nav-item">
-          <a href="#about-5" data-scroll>@lang('participa.nav.2017')</a>
+          <a href="{{ $prelink }}#2017" data-scroll>@lang('participa.nav.2017')</a>
         </li>
     </ul>
 
