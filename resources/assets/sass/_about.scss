@@ -70,17 +70,28 @@
   }
 
   a.about-block__read-more-link {
-    background: lighten($gray-light, 20%);
-    color: $white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
+    display: inline-block;
+    color: $gray-light;
+    padding: 0.4rem 1rem 0.3rem 1rem;
+    margin-top: 0.5rem;
+    border: 1px $gray-light solid;
+    border-radius: 2rem;
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: bold;
+    transform: 0.25s ease-in;
 
     &:hover {
       text-decoration: none;
-      background: $gray-light;
+      color: $white;
+      background: lighten($gray-light, 10%);
+      border-color: lighten($gray-light, 10%);
+    }
+
+    &:focus,
+    &:active {
+      outline: 0;
+      box-shadow: 0 0 0 4px lighten($gray-light, 50%);
     }
   }
 

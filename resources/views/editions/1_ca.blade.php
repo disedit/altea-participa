@@ -66,9 +66,9 @@
         </p>
     </div>
 
-    <p>
+    <p class="mb-0">
         <a href="#" class="about-block__read-more-link about-block__01-expand" aria-haspopup="true" aria-labelledby="about-1">
-            + Continua llegint
+            <i class="far fa-chevron-down fa-fw"></i> Continua llegint
         </a>
     </p>
 </section>
@@ -181,7 +181,7 @@
     </div>
 
     <a href="#" class="about-block__read-more-link" data-toggle="modal" data-target="#expandedCalendar">
-        <i class="far fa-calendar-plus"></i> Calendari detallat
+        <i class="far fa-calendar-plus fa-fw"></i> Calendari detallat
     </a>
 </section>
 
@@ -474,9 +474,9 @@
             $('.about-block__01-hidden').slideToggle();
 
             if (self.hasClass('opened')) {
-                self.text('+ Continua llegint');
+                self.html('<i class="far fa-chevron-down fa-fw"></i> Continua llegint');
             } else {
-                self.text('- Mostra menys');
+                self.html('<i class="far fa-chevron-up fa-fw"></i> Mostra menys');
             }
 
             self.toggleClass('opened');
