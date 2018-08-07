@@ -39,6 +39,18 @@ return [
     | Sidebar
     |--------------------------------------------------------------------------
     */
+    'nav' => [
+      'calendar' => 'Calendar',
+      'proposals' => 'Proposals',
+      'info' => 'Information',
+      '2017' => '2017 Results'
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Sidebar
+    |--------------------------------------------------------------------------
+    */
     'poll' => 'Poll',
     'current_poll' => 'Current poll',
     'sidebar_dates' => 'From :start_date to :end_date',

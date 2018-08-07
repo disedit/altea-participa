@@ -23,16 +23,16 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-main-links" role="presentation">
         <li class="nav-item">
-          <a href="#about-2" data-scroll>Calendari</a>
+          <a href="#about-2" data-scroll>@lang('participa.nav.calendar')</a>
         </li>
         <li class="nav-item">
-          <a href="#about-3" data-scroll>Propostes</a>
+          <a href="#about-3" data-scroll>@lang('participa.nav.proposals')</a>
         </li>
         <li class="nav-item">
-          <a href="#about-4" data-scroll>Informació</a>
+          <a href="#about-4" data-scroll>@lang('participa.nav.info')</a>
         </li>
         <li class="nav-item">
-          <a href="#about-5" data-scroll>Resultats 2017</a>
+          <a href="#about-5" data-scroll>@lang('participa.nav.2017')</a>
         </li>
     </ul>
 
