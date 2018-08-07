@@ -102,10 +102,6 @@
 }
 
 .options-widget {
-  border-bottom: 1px $gray-lighter solid;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-
   &:last {
     border-bottom: 0;
     padding-bottom: 0;
@@ -293,7 +289,7 @@
       position: absolute;
       width: 319px;
       right: -372px;
-      bottom: 0;
+      bottom: 60px;
     }
   }
 }

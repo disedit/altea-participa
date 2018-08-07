@@ -1,6 +1,5 @@
 @foreach($edition->questions as $question)
     <div class="options-widget">
-        <h4>{{ $question->question }}</h4>
         <div class="card-columns">
             @foreach($question->options as $option)
                 <div class="card option">

@@ -1,6 +1,6 @@
 <section aria-labelledby="about-1" class="about-block" aria-live="polite">
     <h3 id="about-1">Altea imagina, Altea participa</h3>
-    <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" />
+    <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" aria-hidden="true" />
 
     <p class="about-block__subtitle">
         La ciutadania decideix directament part de les inversions municipals
@@ -187,12 +187,17 @@
         La ciutadania decidirà quines <strong>tres propostes es consideren millor per al poble d’Altea</strong>, amb una inversió máxima de <strong>100.000€</strong>.
     </p>
 
-    <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" />
+    <div>
+        <p><strong>Propostes presentades</strong></p>
+        [options]
+    </div>
+
+    <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
 
 <section aria-labelledby="about-4" class="about-block about-block--info">
     <h3 id="about-4">Informació sobre la votació</h3>
-    <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" />
+    <img src="/images/choice.svg" class="about-block__info-thumbnail" alt="" aria-hidden="true" />
     <div class="columns">
         <h4>Qui pot participar a Altea Participa?</h4>
         <p>
@@ -266,7 +271,7 @@
                 <div class="results-2017__execution__block">
                     <h6><span><i class="far fa-cogs"></i> En execució</span></h6>
                     En exposició pública. Inici d’adjudicació de l’obra signat i execució prevista abans que acabe l’any.
-                    <hr class="my-3" />
+                    <hr class="my-3" aria-hidden="true" />
                     <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta <span class="badge">PDF</span></a>
                     <small class="d-block mt-3">Última actualització: 2 d'agost de 2018</small>
                 </div>
@@ -306,7 +311,7 @@
                         <li>Creació d'un parc infantil en la zona verda de C/ La Trompa</li>
                         <li>Optimització i reordenació de la xarxa semafórica del municipi</li>
                     </ol>
-                    <hr class="my-3" />
+                    <hr class="my-3" aria-hidden="true" />
                     <a href="{{ url('/archive/2017') }}">
                         <i class="far fa-chart-bar" aria-hidden="true"></i> Resultats complets de 2017
                     </a>

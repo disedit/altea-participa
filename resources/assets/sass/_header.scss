@@ -37,7 +37,8 @@
     color: $white;
   }
 
-  &-social {
+  &-social,
+  &-main-links {
     margin-right: 1rem;
 
     .nav-item {
@@ -45,13 +46,15 @@
     }
 
     a {
-      margin: 0 0.5rem;
+      display: block;
+      margin: 0 0.75rem;
       opacity: 0.75;
       transition: 0.15s ease-in-out;
 
       &:hover {
         opacity: 1;
         text-decoration: none;
+        box-shadow: 0 2px 0 white;
       }
     }
 

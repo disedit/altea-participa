@@ -21,11 +21,26 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav navbar-social ml-auto">
+    <ul class="navbar-nav navbar-main-links" role="presentation">
+        <li class="nav-item">
+          <a href="#about-2" data-scroll>Calendari</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-3" data-scroll>Propostes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-4" data-scroll>Informació</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-5" data-scroll>Resultats 2017</a>
+        </li>
+    </ul>
+
+    <ul class="navbar-nav navbar-social ml-auto d-lg-none d-xl-flex" role="presenation">
         @include('components/social')
     </ul>
 
-    <nav aria-label="@lang('participa.select_language')" class="navbar-nav navbar-languages">
+    <nav aria-label="@lang('participa.select_language')" class="navbar-nav navbar-languages ml-lg-auto ml-xl-0">
         @include('components/languages')
     </nav>
   </div>
