@@ -214,6 +214,29 @@
     margin-bottom: 1rem;
   }
 
+  .phases {
+    display: flex;
+    flex-direction: row;
+
+    .phase {
+      width: 20%;
+      flex-direction: column;
+
+      &__path {
+        display: none;
+      }
+
+      &__text {
+        margin-top: 1rem;
+        padding-right: 1.5rem;
+      }
+
+      .calendar {
+        margin-left: 0;
+      }
+    }
+  }
+
   .about-block {
     h4 {
       padding: 0.5rem 0.75rem;

@@ -15,14 +15,17 @@
                 <div class="calendar">
                     <div class="calendar__heading">Propostes</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>fins el 30</strong></div>
+                        <div class="calendar__days"><strong>3 - 23</strong></div>
                         <div class="calendar__month">setembre</div>
                     </div>
                 </div>
             </div>
             <div class="phase__text">
-                <p>Els veïns i veïnes, associacions… han de de fer les seues propostes i enviar-les utilitzant el formulari que està penjat a la web <a href="https://www.alteaparticipa.es">www.alteaparticipa.es</a> i enviar-lo per correu electrònic a <a href="mailto:participacio@altea.es">participacio@altea.es</a> o bé, entregar-lo per registre d’entrada a l’<strong>Oficina d’Atenció al Ciutadà (OAC)</strong> que està ubicat a la planta Baixa de l’<strong>Ajuntament d’Altea</strong> o també a l’<strong>Extensió Administrativa d’Altea la Vella</strong>.  El termini per presentar les propostes finaliza el <strong>30 de setembre</strong>.</p>
-                <p>Les iniciatives / propostes / projectes que es presenten hauran de correspondre’s amb inversions municipals i amb la finalitat de fer d’<strong>Altea</strong> un poble millor per a totes i tots.</p>
+                <p>
+                    La ciutadania i associacions poden fer
+                    arribar les seues propostes emplenant el formulari
+                    online o per registre d'entrada.
+                </p>
             </div>
         </div>
 
@@ -35,13 +38,13 @@
                 <div class="calendar">
                     <div class="calendar__heading">Avaluació</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
-                        <div class="calendar__month">agost</div>
+                        <div class="calendar__days"><strong>24</strong> - <strong>28</strong></div>
+                        <div class="calendar__month">setembre</div>
                     </div>
                 </div>
             </div>
             <div class="phase__text">
-                <p>Totes i cadascuna de les propostes seran avaluades pels serveis tècnics de l’Ajuntament per tal de comprobar que, de manera estimativa, no superen els límits pressupostaris, que s’ajusten a la viabilitat i que son competències de l’Ajuntament i no del Ministeri o de Conselleria.</p>
+                <p>Informació tècnica dels projectes presentats per determinar pressupost.</p>
             </div>
         </div>
 
@@ -54,13 +57,13 @@
                 <div class="calendar">
                     <div class="calendar__heading">Consell</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
-                        <div class="calendar__month">agost</div>
+                        <div class="calendar__days"><strong>1</strong> - <strong>5</strong></div>
+                        <div class="calendar__month">octubre</div>
                     </div>
                 </div>
             </div>
             <div class="phase__text">
-                <p>Posteriorment, serà el <strong>Consell de Participació Ciutadana</strong> on estan representants tots els Consells Sectorials d’Altea qui decidirà finalment quins <strong>10 projectes</strong> eixiran a votació.</p>
+                <p>El Consell de participació decidirà els 10 projectes que eixiran a votació.</p>
             </div>
         </div>
 
@@ -73,13 +76,16 @@
                 <div class="calendar">
                     <div class="calendar__heading">Campanya</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
-                        <div class="calendar__month">agost</div>
+                        <div class="calendar__days"><strong>8</strong> - <strong>12</strong></div>
+                        <div class="calendar__month">octubre</div>
                     </div>
                 </div>
             </div>
             <div class="phase__text">
-                <p>Prèviament a la votació, s’explicarà un per un tots els projectes que finalment eixiran a votació per tal que la ciutania tinga <strong>tota la informació al seu abast</strong>. Les 10 propostes finalistes, seran explicades per la persona o entitat que l’haja presentada.</p>
+                <p>
+                    S'exposaran i explicaran els 10 projectes objectes de
+                    votació, període i llocs on votar en un acte públic.
+                </p>
             </div>
         </div>
 
@@ -92,15 +98,16 @@
                 <div class="calendar calendar--red">
                     <div class="calendar__heading">Votació</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>6</strong> - <strong>11</strong></div>
-                        <div class="calendar__month">agost</div>
+                        <div class="calendar__days"><strong>15</strong> - <strong>19</strong></div>
+                        <div class="calendar__month">octubre</div>
                     </div>
                 </div>
             </div>
             <div class="phase__text">
-                <p>Finalment, seran els ciutadans i ciutadanes els que es pronuncien sobre <strong>quins seran els 3 projectes</strong> que consideren més oportuns que l’Ajuntament d’Altea realitze.</p>
-                <p>Tota la informació al voltant dels projectes / propostes es podrà consultar a la web <a href="https://www.alteaarticipa.es">www.alteaarticipa.es</a>.</p>
-                <p>La ciutadania decidirà al voltant dels projectes que proposen els veïns.</p>
+                <p>
+                    Es podrà votar telemàticament per mitjà del sistema habilitat
+                    per internet o als punts habilitats per a la votació presencial.
+                </p>
             </div>
         </div>
     </div>
