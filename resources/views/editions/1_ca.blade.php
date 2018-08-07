@@ -27,7 +27,7 @@
         real i efectiva de la ciutadania.
     </p>
 
-    <div class="about-block__read-more">
+    <div class="about-block__01-hidden">
         <p>
             A tal efecte, l'Equip de Govern ha decidit que els 10 projectes que se
             sotmeten a votació hagen estat proposats per la ciutadania. Al mes de
@@ -67,7 +67,7 @@
     </div>
 
     <p>
-        <a href="#" class="about-block__read-more-link" aria-haspopup="true" aria-labelledby="about-1">
+        <a href="#" class="about-block__read-more-link about-block__01-expand" aria-haspopup="true" aria-labelledby="about-1">
             + Continua llegint
         </a>
     </p>
@@ -76,7 +76,7 @@
 <section aria-labelledby="about-2" class="about-block about-block--calendar">
     <h3 id="about-2">La ciutadania decideix</h3>
 
-    <div class="phases">
+    <div class="phases phases-compact">
         <div class="phase">
             <div class="phase__calendar">
                 <div class="calendar">
@@ -90,8 +90,9 @@
             <div class="phase__text">
                 <p>
                     La ciutadania i associacions poden fer
-                    arribar les seues propostes emplenant el formulari
-                    online o per registre d'entrada.
+                    arribar les seues propostes emplenant el
+                    <a href="{{ url('/propose') }}">formulari online</a>
+                    o per registre d'entrada.
                 </p>
             </div>
         </div>
@@ -178,6 +179,10 @@
             </div>
         </div>
     </div>
+
+    <a href="#" class="about-block__read-more-link" data-toggle="modal" data-target="#expandedCalendar">
+        <i class="far fa-calendar-plus"></i> Calendari detallat
+    </a>
 </section>
 
 <section aria-labelledby="about-3" class="about-block">
@@ -321,14 +326,152 @@
     </div>
 </section>
 
+<div class="modal fade" id="expandedCalendar" tabindex="-1" role="dialog" aria-labelledby="expandedCalendarLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="expandedCalendarLabel">Calendari detallat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Tanca">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="phases-expanded">
+                    <div class="phase">
+                        <div class="phase__calendar">
+                            <div class="calendar">
+                                <div class="calendar__heading">Propostes</div>
+                                <div class="calendar__dates">
+                                    <div class="calendar__days"><strong>3 - 23</strong></div>
+                                    <div class="calendar__month">setembre</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase__text">
+                            <p>
+                              <strong>Propostes</strong>: La ciutadania i associacions poden fer
+                              arribar les seues propostes emplenant el
+                              <a href="{{ url('/propose') }}">formulari online</a>
+                              o bé, presentar la seua proposta per registre
+                              d'entrada a l'Oficina d'Atenció al Ciutadà (OAC) o a l'Extensió
+                              adminisitrativa d'Altea la Vella.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="phase__path">
+                        <img src="/images/path.svg" alt="" />
+                    </div>
+
+                    <div class="phase">
+                        <div class="phase__calendar">
+                            <div class="calendar">
+                                <div class="calendar__heading">Avaluació</div>
+                                <div class="calendar__dates">
+                                    <div class="calendar__days"><strong>24</strong> - <strong>28</strong></div>
+                                    <div class="calendar__month">setembre</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase__text">
+                            <p>
+                              <strong>Avaluació tècnica</strong>: Els tècnics municipals
+                              avaluaran totes i cadascuna de les propostes per fer un pressupost
+                              estimat del seu cost, avaluar si són competències de l'Ajuntament així
+                              com de la gent que se'n beneficiaria.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="phase__path mt-0">
+                        <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
+                    </div>
+
+                    <div class="phase">
+                        <div class="phase__calendar">
+                            <div class="calendar">
+                                <div class="calendar__heading">Consell</div>
+                                <div class="calendar__dates">
+                                    <div class="calendar__days"><strong>1</strong> - <strong>5</strong></div>
+                                    <div class="calendar__month">octubre</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase__text">
+                            <p>
+                                <strong>Reunió Consell de Participaciò Ciutadana Municipal</strong>:
+                                El Consell de participació revisarà totes les propostes que
+                                han passat el filtre tècnic i decidirà finalment els 10 projectes que
+                                eixiran a votació.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="phase__path">
+                        <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
+                    </div>
+
+                    <div class="phase">
+                        <div class="phase__calendar">
+                            <div class="calendar">
+                                <div class="calendar__heading">Campanya</div>
+                                <div class="calendar__dates">
+                                    <div class="calendar__days"><strong>8</strong> - <strong>12</strong></div>
+                                    <div class="calendar__month">octubre</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase__text">
+                            <p>
+                                <strong>Campanya informativa</strong>: En un acte públic es
+                                presentaran els 10 projectes que eixen a votació, convidant a la persona
+                                o assoació que ha fet la seua proposta a que la presente i explique. Al
+                                mateix acte públic, s'informarà de les dates de votació i dels llocs
+                                habilitats per a fer-ho.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="phase__path">
+                        <img src="/images/path.svg" alt="" />
+                    </div>
+
+                    <div class="phase">
+                        <div class="phase__calendar">
+                            <div class="calendar calendar--red">
+                                <div class="calendar__heading">Votació</div>
+                                <div class="calendar__dates">
+                                    <div class="calendar__days"><strong>15</strong> - <strong>19</strong></div>
+                                    <div class="calendar__month">octubre</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase__text">
+                            <p>
+                                <strong>Votació</strong>: Es podrà votar telemàticament a la web
+                                www.alteaparticipa.es o bé als punts habilitats per a la votació
+                                presencial: Oficina d'Atenció al Ciutadà, Extensió administrativa Altea
+                                la Vella, Centre Juvenil, Casa de cultura.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 @push('scripts')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        $('.about-block__read-more-link').on('click', function (e) {
+        $('.about-block__01-expand').on('click', function (e) {
             e.preventDefault();
             var self = $(this);
 
-            $('.about-block__read-more').slideToggle();
+            $('.about-block__01-hidden').slideToggle();
 
             if (self.hasClass('opened')) {
                 self.text('+ Continua llegint');

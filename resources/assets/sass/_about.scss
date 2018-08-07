@@ -19,7 +19,7 @@
   }
 
   &__subtitle {
-    color: lighten($gray, 15%);
+    color: lighten($gray, 20%);
     font-size: 1.25rem;
     font-style: italic;
   }
@@ -70,7 +70,7 @@
   }
 
   a.about-block__read-more-link {
-    background: lighten($gray-light, 15%);
+    background: lighten($gray-light, 20%);
     color: $white;
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
@@ -84,7 +84,7 @@
     }
   }
 
-  &__read-more {
+  &__01-hidden {
     display: none;
   }
 
@@ -122,6 +122,10 @@
     font-size: 0.75rem;
     color: $gray-500;
   }
+}
+
+.phases {
+  margin-bottom: 1.5rem;
 }
 
 .phase {
@@ -241,9 +245,10 @@
     margin-bottom: 1rem;
   }
 
-  .phases {
+  .phases-compact {
     display: flex;
     flex-direction: row;
+    margin-bottom: 0.5rem;
 
     .phase {
       width: 20%;
