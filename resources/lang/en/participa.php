@@ -21,6 +21,7 @@ return [
     | Global
     |--------------------------------------------------------------------------
     */
+    'skip_to_content' => 'Skip to main content',
     'select_language' => 'Selecciona idioma / Select your language',
     'current_language' => 'Current language',
     'calendar_heading' => 'Poll',
