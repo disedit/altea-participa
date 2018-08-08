@@ -185,17 +185,16 @@
     </a>
 </section>
 
-<section id="proposals" aria-labelledby="about-3" class="about-block">
+<section id="proposals" aria-labelledby="about-3" class="about-block about-block--proposals">
     <h3 id="about-3">Què anem a decidir?</h3>
     <p class="about-block__highlight">
         <i class="far fa-question-circle"></i>
-        La ciutadania decidirà quines <strong>tres propostes es consideren millor per al poble d’Altea</strong>, amb una inversió máxima de <strong>100.000€</strong>.
+        La ciutadania decidirà quines <strong>tres propostes es consideren millor
+        per al poble d’Altea</strong>, amb una inversió máxima de <strong>100.000€</strong>.
     </p>
 
-    <div>
-        <p><strong>Propostes presentades</strong></p>
-        [options]
-    </div>
+    <h4 class="options-title">Propostes presentades</h4>
+    <div class="about-block__outlined-block">Encara estem recopilant propostes. Pots enviar la teua omplint el <a href="{{ url('/propose') }}">formulari de nova proposta</a>.</div>
 
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
@@ -274,7 +273,7 @@
             </div>
             <div class="d-flex justify-content-center col-md-6 results-2017__execution">
                 <div class="results-2017__execution__block">
-                    <h6><span><i class="far fa-cogs"></i> En execució</span></h6>
+                    <h6><span><i class="far fa-cogs" aria-hidden="true"></i> En execució</span></h6>
                     En exposició pública. Inici d’adjudicació de l’obra signat i execució prevista abans que acabe l’any.
                     <hr class="my-3" aria-hidden="true" />
                     <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta <span class="badge">PDF</span></a>
