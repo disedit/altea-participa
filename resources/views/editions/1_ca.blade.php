@@ -209,7 +209,7 @@
           associacions que així ho desitgen.
         </p>
 
-        <h4>Quí pot votar?</h4>
+        <h4>Qui pot votar?</h4>
         <p>
             Podran votar en aquest procés aquelles persones majors de 16 anys
             empadronades a Altea, d’acord al padró de data 01/06/2018.
