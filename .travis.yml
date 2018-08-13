@@ -1,5 +1,7 @@
 language: php
 
+os: osx
+
 php:
   - 7.2
 
@@ -10,6 +12,7 @@ before_script:
   - php artisan key:generate
   - php artisan migrate
   - nvm install stable
+  - apt-get update && apt-get install nasm
   - npm install npm@latest -g
   - npm install
 
