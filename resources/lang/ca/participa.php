@@ -21,6 +21,7 @@ return [
     | Global
     |--------------------------------------------------------------------------
     */
+    'skip_to_content' => 'Ves directament al contingut',
     'select_language' => 'Selecciona idioma / Select your language',
     'current_language' => 'Idioma actual',
     'calendar_heading' => 'Votació',
@@ -33,6 +34,19 @@ return [
     'close' => 'Tanca',
     'ordered_randomly' => 'Ordenades alteatòriament',
     'SMS_notification' => 'El teu codi per a votar és :code',
+    'video_id' => '',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Sidebar
+    |--------------------------------------------------------------------------
+    */
+    'nav' => [
+      'calendar' => 'Calendari',
+      'proposals' => 'Propostes',
+      'info' => 'Informació',
+      '2017' => 'Resultats 2017'
+    ],
 
     /*
     |--------------------------------------------------------------------------

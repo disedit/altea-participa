@@ -21,6 +21,7 @@ return [
     | Global
     |--------------------------------------------------------------------------
     */
+    'skip_to_content' => 'Ir directamente al contenido',
     'select_language' => 'Selecciona idioma / Select your language',
     'current_language' => 'Idioma actual',
     'calendar_heading' => 'Votación',
@@ -33,6 +34,19 @@ return [
     'close' => 'Cierra',
     'ordered_randomly' => 'Ordenadas alteatoriamente',
     'SMS_notification' => 'Tu código para votar es :code',
+    'video_id' => '',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Sidebar
+    |--------------------------------------------------------------------------
+    */
+    'nav' => [
+      'calendar' => 'Calendario',
+      'proposals' => 'Propuestas',
+      'info' => 'Información',
+      '2017' => 'Resultados 2017'
+    ],
 
     /*
     |--------------------------------------------------------------------------

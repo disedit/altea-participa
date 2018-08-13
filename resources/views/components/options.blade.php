@@ -1,6 +1,5 @@
 @foreach($edition->questions as $question)
     <div class="options-widget">
-        <h4>{{ $question->question }}</h4>
         <div class="card-columns">
             @foreach($question->options as $option)
                 <div class="card option">
@@ -52,7 +51,7 @@
                     option_title = e.relatedTarget.dataset.optionTitle;
 
                 $(".modal-title", this).text(option_title);
-                $(".modal-body").load('/api/option/' + option_id);
+                $(".modal-body", this).load('/api/option/' + option_id);
             });
         });
     </script>

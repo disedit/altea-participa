@@ -1,10 +1,11 @@
-<header class="vote-info {{ (!Request::segment(1)) ? 'vote-info--full' : 'vote-info--compact' }}" role="banner">
+@php
+  $compact = (!Request::segment(1)) ? false : true;
+@endphp
+<header class="vote-info {{ (!$compact) ? 'vote-info--full' : 'vote-info--compact' }}" role="banner">
     @if(!$inPerson)
-        <div class="left-hands"></div>
-        <div class="right-hands"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-8 vote-info__text">
+                <div class="{{ ($compact) ? 'col-lg-8' : 'col-lg-6' }} vote-info__text">
                     <h2><span>@lang('participa.heading')</span></h2>
                     <p class="vote-info__intro"><span>@lang('participa.subheading')</span></p>
 
@@ -23,9 +24,17 @@
                     @endif
                 </div>
 
-                <div class="col-lg-4 d-none d-lg-block">
-                    @include('components/calendar')
-                </div>
+                @if(!$compact)
+                    <div class="vote-info__video col-lg-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/@lang('participa.video_id')" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                @else
+                    <div class="vote-info__calendar col-lg-4 d-none d-lg-block">
+                        @include('components/calendar')
+                    </div>
+                @endif
             </div>
         </div>
     @endif

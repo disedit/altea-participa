@@ -18,6 +18,12 @@
     font-size: 1.25rem;
   }
 
+  &__subtitle {
+    color: lighten($gray, 20%);
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+
   &__thumbnail {
     width: 150px;
     float: right;
@@ -63,18 +69,72 @@
     }
   }
 
+  &__outlined-block {
+    border: 2px $gray-lighter dashed;
+    padding: 1rem;
+    color: $gray-light;
+    border-radius: 1rem;
+
+    a {
+      color: $gray-light;
+      text-decoration: underline;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+
+  a.about-block__read-more-link {
+    display: inline-block;
+    color: $gray-light;
+    padding: 0.4rem 1rem 0.3rem 1rem;
+    margin-top: 0.5rem;
+    border: 1px $gray-light solid;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transform: 0.25s ease-in;
+
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      background: lighten($gray-light, 10%);
+      border-color: lighten($gray-light, 10%);
+    }
+
+    &:focus,
+    &:active {
+      outline: 0;
+      box-shadow: 0 0 0 4px lighten($gray-light, 50%);
+    }
+  }
+
+  &__01-hidden {
+    display: none;
+  }
+
   &.about-block--last {
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
+  &.about-block--calendar {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .options-title {
+    background: $white;
+    padding: 0;
+    color: $gray-dark;
+  }
 }
 
 .options-widget {
-  border-bottom: 1px $gray-lighter solid;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-
   &:last {
     border-bottom: 0;
     padding-bottom: 0;
@@ -95,6 +155,10 @@
     font-size: 0.75rem;
     color: $gray-500;
   }
+}
+
+.phases {
+  margin-bottom: 1.5rem;
 }
 
 .phase {
@@ -214,6 +278,30 @@
     margin-bottom: 1rem;
   }
 
+  .phases-compact {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+
+    .phase {
+      width: 20%;
+      flex-direction: column;
+
+      &__path {
+        display: none;
+      }
+
+      &__text {
+        margin-top: 1rem;
+        padding-right: 1.5rem;
+      }
+
+      .calendar {
+        margin-left: 0;
+      }
+    }
+  }
+
   .about-block {
     h4 {
       padding: 0.5rem 0.75rem;
@@ -231,6 +319,7 @@
       position: absolute;
       width: 319px;
       right: -375px;
+      bottom: 0;
     }
 
     &__phases-thumbnail {
@@ -238,7 +327,7 @@
       position: absolute;
       width: 319px;
       right: -372px;
-      bottom: 0;
+      bottom: 60px;
     }
   }
 }
