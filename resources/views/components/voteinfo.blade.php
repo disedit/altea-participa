@@ -27,7 +27,14 @@
                 @if(!$compact)
                     <div class="vote-info__video col-lg-6">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/@lang('participa.video_id')" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe
+                                title="Video"
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/@lang('participa.video_id')"
+                                frameborder="0"
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
                 @else

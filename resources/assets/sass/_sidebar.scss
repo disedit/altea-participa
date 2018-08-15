@@ -147,7 +147,7 @@ $sidebar-text: $gray-light;
 }
 
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   .sidebar:after {
     display: none;
   }

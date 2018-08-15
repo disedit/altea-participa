@@ -110,6 +110,7 @@
     line-height: 1.75;
     max-width: 730px;
     transition: 0.5s ease-in-out;
+    padding-right: 5rem;
 
     span {
       box-decoration-break: clone;
@@ -179,7 +180,8 @@
 
     h2,
     .vote-info__intro,
-    .vote-info__action {
+    .vote-info__action,
+    .vote-info__video {
       display: none;
     }
 
@@ -235,6 +237,7 @@
     h2 {
       font-size: 2.5rem;
       line-height: 1.6;
+      padding-right: 0;
     }
 
     &__intro {

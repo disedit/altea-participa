@@ -7,6 +7,10 @@
 .main-footer {
   padding-bottom: 3rem;
 
+  .media {
+    display: block;
+  }
+
   .languages {
     background: $white;
     margin-bottom: 2rem;
@@ -42,6 +46,7 @@ address {
     display: flex;
 
     .media {
+      display: flex;
       order: 1;
       margin-right: auto;
     }

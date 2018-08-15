@@ -32,7 +32,7 @@
   @import '../../../sass/_variables';
 
   select {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: $gray-mid;
     border-width: 0;
     width: 5rem;
     height: 4.5rem;
@@ -44,6 +44,6 @@
   }
 
   select:disabled {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: $gray-mid;
   }
 </style>
