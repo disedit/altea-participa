@@ -74,7 +74,7 @@
     </section>
 
     @if(count($places) > 0)
-        <section aria-labelledby="voting-places" class="sidebar__box" v-if="voting_places">
+        <section aria-labelledby="voting-places" class="sidebar__box">
             <h3 id="voting-places">@lang('participa.voting_places')</h3>
             <p class="sidebar__secondary">@lang('participa.voting_text')</p>
             <hr aria-hidden="true" />

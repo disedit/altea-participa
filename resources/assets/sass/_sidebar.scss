@@ -46,6 +46,11 @@ $sidebar-text: $gray-light;
       height: 0.35rem;
       background: $sidebar-text;
     }
+
+    &:focus-within {
+      box-shadow: 0 0 40px -10px $brand-primary,
+                  0 0 0 10px lighten($brand-primary, 65%);
+    }
   }
 
   &__box--main {
