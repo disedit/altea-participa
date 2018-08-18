@@ -67,7 +67,7 @@
 
             @if(!isset($isArchive) && $edition->inProposalPhase() && Request::segment(1) != 'propose')
                 <div class="sidebar__propose">
-                    <a href="{{ secure_url('propose') }}" class="btn btn-secondary btn-lg btn-block"><i class="far fa-pencil-alt" aria-hidden="true"></i> @lang('participa.propose_cta')</a>
+                    <a href="{{ secure_url('propose') }}" class="btn btn-primary btn-lg btn-block"><i class="far fa-pencil-alt" aria-hidden="true"></i> @lang('participa.propose_cta')</a>
                 </div>
             @endif
         </div>

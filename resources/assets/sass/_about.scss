@@ -21,7 +21,6 @@
   &__subtitle {
     color: lighten($gray, 20%);
     font-size: 1.25rem;
-    font-style: italic;
   }
 
   &__thumbnail {
@@ -131,17 +130,6 @@
     background: $white;
     padding: 0;
     color: $gray-dark;
-  }
-
-  &:focus-within:before {
-    content: '';
-    position: absolute;
-    left: -1.5rem;
-    top: 0.75rem;
-    background: $brand-primary;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
   }
 }
 
