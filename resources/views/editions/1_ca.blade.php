@@ -27,7 +27,7 @@
         real i efectiva de la ciutadania.
     </p>
 
-    <div class="about-block__01-hidden">
+    <div id="about-1-more" class="about-block__01-hidden">
         <p>
             A tal efecte, l'Equip de Govern ha decidit que els 10 projectes que se
             sotmeten a votació hagen estat proposats per la ciutadania. Al mes de
@@ -51,10 +51,10 @@
         <p>
             Posteriorment seran els ciutadans i ciutadanes els que es pronuncien
             sobre quins 3 projectes consideren prioritaris. La informació al voltant
-            dels projectes es podrà consultar a la web municipal, als llocs
-            habilitats per a l’emissió del parer de la ciutadania, així com als
-            diferents mitjans de comunicació. Es farà una presentació pública dels
-            10 projectes sotmesos a votació.
+            dels projectes es podrà consultar a la web municipal, als
+            <a href="#voting-places" data-scroll>llocs habilitats</a> per a l’emissió del parer
+            de la ciutadania, així com als diferents mitjans de comunicació.
+            Es farà una presentació pública dels 10 projectes sotmesos a votació.
         </p>
 
         <p>
@@ -67,7 +67,7 @@
     </div>
 
     <p class="mb-0">
-        <a href="#" class="about-block__read-more-link about-block__01-expand" aria-haspopup="true" aria-labelledby="about-1">
+        <a href="#" class="about-block__read-more-link about-block__01-expand" role="button" aria-expanded="false" aria-controls="about-1-more" aria-labelledby="about-1">
             <i class="far fa-chevron-down fa-fw"></i> Continua llegint
         </a>
     </p>
@@ -152,7 +152,8 @@
             <div class="phase__text">
                 <p>
                     S'exposaran i explicaran els 10 projectes objectes de
-                    votació, període i llocs on votar en un acte públic.
+                    votació, període i llocs on votar
+                    en un acte públic.
                 </p>
             </div>
         </div>
@@ -174,7 +175,7 @@
             <div class="phase__text">
                 <p>
                     Es podrà votar telemàticament per mitjà del sistema habilitat
-                    per internet o als punts habilitats per a la votació presencial.
+                    per internet o als <a href="#voting-places" data-scroll>punts habilitats per a la votació presencial</a>.
                 </p>
             </div>
         </div>
@@ -241,7 +242,8 @@
           S’ha establert un període de votació que començarà, via internet, a les
           12h la nit del dia 15 d'octubre de 2018 i conclourà el dia 19 d’octubre
           a les 12h de la nit. Físicament es podrà votar des del dia 15 al dia 19
-          d’octubre a les seus habilitades, dins del seu horari d’obertura.
+          d’octubre a les <a href="#voting-places" data-scroll>seus habilitades</a>,
+          dins del seu horari d’obertura.
         </p>
 
         <h4>Resultat de la votació</h4>
@@ -447,9 +449,9 @@
                         </div>
                         <div class="phase__text">
                             <p>
-                                <strong>Votació</strong>: Es podrà votar telemàticament a la web
-                                www.alteaparticipa.es o bé als punts habilitats per a la votació
-                                presencial: Oficina d'Atenció al Ciutadà, Extensió administrativa Altea
+                                <strong>Votació</strong>: Es podrà votar telemàticament a aquesta web
+                                o bé als punts habilitats per a la votació presencial:
+                                Oficina d'Atenció al Ciutadà, Extensió administrativa Altea
                                 la Vella, Centre Juvenil, Casa de cultura.
                             </p>
                         </div>
@@ -457,7 +459,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Tanca</button>
             </div>
         </div>
     </div>
@@ -473,8 +475,10 @@
             $('.about-block__01-hidden').slideToggle();
 
             if (self.hasClass('opened')) {
+                self.attr('aria-expanded', false);
                 self.html('<i class="far fa-chevron-down fa-fw"></i> Continua llegint');
             } else {
+                self.attr('aria-expanded', true);
                 self.html('<i class="far fa-chevron-up fa-fw"></i> Mostra menys');
             }
 
