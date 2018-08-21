@@ -18,7 +18,7 @@
         <strong>Altea Participa</strong> pretende profundizar en la participación real y efectiva de la ciudadanía.
     </p>
 
-    <div class="about-block__01-hidden">
+    <div id="about-1-more" class="about-block__01-hidden">
         <p>
             A tal efecto, el Equipo de Gobierno ha decidido que los 10 proyectos que se sometan a votación hayan sido propuestos por la ciudadanía. En el mes de septiembre de 2018, se abrirá un plazo de dos semanas para que los ciudadanos/as presenten sus propuestas de inversiones. Estas propuestas serán evaluadas y analizadas por los Técnicos Municipales donde cada propuesta tendrá un presupuesto estimado y a quien beneficiaría, así como el motivo por el que quedarán desestimadas.
         </p>
@@ -37,7 +37,7 @@
     </div>
 
     <p class="mb-0">
-        <a href="#" class="about-block__read-more-link about-block__01-expand" aria-haspopup="true" aria-labelledby="about-1">
+        <a href="#" class="about-block__read-more-link about-block__01-expand" role="button" aria-expanded="false" aria-controls="about-1-more" aria-labelledby="about-1">
             <i class="far fa-chevron-down fa-fw"></i> Sigue leyendo
         </a>
     </p>
@@ -279,7 +279,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="expandedCalendarLabel">Calendario detallado</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Cierra">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -396,7 +396,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cierra</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -412,8 +412,10 @@
             $('.about-block__01-hidden').slideToggle();
 
             if (self.hasClass('opened')) {
+                self.attr('aria-expanded', false);
                 self.html('<i class="far fa-chevron-down fa-fw"></i> Sigue leyendo');
             } else {
+                self.attr('aria-expanded', true);
                 self.html('<i class="far fa-chevron-up fa-fw"></i> Muestra menos');
             }
 
