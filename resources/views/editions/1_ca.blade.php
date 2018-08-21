@@ -31,30 +31,30 @@
         <p>
             A tal efecte, l'Equip de Govern ha decidit que els 10 projectes que se
             sotmeten a votació hagen estat proposats per la ciutadania. Al mes de
-            setembre de 2018, s'obrirà un termini de dos setmanes per tal que esl
-            ciutadans/anes presenten les seues propostes d'inversions. Estes
-            propostes seran avaluades i analitzades pel Tècnics Municipals on cada
-            proposta tindrà un pressupost estimat i a quí beneficiaria, així com el
+            setembre de 2018, s'obrirà un termini de dues setmanes per tal que els
+            ciutadans I les ciutadanes presenten les seues propostes d'inversions. Aquestes
+            propostes seran avaluades i analitzades pel Tècnics Municipals i cada
+            proposta tindrà un pressupost estimat i una estimació de beneficiaris, així com el
             motiu pel qual queden desestimades.
         </p>
 
         <p>
-            Les propostes que superen l’estimació tècnica, seran debatudes al si del
-            Consell de Participació Ciutadana, l’òrgan màxim de participació,  on es
-            decidirà els 10 projectes que se sotmetran a votació.Recordar que al
+            Les propostes que superen l’estimació tècnica seran debatudes al si del
+            Consell de Participació Ciutadana, l’òrgan màxim de participació, on es
+            decidiran els 10 projectes que se sotmetran a votació. Cal recordar que en el
             Consell de Participació Ciutadana estan representats tots els grups
-            politics i dels Consell Sectorials creats (Consell Escolar Municipal, de
+            politics i dels Consells Sectorials creats (Consell Escolar Municipal, de
             Medi Ambient, d'Agricultura, de Salut, d'Urbanisme, de Comerç i Turisme,
-            de les Xiquetes i xiquets).
+            de les Xiquetes i Xiquets).
         </p>
 
         <p>
-            Posteriorment seran els ciutadans i ciutadanes els que es pronuncien
+            Posteriorment, seran els ciutadans i ciutadanes els qui es pronunciaran
             sobre quins 3 projectes consideren prioritaris. La informació al voltant
-            dels projectes es podrà consultar a la web municipal, als
-            <a href="#voting-places" data-scroll>llocs habilitats</a> per a l’emissió del parer
-            de la ciutadania, així com als diferents mitjans de comunicació.
-            Es farà una presentació pública dels 10 projectes sotmesos a votació.
+            dels projectes es podrà consultar a la web municipal, als llocs
+            habilitats per a l’emissió del parer de la ciutadania, així com als
+            diferents mitjans de comunicació. Es farà una presentació pública dels
+            10 projectes sotmesos a votació.
         </p>
 
         <p>
@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="phase__text">
-                <p>Informació tècnica dels projectes presentats per determinar pressupost.</p>
+                <p>Informació tècnica dels projectes presentats per determinar-ne pressupost.</p>
             </div>
         </div>
 
@@ -151,9 +151,8 @@
             </div>
             <div class="phase__text">
                 <p>
-                    S'exposaran i explicaran els 10 projectes objectes de
-                    votació, període i llocs on votar
-                    en un acte públic.
+                    S'exposaran i explicaran els 10 projectes que serán objecte de
+                    votació, període i llocs on votar en un acte públic.
                 </p>
             </div>
         </div>
@@ -175,7 +174,7 @@
             <div class="phase__text">
                 <p>
                     Es podrà votar telemàticament per mitjà del sistema habilitat
-                    per internet o als <a href="#voting-places" data-scroll>punts habilitats per a la votació presencial</a>.
+                    per internet o als punts habilitats per a la votació presencial.
                 </p>
             </div>
         </div>
@@ -190,12 +189,12 @@
     <h3 id="about-3">Què anem a decidir?</h3>
     <p class="about-block__highlight">
         <i class="far fa-question-circle"></i>
-        La ciutadania decidirà quines <strong>tres propostes es consideren millor
+        La ciutadania decidirà quines <strong>tres propostes es consideren millors
         per al poble d’Altea</strong>, amb una inversió máxima de <strong>100.000€</strong>.
     </p>
 
     <h4 class="options-title">Propostes presentades</h4>
-    <div class="about-block__outlined-block">Encara estem recopilant propostes. Pots enviar la teua omplint el <a href="{{ url('/propose') }}">formulari de nova proposta</a>.</div>
+    <div class="about-block__outlined-block">Encara estem recopilant propostes. Pots enviar-ne la teua omplint el <a href="{{ url('/propose') }}">formulari de nova proposta</a>.</div>
 
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
@@ -206,7 +205,7 @@
     <div class="columns">
         <h4>Qui pot participar a Altea Participa?</h4>
         <p>
-          Podran participar en aquest procés  totes aquelles persones i/o
+          Podran participar en aquest procés totes aquelles persones i/o
           associacions que així ho desitgen.
         </p>
 
@@ -219,7 +218,7 @@
         <h4>Què es votarà?</h4>
         <p>
           Es podran votar 3 de les 10 propostes elegides prèviament pel Consell de
-          Participació Ciutadana d’entre les presentades pels ciutadans. La
+          Participació Ciutadana d’entre les presentades per la ciutadania. La
           decisió que manifeste un ciutadà o ciutadana esdevindrà ineficaç si
           s’escullen més de 3 projectes.
         </p>
@@ -228,27 +227,26 @@
         <p>
           Es podrà votar mitjançant una plataforma d’internet i amb un sistema de
           votació telemàtica accessible des de qualsevol ordinador o dispositiu
-          mòbil. Per cada línia IP es podran efectuar 3 votacions. A aquesta web,
+          mòbil. Per cada línia IP es podran efectuar 3 votacions. En aquesta web
           s’haurà d’introduir prèviament el DNI a la casella que s’indique.
           Aquelles persones que descobrisquen que algú ha suplantat la seua
-          identitat o vullguen rectificar el seu vot, podran dirigir-se a
+          identitat o vulguen rectificar el seu vot, podran dirigir-se a
           qualsevol dels punts de votació ubicats als edificis municipals i
-          demanar a la persona encarregada l’anul·lació del vot emès i la voluntat
-          de tornar a votar, presentant el seu DNI.
+          demanar a la persona encarregada que anul·le el vot emès i la voluntat
+          de tornar a votar, tot presentant el DNI.
         </p>
 
         <h4>Inici i final de la votació</h4>
         <p>
           S’ha establert un període de votació que començarà, via internet, a les
-          12h la nit del dia 15 d'octubre de 2018 i conclourà el dia 19 d’octubre
+          12h de la nit del dia 15 d'octubre de 2018 i conclourà el dia 19 d’octubre
           a les 12h de la nit. Físicament es podrà votar des del dia 15 al dia 19
-          d’octubre a les <a href="#voting-places" data-scroll>seus habilitades</a>,
-          dins del seu horari d’obertura.
+          d’octubre a les seus habilitades, dins del seu horari d’obertura.
         </p>
 
         <h4>Resultat de la votació</h4>
         <p>
-            El resultat de la votació es farà públic a aquesta web només concloga
+            El resultat de la votació es farà públic en aquesta web només concloga
             el període de votació.
         </p>
     </div>
@@ -299,7 +297,7 @@
             <div class="d-flex justify-content-center col-md-4">
                 <div class="results__card">
                     <span class="results__card__number d-none d-md-inline">3</span>
-                    <h5>Condicionament del solar contigu al conservatori</h5>
+                    <h5>Condicionament del solar llindant al conservatori</h5>
                     <div class="results__votes">
                         <div class="results__points">13%</div>
                         <div class="progress">
@@ -314,8 +312,8 @@
                 <div class="results-2017__execution__block">
                     <ol start="4" class="results-2017__descending-list">
                         <li>Millora de parcs infantils d'Altea i Altea la Vella (12%)</li>
-                        <li>Creació d'un parc infantil en la zona verda de C/ La Trompa</li>
-                        <li>Optimització i reordenació de la xarxa semafórica del municipi</li>
+                        <li>Creació d'un parc infantil en la zona verda de C/La Trompa</li>
+                        <li>Optimització i reordenació de la xarxa semafòrica del municipi</li>
                     </ol>
                     <hr class="my-3" aria-hidden="true" />
                     <a href="{{ url('/archive/2017') }}">
@@ -353,9 +351,9 @@
                               <strong>Propostes</strong>: La ciutadania i associacions poden fer
                               arribar les seues propostes emplenant el
                               <a href="{{ url('/propose') }}">formulari online</a>
-                              o bé, presentar la seua proposta per registre
+                              o bé presentar la seua proposta per registre
                               d'entrada a l'Oficina d'Atenció al Ciutadà (OAC) o a l'Extensió
-                              adminisitrativa d'Altea la Vella.
+                              Adminisitrativa d'Altea la Vella.
                             </p>
                         </div>
                     </div>
@@ -378,7 +376,7 @@
                             <p>
                               <strong>Avaluació tècnica</strong>: Els tècnics municipals
                               avaluaran totes i cadascuna de les propostes per fer un pressupost
-                              estimat del seu cost, avaluar si són competències de l'Ajuntament així
+                              estimat del seu cost, avaluar si són competències de l'Ajuntament, així
                               com de la gent que se'n beneficiaria.
                             </p>
                         </div>
@@ -400,9 +398,9 @@
                         </div>
                         <div class="phase__text">
                             <p>
-                                <strong>Reunió Consell de Participaciò Ciutadana Municipal</strong>:
+                                <strong>Reunió Consell de Participació Ciutadana Municipal</strong>:
                                 El Consell de participació revisarà totes les propostes que
-                                han passat el filtre tècnic i decidirà finalment els 10 projectes que
+                                hagen passat el filtre tècnic i decidirà finalment els 10 projectes que
                                 eixiran a votació.
                             </p>
                         </div>
@@ -449,9 +447,9 @@
                         </div>
                         <div class="phase__text">
                             <p>
-                                <strong>Votació</strong>: Es podrà votar telemàticament a aquesta web
+                                <strong>Votació</strong>: Es podrà votar telemàticament en aquesta web
                                 o bé als punts habilitats per a la votació presencial:
-                                Oficina d'Atenció al Ciutadà, Extensió administrativa Altea
+                                Oficina d'Atenció al Ciutadà, Extensió Administrativa Altea
                                 la Vella, Centre Juvenil, Casa de cultura.
                             </p>
                         </div>
