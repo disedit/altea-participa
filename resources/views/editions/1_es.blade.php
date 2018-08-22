@@ -150,6 +150,8 @@
     <a href="#" class="about-block__read-more-link" data-toggle="modal" data-target="#expandedCalendar">
         <i class="far fa-calendar-plus fa-fw"></i> Calendario detallado
     </a>
+
+    <p class="about-block__fine-print mt-4 mb-0">* Las fechas del calendario pueden sufrir variaciones</p>
 </section>
 
 <section id="proposals" aria-labelledby="about-3" class="about-block about-block--proposals">
