@@ -43,7 +43,7 @@
         @include('components/social')
     </ul>
 
-    <nav id="languages" aria-label="@lang('participa.select_language')" class="navbar-nav navbar-languages ml-lg-auto ml-xl-0">
+    <nav id="languages" aria-label="@lang('participa.select_language')" class="navbar-nav navbar-languages languages ml-lg-auto ml-xl-0">
         @include('components/languages')
     </nav>
   </div>

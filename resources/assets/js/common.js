@@ -19,6 +19,7 @@ function closeMenusOnResize() {
   if (document.body.clientWidth >= 768) {
     collapse.classList.add('collapse');
     collapse.classList.remove('in');
+    collapse.classList.remove('show');
     navbar.classList.remove('navbar-expanded');
   }
 }

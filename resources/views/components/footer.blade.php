@@ -1,5 +1,5 @@
 <footer class="main-footer" role="contentinfo">
-    <div class="footer-language" aria-hidden="true">
+    <div class="languages footer-languages" aria-hidden="true">
         @include('components/languages')
     </div>
 
