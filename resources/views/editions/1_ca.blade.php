@@ -217,7 +217,7 @@
             empadronades a Altea, d’acord al padró de data 01/06/2018.
         </p>
 
-        <h4>Què es votarà?</h4>
+        <h4>Què es votarà?</h4>
         <p>
           Es podran votar 3 de les 10 propostes elegides prèviament pel Consell de
           Participació Ciutadana d’entre les presentades per la ciutadania. La
@@ -225,7 +225,7 @@
           s’escullen més de 3 projectes.
         </p>
 
-        <h4>Es podrà votar per internet?</h4>
+        <h4>Es podrà votar per internet?</h4>
         <p>
           Es podrà votar mitjançant una plataforma d’internet i amb un sistema de
           votació telemàtica accessible des de qualsevol ordinador o dispositiu
@@ -238,7 +238,7 @@
           de tornar a votar, tot presentant el DNI.
         </p>
 
-        <h4>Inici i final de la votació</h4>
+        <h4>Inici i final de la votació</h4>
         <p>
           S’ha establert un període de votació que començarà, via internet, a les
           12h de la nit del dia 15 d'octubre de 2018 i conclourà el dia 19 d’octubre
@@ -246,7 +246,7 @@
           d’octubre a les seus habilitades, dins del seu horari d’obertura.
         </p>
 
-        <h4>Resultat de la votació</h4>
+        <h4>Resultat de la votació</h4>
         <p>
             El resultat de la votació es farà públic en aquesta web només concloga
             el període de votació.
