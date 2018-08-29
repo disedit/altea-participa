@@ -11,7 +11,7 @@
     </p>
 
     <p>
-        Ya empezamos el <a href="{{ url('/archive/2017') }}">año pasado</a> con este formato de presupuestos participativos y en esta segunda edición, el proceso de participación será mucho más amplio, dinámico y fácil"
+        Ya empezamos el <a href="{{ url('/archive/2017') }}">año pasado</a> con este formato de presupuestos participativos y en esta segunda edición, el proceso de participación será mucho más amplio, dinámico y fácil.
     </p>
 
     <p>
@@ -20,7 +20,7 @@
 
     <div id="about-1-more" class="about-block__01-hidden">
         <p>
-            A tal efecto, el Equipo de Gobierno ha decidido que los 10 proyectos que se sometan a votación hayan sido propuestos por la ciudadanía. En el mes de septiembre de 2018, se abrirá un plazo de dos semanas para que los ciudadanos/as presenten sus propuestas de inversiones. Estas propuestas serán evaluadas y analizadas por los Técnicos Municipales donde cada propuesta tendrá un presupuesto estimado y a quien beneficiaría, así como el motivo por el que quedarán desestimadas.
+            A tal efecto, el Equipo de Gobierno ha decidido que los 10 proyectos que se sometan a votación hayan sido propuestos por la ciudadanía. En el mes de septiembre de 2018, se abrirá un plazo de tres semanas para que los ciudadanos/as presenten sus propuestas de inversiones. Estas propuestas serán evaluadas y analizadas por los Técnicos Municipales donde cada propuesta tendrá un presupuesto estimado y a quien beneficiaría, así como el motivo por el que quedarán desestimadas.
         </p>
 
         <p>

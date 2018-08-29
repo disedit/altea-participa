@@ -19,7 +19,7 @@
     <p>
         Ja vam començar l'<a href="{{ url('/archive/2017') }}">any passat</a> amb aquest format de
         pressupostos participatius i en aquesta segona edicio, el procés de
-        participaciò serà molt més ampli, dinàmic i fàcil"
+        participaciò serà molt més ampli, dinàmic i fàcil.
     </p>
 
     <p>
@@ -31,7 +31,7 @@
         <p>
             A tal efecte, l'Equip de Govern ha decidit que els 10 projectes que se
             sotmeten a votació hagen estat proposats per la ciutadania. Al mes de
-            setembre de 2018, s'obrirà un termini de dues setmanes per tal que els
+            setembre de 2018, s'obrirà un termini de tres setmanes per tal que els
             ciutadans I les ciutadanes presenten les seues propostes d'inversions. Aquestes
             propostes seran avaluades i analitzades pel Tècnics Municipals i cada
             proposta tindrà un pressupost estimat i una estimació de beneficiaris, així com el

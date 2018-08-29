@@ -29,8 +29,8 @@
     <div id="about-1-more" class="about-block__01-hidden">
         <p>
             To this end, the Government of Altea has decided that the ten projects
-            that will be on the ballot be chosen from citizen submissions. On September 2018,
-            a two-week proposal phase will open so that citizens may submit
+            that make it to the ballot will be chosen from among citizen submissions. On September 2018,
+            a three-week proposal phase will start so that citizens may submit
             their proposals for local projects. The proposals will then be assessed and
             analysed by municipal technicians, who will assign an estimated budget,
             determine who would benefit from the project, or provide a technical reason
