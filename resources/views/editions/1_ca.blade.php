@@ -369,7 +369,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Avaluació</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>22</strong> - <strong>23</strong></div>
+                                    <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
                                     <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
