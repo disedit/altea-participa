@@ -52,8 +52,8 @@
                 <div class="calendar">
                     <div class="calendar__heading">Propuestas</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>3 - 23</strong></div>
-                        <div class="calendar__month">septiembre</div>
+                        <div class="calendar__days"><strong>hasta 21</strong></div>
+                        <div class="calendar__month">octubre</div>
                     </div>
                 </div>
             </div>
@@ -75,8 +75,8 @@
                 <div class="calendar">
                     <div class="calendar__heading">Evaluación</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>24</strong> - <strong>28</strong></div>
-                        <div class="calendar__month">septiembre</div>
+                        <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                        <div class="calendar__month">octubre</div>
                     </div>
                 </div>
             </div>
@@ -94,8 +94,8 @@
                 <div class="calendar">
                     <div class="calendar__heading">Consejo</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>1</strong> - <strong>5</strong></div>
-                        <div class="calendar__month">octubre</div>
+                        <div class="calendar__days"><strong>5</strong> - <strong>10</strong></div>
+                        <div class="calendar__month">noviembre</div>
                     </div>
                 </div>
             </div>
@@ -113,8 +113,8 @@
                 <div class="calendar">
                     <div class="calendar__heading">Campaña</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>8</strong> - <strong>12</strong></div>
-                        <div class="calendar__month">octubre</div>
+                        <div class="calendar__days"><strong>12</strong> - <strong>16</strong></div>
+                        <div class="calendar__month">noviembre</div>
                     </div>
                 </div>
             </div>
@@ -134,8 +134,8 @@
                 <div class="calendar calendar--red">
                     <div class="calendar__heading">Votación</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>15</strong> - <strong>19</strong></div>
-                        <div class="calendar__month">octubre</div>
+                        <div class="calendar__days"><strong>19</strong> - <strong>13</strong></div>
+                        <div class="calendar__month">noviembre</div>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,7 @@
 
         <h4>Inicio y fin de la votación</h4>
         <p>
-          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 15 de octubre de 2018 y concluirá el día 19 de octubre a las 12 horas de la noche. Físicamente se podrá votar desde el día 15 al día 19 de octubre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
+          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 19 de noviembre de 2018 y concluirá el día 23 de noviembre a las 12 horas de la noche. Físicamente se podrá votar desde el día 19 al día 23 de noviembre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
         </p>
 
         <h4>Resultado de la votación</h4>
@@ -292,8 +292,8 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Propuestas</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>3 - 23</strong></div>
-                                    <div class="calendar__month">septiembre</div>
+                                    <div class="calendar__days"><strong>hasta 21</strong></div>
+                                    <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
                         </div>
@@ -318,8 +318,8 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Evaluación</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>24</strong> - <strong>28</strong></div>
-                                    <div class="calendar__month">septiembre</div>
+                                    <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                                    <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
                         </div>
@@ -341,8 +341,8 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Consejo</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>1</strong> - <strong>5</strong></div>
-                                    <div class="calendar__month">octubre</div>
+                                    <div class="calendar__days"><strong>5</strong> - <strong>10</strong></div>
+                                    <div class="calendar__month">noviembre</div>
                                 </div>
                             </div>
                         </div>
@@ -363,8 +363,8 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Campaña</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>8</strong> - <strong>12</strong></div>
-                                    <div class="calendar__month">octubre</div>
+                                    <div class="calendar__days"><strong>12</strong> - <strong>16</strong></div>
+                                    <div class="calendar__month">noviembre</div>
                                 </div>
                             </div>
                         </div>
@@ -384,8 +384,8 @@
                             <div class="calendar calendar--red">
                                 <div class="calendar__heading">Votación</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>15</strong> - <strong>19</strong></div>
-                                    <div class="calendar__month">octubre</div>
+                                    <div class="calendar__days"><strong>19</strong> - <strong>23</strong></div>
+                                    <div class="calendar__month">noviembre</div>
                                 </div>
                             </div>
                         </div>
