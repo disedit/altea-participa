@@ -238,8 +238,8 @@
 
         <h4>Start and end of the vote</h4>
         <p>
-            On-line voting will open on November 19th 2018 at midnight and will
-            close on November 23rd at midnight. In-person voting will also be available
+            On-line voting will open on December 3rd 2018 at midnight and will
+            close on December 16th at midnight. In-person voting will also be available
             at selected <a href="#voting-places" data-scroll>polling stations</a>
             during the same days on their normal opening hours.
         </p>

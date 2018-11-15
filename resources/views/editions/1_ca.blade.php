@@ -241,9 +241,9 @@
         <h4>Inici i final de la votació</h4>
         <p>
           S’ha establert un període de votació que començarà, via internet, a les
-          12h de la nit del dia 19 de novembre de 2018 i conclourà el dia 23 de novembre
-          a les 12h de la nit. Físicament es podrà votar des del dia 19 al dia 23
-          de novembre a les seus habilitades, dins del seu horari d’obertura.
+          12h de la nit del dia 3 de desembre de 2018 i conclourà el dia 16
+          a les 12h de la nit. Físicament es podrà votar des del dia 3 al dia 16
+          de desembre a les seus habilitades, dins del seu horari d’obertura.
         </p>
 
         <h4>Resultat de la votació</h4>

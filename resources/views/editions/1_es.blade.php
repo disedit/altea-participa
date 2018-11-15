@@ -193,7 +193,7 @@
 
         <h4>Inicio y fin de la votación</h4>
         <p>
-          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 19 de noviembre de 2018 y concluirá el día 23 de noviembre a las 12 horas de la noche. Físicamente se podrá votar desde el día 19 al día 23 de noviembre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
+          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 3 de diciembre de 2018 y concluirá el día 16 a las 12 horas de la noche. Físicamente se podrá votar desde el día 3 al día 16 de diciembre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
         </p>
 
         <h4>Resultado de la votación</h4>
