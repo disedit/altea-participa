@@ -34,7 +34,7 @@ return [
     'close' => 'Tanca',
     'ordered_randomly' => 'Ordenades alteatòriament',
     'SMS_notification' => 'El teu codi per a votar és :code',
-    'video_id' => 'OaxP-ywhV_k',
+    'video_id' => 'erM03GK0MXI',
 
     /*
     |--------------------------------------------------------------------------
