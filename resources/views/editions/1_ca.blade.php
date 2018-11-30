@@ -196,7 +196,7 @@
     </p>
 
     <h4 class="options-title">Propostes presentades</h4>
-    <div class="about-block__outlined-block">Encara estem recopilant propostes. Pots enviar-ne la teua omplint el <a href="{{ url('/propose') }}">formulari de nova proposta</a>.</div>
+    [options]
 
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>

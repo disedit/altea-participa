@@ -194,10 +194,7 @@
     </p>
 
     <h4 class="options-title">Submitted proposals</h4>
-    <div class="about-block__outlined-block">
-        We are still accepting proposals. Submit yours by filling out
-        the <a href="{{ url('/propose') }}">proposal application form</a>.
-    </div>
+    [options]
 
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>

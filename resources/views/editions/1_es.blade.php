@@ -162,7 +162,7 @@
     </p>
 
     <h4 class="options-title">Propuestas presentadas</h4>
-    <div class="about-block__outlined-block">Aún estamos recopilando propuestas. Puedes enviar la tuya rellenando el <a href="{{ url('/propose') }}">formulario de nueva propuesta</a>.</div>
+    [options]
 
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
