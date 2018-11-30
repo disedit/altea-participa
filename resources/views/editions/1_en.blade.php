@@ -212,7 +212,7 @@
         <h4>Who can vote?</h4>
         <p>
             All citizens who are <strong>16 years of age or older and are
-            residents of Altea</strong>, as per the census on <strong>June 1st, 2018</strong>.
+            residents of Altea</strong>, as per the census on <strong>August 30th, 2018</strong>.
         </p>
 
         <h4>What will be voted on?</h4>

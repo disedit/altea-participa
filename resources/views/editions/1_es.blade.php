@@ -178,7 +178,7 @@
 
         <h4>¿Quién puede votar?</h4>
         <p>
-            Podrán votar en este proceso aquellas personas mayores de 16 años empadronadas en Altea, de acuerdo con el padrón en fecha de 01/06/2018.
+            Podrán votar en este proceso aquellas personas mayores de 16 años empadronadas en Altea, de acuerdo con el padrón en fecha del 30 de agosto de 2018.
         </p>
 
         <h4>¿Qué se votará?</h4>
