@@ -3,8 +3,7 @@
                     ? config('participa.logo_dark')
                     : config('participa.logo');
 
-    $prelink = (!Request::segment(1) || Request::segment(1) == 'about')
-                    ? '' : url('/about');
+    $prelink = url('/about');
 @endphp
 
 <nav class="navbar fixed-top navbar-expand-lg
