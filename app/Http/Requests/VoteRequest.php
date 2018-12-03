@@ -129,7 +129,7 @@ class VoteRequest extends FormRequest
 
         // Improve this with regex?
         $value = str_replace(" ", "", $value);
-        $value = str_replace("-", "", $value);
+        //$value = str_replace("-", "", $value);
         $value = str_replace(".", "", $value);
 
         $value = strtoupper($value);
