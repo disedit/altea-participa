@@ -129,8 +129,16 @@ class VoteRequest extends FormRequest
 
         // Improve this with regex?
         $value = str_replace(" ", "", $value);
-        //$value = str_replace("-", "", $value);
+        $value = str_replace("-", "", $value);
         $value = str_replace(".", "", $value);
+
+        // Quick patch for NIEs
+        if (!is_numeric(substr($value, 0, 1))) {
+            $number = substr($value, 1, -1);
+            if (strlen($number) != 8) {
+                $value = substr($value, 0, 1) . str_pad($number, 8, '0', STR_PAD_LEFT) . substr($value, -1, 1);
+            }
+        }
 
         $value = strtoupper($value);
 
