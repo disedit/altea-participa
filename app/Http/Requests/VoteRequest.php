@@ -35,6 +35,7 @@ class VoteRequest extends FormRequest
 
         $countryCode = (isset($attributes['country_code'])) ? $attributes['country_code'] : null;
 
+        $attributes['rawSID'] = $attributes['SID'];
         if(isset($attributes['SID'])) $attributes['SID'] = $this->hashSID($attributes['SID']);
         if(isset($attributes['phone'])) $attributes['phone'] = $this->cleanPhone($countryCode, $attributes['phone']);
 
@@ -64,7 +65,7 @@ class VoteRequest extends FormRequest
         // Rules
         $rules['SID'] = [
             'required',
-            new OnCensus($voter),
+            new OnCensus($voter, $this->input('rawSID')),
             new HasNotVoted($voter)
         ];
 

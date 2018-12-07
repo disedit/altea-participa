@@ -9,15 +9,17 @@ class OnCensus implements Rule
 {
     /* The voter instance */
     protected $voter;
+    protected $rawSID;
 
     /**
      * Create a new rule instance.
      *
      * @return void
      */
-    public function __construct($voter)
+    public function __construct($voter, $rawSID)
     {
         $this->voter = $voter;
+        $this->rawSID = $rawSID;
     }
 
     /**
@@ -30,7 +32,7 @@ class OnCensus implements Rule
     public function passes($attribute, $value)
     {
         if(!$this->voter) {
-            Limit::logAction('IDFailedLookUp', null, $value);
+            Limit::logAction('IDFailedLookUp', null, $this->rawSID);
             return false;
         }
 
