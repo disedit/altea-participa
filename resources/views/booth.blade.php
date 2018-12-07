@@ -6,6 +6,9 @@
 
 @section('content')
 <div class="{{ $inPerson ? 'booth-mode' : '' }}">
+    <div aria-hidden="true" class="d-sm-none footer-languages languages">
+        @include('components/languages')
+    </div>
     <div id="booth"></div>
 </div>
 @endsection
