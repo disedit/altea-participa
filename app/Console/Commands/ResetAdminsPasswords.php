@@ -31,10 +31,10 @@ class ResetAdminsPasswords extends Command
         $users = $this->argument('users');
         $table = [];
 
-        foreach(array_wrap($users) as $username){
+        foreach($users as $username){
             $user = User::where('username', $username)->first();
 
-            if(count($user) == 0) {
+            if(!$user) {
                 $this->error('User \'' . $username . '\' does not exist.');
                 continue;
             }
