@@ -116,7 +116,9 @@ class CacheResults extends Command
         $validBallots = 0;
         $bar = $this->output->createProgressBar(count($ballots));
         foreach($ballots as $ballot) {
-            if(!$ballot->check() || !$decodedBallot = $ballot->decrypt()) {
+            $decodedBallot = $ballot->decrypt();
+
+            if(!$ballot->check() || $decodedBallot === false) {
                 $this->errors[] = [$ballot->cast_at, $ballot->ref];
                 continue;
             }
