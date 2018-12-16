@@ -69,8 +69,8 @@ return [
     | Placeholder
     |--------------------------------------------------------------------------
     */
-    'voting_closed' => 'Poll closed',
-    'awaiting_results' => 'The results will be made public on <strong>:publish_date</strong> at <strong>:publish_time</strong>',
+    'voting_closed' => 'Thank you for your participation 👍',
+    'awaiting_results' => 'Come back soon for the results on this website.',
 
 
     /*

@@ -69,8 +69,8 @@ return [
     | Placeholder
     |--------------------------------------------------------------------------
     */
-    'voting_closed' => 'Votació tancada',
-    'awaiting_results' => 'Els resultats es faran públics el <strong>:publish_date</strong> a les <strong>:publish_time</strong>',
+    'voting_closed' => 'Gràcies per la vostra participació 👍',
+    'awaiting_results' => 'Els resultats es faran públics en breu.',
 
 
     /*

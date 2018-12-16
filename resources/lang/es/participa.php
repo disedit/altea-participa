@@ -69,9 +69,8 @@ return [
     | Placeholder
     |--------------------------------------------------------------------------
     */
-    'voting_closed' => 'Votación cerrada',
-    'awaiting_results' => 'Los resultados se harán públicos el <strong>:publish_date</strong> a las <strong>:publish_time</strong>',
-
+    'voting_closed' => 'Gracias por vuestra participación 👍',
+    'awaiting_results' => 'Los resultados se harán públicos en breve.',
 
     /*
     |--------------------------------------------------------------------------
