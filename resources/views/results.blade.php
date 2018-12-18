@@ -5,37 +5,6 @@
     <div class="col-md-8">
         <h2><i class="far fa-chart-bar" aria-hidden="true"></i> @lang('participa.results')</h2>
 
-        <table class="census table table-bordered">
-            @if(config('participa.display_census_number'))
-                <colgroup>
-                    <col width="25%" />
-                    <col width="25%" />
-                    <col width="25%" />
-                    <col width="25%" />
-                </colgroup>
-            @else
-                <colgroup>
-                    <col width="50%" />
-                    <col width="50%" />
-                </colgroup>
-            @endif
-            <tbody>
-                <tr>
-                    @if(config('participa.display_census_number'))
-                        <th class="text-right">@lang('participa.census')</th>
-                        <td>{{ number($census, 0) }}</td>
-                    @endif
-                    <th class="text-right">@lang('participa.turnout')</th>
-                    <td>
-                        {{ number($turnout, 0) }}
-                        @if(config('participa.display_census_number'))
-                            <span class="results__points">{{ number(($turnout * 100 / $census), 2) . '%' }}</span>
-                        @endif
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
         @foreach($results as $block)
             @php
                 $classes = [
@@ -69,8 +38,8 @@
                                     <div class="results__votes">
                                         <div class="results__points">{{ number($option['points'], 0) }} {{ trans_choice('participa.votes', $option['points']) }}</div>
                                         <div class="progress">
-                                            <div class="d-flex" style="width: {{ $option['percentage'] . '%' }}" aria-valuenow="{{ $option['percentage'] }}" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                                <div class="progress-bar"></div>
+                                            <div class="d-flex" style="width: {{ $option['relative'] . '%' }}" aria-valuenow="{{ $option['percentage'] }}" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                                <div class="progress-bar text-right pr-2">{{ round($option['percentage']) }}%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -108,8 +77,8 @@
                                     </td>
                                     <td class="align-middle">
                                         <div class="progress">
-                                            <div class="d-flex" style="width: {{ $option['percentage'] . '%' }}" aria-valuenow="{{ $option['percentage'] }}" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                                <div class="progress-bar"></div>
+                                            <div class="d-flex" style="width: {{ $option['relative'] . '%' }}" aria-valuenow="{{ $option['percentage'] }}" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                                <div class="progress-bar text-right pr-2">{{ round($option['percentage']) }}%</div>
                                             </div>
                                         </div>
                                     </td>
