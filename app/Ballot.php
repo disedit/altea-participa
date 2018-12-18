@@ -52,6 +52,8 @@ class Ballot extends Model
             }
         }
 
+        if (empty($ballotToEncrypt)) return false;
+
         return encrypt($ballotToEncrypt);
     }
 
@@ -117,10 +119,13 @@ class Ballot extends Model
     public function cast($request, $voter)
     {
         $userId = ($request->user()) ? $request->user()->id : null;
+        $ballot = $this->createBallot($request->input('ballot'));
+
+        if (!$ballot) return false;
 
         $this->edition_id = $request->get('edition_id');
         $this->ref = $this->createRef();
-        $this->ballot = $this->createBallot($request->input('ballot'));
+        $this->ballot = $ballot;
         $this->signature = $this->createSignature();
         $this->by_user_id = $userId;
 

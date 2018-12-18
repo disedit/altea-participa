@@ -100,7 +100,7 @@ class BoothController extends Controller
                 // If an error occurred during the casting process,
                 // Unmark voter and display error
                 $voter->rollback();
-                return response()->json(['success' => false, 'error' => 'Error sistema']);
+                return response()->json(['success' => false, 'error' => 'Error enviant la teua papereta. Torna a intentar-ho.']);
             } else {
                 if(!$request->user()) Limit::logAction('vote', $editionId);
             }
