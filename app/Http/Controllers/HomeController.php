@@ -58,9 +58,9 @@ class HomeController extends Controller
         if($edition->resultsPublished()){
             $results = $edition->fullResults();
             $turnout = $edition->turnout()->count();
-            $census = $edition->voters()->count();
+            $votes = $edition->results()->get()->sum('points');
 
-            return view('results', compact('edition', 'results', 'turnout', 'census', 'pastEditions'));
+            return view('results', compact('edition', 'results', 'turnout', 'votes', 'pastEditions'));
         }
 
         // If none of the previous conditions are met

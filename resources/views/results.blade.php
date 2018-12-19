@@ -5,6 +5,23 @@
     <div class="col-md-8">
         <h2><i class="far fa-chart-bar" aria-hidden="true"></i> @lang('participa.results')</h2>
 
+        <table class="census table table-bordered">
+            <colgroup>
+                <col width="25%" />
+                <col width="25%" />
+                <col width="25%" />
+                <col width="25%" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th class="text-right">@lang('participa.turnout')</th>
+                    <td>{{ number($turnout, 0) }}</td>
+                    <th class="text-right">@lang('participa.ballots')</th>
+                    <td>{{ number($votes, 0) }}</td>
+                </tr>
+            </tbody>
+        </table>
+
         @foreach($results as $block)
             @php
                 $classes = [

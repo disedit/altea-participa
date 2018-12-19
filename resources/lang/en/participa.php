@@ -72,7 +72,6 @@ return [
     'voting_closed' => 'Thank you for your participation 👍',
     'awaiting_results' => 'Come back soon for the results on this website.',
 
-
     /*
     |--------------------------------------------------------------------------
     | Results
@@ -82,6 +81,7 @@ return [
     'census' => 'Census',
     'turnout' => 'Turnout',
     'votes' => 'vote|votes',
+    'ballots' => 'Votes',
     'top_results' => '[1] Top project|[2] Top two projects|[3] Top three projects|[4] Top four projects|[5,*] Top :num projects',
     'other_results' => 'Other projects',
 

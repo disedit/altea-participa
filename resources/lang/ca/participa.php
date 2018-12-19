@@ -72,7 +72,6 @@ return [
     'voting_closed' => 'Gràcies per la vostra participació 👍',
     'awaiting_results' => 'Els resultats es faran públics en breu.',
 
-
     /*
     |--------------------------------------------------------------------------
     | Results
@@ -82,6 +81,7 @@ return [
     'census' => 'Cens',
     'turnout' => 'Participació',
     'votes' => 'vot|vots',
+    'ballots' => 'Vots',
     'top_results' => '[1] Projecte més votat|[2] Dos projectes més votats|[3] Tres projectes més votats|[4] Quatre projectes més votats|[5,*] :num projectes més votats',
     'other_results' => 'Resta',
 
