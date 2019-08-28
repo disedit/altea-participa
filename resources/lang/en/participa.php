@@ -45,7 +45,7 @@ return [
       'calendar' => 'Calendar',
       'proposals' => 'Proposals',
       'info' => 'Information',
-      '2017' => '2017 Results'
+      'archive' => 'Archive'
     ],
 
     /*

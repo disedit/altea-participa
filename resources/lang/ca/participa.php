@@ -45,7 +45,7 @@ return [
       'calendar' => 'Calendari',
       'proposals' => 'Propostes',
       'info' => 'Informació',
-      '2017' => 'Resultats 2017'
+      'archive' => 'Arxiu'
     ],
 
     /*

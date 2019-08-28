@@ -34,7 +34,7 @@
           <a href="{{ $prelink }}#info" data-scroll>@lang('participa.nav.info')</a>
         </li>
         <li class="nav-item">
-          <a href="{{ $prelink }}#2017" data-scroll>@lang('participa.nav.2017')</a>
+          <a href="{{ $prelink }}#archive" data-scroll>@lang('participa.nav.archive')</a>
         </li>
     </ul>
 
