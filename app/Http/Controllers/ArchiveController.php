@@ -19,10 +19,11 @@ class ArchiveController extends Controller
         $results = $edition->fullResults();
         $turnout = $edition->turnout()->count();
         $census = $edition->voters()->count();
+        $votes = $edition->results()->get()->sum('points');
         $pastEditions = Edition::pastEditions();
         $isArchive = true;
 
-        return view('results', compact('edition', 'results', 'turnout', 'census', 'pastEditions', 'isArchive'));
+        return view('results', compact('edition', 'results', 'turnout', 'votes', 'census', 'pastEditions', 'isArchive'));
     }
 
     /**
