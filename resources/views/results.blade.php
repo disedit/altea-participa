@@ -94,6 +94,9 @@
                                         <a href="#" data-toggle="modal" data-target="#optionModal" data-option-id="{{ $option['id'] }}" data-option-title="{{ $option['option'] }}">
                                             {{ $option['option'] }}
                                         </a>
+                                        <span class="results__status">
+                                            {{ $option['status'] }}
+                                        </span>
                                     </td>
                                     <td class="align-middle">
                                         <div class="progress">

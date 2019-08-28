@@ -67,6 +67,11 @@
     right: 1rem;
   }
 
+  &__status {
+    display: block;
+    font-size: .85rem;
+  }
+
   &__pos {
     font-size: 2rem;
     position: absolute;
