@@ -2,6 +2,13 @@
     {!! $option->description !!}
 </div>
 
+@if($option->status)
+    <h4>@lang('participa.option_status')</h4>
+    <div>
+        {!! $option->status !!}
+    </div>
+@endif
+
 @if($option->motivation)
     <h4>@lang('participa.option_motivation')</h4>
     <div>

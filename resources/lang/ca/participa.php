@@ -93,6 +93,7 @@ return [
     'option_motivation' => 'Motivació',
     'option_cost' => 'Cost',
     'option_attachments' => 'Documentació adjunta',
+    'option_status' => 'Estat',
 
     /*
     |--------------------------------------------------------------------------

@@ -51,6 +51,9 @@
                                 <a href="#" class="results__card" data-toggle="modal" data-target="#optionModal" data-option-id="{{ $option['id'] }}" data-option-title="{{ $option['option'] }}">
                                     <span class="results__pos">{{ $pos }}</span>
                                     <h5>{{ $option['option'] }}</h5>
+                                    <div class="results__status">
+                                        {{ $option['status'] }}
+                                    </div>
 
                                     <div class="results__votes">
                                         <div class="results__points">{{ number($option['points'], 0) }} {{ trans_choice('participa.votes', $option['points']) }}</div>

@@ -93,6 +93,7 @@ return [
     'option_motivation' => 'Motivation',
     'option_cost' => 'Cost',
     'option_attachments' => 'Attached documents',
+    'option_status' => 'Status',
 
     /*
     |--------------------------------------------------------------------------
