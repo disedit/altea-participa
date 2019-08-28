@@ -110,7 +110,7 @@
     <section aria-labelledby="contact" class="sidebar__box">
         <h3 id="contact">@lang('participa.contact')</h3>
         <p>@lang('participa.contact_text', ['contact_email' => config('participa.contact_email')])</p>
-    </div>
+    </section>
 
     @isset($pastEditions)
         @if(count($pastEditions) > 0)
@@ -125,6 +125,11 @@
                         </a>
                     </li>
                 @endforeach
+                <li class="sidebar__list__item">
+                    <a href="{{ secure_url('archive/2017') }}">
+                        <i class="far fa-calendar-alt" aria-hidden="true"></i> <span>setembre 2017</span>
+                    </a>
+                </li>
                 </ul>
             </div>
         @endif
