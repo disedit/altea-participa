@@ -16,7 +16,7 @@
     </p>
 
     <p>
-        It started <a href="{{ url('/archive/2017') }}">last year</a> with this format
+        It started <a href="{{ url('/archive/2017') }}">two years ago</a> with this format
         of participatory budgeting and for this second edition, the process
         will be more dynamic, broader in reach, and easier to take a part in.
     </p>
@@ -29,7 +29,7 @@
     <div id="about-1-more" class="about-block__01-hidden">
         <p>
             To this end, the Government of Altea has decided that the ten projects
-            that make it to the ballot will be chosen from among citizen submissions. On September 2018,
+            that make it to the ballot will be chosen from among citizen submissions. On September 2019,
             a three-week proposal phase will start so that citizens may submit
             their proposals for local projects. The proposals will then be assessed and
             analysed by municipal technicians, who will assign an estimated budget,
@@ -78,7 +78,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Proposals</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>till 21st</strong></div>
+                        <div class="calendar__days"><strong>until 2th</strong></div>
                         <div class="calendar__month">October</div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Assessment</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                        <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
                         <div class="calendar__month">October</div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Council</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>12</strong> - <strong>22</strong></div>
+                        <div class="calendar__days"><strong>21</strong></div>
                         <div class="calendar__month">November</div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Campaign</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>26</strong> - <strong>30</strong></div>
+                        <div class="calendar__days"><strong>25</strong> - <strong>30</strong></div>
                         <div class="calendar__month">November</div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                 <div class="calendar calendar--red">
                     <div class="calendar__heading">Poll</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>6</strong> - <strong>16</strong></div>
+                        <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
                         <div class="calendar__month">December</div>
                     </div>
                 </div>
@@ -212,7 +212,7 @@
         <h4>Who can vote?</h4>
         <p>
             All citizens who are <strong>16 years of age or older and are
-            residents of Altea</strong>, as per the census on <strong>August 30th, 2018</strong>.
+            residents of Altea</strong>, as per the census on <strong>August 30th, 2019</strong>.
         </p>
 
         <h4>What will be voted on?</h4>
@@ -235,8 +235,8 @@
 
         <h4>Start and end of the vote</h4>
         <p>
-            On-line voting will open on December 3rd 2018 at midnight and will
-            close on December 16th at midnight. In-person voting will also be available
+            On-line voting will open on December 2nd 2019 at midnight and will
+            close on December 15th at midnight. In-person voting will also be available
             at selected <a href="#voting-places" data-scroll>polling stations</a>
             during the same days on their normal opening hours.
         </p>
@@ -246,79 +246,6 @@
             The results of the vote will be made public on this website
             as soon as the voting period ends.
         </p>
-    </div>
-</section>
-
-<section id="2017" aria-labelledby="about-5" class="about-block about-block--last">
-    <h3 id="about-5">Last year's results</h3>
-    <div>
-        <h4 class="mb-4">Top three projects</h4>
-        <div class="row results results-2017 results-2017--compact mt-3">
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card results__card--winner">
-                    <span class="results__card__number d-none d-md-inline">1</span>
-                    <h5><span>Pedestrian road between the Filharmònica and Empedrat streets</span> <i class="far fa-check" aria-hidden="true"></i></h5>
-                    <div class="results__votes">
-                        <div class="results__points">15%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
-                <div class="results-2017__execution__block">
-                    <h6><span><i class="far fa-cogs"></i> In the works</span></h6>
-                    On public display. Start of public works contract signed and execution is expected before the end of the year.
-                    <hr class="my-3" />
-                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Attached blueprints</a>
-                    <small class="d-block mt-3">Last updated: September 3rd, 2018</small>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
-                    <span class="results__card__number d-none d-md-inline">2</span>
-                    <h5>Retrofitting of the Casa de l’Aigua</h5>
-                    <div class="results__votes">
-                        <div class="results__points">14%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
-                    <span class="results__card__number d-none d-md-inline">3</span>
-                    <h5>Regeneration of the lot adjacent to the conservatory</h5>
-                    <div class="results__votes">
-                        <div class="results__points">13%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
-                <div class="results-2017__execution__block">
-                    <ol start="4" class="results-2017__descending-list">
-                        <li>Improvement of Altea and Altea la Vella's playgrounds (12%)</li>
-                        <li>Creation of a playground in La Trompa stree's green zone</li>
-                        <li>Optimization and reordering of the local traffic light network</li>
-                    </ol>
-                    <hr class="my-3" aria-hidden="true" />
-                    <a href="{{ url('/archive/2017') }}">
-                        <i class="far fa-chart-bar" aria-hidden="true"></i> Full 2017 Results
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -338,7 +265,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Proposals</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>till 21st</strong></div>
+                                    <div class="calendar__days"><strong>until 4th</strong></div>
                                     <div class="calendar__month">October</div>
                                 </div>
                             </div>
@@ -364,7 +291,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Assessment</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                                    <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
                                     <div class="calendar__month">October</div>
                                 </div>
                             </div>
@@ -388,7 +315,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Council</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>12</strong> - <strong>22</strong></div>
+                                    <div class="calendar__days"><strong>21</strong></div>
                                     <div class="calendar__month">November</div>
                                 </div>
                             </div>
@@ -412,7 +339,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Campaign</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>26</strong> - <strong>30</strong></div>
+                                    <div class="calendar__days"><strong>25</strong> - <strong>30</strong></div>
                                     <div class="calendar__month">November</div>
                                 </div>
                             </div>
@@ -437,7 +364,7 @@
                             <div class="calendar calendar--red">
                                 <div class="calendar__heading">Poll</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
+                                    <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
                                     <div class="calendar__month">December</div>
                                 </div>
                             </div>

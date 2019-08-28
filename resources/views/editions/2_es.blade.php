@@ -11,7 +11,7 @@
     </p>
 
     <p>
-        Ya empezamos el <a href="{{ url('/archive/2017') }}">año pasado</a> con este formato de presupuestos participativos y en esta segunda edición, el proceso de participación será mucho más amplio, dinámico y fácil.
+        Ya empezamos <a href="{{ url('/archive/2017') }}">hace dos años</a> con este formato de presupuestos participativos y en esta segunda edición, el proceso de participación será mucho más amplio, dinámico y fácil.
     </p>
 
     <p>
@@ -20,7 +20,7 @@
 
     <div id="about-1-more" class="about-block__01-hidden">
         <p>
-            A tal efecto, el Equipo de Gobierno ha decidido que los 10 proyectos que se sometan a votación hayan sido propuestos por la ciudadanía. En el mes de septiembre de 2018, se abrirá un plazo de tres semanas para que los ciudadanos/as presenten sus propuestas de inversiones. Estas propuestas serán evaluadas y analizadas por los Técnicos Municipales donde cada propuesta tendrá un presupuesto estimado y a quien beneficiaría, así como el motivo por el que quedarán desestimadas.
+            A tal efecto, el Equipo de Gobierno ha decidido que los 10 proyectos que se sometan a votación hayan sido propuestos por la ciudadanía. En el mes de septiembre de 2019, se abrirá un plazo de tres semanas para que los ciudadanos/as presenten sus propuestas de inversiones. Estas propuestas serán evaluadas y analizadas por los Técnicos Municipales donde cada propuesta tendrá un presupuesto estimado y a quien beneficiaría, así como el motivo por el que quedarán desestimadas.
         </p>
 
         <p>
@@ -52,7 +52,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Propuestas</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>hasta 21</strong></div>
+                        <div class="calendar__days"><strong>hasta 4</strong></div>
                         <div class="calendar__month">octubre</div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Evaluación</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                        <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
                         <div class="calendar__month">octubre</div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Consejo</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>12</strong> - <strong>22</strong></div>
+                        <div class="calendar__days"><strong>21</strong></div>
                         <div class="calendar__month">noviembre</div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Campaña</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>26</strong> - <strong>30</strong></div>
+                        <div class="calendar__days"><strong>25</strong> - <strong>30</strong></div>
                         <div class="calendar__month">noviembre</div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                 <div class="calendar calendar--red">
                     <div class="calendar__heading">Votación</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
+                        <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
                         <div class="calendar__month">diciembre</div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
 
         <h4>¿Quién puede votar?</h4>
         <p>
-            Podrán votar en este proceso aquellas personas mayores de 16 años empadronadas en Altea, de acuerdo con el padrón en fecha del 30 de agosto de 2018.
+            Podrán votar en este proceso aquellas personas mayores de 16 años empadronadas en Altea, de acuerdo con el padrón en fecha del 30 de agosto de 2019.
         </p>
 
         <h4>¿Qué se votará?</h4>
@@ -193,86 +193,13 @@
 
         <h4>Inicio y fin de la votación</h4>
         <p>
-          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 3 de diciembre de 2018 y concluirá el día 16 a las 12 horas de la noche. Físicamente se podrá votar desde el día 3 al día 16 de diciembre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
+          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 2 de diciembre de 2019 y concluirá el día 15 a las 12 horas de la noche. Físicamente se podrá votar desde el día 2 al día 15 de diciembre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
         </p>
 
         <h4>Resultado de la votación</h4>
         <p>
             El resultado de la votación se hará público en esta web tan pronto concluya el periodo de votación.
         </p>
-    </div>
-</section>
-
-<section id="2017" aria-labelledby="about-5" class="about-block about-block--last">
-    <h3 id="about-5">En la anterior edición...</h3>
-    <div>
-        <h4 class="mb-4">Tres proyectos más votados</h4>
-        <div class="row results results-2017 results-2017--compact mt-3">
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card results__card--winner">
-                    <span class="results__card__number d-none d-md-inline">1</span>
-                    <h5><span>Apertura de un vial para peatones entre C/Filharmònica y C/Empedrat</span> <i class="far fa-check" aria-hidden="true"></i></h5>
-                    <div class="results__votes">
-                        <div class="results__points">15%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
-                <div class="results-2017__execution__block">
-                    <h6><span><i class="far fa-cogs" aria-hidden="true"></i> En ejecución</span></h6>
-                    En exposición pública. Inicio de adjudicación de la obra firmado y ejecución prevista para antes de que acabe el año.
-                    <hr class="my-3" aria-hidden="true" />
-                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentación adjunta <span class="badge">PDF</span></a>
-                    <small class="d-block mt-3">Última actualización: 2 de agosto de 2018</small>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
-                    <span class="results__card__number d-none d-md-inline">2</span>
-                    <h5>Puesta a punto de la Casa de l’Aigua para poder ser utilizada en condiciones</h5>
-                    <div class="results__votes">
-                        <div class="results__points">14%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
-                    <span class="results__card__number d-none d-md-inline">3</span>
-                    <h5>Acondicionamiento del solar contiguo al conservatorio</h5>
-                    <div class="results__votes">
-                        <div class="results__points">13%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
-                <div class="results-2017__execution__block">
-                    <ol start="4" class="results-2017__descending-list">
-                        <li>Mejora de parques infantiles de Altea y Altea la Vella (12%)</li>
-                        <li>Creación de un parque infantil en la zona verde de C/La Trompa</li>
-                        <li>Optimización y reordenación de la red semafórica del municipio</li>
-                    </ol>
-                    <hr class="my-3" aria-hidden="true" />
-                    <a href="{{ url('/archive/2017') }}">
-                        <i class="far fa-chart-bar" aria-hidden="true"></i> Resultados completos de 2017
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -292,7 +219,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Propuestas</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>hasta 21</strong></div>
+                                    <div class="calendar__days"><strong>hasta 4</strong></div>
                                     <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
@@ -318,7 +245,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Evaluación</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                                    <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
                                     <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
@@ -341,7 +268,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Consejo</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>12</strong> - <strong>22</strong></div>
+                                    <div class="calendar__days"><strong>21</strong></div>
                                     <div class="calendar__month">noviembre</div>
                                 </div>
                             </div>
@@ -363,7 +290,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Campaña</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>26</strong> - <strong>30</strong></div>
+                                    <div class="calendar__days"><strong>25</strong> - <strong>30</strong></div>
                                     <div class="calendar__month">noviembre</div>
                                 </div>
                             </div>
@@ -384,7 +311,7 @@
                             <div class="calendar calendar--red">
                                 <div class="calendar__heading">Votación</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
+                                    <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
                                     <div class="calendar__month">diciembre</div>
                                 </div>
                             </div>

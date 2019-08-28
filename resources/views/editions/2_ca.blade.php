@@ -17,7 +17,7 @@
     </p>
 
     <p>
-        Ja vam començar l'<a href="{{ url('/archive/2017') }}">any passat</a> amb aquest format de
+        Ja vam començar <a href="{{ url('/archive/2017') }}">fa dos anys</a> amb aquest format de
         pressupostos participatius i en aquesta segona edicio, el procés de
         participaciò serà molt més ampli, dinàmic i fàcil.
     </p>
@@ -31,7 +31,7 @@
         <p>
             A tal efecte, l'Equip de Govern ha decidit que els 10 projectes que se
             sotmeten a votació hagen estat proposats per la ciutadania. Al mes de
-            setembre de 2018, s'obrirà un termini de tres setmanes per tal que els
+            setembre de 2019, s'obrirà un termini de tres setmanes per tal que els
             ciutadans I les ciutadanes presenten les seues propostes d'inversions. Aquestes
             propostes seran avaluades i analitzades pel Tècnics Municipals i cada
             proposta tindrà un pressupost estimat i una estimació de beneficiaris, així com el
@@ -82,7 +82,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Propostes</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>fins el 21</strong></div>
+                        <div class="calendar__days"><strong>fins el 4</strong></div>
                         <div class="calendar__month">octubre</div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Avaluació</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                        <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
                         <div class="calendar__month">octubre</div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Consell</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>12</strong> - <strong>22</strong></div>
+                        <div class="calendar__days"><strong>21</strong></div>
                         <div class="calendar__month">novembre</div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Campanya</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>26</strong> - <strong>30</strong></div>
+                        <div class="calendar__days"><strong>25</strong> - <strong>30</strong></div>
                         <div class="calendar__month">novembre</div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                 <div class="calendar calendar--red">
                     <div class="calendar__heading">Votació</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
+                        <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
                         <div class="calendar__month">desembre</div>
                     </div>
                 </div>
@@ -214,7 +214,7 @@
         <h4>Qui pot votar?</h4>
         <p>
             Podran votar en aquest procés aquelles persones majors de 16 anys
-            empadronades a Altea, d’acord al padró de data 30 d'agost de 2018.
+            empadronades a Altea, d’acord al padró de data 30 d'agost de 2019.
         </p>
 
         <h4>Què es votarà?</h4>
@@ -241,8 +241,8 @@
         <h4>Inici i final de la votació</h4>
         <p>
           S’ha establert un període de votació que començarà, via internet, a les
-          12h de la nit del dia 3 de desembre de 2018 i conclourà el dia 16
-          a les 12h de la nit. Físicament es podrà votar des del dia 3 al dia 16
+          12h de la nit del dia 2 de desembre de 2019 i conclourà el dia 15
+          a les 12h de la nit. Físicament es podrà votar des del dia 2 al dia 15
           de desembre a les seus habilitades, dins del seu horari d’obertura.
         </p>
 
@@ -251,79 +251,6 @@
             El resultat de la votació es farà públic en aquesta web només concloga
             el període de votació.
         </p>
-    </div>
-</section>
-
-<section id="2017" aria-labelledby="about-5" class="about-block about-block--last">
-    <h3 id="about-5">En l'anterior edició...</h3>
-    <div>
-        <h4 class="mb-4">Tres projectes més votats</h4>
-        <div class="row results results-2017 results-2017--compact mt-3">
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card results__card--winner">
-                    <span class="results__card__number d-none d-md-inline">1</span>
-                    <h5><span>Obertura d'un vial per als vianants entre C/Filharmònica i C/Empedrat</span> <i class="far fa-check" aria-hidden="true"></i></h5>
-                    <div class="results__votes">
-                        <div class="results__points">15%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
-                <div class="results-2017__execution__block">
-                    <h6><span><i class="far fa-cogs" aria-hidden="true"></i> En execució</span></h6>
-                    En exposició pública. Inici d’adjudicació de l’obra signat i execució prevista abans que acabe l’any.
-                    <hr class="my-3" aria-hidden="true" />
-                    <a href="{{ url('/docs/Planols.pdf') }}"><i class="far fa-paperclip" aria-hidden="true"></i> Documentació adjunta <span class="badge">PDF</span></a>
-                    <small class="d-block mt-3">Última actualització: 2 d'agost de 2018</small>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
-                    <span class="results__card__number d-none d-md-inline">2</span>
-                    <h5>Posada a punt de la Casa de l’Aigua per a poder ser utilitzada en condicions</h5>
-                    <div class="results__votes">
-                        <div class="results__points">14%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-4">
-                <div class="results__card">
-                    <span class="results__card__number d-none d-md-inline">3</span>
-                    <h5>Condicionament del solar llindant al conservatori</h5>
-                    <div class="results__votes">
-                        <div class="results__points">13%</div>
-                        <div class="progress">
-                            <div class="d-flex" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
-                <div class="results-2017__execution__block">
-                    <ol start="4" class="results-2017__descending-list">
-                        <li>Millora de parcs infantils d'Altea i Altea la Vella (12%)</li>
-                        <li>Creació d'un parc infantil en la zona verda de C/La Trompa</li>
-                        <li>Optimització i reordenació de la xarxa semafòrica del municipi</li>
-                    </ol>
-                    <hr class="my-3" aria-hidden="true" />
-                    <a href="{{ url('/archive/2017') }}">
-                        <i class="far fa-chart-bar" aria-hidden="true"></i> Resultats complets de 2017
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -343,7 +270,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Propostes</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>fins el 21</strong></div>
+                                    <div class="calendar__days"><strong>fins el 4</strong></div>
                                     <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
@@ -369,7 +296,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Avaluació</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>22</strong> - <strong>27</strong></div>
+                                    <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
                                     <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
@@ -393,7 +320,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Consell</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>12</strong> - <strong>22</strong></div>
+                                    <div class="calendar__days"><strong>21</strong></div>
                                     <div class="calendar__month">novembre</div>
                                 </div>
                             </div>
@@ -417,7 +344,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Campanya</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>26</strong> - <strong>30</strong></div>
+                                    <div class="calendar__days"><strong>25</strong> - <strong>30</strong></div>
                                     <div class="calendar__month">novembre</div>
                                 </div>
                             </div>
@@ -442,7 +369,7 @@
                             <div class="calendar calendar--red">
                                 <div class="calendar__heading">Votació</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
+                                    <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
                                     <div class="calendar__month">desembre</div>
                                 </div>
                             </div>
