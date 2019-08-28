@@ -254,6 +254,78 @@
     </div>
 </section>
 
+<section id="archive" aria-labelledby="about-5" class="about-block about-block--last">
+    <h3 id="about-5">Arxiu</h3>
+    <div>
+        <h4 class="mb-4">Resultats de 2018</h4>
+        <div class="row results results-2017 results-2017--compact mt-3">
+            <div class="d-flex justify-content-center col-md-4">
+                <div class="results__card results__card--winner">
+                    <span class="results__card__number d-none d-md-inline">1</span>
+                    <h5><span>Millora <br />Camí de l’Algar, davant del poliesportiu</span> <i class="far fa-check" aria-hidden="true"></i></h5>
+                    <div class="results__votes">
+                        <div class="results__points">17%</div>
+                        <div class="progress">
+                            <div class="d-flex" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
+                <div class="results-2017__execution__block">
+                    <h6><span><i class="far fa-cogs" aria-hidden="true"></i> Estat</span></h6>
+                    Projecte redactat i presentat al Consell de Participació. En breu es traurà la licitació.
+                    <hr class="my-3" aria-hidden="true" />
+                    <small class="d-block mt-3">Última actualització: 28 d'agost de 2019</small>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-md-4">
+                <div class="results__card">
+                    <span class="results__card__number d-none d-md-inline">2</span>
+                    <h5>Parc infantil de fusta per a totes les edats</h5>
+                    <div class="results__votes">
+                        <div class="results__points">16%</div>
+                        <div class="progress">
+                            <div class="d-flex" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-md-4">
+                <div class="results__card">
+                    <span class="results__card__number d-none d-md-inline">3</span>
+                    <h5>Mercat lliure de plàstic</h5>
+                    <div class="results__votes">
+                        <div class="results__points">15%</div>
+                        <div class="progress">
+                            <div class="d-flex" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-md-6 results-2017__execution">
+                <div class="results-2017__execution__block">
+                    <ol start="4" class="results-2017__descending-list">
+                        <li>Pistes volei platja en Altea (10%)</li>
+                        <li>Plantar arbres en la Plaça Europa (10%)</li>
+                        <li>Punts de recàrrega públics per a cotxes elèctrics (9%)</li>
+                    </ol>
+                    <hr class="my-3" aria-hidden="true" />
+                    <a href="{{ url('/archive/1') }}">
+                        <i class="far fa-chart-bar" aria-hidden="true"></i> Resultats complets de 2018
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="modal fade" id="expandedCalendar" tabindex="-1" role="dialog" aria-labelledby="expandedCalendarLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
