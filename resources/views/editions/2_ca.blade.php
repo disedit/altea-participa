@@ -82,7 +82,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Propostes</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>fins el 4</strong></div>
+                        <div class="calendar__days"><strong>fins el 20</strong></div>
                         <div class="calendar__month">octubre</div>
                     </div>
                 </div>
@@ -106,8 +106,8 @@
                 <div class="calendar">
                     <div class="calendar__heading">Avaluació</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
-                        <div class="calendar__month">octubre</div>
+                        <div class="calendar__days"><strong>4</strong> - <strong>18</strong></div>
+                        <div class="calendar__month">oct - nov</div>
                     </div>
                 </div>
             </div>
@@ -342,7 +342,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Propostes</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>fins el 4</strong></div>
+                                    <div class="calendar__days"><strong>fins el 20</strong></div>
                                     <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
@@ -368,8 +368,8 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Avaluació</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>4</strong> - <strong>25</strong></div>
-                                    <div class="calendar__month">octubre</div>
+                                    <div class="calendar__days"><strong>4</strong> - <strong>18</strong></div>
+                                    <div class="calendar__month">oct - nov</div>
                                 </div>
                             </div>
                         </div>
