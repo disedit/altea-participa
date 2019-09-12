@@ -52,7 +52,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Propuestas</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>hasta 20</strong></div>
+                        <div class="calendar__days"><strong>hasta 28</strong></div>
                         <div class="calendar__month">octubre</div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     <div class="calendar__heading">Evaluación</div>
                     <div class="calendar__dates">
                         <div class="calendar__days"><strong>4</strong> - <strong>18</strong></div>
-                        <div class="calendar__month">oct - nov</div>
+                        <div class="calendar__month">noviembre</div>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
     <h3 id="about-3">¿Qué vamos a decidir?</h3>
     <p class="about-block__highlight">
         <i class="far fa-question-circle"></i>
-        La ciudadanía decidirá qué <strong>tres propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión máxima de <strong>100.000€</strong>.
+        La ciudadanía decidirá qué <strong>propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión máxima de <strong>100.000€</strong>.
     </p>
 
     <h4 class="options-title">Propuestas presentadas</h4>
@@ -178,7 +178,7 @@
 
         <h4>¿Quién puede votar?</h4>
         <p>
-            Podrán votar en este proceso aquellas personas mayores de 16 años empadronadas en Altea, de acuerdo con el padrón en fecha del 30 de agosto de 2019.
+            Podrán votar en este proceso aquellas personas mayores de 16 años empadronadas en Altea, de acuerdo con el padrón en fecha del 30 de octubre de 2019.
         </p>
 
         <h4>¿Qué se votará?</h4>
@@ -291,7 +291,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Propuestas</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>hasta 20</strong></div>
+                                    <div class="calendar__days"><strong>hasta 28</strong></div>
                                     <div class="calendar__month">octubre</div>
                                 </div>
                             </div>
@@ -318,7 +318,7 @@
                                 <div class="calendar__heading">Evaluación</div>
                                 <div class="calendar__dates">
                                     <div class="calendar__days"><strong>4</strong> - <strong>18</strong></div>
-                                    <div class="calendar__month">oct - nov</div>
+                                    <div class="calendar__month">noviembre</div>
                                 </div>
                             </div>
                         </div>

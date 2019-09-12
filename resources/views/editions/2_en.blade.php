@@ -78,7 +78,7 @@
                 <div class="calendar">
                     <div class="calendar__heading">Proposals</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>until 20th</strong></div>
+                        <div class="calendar__days"><strong>until 28th</strong></div>
                         <div class="calendar__month">October</div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                     <div class="calendar__heading">Assessment</div>
                     <div class="calendar__dates">
                         <div class="calendar__days"><strong>4</strong> - <strong>18</strong></div>
-                        <div class="calendar__month">Oct - Nov</div>
+                        <div class="calendar__month">November</div>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
     <h3 id="about-3">What will be decided?</h3>
     <p class="about-block__highlight">
         <i class="far fa-question-circle"></i>
-        Citizens will decide which <strong>three projects they deem
+        Citizens will decide what <strong>projects they deem
         best for Altea</strong>, with a combined cost of up to <strong>€100,000</strong>.
     </p>
 
@@ -212,7 +212,7 @@
         <h4>Who can vote?</h4>
         <p>
             All citizens who are <strong>16 years of age or older and are
-            residents of Altea</strong>, as per the census on <strong>August 30th, 2019</strong>.
+            residents of Altea</strong>, as per the census on <strong>October 30th, 2019</strong>.
         </p>
 
         <h4>What will be voted on?</h4>
@@ -337,7 +337,7 @@
                             <div class="calendar">
                                 <div class="calendar__heading">Proposals</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>until 20th</strong></div>
+                                    <div class="calendar__days"><strong>until 28th</strong></div>
                                     <div class="calendar__month">October</div>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@
                                 <div class="calendar__heading">Assessment</div>
                                 <div class="calendar__dates">
                                     <div class="calendar__days"><strong>4</strong> - <strong>18</strong></div>
-                                    <div class="calendar__month">Oct - Nov</div>
+                                    <div class="calendar__month">November</div>
                                 </div>
                             </div>
                         </div>
