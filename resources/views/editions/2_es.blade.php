@@ -134,7 +134,7 @@
                 <div class="calendar calendar--red">
                     <div class="calendar__heading">Votación</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
+                        <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
                         <div class="calendar__month">diciembre</div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
 
         <h4>Inicio y fin de la votación</h4>
         <p>
-          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 2 de diciembre de 2019 y concluirá el día 15 a las 12 horas de la noche. Físicamente se podrá votar desde el día 2 al día 15 de diciembre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
+          Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 3 de diciembre de 2019 y concluirá el día 15 a las 12 horas de la noche. Físicamente se podrá votar desde el día 3 al día 16 de diciembre en las <a href="#voting-places" data-scroll>sedes habilitadas</a>, dentro del horario de apertura.
         </p>
 
         <h4>Resultado de la votación</h4>
@@ -383,7 +383,7 @@
                             <div class="calendar calendar--red">
                                 <div class="calendar__heading">Votación</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
+                                    <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
                                     <div class="calendar__month">diciembre</div>
                                 </div>
                             </div>

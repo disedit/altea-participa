@@ -164,7 +164,7 @@
                 <div class="calendar calendar--red">
                     <div class="calendar__heading">Poll</div>
                     <div class="calendar__dates">
-                        <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
+                        <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
                         <div class="calendar__month">December</div>
                     </div>
                 </div>
@@ -235,8 +235,8 @@
 
         <h4>Start and end of the vote</h4>
         <p>
-            On-line voting will open on December 2nd 2019 at midnight and will
-            close on December 15th at midnight. In-person voting will also be available
+            On-line voting will open on December 3rd 2019 at midnight and will
+            close on December 16th at midnight. In-person voting will also be available
             at selected <a href="#voting-places" data-scroll>polling stations</a>
             during the same days on their normal opening hours.
         </p>
@@ -436,7 +436,7 @@
                             <div class="calendar calendar--red">
                                 <div class="calendar__heading">Poll</div>
                                 <div class="calendar__dates">
-                                    <div class="calendar__days"><strong>2</strong> - <strong>15</strong></div>
+                                    <div class="calendar__days"><strong>3</strong> - <strong>16</strong></div>
                                     <div class="calendar__month">December</div>
                                 </div>
                             </div>
