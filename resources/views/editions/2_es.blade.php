@@ -161,9 +161,6 @@
         La ciudadanía decidirá qué <strong>propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión máxima de <strong>100.000€</strong>.
     </p>
 
-    <h4 class="options-title">Propuestas presentadas</h4>
-    [options]
-
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
 
