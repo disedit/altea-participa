@@ -254,6 +254,16 @@
     </div>
 </section>
 
+<section id="kit" aria-labelledby="about-6" class="about-block">
+    <h3 id="about-6">Kit Participa</h3>
+    <p>Des de Participació farem campanya perquè la gent d'Altea conega les propostes i vote la que més li agrade, però us animem que participeu i que creeu la vostra pròpia campanya. Sabem que no és fàcil, però us deixem ací un PDF que podeu descarregar amb tota la informació perquè construïu la campanya per a la vostra proposta.</p>
+     <p class="mb-0">
+        <a href="/docs/KitParticipa_VAL.pdf" class="about-block__read-more-link about-block__01-expand" role="button" aria-expanded="false" aria-controls="about-1-more" aria-labelledby="about-1">
+            <i class="far fa-file-alt fa-fw"></i> Descarrega el Kit Participa
+        </a>
+    </p>
+</section>
+
 <section id="archive" aria-labelledby="about-5" class="about-block about-block--last">
     <h3 id="about-5">Arxiu</h3>
     <div>
