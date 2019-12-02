@@ -195,6 +195,9 @@
         per al poble d’Altea</strong>, amb una inversió máxima de <strong>100.000€</strong>.
     </p>
 
+    <h4 class="options-title">Propostes presentades</h4>
+    [options]
+
     <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
 
