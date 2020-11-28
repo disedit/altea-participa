@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests;
-use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Edition;
 use App\Voter;
 use App\Report;
@@ -16,14 +15,15 @@ use App\Limit;
 class AdminController extends Controller
 {
     /**
-     * Anull a ballot
+     * Annul a ballot
      *
      * @return \Illuminate\Http\Response
      */
-    public function anullBallot(Request $request)
+    public function annulBallot(Request $request)
     {
 
-        if(config('participa.anonymous_voting') === true) abort(422, 'Anonymous voting is not disabed');
+        if (config('participa.anonymous_voting') === true)
+            abort(422, 'Anonymous voting is not disabed');
 
         $user = Auth::user();
         $edition = Edition::current();
@@ -31,33 +31,41 @@ class AdminController extends Controller
 
         $rules['SID'] = 'required|min:5';
 
-        if($confirm) {
+        if ($confirm) {
             $rules['reason'] = 'required';
         }
 
         $this->validate($request, $rules);
 
         /* Find the voter */
-        $SID = (config('participa.hashed_SIDs')) ? hash('sha256', $request->input('SID')) : $request->input('SID');
+        $SID = (config('participa.hashed_SIDs'))
+            ? hash('sha256', $request->input('SID'))
+            : $request->input('SID');
         $voter = Voter::findBySID($SID, $edition->id);
 
-        if(!$voter) {
-            return response()->json(['SID' => ['L\'identificador no s\'ha trobat al cens']], 422);
+        if (!$voter) {
+            return response()->json([
+                'SID' => ['L\'identificador no s\'ha trobat al cens']
+            ], 422);
         }
 
         /* Retreive ballot submitted by the voter */
         $ballot = $voter->ballot()->first();
 
-        if(!$ballot) {
-            return response()->json(['SID' => ['L\'identificador no ha emés cap vot.']], 422);
+        if (!$ballot) {
+            return response()->json([
+                'SID' => ['L\'identificador no ha emés cap vot.']
+            ], 422);
         }
 
-        if($ballot->by_user_id) {
-            return response()->json(['SID' => ['Aquesta papereta no es pot anul·lar perquè s\'ha emés de manera presencial.']], 422);
+        if ($ballot->by_user_id) {
+            return response()->json([
+                'SID' => ['Aquesta papereta no es pot anul·lar perquè s\'ha emés de manera presencial.']
+            ], 422);
         }
 
         /* Do not submit report and delete ballot if not double confirmed */
-        if(!$confirm) {
+        if (!$confirm) {
             return response()->json(['success' => true]);
         }
 
@@ -95,11 +103,11 @@ class AdminController extends Controller
         ]);
 
         $foundSIDs = Voter::select('SID')
-                    ->where('SID', 'like', '%' . $request->input('SID') . '%')
-                    ->where('edition_id', $edition->id)
-                    ->orderBy('SID', 'ASC')
-                    ->take(10)
-                    ->get();
+                          ->where('SID', 'like', '%' . $request->input('SID') . '%')
+                          ->where('edition_id', $edition->id)
+                          ->orderBy('SID', 'ASC')
+                          ->take(10)
+                          ->get();
 
         return response()->json($foundSIDs);
     }
@@ -117,7 +125,7 @@ class AdminController extends Controller
         $lastTally = cache('last_tally_finished_' . $edition->id);
         $nextTally = $lastTally + (60 * 30); // 30 minutes
 
-        if(time() > $nextTally || $request->get('force')) {
+        if (time() > $nextTally || $request->get('force')) {
             Artisan::call('results:cache');
             $output = Artisan::output();
             $integrity = stripos($output, 'Result integrity check failed');
@@ -157,17 +165,17 @@ class AdminController extends Controller
 
         $edition = Edition::current();
 
-        // Get anulled ballots and error reports
+        // Get annuled ballots and error reports
         $reports = $edition->reports()
-                    ->with('user')
-                    ->get()
-                    ->map(function ($item) {
-                        $item['type'] = 'report';
-                        $item['data'] = json_decode($item['attachment']);
-                        unset($item['attachment']);
-                        return $item;
-                    })
-                    ->toArray();
+                        ->with('user')
+                        ->get()
+                        ->map(function ($item) {
+                            $item['type'] = 'report';
+                            $item['data'] = json_decode($item['attachment']);
+                            unset($item['attachment']);
+                            return $item;
+                        })
+                        ->toArray();
 
         // Get IPs over limit
         $voteLimit = Limit::getReports($edition->id, 'vote');
@@ -175,10 +183,10 @@ class AdminController extends Controller
 
         // Combine all the info into one array and sort it by date
         $combined = collect([$reports, $voteLimit, $lookupLimit])
-                    ->collapse()
-                    ->sortByDesc(function($item) {
-                        return strtotime($item['created_at']);
-                    })->values()->all();
+                        ->collapse()
+                        ->sortByDesc(function ($item) {
+                            return strtotime($item['created_at']);
+                        })->values()->all();
 
         return response()->json(['reports' => $combined]);
     }

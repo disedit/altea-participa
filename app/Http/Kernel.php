@@ -15,7 +15,6 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \App\Http\Middleware\PreferredDomain::class
     ];
 
     /**
@@ -59,14 +58,11 @@ class Kernel extends HttpKernel
     protected $routeMiddleware = [
         'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'auth.api' => \App\Http\Middleware\ApiAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'cookies' => \App\Http\Middleware\EncryptCookies::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'language' => \App\Http\Middleware\Language::class,
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'jwt.auth' => \Tymon\JWTAuth\Middleware\GetUserFromToken::class,
-        'jwt.refresh' => \Tymon\JWTAuth\Middleware\RefreshToken::class
+        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class
     ];
 }

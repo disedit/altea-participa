@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use App\User;
+use Illuminate\Support\Str;
 
 class CreateAdmins extends Command
 {
@@ -42,15 +43,15 @@ class CreateAdmins extends Command
         $superadmin = $this->option('superadmin');
         $table = [];
 
-        foreach($users as $user){
+        foreach ($users as $user){
 
             // Check if user exists
-            if(User::where('username', $user)->count()) {
+            if (User::where('username', $user)->count()) {
                 $this->error('User \'' . $user . '\' could not be created: Username duplicate.');
                 continue;
             }
 
-            $randomPassword = str_random(12);
+            $randomPassword = Str::random(12);
             $isSuperadmin = ($superadmin) ? 1 : 0;
             $table[] = [$user, $randomPassword, $isSuperadmin];
 
@@ -58,6 +59,7 @@ class CreateAdmins extends Command
                 'name' => $user,
                 'username' => $user,
                 'password' => bcrypt($randomPassword),
+                'api_token' => Str::random(60),
                 'is_superadmin' => $isSuperadmin
             ]);
         }
