@@ -291,6 +291,10 @@
       width: 20%;
       flex-direction: column;
 
+      &.phase-25 {
+        width: 25%;
+      }
+
       &__path {
         display: none;
       }
