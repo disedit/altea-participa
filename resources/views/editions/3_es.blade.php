@@ -3,7 +3,7 @@
   <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" aria-hidden="true" />
 
   <p class="about-block__subtitle">
-      La ciudadanía decide directamente parte de las inversiones municipales con un presupuesto de 100.000€
+      La ciudadanía decide directamente parte de las inversiones municipales con un presupuesto de 120.000€
   </p>
 
   <p>

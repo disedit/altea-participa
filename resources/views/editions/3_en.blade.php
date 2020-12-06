@@ -4,7 +4,7 @@
 
   <p class="about-block__subtitle">
       Citizens have a direct say on part of the Council's investments
-      with a budget of up to €100,000
+      with a budget of up to €120,000
   </p>
 
   <p>

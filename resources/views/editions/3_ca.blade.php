@@ -4,7 +4,7 @@
 
   <p class="about-block__subtitle">
       La ciutadania decideix directament part de les inversions municipals
-      amb un pressupost de 100.000€
+      amb un pressupost de 120.000€
   </p>
 
   <p>
