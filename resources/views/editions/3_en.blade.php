@@ -189,7 +189,7 @@
   <p class="about-block__highlight">
       <i class="far fa-question-circle"></i>
       Citizens will decide what <strong>projects they deem
-      best for Altea</strong>, with a combined cost of up to <strong>€100,000</strong>.
+      best for Altea</strong>, with a combined cost of up to <strong>€120,000</strong>.
   </p>
 
   {{-- 
@@ -251,7 +251,7 @@
 <section id="kit" aria-labelledby="about-6" class="about-block">
   <h3 id="about-6">Kit Participa</h3>
   <p class="mb-0">
-      <a href="/docs/KitParticipa_CAS.pdf" class="about-block__read-more-link about-block__01-expand" role="button" aria-expanded="false" aria-controls="about-1-more" aria-labelledby="about-1">
+      <a href="/docs/KitParticipa_CAS.pdf" class="about-block__read-more-link" role="button" aria-expanded="false" aria-controls="about-1-more" aria-labelledby="about-1">
           <i class="far fa-file-alt fa-fw"></i> Download the Kit Participa
       </a>
   </p>
