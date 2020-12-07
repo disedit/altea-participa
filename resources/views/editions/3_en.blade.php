@@ -114,14 +114,14 @@
       <div class="phase__path mt-0">
           <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
       </div>
-      <!--
+
       <div class="phase">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Council</div>
                   <div class="calendar__dates">
                       <div class="calendar__days"><strong>21</strong></div>
-                      <div class="calendar__month">November</div>
+                      <div class="calendar__month">January</div>
                   </div>
               </div>
           </div>
@@ -136,7 +136,7 @@
       <div class="phase__path">
           <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
       </div>
-    -->
+
       <div class="phase phase-25">
           <div class="phase__calendar">
               <div class="calendar">
@@ -150,7 +150,7 @@
           <div class="phase__text">
               <p>
                   The ten selected projects will be presented and exhibited
-                  in an open event organised by the Council on January 29th.
+                  in an open event organised by the Council on January 25th.
               </p>
           </div>
       </div>
@@ -428,7 +428,7 @@
                           <p>
                               <strong>Information campaign</strong>: The citizens or associations
                               that have submitted proposals will have the chance to present them
-                              in an open session organised by the Council on January 29th. In this event,
+                              in an open session organised by the Council on January 25th. In this event,
                               more details about the vote will also be explained, such as the dates or
                               different ways to vote.
                           </p>

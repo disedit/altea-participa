@@ -77,7 +77,7 @@
   <h3 id="about-2">La ciutadania decideix</h3>
 
   <div class="phases phases-compact">
-      <div class="phase phase-25">
+      <div class="phase">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Propostes</div>
@@ -101,7 +101,7 @@
           <img src="/images/path.svg" alt="" />
       </div>
 
-      <div class="phase phase-25">
+      <div class="phase">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Avaluació</div>
@@ -120,14 +120,13 @@
           <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
       </div>
 
-      <!--
       <div class="phase">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Consell</div>
                   <div class="calendar__dates">
                       <div class="calendar__days"><strong>21</strong></div>
-                      <div class="calendar__month">novembre</div>
+                      <div class="calendar__month">gener</div>
                   </div>
               </div>
           </div>
@@ -139,9 +138,8 @@
       <div class="phase__path">
           <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
       </div>
-      -->
 
-      <div class="phase phase-25">
+      <div class="phase">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Campanya</div>
@@ -154,7 +152,7 @@
           <div class="phase__text">
               <p>
                   S'exposaran i explicaran els 10 projectes que seran objecte de
-                  votació, període i llocs on votar en un acte públic el 29 de gener.
+                  votació, període i llocs on votar en un acte públic el 25 de gener.
               </p>
           </div>
       </div>
@@ -163,7 +161,7 @@
           <img src="/images/path.svg" alt="" />
       </div>
 
-      <div class="phase phase-25">
+      <div class="phase">
           <div class="phase__calendar">
               <div class="calendar calendar--red">
                   <div class="calendar__heading">Votació</div>
@@ -399,14 +397,14 @@
                   <div class="phase__path mt-0">
                       <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
                   </div>
-                  <!--
+
                   <div class="phase">
                       <div class="phase__calendar">
                           <div class="calendar">
                               <div class="calendar__heading">Consell</div>
                               <div class="calendar__dates">
                                   <div class="calendar__days"><strong>21</strong></div>
-                                  <div class="calendar__month">novembre</div>
+                                  <div class="calendar__month">gener</div>
                               </div>
                           </div>
                       </div>
@@ -423,7 +421,7 @@
                   <div class="phase__path">
                       <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
                   </div>
-                  -->
+
                   <div class="phase">
                       <div class="phase__calendar">
                           <div class="calendar">
@@ -436,7 +434,7 @@
                       </div>
                       <div class="phase__text">
                           <p>
-                              <strong>Campanya informativa</strong>: En un acte públic (29 de gener) es
+                              <strong>Campanya informativa</strong>: En un acte públic (25 de gener) es
                               presentaran els 10 projectes que eixen a votació, convidant a la persona
                               o assoació que ha fet la seua proposta a que la presente i explique. Al
                               mateix acte públic, s'informarà de les dates de votació i dels llocs

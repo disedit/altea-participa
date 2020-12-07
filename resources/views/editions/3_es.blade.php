@@ -89,14 +89,13 @@
           <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
       </div>
 
-      <!--
       <div class="phase">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Consejo</div>
                   <div class="calendar__dates">
                       <div class="calendar__days"><strong>21</strong></div>
-                      <div class="calendar__month">noviembre</div>
+                      <div class="calendar__month">enero</div>
                   </div>
               </div>
           </div>
@@ -108,7 +107,6 @@
       <div class="phase__path">
           <img src="/images/path-2.svg" alt="" style="margin-left: 168px;" />
       </div>
-    -->
 
       <div class="phase phase-25">
           <div class="phase__calendar">
@@ -122,7 +120,7 @@
           </div>
           <div class="phase__text">
               <p>
-                  Se expondrán y explicarán los 10 proyectos objeto de votación, periodo y lugares donde votar en un acto público el 29 de enero.
+                  Se expondrán y explicarán los 10 proyectos objeto de votación, periodo y lugares donde votar en un acto público el 25 de enero.
               </p>
           </div>
       </div>
@@ -385,7 +383,7 @@
                       </div>
                       <div class="phase__text">
                           <p>
-                              <strong>Campaña informativa</strong>: En un acto público (29 de enero), se presentarán los 10 proyectos que saldrán a votación, invitando a la persona o asociación que ha hecho suya la propuesta a que la presente y la explique. En el mismo acto público, se informará de las fechas de votación y de los sitios habilitados.
+                              <strong>Campaña informativa</strong>: En un acto público (25 de enero), se presentarán los 10 proyectos que saldrán a votación, invitando a la persona o asociación que ha hecho suya la propuesta a que la presente y la explique. En el mismo acto público, se informará de las fechas de votación y de los sitios habilitados.
                           </p>
                       </div>
                   </div>
