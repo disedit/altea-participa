@@ -150,7 +150,7 @@
           <div class="phase__text">
               <p>
                   The ten selected projects will be presented and exhibited
-                  in an open event organised by the Council on January 25th.
+                  in an <strong>open event organised by the Council on January 25th</strong>.
               </p>
           </div>
       </div>

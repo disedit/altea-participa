@@ -152,7 +152,7 @@
           <div class="phase__text">
               <p>
                   S'exposaran i explicaran els 10 projectes que seran objecte de
-                  votació, període i llocs on votar en un acte públic el 25 de gener.
+                  votació, període i llocs on votar en un <strong>acte públic el 25 de gener</strong>.
               </p>
           </div>
       </div>

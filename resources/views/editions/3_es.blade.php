@@ -120,7 +120,7 @@
           </div>
           <div class="phase__text">
               <p>
-                  Se expondrán y explicarán los 10 proyectos objeto de votación, periodo y lugares donde votar en un acto público el 25 de enero.
+                  Se expondrán y explicarán los 10 proyectos objeto de votación, periodo y lugares donde votar en un <strong>acto público el 25 de enero</strong>.
               </p>
           </div>
       </div>
