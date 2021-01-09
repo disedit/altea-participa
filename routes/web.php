@@ -23,6 +23,9 @@ Route::get('/lang/{language}', 'LanguageController@switchLanguage');
 Route::redirect('/es', '/lang/es/?home', 301);
 Route::redirect('/en', '/lang/en/?home', 301);
 
+// Associacions
+Route::get('/associacions', 'AssociationsController@index');
+
 Auth::routes();
 
 /* Archive */
