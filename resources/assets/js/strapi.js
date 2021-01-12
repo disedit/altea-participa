@@ -1,6 +1,10 @@
 export default class Strapi {
   constructor () {
-    this.apiURL = 'https://cms.alteaparticipa.com/';
+    this.apiURL = 'https://cms.alteaparticipa.es/';
+  }
+
+  getAssociationCategories () {
+    return this._call('get', 'association-categories');
   }
 
   _call(type, url, data) {
