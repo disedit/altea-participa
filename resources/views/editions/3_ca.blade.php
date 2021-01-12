@@ -125,7 +125,7 @@
               <div class="calendar">
                   <div class="calendar__heading">Consell</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>21</strong></div>
+                      <div class="calendar__days"><strong>25</strong></div>
                       <div class="calendar__month">gener</div>
                   </div>
               </div>
@@ -152,7 +152,7 @@
           <div class="phase__text">
               <p>
                   S'exposaran i explicaran els 10 projectes que seran objecte de
-                  votació, període i llocs on votar en un <strong>acte públic el 25 de gener</strong>.
+                  votació, període i llocs on votar en un <strong>acte públic</strong>.
               </p>
           </div>
       </div>
@@ -403,7 +403,7 @@
                           <div class="calendar">
                               <div class="calendar__heading">Consell</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>21</strong></div>
+                                  <div class="calendar__days"><strong>25</strong></div>
                                   <div class="calendar__month">gener</div>
                               </div>
                           </div>
@@ -434,7 +434,7 @@
                       </div>
                       <div class="phase__text">
                           <p>
-                              <strong>Campanya informativa</strong>: En un acte públic (25 de gener) es
+                              <strong>Campanya informativa</strong>: En un acte públic es
                               presentaran els 10 projectes que eixen a votació, convidant a la persona
                               o assoació que ha fet la seua proposta a que la presente i explique. Al
                               mateix acte públic, s'informarà de les dates de votació i dels llocs
