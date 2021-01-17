@@ -1,5 +1,9 @@
 @extends('layouts.public')
 
+@section('page-header')
+    <h2><span>Associacions</span></h2>
+@endsection
+
 @section('content')
 <div>
     <div aria-hidden="true" class="d-sm-none footer-languages languages">

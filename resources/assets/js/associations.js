@@ -1,5 +1,4 @@
-require('./bootstrap');
-
+window.axios = require('axios');
 window.Vue = require('vue');
 
 import VueRouter from 'vue-router';
@@ -14,7 +13,7 @@ import Catalan from './language/ca.js';
 import Spanish from './language/es.js';
 import English from './language/en.js';
 
-window.Participa = new Strapi();
+window.Strapi = new Strapi();
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
