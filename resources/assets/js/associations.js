@@ -8,6 +8,7 @@ import Strapi from './strapi';
 
 import AssociationsLayout from './components/associations/AssociationsLayout';
 import AssociationsHome from './components/associations/AssociationsHome';
+import AssociationsDetail from './components/associations/AssociationsDetail';
 
 import Catalan from './language/ca.js';
 import Spanish from './language/es.js';
@@ -38,7 +39,8 @@ const router = new VueRouter({
       path: '/associacions',
       component: AssociationsLayout,
       children: [
-        { path: '', component: AssociationsHome },
+        { name: 'home', path: '', component: AssociationsHome },
+        { name: 'detail', path: ':slug', component: AssociationsDetail }
       ],
     },
   ],

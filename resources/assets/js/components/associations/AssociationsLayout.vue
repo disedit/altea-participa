@@ -1,13 +1,21 @@
 <template>
-  <div>
-    Layout
+  <transition :name="transitionName" mode="out-in">
     <router-view></router-view>
-  </div>
+  </transition>
 </template>
 
 <script>
   export default {
-    
+    data () {
+      return {
+        transitionName: 'slide-left'
+      }
+    },
+
+    beforeRouteUpdate (to, from, next) {
+      this.transitionName = (to.name === 'detail') ? 'slide-left' : 'slide-right'
+      next();
+    },
   }
 </script>
 
