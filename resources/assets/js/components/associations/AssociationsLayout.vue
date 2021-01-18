@@ -1,24 +1,5 @@
 <template>
-  <transition :name="transitionName" mode="out-in">
+  <div>
     <router-view></router-view>
-  </transition>
+  </div>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        transitionName: 'slide-left'
-      }
-    },
-
-    beforeRouteUpdate (to, from, next) {
-      this.transitionName = (to.name === 'detail') ? 'slide-left' : 'slide-right'
-      next();
-    },
-  }
-</script>
-
-<style lang="scss" scoped>
-
-</style>
