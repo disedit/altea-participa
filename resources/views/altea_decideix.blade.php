@@ -2,6 +2,7 @@
 
 @section('page-header')
     <h2><span>Altea Decideix</span></h2>
+    <p class="vote-info__intro"><span>En aquest apartat trobareu tots els processos participatius que estan en marxa a l'Ajuntament d'Altea.</span></p>
 @endsection
 
 @section('content')
