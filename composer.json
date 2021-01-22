@@ -8,7 +8,7 @@
         "php": ">=7.2",
         "astrotomic/laravel-translatable": "^11.8.1",
         "laravel-notification-channels/messagebird": "^2.1",
-        "laravel/framework": "7.0.*",
+        "laravel/framework": "7.30.*",
         "laravel/tinker": "~2.4",
         "laravel/ui": "^2.0",
         "simplesoftwareio/simple-qrcode": "^1.5",
