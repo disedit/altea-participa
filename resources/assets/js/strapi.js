@@ -11,6 +11,10 @@ export default class Strapi {
     return this._call('get', `associations/?slug=${slug}`);
   }
 
+  getOpenProcesses () {
+    return this._call('get', 'altea-decideix')
+  }
+
   _call(type, url, data) {
     return new Promise((resolve, reject) => {
       axios[type](this.apiURL + url, data).then(response => {
