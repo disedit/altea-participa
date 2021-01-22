@@ -6,7 +6,7 @@
       :aria-expanded="expanded ? 'true' : 'false'"
       :aria-controls="`detail-${category.cat_slug}`"
     >
-      <i :class="`category__icon far fa-${category.icon}`" />
+      <i :class="`category__icon far fa-fw fa-${category.icon}`" />
       <span class="category__name">{{ category.cat_name }}</span>
       <img v-if="category.logo" :src="cms + category.logo.url" :alt="category.logo.alternativeText" class="category__logo" />
       <i :class="['category__chev', 'far', { 'fa-chevron-down': expanded, 'fa-chevron-up': !expanded }]" />
@@ -15,7 +15,7 @@
       <div
         v-show="expanded"
         :id="`detail-${category.cat_slug}`" 
-        aria-labelledby="`title-${category.cat_slug}`"
+        :aria-labelledby="`title-${category.cat_slug}`"
       >
         <div v-if="category.description" class="category__description">
           <vue-markdown>{{ category.description }}</vue-markdown>
@@ -109,6 +109,10 @@
     &__name {
       text-align: left;
       margin-right: auto;
+    }
+
+    &__icon {
+      margin-right: .5rem;
     }
 
     &__chev {
