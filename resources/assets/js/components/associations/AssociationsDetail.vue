@@ -13,7 +13,7 @@
           </span>
         </div>
         <div class="association__logo" v-if="association.logo">
-          <img :src="cms + association.logo.url" alt="" />
+          <img :src="cms + association.logo.url" :alt="association.logo.alternativeText" />
         </div>
         <h3>{{ association.name }}</h3>
         <ul class="association__details">
@@ -31,15 +31,15 @@
           </li>
           <li v-if="association.facebook">
             <i class="fab fa-fw fa-facebook" title="Facebook" />
-            <a :href="`https://facebook.com/${association.facebook}`" target="_blank" rel="noopener">{{ association.facebook }}</a>
+            <a :href="`https://facebook.com/${association.facebook}`" target="_blank" rel="noopener">{{ associationFacebook }}</a>
           </li>
           <li v-if="association.twitter">
             <i class="fab fa-fw fa-twitter" title="Twitter" />
-            <a :href="`https://twitter.com/${association.twitter}`" target="_blank" rel="noopener">{{ association.twitter }}</a>
+            <a :href="`https://twitter.com/${association.twitter}`" target="_blank" rel="noopener">@{{ association.twitter }}</a>
           </li>
           <li v-if="association.instagram">
             <i class="fab fa-fw fa-instagram" title="Instagram" />
-            <a :href="`https://instagram.com/${association.instagram}`" target="_blank" rel="noopener">{{ association.instagram }}</a>
+            <a :href="`https://instagram.com/${association.instagram}`" target="_blank" rel="noopener">@{{ association.instagram }}</a>
           </li>
           <li v-if="association.youtube">
             <i class="fab fa-fw fa-youtube" title="Youtube" />
@@ -50,10 +50,10 @@
             <a :href="association.website" target="_blank" rel="noopener">{{ association.website }}</a>
           </li>
         </ul>
-        <div class="association__description">
-          {{ association.description }}
+        <div v-if="association.description" class="association__description">
+          <vue-markdown>{{ association.description }}</vue-markdown>
         </div>
-        <div class="association__video" v-if="association.video">
+        <div v-if="association.video" class="association__video">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe
               class="embed-responsive-item"
@@ -71,7 +71,7 @@
           <ul>
             <li v-for="photo in association.photos" :key="photo.id">
               <div class="embed-responsive embed-responsive-1by1">
-                <img class="embed-responsive-item" :src="cms + photo.formats.small.url" alt="" />
+                <img class="embed-responsive-item" :src="cms + photo.formats.small.url" :alt="photo.alternativeText" />
               </div>
             </li>
           </ul>
@@ -85,11 +85,24 @@
 </template>
 
 <script>
+  import VueMarkdown from 'vue-markdown'
+
   export default {
+    components: {
+      VueMarkdown
+    },
+
     data () {
       return {
         association: null,
-        cms: 'https://cms.alteaparticipa.es/'
+        cms: GlobalConfig.cms_url
+      }
+    },
+
+    computed: {
+      associationFacebook () {
+        if (!this.association) return ''
+        return this.association.facebook.replace(/https?:\/\/(www.)?facebook.com\//g, '')
       }
     },
 
@@ -151,14 +164,22 @@
 
     h3 {
       font-weight: 900;
-      font-size: 2.4rem;
+      font-size: 1.75rem;
     }
 
     &__logo {
-      float: right;
+      background: #fff;
+      border: 1px rgba($brand-primary, .2) solid;
+      border-radius: .5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
 
       img {
-        max-width: 200px;
+        display: block;
+        max-width: 80%;
+        max-height: 6rem;
+        margin: 0 auto;
+        object-fit: contain;
       }
     }
 
@@ -167,7 +188,23 @@
       padding: 0;
 
       li {
+        display: flex;
         list-style: none;
+        align-items: center;
+        line-height: 1;
+        margin: .75rem 0;
+
+        i {
+          flex-shrink: 0;
+          margin-right: .25rem;
+        }
+
+        a {
+          overflow-wrap: break-word;
+          word-wrap: break-word;
+          word-break: break-word;
+          hyphens: auto;
+        }
       }
     }
 
@@ -214,5 +251,23 @@
     font-size: 2rem;
     text-align: center;
     padding: 1rem;
+  }
+
+  @media (min-width: 992px) {
+    .association {
+      h3 {
+        font-size: 2.4rem;
+      }
+
+      &__logo {
+        float: right;
+
+        img {
+          width: 100%;
+          max-width: 10rem;
+          max-height: 7rem;
+        }
+      }
+    }
   }
 </style>

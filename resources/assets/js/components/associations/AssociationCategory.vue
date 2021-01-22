@@ -7,30 +7,42 @@
       :aria-controls="`detail-${category.cat_slug}`"
     >
       <i :class="`category__icon far fa-${category.icon}`" />
-      {{ category.cat_name }}
+      <span class="category__name">{{ category.cat_name }}</span>
+      <img v-if="category.logo" :src="cms + category.logo.url" :alt="category.logo.alternativeText" class="category__logo" />
       <i :class="['category__chev', 'far', { 'fa-chevron-down': expanded, 'fa-chevron-up': !expanded }]" />
     </button>
-    <div
-      v-show="expanded"
-      :id="`detail-${category.cat_slug}`" 
-      aria-labelledby="`title-${category.cat_slug}`"
-    >
-      <ul v-if="category.associations.length > 0" class="associations">
-        <li v-for="association in category.associations" :key="association.id">
-          <router-link :to="`/associacions/${association.slug}`">
-            {{ association.name }}
-          </router-link>
-        </li>
-      </ul>
-      <div v-else class="associations associations--empty">
-        No hi ha associacions en aquesta categoria
+    <transition name="slide">
+      <div
+        v-show="expanded"
+        :id="`detail-${category.cat_slug}`" 
+        aria-labelledby="`title-${category.cat_slug}`"
+      >
+        <div v-if="category.description" class="category__description">
+          <vue-markdown>{{ category.description }}</vue-markdown>
+        </div>
+        <ul v-if="category.associations.length > 0" class="associations">
+          <li v-for="association in category.associations" :key="association.id">
+            <router-link :to="`/associacions/${association.slug}`">
+              {{ association.name }}
+            </router-link>
+          </li>
+        </ul>
+        <div v-else class="associations associations--empty">
+          No hi ha associacions en aquesta categoria
+        </div>
       </div>
-    </div>
+    </transition>
   </li>
 </template>
 
 <script>
+  import VueMarkdown from 'vue-markdown'
+
   export default {
+    components: {
+      VueMarkdown
+    },
+
     props: {
       category: {
         type: Object,
@@ -40,7 +52,8 @@
 
     data () {
       return {
-        expanded: false
+        expanded: false,
+        cms: GlobalConfig.cms_url
       }
     }
   }
@@ -72,6 +85,7 @@
         font-size: 1.5rem;
         align-items: center;
         border-radius: .5rem;
+        transition: .25s ease;
 
         &[aria-expanded='true'] {
           border-radius: .5rem .5rem 0 0;
@@ -92,9 +106,24 @@
       }
     }
 
+    &__name {
+      text-align: left;
+      margin-right: auto;
+    }
+
     &__chev {
-      margin-left: auto;
       font-size: 1rem;
+    }
+
+    &__logo {
+      height: 2.25rem;
+      margin-right: 1rem;
+    }
+
+    &__description {
+      font-size: .85rem;
+      border-bottom: 1px rgba($brand-primary, .2) solid;
+      padding: .75rem 1rem;
     }
   }
 
