@@ -13,15 +13,15 @@
 <meta name="theme-color" content="{{ config('participa.primary_color', '#2980b9') }}">
 <meta property="fb:app_id" content="{{ config('participa.facebook_app_id', '180444172483336') }}" />
 <meta property="og:title" content="@yield('title'){{ config('app.name', 'Participa') }}" />
-<meta property="og:image" content="{{ secure_asset('images/thumbnail.png') }}"/>
+<meta property="og:image" content="@hasSection('thumbnail')@yield('thumbnail')@else{{ secure_asset('images/thumbnail.png') }}@endif"/>
 <meta property="og:site_name" content="{{ config('app.name', 'Participa') }}"/>
 <meta property="og:locale" content="@lang('participa.facebook_locale')"/>
 <meta property="og:type" content="website"/>
-<meta property="og:description" content="@lang('participa.description')"/>
+<meta property="og:description" content="@hasSection('description') @yield('description') @else @lang('participa.description') @endif"/>
 <meta property="og:url" content="{{ URL::current() }}" />
 <meta property="twitter:site" content="@{{ config('participa.twitter', 'infoDisedit') }}"/>
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="@yield('title'){{ config('app.name', 'Participa') }}"/>
-<meta property="twitter:description" content="@lang('participa.description')"/>
-<meta property="twitter:image" content="{{ secure_asset('images/thumbnail.png') }}"/>
+<meta property="twitter:description" content="@hasSection('description') @yield('description') @else @lang('participa.description') @endif"/>
+<meta property="twitter:image" content="@hasSection('thumbnail')@yield('thumbnail')@else{{ secure_asset('images/thumbnail.png') }}@endif"/>
 <meta property="twitter:url" content="{{ URL::current() }}"/>

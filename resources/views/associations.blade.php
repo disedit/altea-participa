@@ -1,5 +1,8 @@
 @extends('layouts.public')
 
+@section('title', 'Associacions - ')
+{{-- @section('thumbnail', '') --}}
+
 @section('page-header')
     <h2><span>Associacions</span></h2>
 @endsection

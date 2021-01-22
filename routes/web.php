@@ -24,7 +24,7 @@ Route::redirect('/es', '/lang/es/?home', 301);
 Route::redirect('/en', '/lang/en/?home', 301);
 
 // Associacions
-Route::view('/associacions/{assoc?}', 'associacions');
+Route::view('/associacions/{assoc?}', 'associations');
 
 // Altea decideix
 Route::view('/altea-decideix', 'altea_decideix');
