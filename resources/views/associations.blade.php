@@ -5,12 +5,7 @@
 @endsection
 
 @section('content')
-<div>
-    <div aria-hidden="true" class="d-sm-none footer-languages languages">
-        @include('components/languages')
-    </div>
     <div id="app"></div>
-</div>
 @endsection
 
 @push('scripts')
@@ -20,7 +15,8 @@
             'app_name' => config('app.name'),
             'name' => config('participa.municipality', 'Any City'),
             'contact_email' => config('participa.contact_email', 'participa@disedit.com'),
-            'url' => config('app.url', '')
+            'url' => config('app.url', ''),
+            'cms_url' => 'https://cms.alteaparticipa.es/'
         ];
     @endphp
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

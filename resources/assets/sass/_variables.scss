@@ -28,7 +28,7 @@ $brand-warning:             $orange;
 $brand-danger:              $red;
 $brand-inverse:             $gray-dark;
 $brand-primary-gradient:    $blue;
-
+$card-bg: lighten($brand-primary, 65%);
 
 // Options
 //

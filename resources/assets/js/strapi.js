@@ -7,6 +7,10 @@ export default class Strapi {
     return this._call('get', 'association-categories');
   }
 
+  getAssociation (slug) {
+    return this._call('get', `associations/?slug=${slug}`);
+  }
+
   _call(type, url, data) {
     return new Promise((resolve, reject) => {
       axios[type](this.apiURL + url, data).then(response => {
