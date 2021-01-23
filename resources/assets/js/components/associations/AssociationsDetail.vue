@@ -2,7 +2,7 @@
   <div>
     <router-link to="/associacions" class="back-button">
       <i class="far fa-chevron-left" />
-      Torna a les associacions
+      {{ $t('associations.back') }}
     </router-link>
     <article v-if="association" class="association">
       <div class="association__wrapper">
@@ -31,7 +31,7 @@
           </li>
           <li v-if="association.facebook">
             <i class="fab fa-fw fa-facebook" title="Facebook" />
-            <a :href="`https://facebook.com/${association.facebook}`" target="_blank" rel="noopener">{{ associationFacebook }}</a>
+            <a :href="`${association.facebook}`" target="_blank" rel="noopener">{{ associationFacebook }}</a>
           </li>
           <li v-if="association.twitter">
             <i class="fab fa-fw fa-twitter" title="Twitter" />
@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="association__gallery" aria-hidden="true" v-if="association.photos.length > 0">
-          <h4>Galeria de fotos</h4>
+          <h4>{{ $t('associations.gallery') }}</h4>
           <ul>
             <li v-for="photo in association.photos" :key="photo.id">
               <div class="embed-responsive embed-responsive-1by1">

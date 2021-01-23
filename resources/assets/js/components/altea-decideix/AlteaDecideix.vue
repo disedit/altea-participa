@@ -1,6 +1,6 @@
 <template>
   <section class="altea-decideix">
-    <h3>Processos oberts</h3>
+    <h3>{{ $t('altea_decideix.open') }}</h3>
     <ul class="processes open">
       <li v-for="process in open_processes" :key="process.id">
         <a :href="process.url" target="_blank" rel="noopener" class="process">

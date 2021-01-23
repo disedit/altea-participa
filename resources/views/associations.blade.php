@@ -1,10 +1,10 @@
 @extends('layouts.public')
 
-@section('title', 'Associacions - ')
+@section('title', __('sections.associations') . ' - ')
 {{-- @section('thumbnail', '') --}}
 
 @section('page-header')
-    <h2><span>Associacions</span></h2>
+    <h2><span>@lang('sections.associations')</span></h2>
 @endsection
 
 @section('content')

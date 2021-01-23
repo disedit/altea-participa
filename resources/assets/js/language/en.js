@@ -61,5 +61,13 @@ export default {
     select_button: 'Select this option',
     deselect_button: 'Deselect this option',
     dismiss_button: 'Close'
+  },
+  associations: {
+    back: 'Back to associations',
+    gallery: 'Photo gallery'
+  },
+  altea_decideix: {
+    open: 'Open processes',
+    archived: 'Archived processes'
   }
 };

@@ -1,11 +1,11 @@
 @extends('layouts.public')
 
-@section('title', 'Altea Decideix - ')
+@section('title', __('sections.altea_decideix') . ' - ')
 {{-- @section('thumbnail', '') --}}
 
 @section('page-header')
-    <h2><span>Altea Decideix</span></h2>
-    <p class="vote-info__intro d-block"><span>En aquest apartat trobareu tots els processos participatius que estan en marxa a l'Ajuntament d'Altea.</span></p>
+    <h2><span>@lang('sections.altea_decideix')</span></h2>
+    <p class="vote-info__intro d-block"><span>@lang('sections.altea_decideix_description')</span></p>
 @endsection
 
 @section('content')

@@ -61,5 +61,13 @@ export default {
     select_button: 'Selecciona aquesta opció',
     deselect_button: 'Deselecciona aquesta opció',
     dismiss_button: 'Tanca'
+  },
+  associations: {
+    back: 'Torna a les associacions',
+    gallery: 'Galeria de fotos'
+  },
+  altea_decideix: {
+    open: 'Processos oberts',
+    archived: 'Procesoss passats'
   }
 };
