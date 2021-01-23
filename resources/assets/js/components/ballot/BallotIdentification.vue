@@ -1,6 +1,6 @@
 <template>
   <div class="ballot-identification ballot-box">
-    <h3><i class="fa fa-user" aria-hidden="true"></i> {{ $t('booth_identification.heading') }}</h3>
+    <h3><i class="far fa-user" aria-hidden="true"></i> {{ $t('booth_identification.heading') }}</h3>
     <p class="subheading" v-html="$t('booth_identification.subheading', { min_age, municipality })"></p>
     <text-input
       name="identification"
@@ -17,8 +17,8 @@
     <hr aria-hidden="true" />
 
     <button :class="'btn btn-vote btn-primary btn-lg btn-block' + disabled" type="submit">
-      <i v-if="disabled" class="fa fa-spinner-third fa-spin" aria-hidden="true"></i>
-      <i v-else class="fa fa-bullhorn" aria-hidden="true"></i>
+      <i v-if="disabled" class="far fa-spinner-third fa-spin" aria-hidden="true"></i>
+      <i v-else class="far fa-bullhorn" aria-hidden="true"></i>
       {{ $t('booth_identification.button') }}
     </button>
 

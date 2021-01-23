@@ -64,12 +64,12 @@
 
   .category {
     &__item {
-    background: $card-bg;
-    color: $brand-primary;
-    list-style: none;
-    margin: 0;
-    border-radius: .5rem;
-    margin-bottom: 1rem;
+      background: $card-bg;
+      color: $brand-primary;
+      list-style: none;
+      margin: 0;
+      border-radius: .5rem;
+      margin-bottom: 1rem;
 
       button {
         position: relative;
@@ -86,6 +86,7 @@
         align-items: center;
         border-radius: .5rem;
         transition: .25s ease;
+        line-height: 1;
 
         &[aria-expanded='true'] {
           border-radius: .5rem .5rem 0 0;
@@ -121,13 +122,17 @@
 
     &__logo {
       height: 2.25rem;
-      margin-right: 1rem;
+      margin: -.5rem 1rem -.5rem;
     }
 
     &__description {
       font-size: .85rem;
       border-bottom: 1px rgba($brand-primary, .2) solid;
       padding: .75rem 1rem;
+
+      &::v-deep p:last-child {
+        margin: 0;
+      }
     }
   }
 
@@ -155,7 +160,7 @@
           background: lighten($brand-primary, 57%);
         }
 
-        &:active {
+        &:focus {
           outline: 0;
           box-shadow: 0 0 0 4px rgba($brand-primary, .5);
         }

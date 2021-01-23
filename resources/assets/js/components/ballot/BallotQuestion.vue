@@ -89,7 +89,7 @@
 
   h2 {
     font-size: 1.65rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .description {

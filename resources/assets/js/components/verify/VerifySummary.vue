@@ -72,7 +72,7 @@
 
     h3 {
       font-size: 1.2rem;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .options {

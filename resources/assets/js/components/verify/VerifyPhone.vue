@@ -2,7 +2,7 @@
   <div class="verify-phone">
     <form @submit.prevent="requestSMS">
       <h3>
-        <i class="fa fa-mobile-alt" aria-hidden="true"></i> {{ $t('verify_phone.heading') }}
+        <i class="far fa-mobile-alt" aria-hidden="true"></i> {{ $t('verify_phone.heading') }}
       </h3>
 
       <p class="subheading" id="phoneDescription">{{ $t('verify_phone.phone_subheading') }}</p>

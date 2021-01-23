@@ -16,13 +16,13 @@
                         @if(isset($edition))
                             <p class="vote-info__action">
                                 @if($edition->isOpen())
-                                    <a data-scroll href="#content" class="big-button"><i aria-hidden="true" class="fa fa-bullhorn"></i> @lang('participa.vote')</a>
+                                    <a data-scroll href="#content" class="big-button"><i aria-hidden="true" class="far fa-bullhorn"></i> @lang('participa.vote')</a>
                                 @elseif($edition->inProposalPhase())
-                                    <a href="{{ secure_url('propose') }}" class="big-button"><i aria-hidden="true" class="fa fa-comment"></i> @lang('participa.propose_cta')</a>
+                                    <a href="{{ secure_url('propose') }}" class="big-button"><i aria-hidden="true" class="far fa-comment"></i> @lang('participa.propose_cta')</a>
                                 @elseif($edition->isPending())
-                                    <a data-scroll href="#content" class="big-button"><i aria-hidden="true" class="fa fa-info-circle"></i> @lang('participa.more_info')</a>
+                                    <a data-scroll href="#content" class="big-button"><i aria-hidden="true" class="far fa-info-circle"></i> @lang('participa.more_info')</a>
                                 @elseif($edition->resultsPublished())
-                                    <a data-scroll href="#content" class="big-button"><i aria-hidden="true" class="fa fa-chart-bar"></i> @lang('participa.results')</a>
+                                    <a data-scroll href="#content" class="big-button"><i aria-hidden="true" class="far fa-chart-bar"></i> @lang('participa.results')</a>
                                 @endif
                             </p>
                         @endif

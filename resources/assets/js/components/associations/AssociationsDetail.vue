@@ -47,7 +47,7 @@
           </li>
           <li v-if="association.website">
             <i class="far fa-fw fa-globe" /> <span class="sr-only">Pàgina web</span>
-            <a :href="association.website" target="_blank" rel="noopener">{{ association.website }}</a>
+            <a :href="association.website" target="_blank" rel="noopener">{{ associationWebsite }}</a>
           </li>
         </ul>
         <div v-if="association.description" class="association__description">
@@ -79,7 +79,7 @@
       </div>
     </article>
     <div v-else class="loading">
-      <i class="fas fa-circle-notch fa-spin"></i> Carregant
+      <i class="far fa-circle-notch fa-spin"></i> Carregant
     </div>
   </div>
 </template>
@@ -103,6 +103,11 @@
       associationFacebook () {
         if (!this.association) return ''
         return this.association.facebook.replace(/https?:\/\/(www.)?facebook.com\//g, '')
+      },
+
+      associationWebsite () {
+        if (!this.association) return ''
+        return this.association.website.replace(/https?:\/\/(www.)?/g, '')
       }
     },
 
