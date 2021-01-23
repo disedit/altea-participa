@@ -71,7 +71,8 @@
           <ul>
             <li v-for="photo in association.photos" :key="photo.id">
               <div class="embed-responsive embed-responsive-1by1">
-                <img class="embed-responsive-item" :src="cms + photo.formats.small.url" :alt="photo.alternativeText" />
+                <img v-if="'small' in photo.formats" class="embed-responsive-item" :src="cms + photo.formats.small.url" :alt="photo.alternativeText" />
+                <img v-else class="embed-responsive-item" :src="cms + photo.url" :alt="photo.alternativeText" />
               </div>
             </li>
           </ul>
