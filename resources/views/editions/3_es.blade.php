@@ -11,7 +11,7 @@
   </p>
 
   <p>
-      Ya empezamos <a href="{{ url('/archive/2017') }}">hace tres años</a> con este formato de presupuestos participativos y en esta segunda edición, el proceso de participación será mucho más amplio, dinámico y fácil.
+      Ya empezamos <a href="{{ url('/archive/2017') }}">hace tres años</a> con este formato de presupuestos participativos y en esta cuarta edición, el proceso de participación será mucho más amplio, dinámico y fácil.
   </p>
 
   <p>

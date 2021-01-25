@@ -18,7 +18,7 @@
 
   <p>
       Ja vam començar <a href="{{ url('/archive/2017') }}">fa tres anys</a> amb aquest format de
-      pressupostos participatius i en aquesta segona edicio, el procés de
+      pressupostos participatius i en aquesta quarta edicio, el procés de
       participaciò serà molt més ampli, dinàmic i fàcil.
   </p>
 

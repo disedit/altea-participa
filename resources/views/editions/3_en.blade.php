@@ -17,7 +17,7 @@
 
   <p>
       It started <a href="{{ url('/archive/2017') }}">three years ago</a> with this format
-      of participatory budgeting and for this second edition, the process
+      of participatory budgeting and for this fourth edition, the process
       will be more dynamic, broader in reach, and easier to take a part in.
   </p>
 
