@@ -42,10 +42,8 @@ return [
     |--------------------------------------------------------------------------
     */
     'nav' => [
-      'calendar' => 'Calendari',
-      'proposals' => 'Propostes',
-      'info' => 'Informació',
-      'archive' => 'Arxiu'
+      'budget' => 'Pressupostos participatius',
+      'decideix' => 'Altea Decideix',
     ],
 
     /*

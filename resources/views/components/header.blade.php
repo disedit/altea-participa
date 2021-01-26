@@ -2,8 +2,6 @@
     $logoUrl = (config('participa.navbar') == 'colorful')
                     ? config('participa.logo_dark')
                     : config('participa.logo');
-
-    $prelink = url('/about');
 @endphp
 
 <nav class="navbar fixed-top navbar-expand-lg
@@ -25,16 +23,10 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-main-links" role="presentation">
         <li class="nav-item">
-          <a href="{{ $prelink }}#calendar" data-scroll>@lang('participa.nav.calendar')</a>
+          <a href="/" data-scroll>@lang('participa.nav.budget')</a>
         </li>
         <li class="nav-item">
-          <a href="{{ $prelink }}#proposals" data-scroll>@lang('participa.nav.proposals')</a>
-        </li>
-        <li class="nav-item">
-          <a href="{{ $prelink }}#info" data-scroll>@lang('participa.nav.info')</a>
-        </li>
-        <li class="nav-item">
-          <a href="{{ $prelink }}#archive" data-scroll>@lang('participa.nav.archive')</a>
+          <a href="/altea-decideix" data-scroll>@lang('participa.nav.decideix')</a>
         </li>
     </ul>
 

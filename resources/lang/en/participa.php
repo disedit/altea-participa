@@ -42,10 +42,8 @@ return [
     |--------------------------------------------------------------------------
     */
     'nav' => [
-      'calendar' => 'Calendar',
-      'proposals' => 'Proposals',
-      'info' => 'Information',
-      'archive' => 'Archive'
+      'budget' => 'Participatory budgets',
+      'decideix' => 'Altea Decides',
     ],
 
     /*
