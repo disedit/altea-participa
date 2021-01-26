@@ -80,7 +80,7 @@
       </div>
     </article>
     <div v-else class="loading">
-      <i class="far fa-circle-notch fa-spin"></i> Carregant
+      <i class="far fa-circle-notch fa-spin"></i> {{ $t('global.loading') }}
     </div>
   </div>
 </template>

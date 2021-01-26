@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('title', __('sections.altea_decideix') . ' - ')
-{{-- @section('thumbnail', '') --}}
+@section('thumbnail', '/images/thumbnail-decideix.jpg')
 
 @section('page-header')
     <h2><span>@lang('sections.altea_decideix')</span></h2>

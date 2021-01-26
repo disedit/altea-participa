@@ -19,7 +19,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:description" content="@hasSection('description') @yield('description') @else @lang('participa.description') @endif"/>
 <meta property="og:url" content="{{ URL::current() }}" />
-<meta property="twitter:site" content="@{{ config('participa.twitter', 'infoDisedit') }}"/>
+<meta property="twitter:site" content="{{ '@' . config('participa.twitter', 'infoDisedit') }}"/>
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="@yield('title'){{ config('app.name', 'Participa') }}"/>
 <meta property="twitter:description" content="@hasSection('description') @yield('description') @else @lang('participa.description') @endif"/>

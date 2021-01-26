@@ -1,33 +1,70 @@
 <template>
   <section class="altea-decideix">
     <h3>{{ $t('altea_decideix.open') }}</h3>
-    <ul class="processes open">
-      <li v-for="process in open_processes" :key="process.id">
-        <a :href="process.url" target="_blank" rel="noopener" class="process">
-          <div v-if="process.flair" class="process__flair"><span>{{ process.flair }}</span> <i class="far fa-external-link" /></div>
-          <h4 class="process__title">{{ process.title }}</h4>
-          <div v-if="process.thumbnail" class="process__thumbnail">
-            <img :src="cms + process.thumbnail.formats.small.url" :alt="process.thumbnail.alternativeText" />
-          </div>
-          <p v-if="process.description" class="process__description">{{ process.description }}</p>
-        </a>
-      </li>
+    <ul v-if="open_processes.length" class="processes open">
+      <altea-decideix-item v-for="process in open_processes" :key="process.id" :process="process" />
     </ul>
+    <div v-else-if="loading === 'open'" class="loading">
+      <i class="far fa-circle-notch fa-spin"></i> {{ $t('global.loading') }}
+    </div>
+    <div v-else class="empty">
+      {{ $t('altea_decideix.no_open_processes') }}
+    </div>
+
+    <button
+      @click="show_archived = !show_archived"
+      aria-controls="archive"
+      :aria-expanded="show_archived ? 'true' : 'false'"
+      class="archived-button">
+      <i :class="['far', { 'fa-chevron-down': !show_archived, 'fa-chevron-up': show_archived }]" />
+      <h3 id="archive-title">{{ $t('altea_decideix.archived') }}</h3>
+    </button>
+
+    <div v-if="show_archived" id="archive" aria-labelledby="archive-title">
+      <ul v-if="archived_processes.length" class="processes open">
+        <altea-decideix-item v-for="process in archived_processes" :key="process.id" :process="process" />
+      </ul>
+      <div v-else-if="loading === 'archived'" class="loading">
+        <i class="far fa-circle-notch fa-spin"></i> {{ $t('global.loading') }}
+      </div>
+      <div v-else class="empty">
+        {{ $t('altea_decideix.no_archived_processes') }}
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
+  import AlteaDecideixItem from './AlteaDecideixItem.vue'
+
   export default {
+    components: {
+      AlteaDecideixItem,
+    },
+
     data () {
       return {
         open_processes: [],
         archived_processes: [],
-        cms: GlobalConfig.cms_url
+        show_archived: false,
+        loading: false
+      }
+    },
+
+    watch: {
+      async show_archived (show) {
+        if (show && !this.archived_processes.length) {
+          this.loading = 'archived'
+          this.archived_processes = await Strapi.getArchivedProcesses()
+          this.loading = false
+        }
       }
     },
 
     async mounted () {
+      this.loading = 'open'
       this.open_processes = await Strapi.getOpenProcesses()
+      this.loading = false
     }
   }
 </script>
@@ -46,79 +83,57 @@
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
 
     li {
       padding: 0;
       margin: 0;
     }
+  }
 
-    .process {
-      display: block;
-      background: $card-bg;
-      color: $brand-primary;
-      list-style: none;
+  .archived-button {
+    display: flex;
+    align-items: center;
+    color: $gray-light;
+    padding: 0.4rem 1rem 0.3rem 1rem;
+    margin: 3.5rem 0 1.5rem 0;
+    border: 1px $gray-light solid;
+    border-radius: 2rem;
+    transform: 0.25s ease-in;
+    background: $white;
+    color: $gray-light;
+
+    h3 {
+      color: inherit;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: bold;
       margin: 0;
-      border-radius: .5rem;
-      padding: 1rem;
-      transition: .2s ease;
-
-      &:hover {
-        text-decoration: none;
-        background: lighten($brand-primary, 60%);
-        transform: translateY(-.25rem);
-        box-shadow: 0 0 0 2px $brand-primary;
-
-        img {
-          opacity: .75;
-          mix-blend-mode: multiply;
-        }
-
-        .far {
-          opacity: 1;
-        }
-      }
-
-      &__flair {
-        display: flex;
-        margin: -1rem 0 1rem 0;
-        align-items: center;
-
-        span {
-          display: inline-block;
-          background: $brand-primary;
-          color: $white;
-          font-weight: bold;
-          border-radius: 0 0 .5rem .5rem;
-          padding: .5rem 1rem;
-        }
-
-        .far {
-          margin-left: auto;
-          opacity: .5;
-          transition: .2s ease;
-        }
-      }
-
-      &__title {
-        font-weight: 900;
-      }
-
-      &__thumbnail {
-        margin: .75rem -1rem;
-
-        img {
-          width: 100%;
-          max-height: 200px;
-          object-fit: cover;
-          transition: .2s ease;
-          mix-blend-mode: multiply;
-        }
-      }
-
-      &__description {
-        font-size: .85rem;
-        margin: 0;
-      }
     }
+
+    .far {
+      margin-right: .5rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background: lighten($gray-light, 10%);
+      border-color: lighten($gray-light, 10%);
+      color: $white;
+    }
+
+    &:focus,
+    &:active {
+      outline: 0;
+      box-shadow: 0 0 0 4px lighten($gray-light, 50%);
+    }
+  }
+
+  .loading,
+  .empty {
+    color: $gray-mid;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
   }
 </style>

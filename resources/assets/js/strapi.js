@@ -1,3 +1,5 @@
+import qs from 'qs'
+
 export default class Strapi {
   constructor () {
     this.apiURL = 'https://cms.alteaparticipa.es/';
@@ -12,7 +14,26 @@ export default class Strapi {
   }
 
   getOpenProcesses () {
-    return this._call('get', 'altea-decideix')
+    const d = new Date()
+    const date = d.getFullYear() + '-' + ('0' + (d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)
+    const query = qs.stringify({ 
+      _where: [
+        { archived_null: true },
+        { _or: [{ autoarchive_null: true }, { autoarchive_gte: date }] },
+      ]
+    })
+    return this._call('get', 'altea-decideix/?' + query)
+  }
+
+  getArchivedProcesses () {
+    const d = new Date()
+    const date = d.getFullYear() + '-' + ('0' + (d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)
+    const query = qs.stringify({ 
+      _where: [
+        { _or: [{ archived: true }, { autoarchive_lt: date }] },
+      ]
+    })
+    return this._call('get', 'altea-decideix/?' + query)
   }
 
   _call(type, url, data) {

@@ -1,6 +1,7 @@
 export default {
   global: {
-    tweet: 'He votado en qué proyectos quiero que @EsAltea invierta'
+    tweet: 'He votado en qué proyectos quiero que @EsAltea invierta',
+    loading: 'Cargando...'
   },
   option: {
     cost: 'Coste',
@@ -68,6 +69,8 @@ export default {
   },
   altea_decideix: {
     open: 'Procesos abiertos',
-    archived: 'Procesos pasados'
+    archived: 'Procesos archivados',
+    no_open_processes: 'No hi ha processos oberts en aquests moments',
+    no_archived_processes: 'No hi ha processos arxivats encara'
   }
 };
