@@ -236,7 +236,6 @@
     &:hover {
       text-decoration: none;
       box-shadow: 0px 6px 25px -7px rgba(0, 0, 0, 0.5);
-      transform: translateY(-3px);
       background: lighten($brand-primary, 65%);
       border-color: lighten($brand-primary, 10%);
     }
@@ -256,6 +255,7 @@
 .option.card {
   border: 0;
   margin: 0;
+  background: #fff;
 }
 
 .calendars {

@@ -42,7 +42,7 @@
                 $part = explode(",", $pic);
             @endphp
 
-            <img src="{{ $part[0] }}" alt="{{ $part[1] or 'Imatge' }}" />
+            <img src="{{ $part[0] }}" alt="{{ $part[1] ?? 'Imatge' }}" />
         @endforeach
     </div>
 @endif
