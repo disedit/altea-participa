@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Ballot extends Model
 {
@@ -88,7 +89,7 @@ class Ballot extends Model
      */
     public function createRef()
     {
-        $newRef = str_random(10);
+        $newRef = Str::random(10);
         $exists = Self::where('ref', $newRef)->count();
         if($exists) return $this->createRef();
         return $newRef;
