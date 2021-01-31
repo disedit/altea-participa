@@ -27,7 +27,7 @@
 
       <div v-if="option.pictures" class="option-pictures">
         <div v-for="(picture, key) in pictures" :key="key">
-          <img :src="picture[0]" alt="Imatge" />
+          <img :src="picture[0]" alt="Imatge" width="100%" />
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@
     <div class="phone">
       <div :class="{ 'input': true, 'focused': focused, 'has-warning': warning }">
         <label :for="name">
-          <i v-if="icon" :class="'fa fa-' + icon" aria-hidden="true"></i>
+          <i v-if="icon" :class="'far fa-' + icon" aria-hidden="true"></i>
           {{label}}
           <i v-if="tooltip" class="far fa-question-circle input-tooltip" v-b-tooltip.hover :title="tooltip"></i>
         </label>

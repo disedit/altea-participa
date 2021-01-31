@@ -1,7 +1,7 @@
 <template>
   <span class="icon">
     <i v-if="loading" class="far fa-spinner-third fa-spin" aria-hidden="true"></i>
-    <i v-else :class="'fa fa-' + icon" aria-hidden="true"></i>
+    <i v-else :class="'far fa-' + icon" aria-hidden="true"></i>
   </span>
 </template>
 

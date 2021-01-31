@@ -17,7 +17,7 @@
       </div>
 
       <a href="#" class="expand" @click.prevent="expand">
-        <i :class="'fa fa-chevron-' + arrowDirection" aria-hidden="true"></i>
+        <i :class="'far fa-chevron-' + arrowDirection" aria-hidden="true"></i>
       </a>
     </div>
   </div>
