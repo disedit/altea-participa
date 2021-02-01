@@ -34,7 +34,7 @@ return [
     'close' => 'Close',
     'ordered_randomly' => 'Ordered randomly',
     'SMS_notification' => 'Your code to vote is :code',
-    'video_id' => 'g6j6FG7eddE',
+    'video_id' => 'ShC-cBHF38M',
 
     /*
     |--------------------------------------------------------------------------
