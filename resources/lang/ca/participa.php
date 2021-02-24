@@ -44,6 +44,7 @@ return [
     'nav' => [
       'budget' => 'Pressupostos participatius',
       'decideix' => 'Altea Decideix',
+      'associations' => 'Associacions'
     ],
 
     /*

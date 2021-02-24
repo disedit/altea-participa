@@ -26,6 +26,9 @@
           <a href="/" data-scroll>@lang('participa.nav.budget')</a>
         </li>
         <li class="nav-item">
+          <a href="/associacions" data-scroll>@lang('participa.nav.associations')</a>
+        </li>
+        <li class="nav-item">
           <a href="/altea-decideix" data-scroll>@lang('participa.nav.decideix')</a>
         </li>
     </ul>
