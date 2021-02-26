@@ -11,6 +11,7 @@
             <i :class="`far fa-${association.category.icon}`" /> 
             {{ association.category.cat_name }}
           </span>
+          <img :src="cms + association.category.logo.url" :alt="association.category.logo.alternativeText" />
         </div>
         <div class="association__logo" v-if="association.logo">
           <img :src="cms + association.logo.url" :alt="association.logo.alternativeText" />
@@ -155,6 +156,7 @@
     }
 
     &__category {
+      display: flex;
       margin-top: -1rem;
       margin-bottom: 1rem;
 
@@ -165,6 +167,12 @@
         display: inline-block;
         padding: .5rem 1rem;
         border-radius: 0 0 .5rem .5rem;
+      }
+
+      img {
+        margin-left: auto;
+        height: 2rem;
+        margin-top: .5rem;
       }
     }
 
