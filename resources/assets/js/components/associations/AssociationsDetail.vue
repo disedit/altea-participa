@@ -51,8 +51,8 @@
             <a :href="association.website" target="_blank" rel="noopener">{{ associationWebsite }}</a>
           </li>
         </ul>
-        <div v-if="association.description" class="association__description">
-          <vue-markdown>{{ association.description }}</vue-markdown>
+        <div v-if="associationDescription" class="association__description">
+          <vue-markdown>{{ associationDescription }}</vue-markdown>
         </div>
         <div v-if="association.video" class="association__video">
           <div class="embed-responsive embed-responsive-16by9">
@@ -110,6 +110,17 @@
       associationWebsite () {
         if (!this.association) return ''
         return this.association.website.replace(/https?:\/\/(www.)?/g, '')
+      },
+
+      associationDescription () {
+        const { locale } = GlobalConfig
+        const fields = {
+          ca: 'description',
+          es: 'description_es',
+          en: 'description_en'
+        }
+
+        return this.association[fields[locale]]
       }
     },
 
