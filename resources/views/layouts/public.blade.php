@@ -41,6 +41,7 @@
         @include('components/voteinfo', ['inPerson' => $inPerson])
     @show
 
+    @hasSection('content')
     <main class="main-background" id="content">
         <div class="container main-container">
             @isset($isArchive)
@@ -50,6 +51,7 @@
             @yield('content')
         </div>
     </main>
+    @endif
 
     @section('footer')
         <div class="footer-background">

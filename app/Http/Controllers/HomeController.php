@@ -28,24 +28,31 @@ class HomeController extends Controller
     }
 
     /**
-     * Determine what page to show on the frontpage.
+     * Homepage
      *
      * @return \Illuminate\View\View
      */
     public function index(Request $request)
     {
+        $this->checkEditionExists();
+
+        $edition = $this->edition;
+        $pastEditions = Edition::pastEditions();
+
+        return view('homepage', compact('edition', 'pastEditions'));
+    }
+
+    /**
+     * Determine what page to show on the participa frontpage.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function participa(Request $request)
+    {
         $now = time();
         $edition = $this->edition;
         $pastEditions = Edition::pastEditions();
         $forceOpen = $request->get('force_open');
-
-        if (!$edition) {
-            $message = 'Create your first edition by running
-                <pre>php artisan edition:new</pre>
-                or create a fake one to test: <pre>php artisan db:seed</pre>';
-
-            return view('errors.503', compact('message'));
-        }
 
         // If within voting window dates, show voting booth
         if ($edition->isOpen() || $forceOpen) {
@@ -147,5 +154,16 @@ class HomeController extends Controller
         $ip = \App\Limit::ip();
 
         return view('ip_address')->withIp($ip);
+    }
+
+    private function checkEditionExists()
+    {
+        if (!$this->edition) {
+            $message = 'Create your first edition by running
+                <pre>php artisan edition:new</pre>
+                or create a fake one to test: <pre>php artisan db:seed</pre>';
+
+            return view('errors.503', compact('message'));
+        }
     }
 }

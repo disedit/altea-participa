@@ -143,6 +143,32 @@ class Edition extends Model
     }
 
     /**
+     * Determine the phase of the vote
+     *
+     * @return boolean
+     */
+    public function phase()
+    {
+        if ($this->inProposalPhase()) {
+            return 'proposals';
+        }
+
+        if ($this->isOpen()) {
+            return 'vote';
+        }
+
+        if ($this->isAwaitingResults()) {
+            return 'awaiting-results';
+        }
+
+        if ($this->resultsPublished()) {
+            return 'results';
+        }
+
+        return 'prevote';
+    }
+
+    /**
      * Determine if current edition is open for voting or not
      *
      * @return boolean

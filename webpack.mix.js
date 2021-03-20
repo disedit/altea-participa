@@ -15,6 +15,7 @@ let mix = require('laravel-mix');
 mix.js('resources/assets/js/app.js', 'public/js')
    .js('resources/assets/js/common.js', 'public/js')
    .js('resources/assets/js/admin.js', 'public/js')
+   .js('resources/assets/js/homepage.js', 'public/js')
    .js('resources/assets/js/associations.js', 'public/js')
    .js('resources/assets/js/altea-decideix.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
