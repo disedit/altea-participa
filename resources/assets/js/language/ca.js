@@ -64,10 +64,14 @@ export default {
     dismiss_button: 'Tanca'
   },
   associations: {
+    title: 'Associacions',
+    description: 'Directori de totes les associacions registrades a Altea',
     back: 'Torna a les associacions',
     gallery: 'Galeria de fotos'
   },
   altea_decideix: {
+    title: 'Altea Decideix',
+    description: 'Tots els processos participatius que estan en marxaa l\'Ajuntament d\'Altea',
     open: 'Processos oberts',
     archived: 'Procesoss arxivats',
     no_open_processes: 'No hi ha processos oberts en aquests moments',

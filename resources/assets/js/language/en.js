@@ -64,13 +64,17 @@ export default {
     dismiss_button: 'Close'
   },
   associations: {
+    title: 'Associations',
+    description: 'Directory of all associations registered in Altea',
     back: 'Back to associations',
     gallery: 'Photo gallery'
   },
   altea_decideix: {
+    title: 'Altea Decides',
+    description: 'All ongoing participatory processes at the Council of Altea',
     open: 'Open processes',
     archived: 'Archived processes',
-    no_open_processes: 'No hi ha processos oberts en aquests moments',
-    no_archived_processes: 'No hi ha processos arxivats encara'
+    no_open_processes: 'No open processes at this moment',
+    no_archived_processes: 'No archived processes yet'
   }
 };

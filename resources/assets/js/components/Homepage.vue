@@ -95,6 +95,7 @@
 
       &:hover {
         transform: translateY(-.25rem);
+        color: $brand-primary;
       }
 
       & > a {
@@ -114,6 +115,28 @@
 
       h2 {
         font-weight: 900;
+      }
+
+      p {
+        opacity: .5;
+        font-size: 1.15rem;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .homepage {
+      &__grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "participa"
+          "assocs"
+          "decideix"
+          "social";
+        grid-template-rows: auto;
+        gap: 1.25rem;
+        margin: 2rem 0;
       }
     }
   }

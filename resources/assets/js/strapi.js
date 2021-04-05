@@ -9,6 +9,10 @@ export default class Strapi {
     return this._call('get', 'association-categories');
   }
 
+  getAssociations (limit) {
+    return this._call('get', `associations/?_limit=${limit}`);
+  }
+
   getAssociation (slug) {
     return this._call('get', `associations/?slug=${slug}`);
   }

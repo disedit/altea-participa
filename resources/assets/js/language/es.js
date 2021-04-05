@@ -64,10 +64,14 @@ export default {
     dismiss_button: 'Cierra'
   },
   associations: {
+    title: 'Asociaciones',
+    description: 'Directorio de todas las asociaciones registradas en Altea',
     back: 'Volver a las asociaciones',
     gallery: 'Galería de fotos'
   },
   altea_decideix: {
+    title: 'Altea Decide',
+    description: 'Todos los procesos participativos que están en marcha en el Ayuntamiento de Altea',
     open: 'Procesos abiertos',
     archived: 'Procesos archivados',
     no_open_processes: 'No hi ha processos oberts en aquests moments',

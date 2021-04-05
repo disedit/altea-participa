@@ -19,12 +19,22 @@
         'participa' => [
           'title' => $edition->name,
           'description' => $edition->description,
-          'phase' => $edition->phase(),
+          // TODO
+          // 'phase' => $edition->phase(),
+          // 'button' => 'Resultats',
+          // 'date' => [
+          //  'start_day' => $startDay,
+          //  'end_day' => $endDay,
+          //  'start_month' => $startMonth,
+          //  'end_month' => $endMonth
+          // Meanwhile...
+          'phase' => 'Votació',
+          'button' => 'Resultats',
           'date' => [
-            'start_day' => $startDay,
-            'end_day' => $endDay,
-            'start_month' => $startMonth,
-            'end_month' => $endMonth
+            'start_day' => '1',
+            'end_day' => '14',
+            'start_month' => 'febrer',
+            'end_month' => 'febrer'
           ]
         ]
       ];
