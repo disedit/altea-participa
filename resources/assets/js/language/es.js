@@ -73,7 +73,7 @@ export default {
   },
   altea_decideix: {
     title: 'Altea Decide',
-    description: 'Todos los procesos participativos que están en marcha en el Ayuntamiento de Altea',
+    description: 'Consulta todos los procesos participativos que están en marcha en el Ayuntamiento de Altea',
     open: 'Procesos abiertos',
     archived: 'Procesos archivados',
     no_open_processes: 'No hi ha processos oberts en aquests moments',

@@ -73,7 +73,7 @@ export default {
   },
   altea_decideix: {
     title: 'Altea Decides',
-    description: 'All ongoing participatory processes at the Council of Altea',
+    description: 'See all ongoing participatory processes at the Council of Altea',
     open: 'Open processes',
     archived: 'Archived processes',
     no_open_processes: 'No open processes at this moment',
