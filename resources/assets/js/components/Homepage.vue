@@ -44,7 +44,7 @@
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-    padding-top: 6rem;
+    padding-top: 10rem;
     padding-bottom: 4rem;
     align-items: center;
     justify-content: center;

@@ -13,8 +13,8 @@
 
 @if(config('participa.twitter'))
     <li class="nav-item">
-        <a href="https://twitter.com/{{ config('participa.twitter') }}" target="_blank" rel="noopener" aria-label="Twitter">
-            <i class="fab fa-twitter" aria-hidden="true"></i> {{ '@' . config('participa.twitter') }}
+        <a href="https://instagram.com/alteaparticipa" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
     </li>
 @endif
