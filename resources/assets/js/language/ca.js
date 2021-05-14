@@ -67,7 +67,9 @@ export default {
     title: 'Associacions',
     description: 'Directori de totes les associacions registrades a Altea',
     back: 'Torna a les associacions',
-    gallery: 'Galeria de fotos'
+    gallery: 'Galeria de fotos',
+    no_assocs: 'No hi ha associacions en aquesta categoria',
+    docs: 'Documents'
   },
   altea_decideix: {
     title: 'Altea Decideix',

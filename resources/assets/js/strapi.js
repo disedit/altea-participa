@@ -9,6 +9,10 @@ export default class Strapi {
     return this._call('get', 'association-categories');
   }
 
+  getAssociationDocuments () {
+    return this._call('get', 'associacions-documents/?_sort=title:ASC');
+  }
+
   getAssociations (limit) {
     return this._call('get', `associations/?_limit=${limit}`);
   }

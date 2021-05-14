@@ -8,15 +8,19 @@
     <div v-else-if="loading" class="loading">
       <i class="far fa-circle-notch fa-spin"></i> {{ $t('global.loading') }}
     </div>
+
+    <associations-docs /> 
   </div>
 </template>
 
 <script>
   import AssociationCategory from './AssociationCategory.vue';
+  import AssociationsDocs from './AssociationsDocs.vue';
 
   export default {
     components: {
-      AssociationCategory
+      AssociationCategory,
+      AssociationsDocs
     },
 
     data () {

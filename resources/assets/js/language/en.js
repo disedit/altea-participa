@@ -67,7 +67,9 @@ export default {
     title: 'Associations',
     description: 'Directory of all associations registered in Altea',
     back: 'Back to associations',
-    gallery: 'Photo gallery'
+    gallery: 'Photo gallery',
+    no_assocs: 'No associations in this category yet',
+    docs: 'Documents'
   },
   altea_decideix: {
     title: 'Altea Decides',

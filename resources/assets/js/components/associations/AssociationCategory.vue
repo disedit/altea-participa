@@ -28,7 +28,7 @@
           </li>
         </ul>
         <div v-else class="associations associations--empty">
-          No hi ha associacions en aquesta categoria
+          {{ $t('associations.no_assocs') }}
         </div>
       </div>
     </transition>
