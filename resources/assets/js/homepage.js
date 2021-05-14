@@ -3,6 +3,7 @@ window.Vue = require('vue');
 
 import VueI18n from 'vue-i18n';
 import Strapi from './strapi';
+import Participa from './api';
 
 import Homepage from './components/Homepage';
 
@@ -11,6 +12,7 @@ import Spanish from './language/es.js';
 import English from './language/en.js';
 
 window.Strapi = new Strapi();
+window.Participa = new Participa();
 
 Vue.use(VueI18n);
 

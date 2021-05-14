@@ -3,7 +3,7 @@
     <a href="/associacions">
       <h2>{{ $t('associations.title') }}</h2>
       <p>{{ $t('associations.description') }}</p>
-      <div class="assocs__wall">
+      <div class="assocs__wall mt-auto">
         <ul>
           <li v-for="assoc in assocs" :key="assoc.id">
             {{ assoc.name }}
@@ -23,7 +23,7 @@
     },
 
     async mounted () {
-      this.assocs = await Strapi.getAssociations(20);
+      this.assocs = await Strapi.getAssociations(30);
     }
   }
 </script>
@@ -34,9 +34,18 @@
   .assocs {
     overflow: hidden;
 
+    a {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2, p {
+      color: $orange;
+    }
+
     &__wall {
       overflow: hidden;
-      opacity: .5;
+      opacity: .75;
       position: relative;
       width: 200%;
       transition: 2s ease;
@@ -60,13 +69,13 @@
 
       li {
         display: inline;
-        background: mix($brand-primary, $white, 10%);
+        background: mix($orange, $white, 20%);
         margin: .5rem .5rem 0 0;
         padding: .25rem .5rem;
         border-radius: .25rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        color: mix($brand-primary, $black, 80%);
+        color: mix($orange, $black, 90%);
       }
     }
 

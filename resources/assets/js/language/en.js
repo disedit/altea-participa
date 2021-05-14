@@ -76,5 +76,13 @@ export default {
     archived: 'Archived processes',
     no_open_processes: 'No open processes at this moment',
     no_archived_processes: 'No archived processes yet'
+  },
+  altea_millora: {
+    title: 'Altea improves',
+    description: 'If you think there is something to improve in Altea, drop us a picture and a message explaining what needs to be improved'
+  },
+  altea_news: {
+    title: 'News',
+    more: 'More stories'
   }
 };

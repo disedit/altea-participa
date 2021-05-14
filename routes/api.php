@@ -32,3 +32,6 @@ Route::post('/id_lookup', 'API\AdminController@lookUp')->middleware('auth:api');
 Route::post('/unblock', 'API\AdminController@unblock')->middleware('auth:api');
 Route::get('/results', 'API\AdminController@results')->middleware('auth:api');
 Route::get('/reports', 'API\AdminController@reports')->middleware('auth:api');
+
+/* News */
+Route::get('/stories', 'API\NewsController@index');

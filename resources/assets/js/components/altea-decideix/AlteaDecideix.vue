@@ -46,7 +46,7 @@
       return {
         open_processes: [],
         archived_processes: [],
-        show_archived: false,
+        show_archived: true,
         loading: false
       }
     },
@@ -64,6 +64,7 @@
     async mounted () {
       this.loading = 'open'
       this.open_processes = await Strapi.getOpenProcesses()
+      this.archived_processes = await Strapi.getArchivedProcesses()
       this.loading = false
     }
   }

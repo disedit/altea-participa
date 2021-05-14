@@ -4,9 +4,9 @@
       <i class="fab fa-facebook mr-2" />
       @AlteaParticipa
     </a>
-    <a href="https://twitter.com/EsAltea" class="twitter">
-      <i class="fab fa-twitter mr-2" />
-      @EsAltea
+    <a href="https://www.instagram.com/alteaparticipa/" class="instagram">
+      <i class="fab fa-instagram mr-2" />
+      @AlteaParticipa
     </a>
   </article>
 </template>
@@ -36,12 +36,14 @@
       &.facebook {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        color: #1877F2;
       }
 
-      &.twitter {
+      &.instagram {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-top: 1px mix($brand-primary, $white, 10%) solid;
+        color: #E1306C;
       }
     }
   }

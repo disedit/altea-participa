@@ -76,5 +76,13 @@ export default {
     archived: 'Procesoss arxivats',
     no_open_processes: 'No hi ha processos oberts en aquests moments',
     no_archived_processes: 'No hi ha processos arxivats encara'
+  },
+  altea_millora: {
+    title: 'Altea millora',
+    description: 'Si consideres que s’ha de millorar en alguna cosa a Altea, envia’ns la teua fotografia i un missatge explicant allò que cal millorar'
+  },
+  altea_news: {
+    title: 'Notícies',
+    more: 'Més notícies'
   }
 };
