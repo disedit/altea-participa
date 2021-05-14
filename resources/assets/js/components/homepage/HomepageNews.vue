@@ -84,7 +84,7 @@
 
     &-thumbnail {
       margin-right: 1rem;
-      max-width: 200px;
+      width: 200px;
       flex-shrink: 0;
       align-self: stretch;
       display: flex;
@@ -122,5 +122,23 @@
     text-align: center;
     font-size: 2rem;
     color: $gray-light;
+    padding: 1rem;
+  }
+
+  @media (max-width: 992px) {
+    .story {
+      flex-direction: column;
+
+      &-thumbnail {
+        margin-right: 0;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .loading {
+      font-size: 1.25rem;
+    }
   }
 </style>

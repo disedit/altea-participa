@@ -153,8 +153,8 @@
           "assocs"
           "decideix"
           "millora"
-          "social"
-          "news";
+          "news"
+          "social";
         grid-template-rows: auto;
         gap: 1.25rem;
         margin: 2rem 0;
