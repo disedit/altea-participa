@@ -1,12 +1,12 @@
 <template>
   <li>
-    <a :href="process.url" target="_blank" rel="noopener" class="process">
-      <div v-if="process.flair" class="process__flair"><span>{{ process.flair }}</span> <i class="far fa-external-link" /></div>
-      <h4 class="process__title">{{ process.title }}</h4>
+    <a :href="url" target="_blank" rel="noopener" class="process">
+      <div v-if="flair" class="process__flair"><span>{{ flair }}</span> <i class="far fa-external-link" /></div>
+      <h4 class="process__title">{{ title }}</h4>
       <div v-if="process.thumbnail" class="process__thumbnail">
         <img :src="cms + process.thumbnail.formats.small.url" :alt="process.thumbnail.alternativeText" />
       </div>
-      <p v-if="process.description" class="process__description">{{ process.description }}</p>
+      <p v-if="description" class="process__description">{{ description }}</p>
     </a>
   </li>
 </template>
@@ -23,6 +23,37 @@
     data () {
       return {
         cms: GlobalConfig.cms_url
+      }
+    },
+
+    computed: {
+      title () {
+        return this.getMultilangField('title')
+      },
+
+      description () {
+        return this.getMultilangField('description')
+      },
+
+      flair () {
+        return this.getMultilangField('flair')
+      },
+
+      url () {
+        return this.getMultilangField('url')
+      }
+    },
+
+    methods: {
+      getMultilangField (name) {
+        const { locale } = GlobalConfig
+        const fields = {
+          ca: name,
+          es: `${name}_es`,
+          en: `${name}_en`
+        }
+
+        return this.process[fields[locale]] || this.process[name]
       }
     }
   }

@@ -7,7 +7,7 @@
       :aria-controls="`detail-${category.cat_slug}`"
     >
       <i :class="`category__icon far fa-fw fa-${category.icon}`" />
-      <span class="category__name">{{ category.cat_name }}</span>
+      <span class="category__name">{{ name }}</span>
       <img v-if="category.logo" :src="cms + category.logo.url" :alt="category.logo.alternativeText" class="category__logo" />
       <i :class="['category__chev', 'far', { 'fa-chevron-down': expanded, 'fa-chevron-up': !expanded }]" />
     </button>
@@ -17,8 +17,8 @@
         :id="`detail-${category.cat_slug}`" 
         :aria-labelledby="`title-${category.cat_slug}`"
       >
-        <div v-if="category.description" class="category__description">
-          <vue-markdown>{{ category.description }}</vue-markdown>
+        <div v-if="description" class="category__description">
+          <vue-markdown>{{ description }}</vue-markdown>
         </div>
         <ul v-if="category.associations.length > 0" class="associations">
           <li v-for="association in category.associations" :key="association.id">
@@ -54,6 +54,29 @@
       return {
         expanded: false,
         cms: GlobalConfig.cms_url
+      }
+    },
+
+    computed: {
+      name () {
+        return this.getMultilangField('cat_name')
+      },
+
+      description () {
+        return this.getMultilangField('description')
+      }
+    },
+
+    methods: {
+      getMultilangField (name) {
+        const { locale } = GlobalConfig
+        const fields = {
+          ca: name,
+          es: `${name}_es`,
+          en: `${name}_en`
+        }
+
+        return this.category[fields[locale]] || this.category[name]
       }
     }
   }

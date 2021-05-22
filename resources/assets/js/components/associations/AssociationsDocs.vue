@@ -30,7 +30,8 @@
 
     methods: {
       async getDocuments () {
-        this.docs = await Strapi.getAssociationDocuments();
+        const { locale } = GlobalConfig
+        this.docs = await Strapi.getAssociationDocuments(locale);
       }
     }
   }
