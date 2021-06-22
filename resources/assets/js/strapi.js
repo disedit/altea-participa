@@ -26,7 +26,7 @@ export default class Strapi {
     const date = d.getFullYear() + '-' + ('0' + (d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)
     const query = qs.stringify({ 
       _where: [
-        { archived_null: true },
+        { _or: [{ archived_null: true }, { archived: false }] },
         { _or: [{ autoarchive_null: true }, { autoarchive_gte: date }] },
       ]
     })
