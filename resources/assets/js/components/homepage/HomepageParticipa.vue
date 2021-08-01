@@ -2,8 +2,8 @@
   <article class="homepage__card participa">
     <a href="/participa" class="d-flex flex-column">
       <div class="d-flex">
-        <h2 class="mr-4">{{ participa.title }}</h2>
-        <div class="calendar ml-auto mb-4 d-none d-md-block">
+        <h2 class="mr-4 chonky-title">{{ $t('participa.title') }}</h2>
+        <div class="calendar ml-auto mb-4 d-none">
             <div class="calendar__heading">{{ participa.phase }}</div>
             <div class="calendar__dates">
                 <div class="calendar__days"><strong>{{ participa.date.start_day }}</strong> - <strong>{{ participa.date.end_day }}</strong></div>
@@ -41,6 +41,11 @@
       text-align: center;
       font-size: 1.15rem;
     }
+  }
+
+  .chonky-title {
+    font-size: calc(2rem + 1.5vw);
+    padding-bottom: 2rem;
   }
 
   .calendar {

@@ -63,6 +63,9 @@ export default {
     deselect_button: 'Deselect this option',
     dismiss_button: 'Close'
   },
+  participa: {
+    title: 'Participatory budget'
+  },
   associations: {
     title: 'Associations',
     description: 'Directory of all associations registered in Altea',

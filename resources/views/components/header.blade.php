@@ -23,7 +23,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-main-links" role="presentation">
         <li class="nav-item">
-          <a href="/" data-scroll>@lang('participa.nav.budget')</a>
+          <a href="/participa" data-scroll>@lang('participa.nav.budget')</a>
         </li>
         <li class="nav-item">
           <a href="/associacions" data-scroll>@lang('participa.nav.associations')</a>

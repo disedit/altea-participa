@@ -1,14 +1,21 @@
 <template>
-  <article class="homepage__card social">
-    <a href="https://www.facebook.com/AlteaParticipa/" class="facebook">
-      <i class="fab fa-facebook mr-2" />
-      @AlteaParticipa
-    </a>
-    <a href="https://www.instagram.com/alteaparticipa/" class="instagram">
-      <i class="fab fa-instagram mr-2" />
-      @AlteaParticipa
-    </a>
-  </article>
+  <div class="social-wrapper">
+    <article class="homepage__card social">
+      <a href="https://www.facebook.com/AlteaParticipa/" class="facebook">
+        <i class="fab fa-facebook mr-2" />
+        @AlteaParticipa
+      </a>
+      <a href="https://www.instagram.com/alteaparticipa/" class="instagram">
+        <i class="fab fa-instagram mr-2" />
+        @AlteaParticipa
+      </a>
+    </article>
+    <article class="homepage__card gva">
+      <a href="https://gvaparticipa.gva.es/" class="gva">
+        <img src="../../../images/gvaparticipa.png" alt="GVA Participa">
+      </a>
+    </article>
+  </div>
 </template>
 
 <script>
@@ -19,6 +26,10 @@
 
 <style lang="scss" scoped>
   @import '../../../sass/_variables';
+
+  .social-wrapper {
+    flex-grow: 1;
+  }
 
   .social {
     display: flex;
@@ -45,6 +56,16 @@
         border-top: 1px mix($brand-primary, $white, 10%) solid;
         color: #E1306C;
       }
+    }
+  }
+
+  .gva {
+    margin-top: 1rem;
+
+    img {
+      display: block;
+      width: 150px;
+      margin: -10px auto;
     }
   }
 </style>

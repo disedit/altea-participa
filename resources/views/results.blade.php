@@ -3,6 +3,17 @@
 @section('content')
 <div class="row results-page">
     <div class="col-md-8">
+        @if($edition->winner)
+        @php
+            $winner = $edition->winner;
+            $winner = str_replace("[template]", $page, $winner);
+        @endphp
+            <h2><i class="far fa-check-circle" aria-hidden="true"></i> @lang('participa.winner')</h2>
+            <div class="mb-4">
+                {!! $winner !!}
+            </div>
+        @endif
+        
         <h2><i class="far fa-chart-bar" aria-hidden="true"></i> @lang('participa.results')</h2>
 
         <table class="census table table-bordered">

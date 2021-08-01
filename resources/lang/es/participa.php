@@ -83,6 +83,7 @@ return [
     'ballots' => 'Votos',
     'top_results' => '[1] Proyecto más votado|[2] Dos proyectos más votados|[3] Tres proyectos más votados|[4] Cuatro proyectos más votados|[5,*] :num proyectos más votados',
     'other_results' => 'Resto',
+    'winner' => 'Proyecto seleccionado',
 
     /*
     |--------------------------------------------------------------------------

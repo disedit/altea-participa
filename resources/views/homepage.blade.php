@@ -29,7 +29,7 @@
           //  'end_month' => $endMonth
           // Meanwhile...
           'phase' => 'Votació',
-          'button' => 'Resultats',
+          'button' => 'Resultats i estat dels projectes',
           'date' => [
             'start_day' => '1',
             'end_day' => '14',

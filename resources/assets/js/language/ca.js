@@ -63,6 +63,9 @@ export default {
     deselect_button: 'Deselecciona aquesta opció',
     dismiss_button: 'Tanca'
   },
+  participa: {
+    title: 'Pressupostos participatius'
+  },
   associations: {
     title: 'Associacions',
     description: 'Directori de totes les associacions registrades a Altea',

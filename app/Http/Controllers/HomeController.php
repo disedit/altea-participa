@@ -76,9 +76,10 @@ class HomeController extends Controller
             $results = $edition->fullResults();
             $turnout = $edition->turnout()->count();
             $census = $edition->voters()->count();
+            $page = $edition->buildResultsPage();
 
             return view('results', compact(
-                'edition', 'results', 'turnout', 'census', 'pastEditions'
+                'edition', 'results', 'turnout', 'census', 'pastEditions', 'page'
             ));
         }
 

@@ -63,6 +63,9 @@ export default {
     deselect_button: 'Deselecciona esta opción',
     dismiss_button: 'Cierra'
   },
+  participa: {
+    title: 'Presupuestos participativos'
+  },
   associations: {
     title: 'Asociaciones',
     description: 'Directorio de todas las asociaciones registradas en Altea',

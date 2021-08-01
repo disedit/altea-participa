@@ -16,7 +16,7 @@ class Edition extends Model
      * @var array
      */
     public $translatedAttributes = [
-        'name', 'description', 'docs', 'voting_places', 'proposal_form', 'about', 'sidebar'
+        'name', 'description', 'docs', 'voting_places', 'proposal_form', 'about', 'sidebar', 'winner'
     ];
 
     /**
@@ -299,5 +299,27 @@ class Edition extends Model
         }
 
         return ['options' => $options, 'template' => $template];
+    }
+
+    /**
+     * Load templates for the Results page
+     *
+     * @return array
+     */
+    public function buildResultsPage()
+    {
+        $edition = $this;
+        $templateView = 'editions.' . $this->id . '_results_' . config('app.locale', 'ca');
+        $templateViewFallback = 'editions.' . $this->id . '_results_' . config('app.fallback_locale', 'ca');
+
+        if(view()->exists($templateView)) {
+            $template = view($templateView, compact('edition'));
+        } elseif(view()->exists($templateViewFallback)) {
+            $template = view($templateViewFallback, compact('edition'));
+        } else {
+            $template = '';
+        }
+
+        return $template;
     }
 }
