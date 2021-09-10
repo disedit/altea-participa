@@ -261,6 +261,10 @@ class Edition extends Model
                     'id' => $option->id,
                     'option' => $option->option,
                     'status' => $option->status,
+                    'description' => $option->description,
+                    'color' => $option->color,
+                    'funding' => $option->funding,
+                    'cost' => $option->cost,
                     'points' => $points,
                     'percentage' => $percentage,
                     'relative' => $relative

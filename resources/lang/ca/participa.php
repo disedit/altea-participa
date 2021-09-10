@@ -42,9 +42,11 @@ return [
     |--------------------------------------------------------------------------
     */
     'nav' => [
-      'budget' => 'Pressupostos participatius',
+      'budget' => 'Pressupostos',
       'decideix' => 'Altea Decideix',
-      'associations' => 'Associacions'
+      'associations' => 'Associacions',
+      'activities' => 'Activitats',
+      'docs' => 'Documents'
     ],
 
     /*
@@ -76,7 +78,7 @@ return [
     | Results
     |--------------------------------------------------------------------------
     */
-    'results' => 'Resultats',
+    'results' => 'Resultats i estat dels projectes',
     'census' => 'Cens',
     'turnout' => 'Participació',
     'votes' => 'vot|vots',
