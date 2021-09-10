@@ -84,21 +84,21 @@
                               <ul>
                                 @if($option['cost'])
                                 <li>
-                                  <span class="project-status-label">Coste del proyecto</span>
+                                  <span class="project-status-label">@lang('participa.project_cost')</span>
                                   <span class="project-status-divider"></span>
                                   <span class="project-status-value cost">{{ number_format($option['cost'], 0, ',', '.') }}€</span>
                                 </li>
                                 @endif
                                 @if($option['funding'])
                                 <li>
-                                  <span class="project-status-label">Financiación</span>
+                                  <span class="project-status-label">@lang('participa.project_funding')</span>
                                   <span class="project-status-divider"></span>
                                   <span class="project-status-value">{{ $option['funding'] }}</span>
                                 </li>
                                 @endif
                                 @if($option['status'])
                                 <li>
-                                  <span class="project-status-label">Estado del proyecte</span>
+                                  <span class="project-status-label">@lang('participa.project_status')</span>
                                   <span class="project-status-divider"></span>
                                   <span class="project-status-value">
                                     {{ $option['status'] }}

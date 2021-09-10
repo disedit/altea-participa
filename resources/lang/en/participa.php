@@ -86,6 +86,9 @@ return [
     'top_results' => '[1] Top project|[2] Top two projects|[3] Top three projects|[4] Top four projects|[5,*] Top :num projects',
     'other_results' => 'Other projects',
     'winner' => 'Selected project',
+    'project_cost' => 'Cost',
+    'project_funding' => 'Funding',
+    'project_status' => 'Status',
 
     /*
     |--------------------------------------------------------------------------
