@@ -110,7 +110,7 @@
   border: 2px lighten($brand-primary, 65%) solid;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto) 1fr;
+  grid-template-rows: repeat(3, auto) 1fr;
   grid-template-areas:
     "thumb"
     "title"
@@ -129,7 +129,6 @@
 
   &-thumb {
     grid-area: thumb;
-    margin-bottom: 1rem;
 
     img {
       width: 100%;
@@ -203,7 +202,7 @@
       "thumb status";
 
     &-thumb {
-      margin-bottom: 0;
+      height: 100%;
 
       img {
         max-height: unset;

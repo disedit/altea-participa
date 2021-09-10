@@ -53,10 +53,16 @@
 
                 <ol class="results-list">
                 @foreach ($block['options'] as $option)
+                @php
+                    $pictures = explode("\n", $option['pictures']);
+                    $picture = (isset($pictures[0])) ? $pictures[0] : false;
+                @endphp
                     <li>
                         <a class="project" href="#" data-toggle="modal" data-target="#optionModal" data-option-id="{{ $option['id'] }}" data-option-title="{{ $option['option'] }}">
                             <div class="project-thumb">
-                              <img src="/docs/2021/cami.jpg" alt="Camí Fondo" />
+                                @if($picture)
+                                    <img src="{{ $picture }}" alt="" />
+                                @endif
                             </div>
                             <h4 class="project-title">
                                 {{ $option['option'] }}

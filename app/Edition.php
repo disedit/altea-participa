@@ -260,6 +260,7 @@ class Edition extends Model
                 $optionsWithResults[] = [
                     'id' => $option->id,
                     'option' => $option->option,
+                    'pictures' => $option->pictures,
                     'status' => $option->status,
                     'description' => $option->description,
                     'color' => $option->color,
