@@ -162,6 +162,7 @@
 
   &-status {
     grid-area: status;
+    margin-top: auto;
 
     ul {
       list-style: none;
@@ -183,6 +184,11 @@
       border-bottom: 1px dotted rgba($primary, .6);
       transform: translateY(-.35em);
       margin: 0 .5em;
+      min-width: 3rem;
+    }
+
+    &-value {
+      text-align: right;
     }
 
     .cost {
