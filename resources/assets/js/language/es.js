@@ -79,8 +79,16 @@ export default {
     description: 'Consulta todos los procesos participativos que están en marcha en el Ayuntamiento de Altea',
     open: 'Procesos abiertos',
     archived: 'Procesos archivados',
-    no_open_processes: 'No hi ha processos oberts en aquests moments',
-    no_archived_processes: 'No hi ha processos arxivats encara'
+    no_open_processes: 'No hay procesos abiertos en estos momentos',
+    no_archived_processes: 'No hay procesos archivados'
+  },
+  activities: {
+    title: 'Actividades',
+    description: 'Consulta todas las actividades que están en marcha en el Ayuntamiento de Altea',
+    open: 'Próximas actividades',
+    archived: 'Actividades pasadas',
+    no_open_activities: 'No hay actividades programadas',
+    no_archived_activities: 'No hay actividades archivadas'
   },
   altea_millora: {
     title: 'Altea mejora',

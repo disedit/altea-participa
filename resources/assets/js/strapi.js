@@ -22,26 +22,37 @@ export default class Strapi {
   }
 
   getOpenProcesses () {
-    const d = new Date()
-    const date = d.getFullYear() + '-' + ('0' + (d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)
     const query = qs.stringify({ 
       _where: [
         { _or: [{ archived_null: true }, { archived: false }] },
-        { _or: [{ autoarchive_null: true }, { autoarchive_gte: date }] },
+        { _or: [{ autoarchive_null: true }, { autoarchive_gte: this._now() }] },
       ]
     })
     return this._call('get', 'altea-decideix/?' + query)
   }
 
   getArchivedProcesses () {
-    const d = new Date()
-    const date = d.getFullYear() + '-' + ('0' + (d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)
     const query = qs.stringify({ 
       _where: [
-        { _or: [{ archived: true }, { autoarchive_lt: date }] },
+        { _or: [{ archived: true }, { autoarchive_lt: this._now() }] },
       ]
     })
     return this._call('get', 'altea-decideix/?' + query)
+  }
+
+  getOpenActivities () {
+    const query = qs.stringify({ end_date_gte: this._now() })
+    return this._call('get', 'activitats/?' + query)
+  }
+
+  getArchivedActivities () {
+    const query = qs.stringify({ end_date_lt: this._now() })
+    return this._call('get', 'activitats/?' + query)
+  }
+
+  _now () {
+    const d = new Date()
+    return d.getFullYear() + '-' + ('0' + (d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)
   }
 
   _call(type, url, data) {

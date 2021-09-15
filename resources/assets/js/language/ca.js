@@ -82,6 +82,14 @@ export default {
     no_open_processes: 'No hi ha processos oberts en aquests moments',
     no_archived_processes: 'No hi ha processos arxivats encara'
   },
+  activities: {
+    title: 'Activitats',
+    description: 'Consulta totes les activitats que estan en marxa a l\'Ajuntament d\'Altea',
+    open: 'Properes activitats',
+    archived: 'Activitats arxivades',
+    no_open_activities: 'No hi ha activitats programades',
+    no_archived_activities: 'No hi ha activitats arxivades'
+  },
   altea_millora: {
     title: 'Altea millora',
     description: 'Si consideres que s’ha de millorar en alguna cosa a Altea, envia’ns la teua fotografia i un missatge explicant allò que cal millorar'

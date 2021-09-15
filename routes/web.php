@@ -30,6 +30,9 @@ Route::view('/associacions/{assoc?}', 'associations');
 // Altea decideix
 Route::view('/altea-decideix', 'altea_decideix');
 
+// Altea decideix
+Route::view('/activitats', 'activities');
+
 Auth::routes();
 
 /* Archive */

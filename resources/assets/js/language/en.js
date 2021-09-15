@@ -82,6 +82,14 @@ export default {
     no_open_processes: 'No open processes at this moment',
     no_archived_processes: 'No archived processes yet'
   },
+  activities: {
+    title: 'Activities',
+    description: 'See all the schedueled activities at the Council of Altea',
+    open: 'Upcoming activities',
+    archived: 'Past activities',
+    no_open_activities: 'No upcoming activities scheduled at this moment',
+    no_archived_activities: 'No archived activities yet'
+  },
   altea_millora: {
     title: 'Altea improves',
     description: 'If you think there is something to improve in Altea, drop us a picture and a message explaining what needs to be improved'

@@ -4,7 +4,7 @@
                     : config('participa.logo');
 @endphp
 
-<nav class="navbar fixed-top navbar-expand-lg
+<nav class="navbar fixed-top navbar-expand-xl
   {{ (config('participa.navbar') == 'colorful') ? 'navbar-dark' : 'navbar-light' }}
   {{ (!Request::segment(1)) ? 'navbar-full' : 'navbar-compact' }}
   {{ ($inPerson) ? 'navbar-scrolled' : '' }}">
@@ -30,6 +30,9 @@
         </li>
         <li class="nav-item">
           <a href="/altea-decideix" data-scroll>@lang('participa.nav.decideix')</a>
+        </li>
+        <li class="nav-item">
+          <a href="/activitats" data-scroll>@lang('participa.nav.activities')</a>
         </li>
     </ul>
 
