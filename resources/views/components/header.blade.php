@@ -35,7 +35,7 @@
           <a href="/activitats" data-scroll>@lang('participa.nav.activities')</a>
         </li>
         <li class="nav-item">
-          <a href="/docs" data-scroll>@lang('participa.nav.docs')</a>
+          <a href="/documents" data-scroll>@lang('participa.nav.docs')</a>
         </li>
     </ul>
 
