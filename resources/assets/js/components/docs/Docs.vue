@@ -43,6 +43,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
+      line-height: 2.25;
     }
 
     a {
