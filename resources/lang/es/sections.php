@@ -24,4 +24,11 @@ return [
     */
     'activities' => 'Activitats',
     'activities_description' => 'Consulta las actividades programadas por el Ayuntamiento de Altea',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Documentos
+    |--------------------------------------------------------------------------
+    */
+    'docs' => 'Documentos',
 ];

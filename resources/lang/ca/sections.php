@@ -25,4 +25,11 @@ return [
     'activities' => 'Activitats',
     'activities_description' => 'Consulta les activitats programades per l\'Ajuntament d\'Altea',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Documents
+    |--------------------------------------------------------------------------
+    */
+    'docs' => 'Documents',
+
 ];

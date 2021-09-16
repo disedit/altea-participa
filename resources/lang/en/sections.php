@@ -24,4 +24,11 @@ return [
     */
     'activities' => 'Activitats',
     'activities_description' => 'Learn about upcoming activities at Altea Town Council',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Documents
+    |--------------------------------------------------------------------------
+    */
+    'docs' => 'Documents',
 ];

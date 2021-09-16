@@ -24,14 +24,11 @@ Route::get('/lang/{language}', 'LanguageController@switchLanguage');
 Route::redirect('/es', '/lang/es/?home', 301);
 Route::redirect('/en', '/lang/en/?home', 301);
 
-// Associacions
+// Sections
 Route::view('/associacions/{assoc?}', 'associations');
-
-// Altea decideix
 Route::view('/altea-decideix', 'altea_decideix');
-
-// Altea decideix
 Route::view('/activitats', 'activities');
+Route::view('/docs', 'docs');
 
 Auth::routes();
 
