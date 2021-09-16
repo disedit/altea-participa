@@ -64,3 +64,7 @@ hr {
   color: $white;
   padding: 0.5rem;
 }
+
+.btn-outline-light--backdrop {
+  background: rgba($brand-primary, .3);
+}

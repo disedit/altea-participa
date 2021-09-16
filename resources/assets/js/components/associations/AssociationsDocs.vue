@@ -1,5 +1,5 @@
 <template>
-  <div class="docs" v-if="docs">
+  <div class="docs" v-if="docs.length">
     <h3>{{ $t('associations.docs')}}</h3>
     <div>
       <ul>

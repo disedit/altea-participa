@@ -7,6 +7,15 @@
     <h2><span>@lang('sections.associations')</span></h2>
 @endsection
 
+@section('page-header-aside')
+    <div class="ml-lg-auto d-flex align-items-center">
+        <a href="/docs/Constituir-Assoc.zip" download class="btn btn-outline-light btn-outline-light--backdrop">
+            <i class="far fa-fw fa-cloud-download"></i>
+            @lang('sections.associations_create')
+        </a>
+    </div>
+@endsection
+
 @section('content')
     <div id="app"></div>
 @endsection

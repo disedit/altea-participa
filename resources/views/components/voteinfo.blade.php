@@ -43,9 +43,15 @@
                         </div>
                     </div>
                 @else
-                    <div class="vote-info__calendar col-lg-4 d-none d-lg-block">
-                        @include('components/calendar')
-                    </div>
+                    @hasSection('page-header-aside')
+                        <div class="col-lg-4 d-flex">
+                            @yield('page-header-aside')
+                        </div>
+                    @else
+                        <div class="vote-info__calendar col-lg-4 d-none d-lg-block">
+                            @include('components/calendar')
+                        </div>
+                    @endif
                 @endif
             </div>
         </div>
