@@ -64,7 +64,8 @@ export default {
     dismiss_button: 'Close'
   },
   participa: {
-    title: 'Participatory budget'
+    title: 'Participatory budget',
+    new_edition: 'New edition'
   },
   associations: {
     title: 'Associations',

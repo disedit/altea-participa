@@ -64,7 +64,8 @@ export default {
     dismiss_button: 'Cierra'
   },
   participa: {
-    title: 'Presupuestos participativos'
+    title: 'Presupuestos participativos',
+    new_edition: 'Nueva edición'
   },
   associations: {
     title: 'Asociaciones',

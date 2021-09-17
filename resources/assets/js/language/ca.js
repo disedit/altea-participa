@@ -64,7 +64,8 @@ export default {
     dismiss_button: 'Tanca'
   },
   participa: {
-    title: 'Pressupostos participatius'
+    title: 'Pressupostos participatius',
+    new_edition: 'Nova edició'
   },
   associations: {
     title: 'Associacions',

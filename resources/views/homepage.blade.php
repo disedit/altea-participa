@@ -17,6 +17,7 @@
       $globalConfig = [
         'locale' => config('app.locale'),
         'participa' => [
+          'flair' => true,
           'title' => $edition->name,
           'description' => $edition->description,
           // TODO
@@ -28,13 +29,13 @@
           //  'start_month' => $startMonth,
           //  'end_month' => $endMonth
           // Meanwhile...
-          'phase' => 'Votació',
-          'button' => 'Resultats i estat dels projectes',
+          'phase' => 'Propostes',
+          'button' => 'Fase de propostes',
           'date' => [
-            'start_day' => '1',
-            'end_day' => '14',
-            'start_month' => 'febrer',
-            'end_month' => 'febrer'
+            'start_day' => '22',
+            'end_day' => '17',
+            'start_month' => 'set',
+            'end_month' => 'oct'
           ]
         ]
       ];

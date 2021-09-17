@@ -1,18 +1,19 @@
 <template>
   <article class="homepage__card participa">
     <a href="/participa" class="d-flex flex-column">
-      <div class="d-flex">
-        <h2 class="mr-4 chonky-title">{{ $t('participa.title') }}</h2>
-        <div class="calendar ml-auto mb-4 d-none">
+      <span class="participa__flair" v-if="participa.flair">{{ $t('participa.new_edition') }}</span>
+      <div class="d-flex align-items-start">
+        <h2 class="mr-4 chonky-title">{{ participa.title }}</h2>
+        <div class="calendar ml-auto">
             <div class="calendar__heading">{{ participa.phase }}</div>
             <div class="calendar__dates">
                 <div class="calendar__days"><strong>{{ participa.date.start_day }}</strong> - <strong>{{ participa.date.end_day }}</strong></div>
-                <div class="calendar__month">{{ participa.date.start_month }}</div>
+                <div class="calendar__month">{{ participa.date.start_month }} - {{ participa.date.end_month }}</div>
             </div>
         </div>
       </div>
       <div class="participa__button">
-        <i class="far fa-chart-bar" />
+        <i class="far fa-pencil" />
         {{ participa.button }}
       </div>
     </a>
@@ -41,10 +42,22 @@
       text-align: center;
       font-size: 1.15rem;
     }
+
+    &__flair {
+      background: $red;
+      width: fit-content;
+      color: $white;
+      padding: .25rem .75rem;
+      border-radius: .5rem;
+      font-weight: bold;
+      margin-top: -2.5rem;
+      margin-bottom: 1rem;
+      animation: pulse 2s infinite;
+    }
   }
 
   .chonky-title {
-    font-size: calc(2rem + 1.5vw);
+    font-size: calc(1.75rem + 1.25vw);
     padding-bottom: 2rem;
   }
 
@@ -55,4 +68,21 @@
       font-size: 1.15rem;
     }
   }
+
+  @keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba($red, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba($red, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba($red, 0);
+  }
+}
 </style>
