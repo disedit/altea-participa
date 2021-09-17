@@ -4,7 +4,7 @@
       <span class="participa__flair" v-if="participa.flair">{{ $t('participa.new_edition') }}</span>
       <div class="d-flex align-items-start">
         <h2 class="mr-4 chonky-title">{{ participa.title }}</h2>
-        <div class="calendar ml-auto">
+        <div class="calendar ml-auto d-none d-md-block">
             <div class="calendar__heading">{{ participa.phase }}</div>
             <div class="calendar__dates">
                 <div class="calendar__days"><strong>{{ participa.date.start_day }}</strong> - <strong>{{ participa.date.end_day }}</strong></div>
