@@ -91,6 +91,9 @@ export default {
     no_open_activities: 'No upcoming activities scheduled at this moment',
     no_archived_activities: 'No archived activities yet'
   },
+  documents: {
+    title: 'Documents'
+  },
   altea_millora: {
     title: 'Altea improves',
     description: 'If you think there is something to improve in Altea, drop us a picture and a message explaining what needs to be improved'

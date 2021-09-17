@@ -91,6 +91,9 @@ export default {
     no_open_activities: 'No hay actividades programadas',
     no_archived_activities: 'No hay actividades archivadas'
   },
+  documents: {
+    title: 'Documentos'
+  },
   altea_millora: {
     title: 'Altea mejora',
     description: 'Si consideras que en Altea se tiene que mejorar en algo, envíanos tu fotografía y un mensaje explicando aquello que hay que mejorar'

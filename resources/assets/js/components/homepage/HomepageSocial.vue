@@ -2,15 +2,27 @@
   <div class="social-wrapper">
     <article class="homepage__card social">
       <a href="https://www.facebook.com/AlteaParticipa/" class="facebook">
-        <i class="fab fa-facebook mr-2" />
+        <i class="fab fa-fw fa-facebook mr-2" />
         @AlteaParticipa
       </a>
       <a href="https://www.instagram.com/alteaparticipa/" class="instagram">
-        <i class="fab fa-instagram mr-2" />
+        <i class="fab fa-fw fa-instagram mr-2" />
         @AlteaParticipa
       </a>
     </article>
-    <article class="homepage__card gva">
+    <article class="homepage__card activities mt-4">
+      <a href="/activitats" class="activities">
+        <i class="far fa-fw fa-calendar-alt mr-2" />
+        {{ $t('activities.title') }}
+      </a>
+    </article>
+    <article class="homepage__card docs mt-4">
+      <a href="/documents" class="docs">
+        <i class="far fa-fw fa-file-alt mr-2" />
+        {{ $t('documents.title') }}
+      </a>
+    </article>
+    <article class="homepage__card gva mt-4">
       <a href="https://gvaparticipa.gva.es/" class="gva">
         <img src="../../../images/gvaparticipa.png" alt="GVA Participa">
       </a>
@@ -26,6 +38,10 @@
 
 <style lang="scss" scoped>
   @import '../../../sass/_variables';
+
+  .homepage__card a {
+    font-size: 1.5rem;
+  }
 
   .social-wrapper {
     flex-grow: 1;
@@ -59,9 +75,11 @@
     }
   }
 
-  .gva {
-    margin-top: 1rem;
+  .activities {
 
+  }
+
+  .gva {
     img {
       display: block;
       width: 150px;
