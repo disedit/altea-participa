@@ -83,6 +83,25 @@
   }
 }
 
+.nav-submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: .5rem;
+  background: rgba($brand-primary, .65);
+  backdrop-filter: blur(10px);
+  border-radius: .5rem;
+
+  @at-root .nav-item:hover & {
+    display: block;
+  }
+
+  li {
+    padding: 0;
+  }
+}
+
 .vote-info {
   position: relative;
   background: $brand-primary;

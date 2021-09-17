@@ -23,19 +23,26 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-main-links" role="presentation">
         <li class="nav-item">
-          <a href="/participa" data-scroll>@lang('participa.nav.budget')</a>
+          <a href="/participa">@lang('participa.nav.budget')</a>
+          <ul class="nav-submenu">
+            <li><a href="/participa">2021 (actual)</a></li>
+            <li><a href="/archive/3">2020</a></li>
+            <li><a href="/archive/2">2019</a></li>
+            <li><a href="/archive/1">2018</a></li>
+            <li><a href="/archive/2017">2017</a></li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a href="/associacions" data-scroll>@lang('participa.nav.associations')</a>
+          <a href="/associacions">@lang('participa.nav.associations')</a>
         </li>
         <li class="nav-item">
-          <a href="/altea-decideix" data-scroll>@lang('participa.nav.decideix')</a>
+          <a href="/altea-decideix">@lang('participa.nav.decideix')</a>
         </li>
         <li class="nav-item">
-          <a href="/activitats" data-scroll>@lang('participa.nav.activities')</a>
+          <a href="/activitats">@lang('participa.nav.activities')</a>
         </li>
         <li class="nav-item">
-          <a href="/documents" data-scroll>@lang('participa.nav.docs')</a>
+          <a href="/documents">@lang('participa.nav.docs')</a>
         </li>
     </ul>
 
