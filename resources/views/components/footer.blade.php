@@ -36,7 +36,11 @@
 
             <p>
                 <i class="far fa-question-circle fa-fw"></i> @lang('participa.help'): <a href="mailto:{{ config('participa.contact_email', 'participa@disedit.com') }}">{{ config('participa.contact_email', 'participa@disedit.com') }}</a> |
-                <a href="{{ url('/legal') }}" style="white-space: nowrap">@lang('participa.legal')</a>
+            </p>
+            <p>
+                <a href="https://www.altea.es/avis-legal/" style="white-space: nowrap">@lang('participa.legal')</a> -
+                <a href="https://www.altea.es/politica-de-privacitat/" style="white-space: nowrap">@lang('participa.privacy')</a> -
+                <a href="https://www.altea.es/politica-de-cookies-2/" style="white-space: nowrap">@lang('participa.cookies')</a>
             </p>
 
             <div>

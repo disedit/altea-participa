@@ -27,6 +27,8 @@ return [
     'calendar_heading' => 'Votación',
     'help' => 'Incidencias y ayuda',
     'legal' => 'Aviso legal',
+    'privacy' => 'Política de privacidad',
+    'cookies' => 'Política de cookies',
     'is_archive' => 'Esta votación finalizó el <strong>:end_date</strong> y está archivada. Ves a la <a href="/">edición actual</a> para consultar la votación en curso.',
     'error' => 'Error',
     'vote' => 'Vota',
