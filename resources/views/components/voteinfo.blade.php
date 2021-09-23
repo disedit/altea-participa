@@ -29,7 +29,7 @@
                     @endif
                 </div>
 
-                @if(!$compact)
+                {{--@if(!$compact)
                     <div class="vote-info__video col-lg-6">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe
@@ -42,7 +42,7 @@
                             </iframe>
                         </div>
                     </div>
-                @else
+                @else--}}
                     @hasSection('page-header-aside')
                         <div class="col-lg-4 d-flex">
                             @yield('page-header-aside')
@@ -52,7 +52,7 @@
                             @include('components/calendar')
                         </div>
                     @endif
-                @endif
+                {{-- @endif --}}
             </div>
         </div>
     @endif
