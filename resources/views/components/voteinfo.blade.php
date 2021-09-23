@@ -1,5 +1,5 @@
 @php
-  $compact = (!Request::segment(1)) ? false : true;
+  $compact = (Request::segment(1) === 'participa') ? false : true;
 @endphp
 
 <header class="vote-info {{ (!$compact) ? 'vote-info--full' : 'vote-info--compact' }} @hasSection('page-header') vote-info--page-header @endif" role="banner">
