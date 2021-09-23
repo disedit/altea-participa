@@ -48,7 +48,7 @@
                             @yield('page-header-aside')
                         </div>
                     @else
-                        <div class="vote-info__calendar col-lg-4 d-none d-lg-block">
+                        <div class="vote-info__calendar col-lg-6 d-none d-lg-block">
                             @include('components/calendar')
                         </div>
                     @endif
