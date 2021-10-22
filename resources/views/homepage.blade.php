@@ -33,7 +33,7 @@
           'button' => 'Fase de propostes',
           'date' => [
             'start_day' => '22',
-            'end_day' => '17',
+            'end_day' => '24',
             'start_month' => 'set',
             'end_month' => 'oct'
           ]

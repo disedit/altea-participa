@@ -78,7 +78,7 @@
               <div class="calendar">
                   <div class="calendar__heading">Proposals</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>until 17th</strong></div>
+                      <div class="calendar__days"><strong>until 24th</strong></div>
                       <div class="calendar__month">October</div>
                   </div>
               </div>
@@ -343,7 +343,7 @@
                           <div class="calendar">
                               <div class="calendar__heading">Proposals</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>until 17th</strong></div>
+                                  <div class="calendar__days"><strong>until 24th</strong></div>
                                   <div class="calendar__month">October</div>
                               </div>
                           </div>
