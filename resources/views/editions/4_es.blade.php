@@ -76,7 +76,7 @@
           <img src="/images/path.svg" alt="" />
       </div>
 
-      <div class="phase phase-25">
+      {{--<div class="phase phase-25">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Evaluación</div>
@@ -93,7 +93,7 @@
 
       <div class="phase__path mt-0">
           <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
-      </div>
+      </div>--}}
 
         <div class="phase">
           <div class="phase__calendar">
@@ -330,7 +330,7 @@
                       <img src="/images/path.svg" alt="" />
                   </div>
 
-                  <div class="phase">
+                  {{--<div class="phase">
                       <div class="phase__calendar">
                           <div class="calendar">
                               <div class="calendar__heading">Evaluación</div>
@@ -351,9 +351,8 @@
 
                   <div class="phase__path mt-0">
                       <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
-                  </div>
+                  </div>--}}
 
-            
                   <div class="phase">
                       <div class="phase__calendar">
                           <div class="calendar">
