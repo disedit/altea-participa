@@ -44,11 +44,11 @@
 </section>
 
 <section id="calendar" aria-labelledby="about-2" class="about-block about-block--calendar">
-  <h3 id="about-2">Acto de presentación</h3>
+  {{--<h3 id="about-2">Acto de presentación</h3>
 
   <a href="https://www.youtube.com/ajuntamentdaltea" target="_blank">
     <img src="/docs/2021/acte.jpeg" width="100%" class="mb-4" style="border-radius: .5rem;" alt="Acte de presentació, 22 de setembre a les 19h al canal de youtube de l'Ajuntament d'Altea" />
-  </a>
+  </a>--}}
 
   <h3 id="about-2-cal">Calendario</h3>
 

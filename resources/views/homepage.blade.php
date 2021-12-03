@@ -29,13 +29,13 @@
           //  'start_month' => $startMonth,
           //  'end_month' => $endMonth
           // Meanwhile...
-          'phase' => 'Propostes',
-          'button' => 'Fase de propostes',
+          'phase' => 'Votació',
+          'button' => 'Més informació',
           'date' => [
-            'start_day' => '22',
-            'end_day' => '24',
-            'start_month' => 'set',
-            'end_month' => 'oct'
+            'start_day' => '20',
+            'end_day' => '31',
+            'start_month' => 'des',
+            'end_month' => 'des'
           ]
         ]
       ];
