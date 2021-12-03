@@ -393,8 +393,8 @@
                           <div class="calendar">
                               <div class="calendar__heading">Council</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>24</strong></div>
-                                  <div class="calendar__month">November</div>
+                                  <div class="calendar__days"><strong>13</strong></div>
+                                  <div class="calendar__month">December</div>
                               </div>
                           </div>
                       </div>
@@ -442,8 +442,8 @@
                           <div class="calendar calendar--red">
                               <div class="calendar__heading">Poll</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>29</strong> - <strong>31</strong></div>
-                                  <div class="calendar__month">Nov / Dec</div>
+                                  <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
+                                  <div class="calendar__month">December</div>
                               </div>
                           </div>
                       </div>

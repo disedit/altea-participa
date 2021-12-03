@@ -100,8 +100,8 @@
               <div class="calendar">
                   <div class="calendar__heading">Consejo</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>24</strong></div>
-                      <div class="calendar__month">noviembre</div>
+                      <div class="calendar__days"><strong>13</strong></div>
+                      <div class="calendar__month">diciembre</div>
                   </div>
               </div>
           </div>
@@ -140,8 +140,8 @@
               <div class="calendar calendar--red">
                   <div class="calendar__heading">Votación</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>29</strong> - <strong>31</strong></div>
-                      <div class="calendar__month">nov / dic</div>
+                      <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
+                      <div class="calendar__month">diciembre</div>
                   </div>
               </div>
           </div>
@@ -358,8 +358,8 @@
                           <div class="calendar">
                               <div class="calendar__heading">Consejo</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>24</strong></div>
-                                  <div class="calendar__month">noviembre</div>
+                                  <div class="calendar__days"><strong>13</strong></div>
+                                  <div class="calendar__month">diciembre</div>
                               </div>
                           </div>
                       </div>
@@ -404,8 +404,8 @@
                           <div class="calendar calendar--red">
                               <div class="calendar__heading">Votación</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>29</strong> - <strong>31</strong></div>
-                                  <div class="calendar__month">nov / dic</div>
+                                  <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
+                                  <div class="calendar__month">diciembre</div>
                               </div>
                           </div>
                       </div>
