@@ -33,9 +33,9 @@
           'button' => 'Més informació',
           'date' => [
             'start_day' => '20',
-            'end_day' => '31',
+            'end_day' => '20',
             'start_month' => 'des',
-            'end_month' => 'des'
+            'end_month' => 'gen'
           ]
         ]
       ];
