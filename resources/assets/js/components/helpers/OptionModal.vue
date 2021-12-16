@@ -3,7 +3,7 @@
     <div slot="modal-title" class="title">{{ option.option }}</div>
 
     <div class="option-modal-body">
-      <div v-html="option.description"></div>
+      <div v-html="optionDescription"></div>
 
       <h4 v-if="option.motivation">{{ $t('option.motivation') }}</h4>
       <div v-html="option.motivation"></div>
@@ -85,6 +85,12 @@
         if(this.option.pictures)
           return this.parseList(this.option.pictures);
       },
+
+      optionDescription: function() {
+        return this.option.description
+          .replaceAll('[img]', '<img src="')
+          .replaceAll('[/img]', '" alt="" />')
+      }
     },
 
     methods: {
