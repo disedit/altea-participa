@@ -140,8 +140,8 @@
               <div class="calendar calendar--red">
                   <div class="calendar__heading">Votación</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
-                      <div class="calendar__month">diciembre</div>
+                      <div class="calendar__days"><strong>20</strong> - <strong>20</strong></div>
+                      <div class="calendar__month">dic. / ene.</div>
                   </div>
               </div>
           </div>
@@ -167,10 +167,8 @@
       La ciudadanía decidirá qué <strong>propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión máxima de <strong>120.000€</strong>.
   </p>
 
-  {{-- 
   <h4 class="options-title">Propuestas presentadas</h4>
   [options]
-  --}}
 
   <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
@@ -201,7 +199,7 @@
 
       <h4>Inicio y fin de la votación</h4>
       <p>
-        Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 29 de noviembre de 2021 y concluirá el día 31 de diciembre a las 23:59.
+        Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 20 de diciembre de 2021 y concluirá el día 20 de enero de 2022 a las 23:59.
       </p>
 
       <h4>Resultado de la votación</h4>
@@ -404,8 +402,8 @@
                           <div class="calendar calendar--red">
                               <div class="calendar__heading">Votación</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
-                                  <div class="calendar__month">diciembre</div>
+                                  <div class="calendar__days"><strong>20</strong> - <strong>20</strong></div>
+                                  <div class="calendar__month">dic. / ene.</div>
                               </div>
                           </div>
                       </div>

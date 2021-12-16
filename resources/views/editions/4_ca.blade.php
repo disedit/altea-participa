@@ -174,8 +174,8 @@
               <div class="calendar calendar--red">
                   <div class="calendar__heading">Votació</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
-                      <div class="calendar__month">desembre</div>
+                      <div class="calendar__days"><strong>20</strong> - <strong>20</strong></div>
+                      <div class="calendar__month">des. / gen.</div>
                   </div>
               </div>
           </div>
@@ -203,10 +203,8 @@
       per al poble d’Altea</strong>, amb una inversió máxima de <strong>120.000€</strong>.
   </p>
 
-    {{--
     <h4 class="options-title">Propostes presentades</h4>
     [options]
-    --}}
 
   <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
@@ -251,8 +249,8 @@
       <h4>Inici i final de la votació</h4>
       <p>
         S’ha establert un període de votació que començarà, via internet, a les
-        12h de la nit del dia 29 de novembre de 2021 i conclourà el dia 31
-        de desembre a les 23:59.
+        12h de la nit del dia 20 de desembre de 2021 i conclourà el dia 20
+        de gener de 2022 a les 23:59.
       </p>
 
       <h4>Resultat de la votació</h4>
@@ -463,8 +461,8 @@
                           <div class="calendar calendar--red">
                               <div class="calendar__heading">Votació</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
-                                  <div class="calendar__month">desembre</div>
+                                  <div class="calendar__days"><strong>20</strong> - <strong>20</strong></div>
+                                  <div class="calendar__month">des. / gen.</div>
                               </div>
                           </div>
                       </div>

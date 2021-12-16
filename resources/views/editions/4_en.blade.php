@@ -164,8 +164,8 @@
               <div class="calendar calendar--red">
                   <div class="calendar__heading">Vote</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>29</strong> - <strong>31</strong></div>
-                      <div class="calendar__month">Nov / Dec</div>
+                      <div class="calendar__days"><strong>20</strong> - <strong>20</strong></div>
+                      <div class="calendar__month">Dec. / Jan.</div>
                   </div>
               </div>
           </div>
@@ -234,8 +234,8 @@
 
       <h4>Start and end of the vote</h4>
       <p>
-          On-line voting will open on November 29th at midnight and will
-          close on December 31st at 23:59.
+          On-line voting will open on December 20th at midnight and will
+          close on January 20th at 23:59.
       </p>
 
       <h4>Results</h4>
@@ -442,8 +442,8 @@
                           <div class="calendar calendar--red">
                               <div class="calendar__heading">Poll</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>20</strong> - <strong>31</strong></div>
-                                  <div class="calendar__month">December</div>
+                                  <div class="calendar__days"><strong>20</strong> - <strong>20</strong></div>
+                                  <div class="calendar__month">Dec. / Jan.</div>
                               </div>
                           </div>
                       </div>
