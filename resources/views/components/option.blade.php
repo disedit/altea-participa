@@ -1,5 +1,9 @@
+@php
+    $description = str_replace("[img]", "<img src='", $option->description);
+    $description = str_replace("[/img]", "' alt='' />", $description);
+@endphp
 <div>
-    {!! $option->description !!}
+    {!! $description !!}
 </div>
 
 @if($option->status)
