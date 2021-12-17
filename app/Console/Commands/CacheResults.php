@@ -164,7 +164,7 @@ class CacheResults extends Command
             foreach($options as $option => $votes) {
                 Result::updateOrCreate(
                     ['edition_id' => $this->edition->id, 'question_id' => $question, 'option_id' => $option],
-                    ['points' => number_format($votes, 3)]
+                    ['points' => round($votes, 3)]
                 );
             }
         }

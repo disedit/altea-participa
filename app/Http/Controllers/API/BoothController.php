@@ -43,7 +43,7 @@ class BoothController extends Controller
     {
         $editionId  = $request->get('edition_id');
         $inPerson   = $request->user();
-        $flag       = null;
+        $flag        = null;
         $SID        = $request->input('SID');
         $phone      = $request->input('phone');
         $voter      = Voter::findBySID($SID, $editionId);

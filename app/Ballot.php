@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use App\Question;
 
 class Ballot extends Model
 {
@@ -47,9 +48,13 @@ class Ballot extends Model
         $ballotToEncrypt = [];
 
         foreach($ballot as $question) {
-            $options = [];
+            $dbquestion = Question::find($question['id']);
+            $i = 1;
             foreach($question['options'] as $option) {
-                $ballotToEncrypt[$question['id']][$option['id']] = 1.000;
+                $maxpoints = count($question['options']);
+                $points = ($dbquestion->vote_type === 'ranked-choice') ? round(1 / $i, 3) : 1.000;
+                $ballotToEncrypt[$question['id']][$option['id']] = $points;
+                $i++;
             }
         }
 
@@ -73,12 +78,20 @@ class Ballot extends Model
         $withOptions = [];
 
         foreach($ballot as $questionId => $options) {
-            $option_keys = array_keys($options);
-            $withOptions[$questionId] = [
-                    'question' => \App\Question::where('id', $questionId)->first(),
-                    'options' => \App\Option::whereIn('id', $option_keys)->get(),
-                    'points' => $options
+            $optionKeys = array_keys($options);
+            $optionsInOrder = [];
+            foreach ($options as $option_id => $points) {
+                $optionsInOrder[] = [
+                    'option' => \App\Option::where('id', $option_id)->first(),
+                    'points' => $points
                 ];
+            }
+            $withOptions[$questionId] = [
+                'question' => \App\Question::where('id', $questionId)->first(),
+                'options' => \App\Option::whereIn('id', $optionKeys)->get(),
+                'points' => $options,
+                'options_in_order' => $optionsInOrder
+            ];
         }
 
         return $withOptions;

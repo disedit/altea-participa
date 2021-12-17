@@ -17,11 +17,13 @@
                     @foreach($ballot->decryptWithOptions() as $questionId => $content)
                         <h4>{{ $content['question']->question }}</h4>
                         <table class="table table-sm table-striped mt-3">
-                            @foreach($content['options'] as $option)
+                            @php $i = 0; @endphp
+                            @foreach ($content['options_in_order'] as $option)
+                            @php $i++ @endphp
                                 <tr>
-                                    <td width="20"><i aria-hidden="true" class="far fa-check-square"></i></td>
-                                    <td>{{ $option->option }}</td>
-                                    <td class="ballot__points">+{{ $content['points'][$option->id] }}</td>
+                                    <td width="20"><span class="badge badge-secondary">{{ $i }}</span></td>
+                                    <td>{{ $option['option']->option }}</td>
+                                    <td class="ballot__points" width="100">+{{ $option['points'] }} punts</td>
                                 </tr>
                             @endforeach
                         </table>

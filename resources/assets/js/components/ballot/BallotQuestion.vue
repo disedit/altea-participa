@@ -26,7 +26,8 @@
           :option="option"
           :selected="isSelected(option)"
           :disabled="isDisabled(option)"
-          :display-cost="displayCost" />
+          :display-cost="displayCost"
+          :ranked="question.vote_type === 'ranked-choice'" />
       </label>
     </div>
     <hr aria-hidden="true" />
@@ -62,7 +63,8 @@
     methods: {
       isSelected(option) {
         const questionIndex = this.selected.findIndex((q) => q.id == option.question_id);
-        return this.selected[questionIndex].options.filter((o) => o.id == option.id).length == 0 ? false : true;
+        const order = this.selected[questionIndex].options.findIndex((o) => o.id === option.id);
+        return order === -1 ? false : order + 1;
       },
 
       isDisabled(option) {
