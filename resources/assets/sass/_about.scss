@@ -151,7 +151,14 @@
   }
 
   .card-columns {
-    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+
+    .option {
+      margin: 0;
+      height: 100%;
+    }
   }
 
   &__random {
