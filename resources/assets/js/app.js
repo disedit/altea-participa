@@ -49,7 +49,7 @@ const router = new VueRouter({
   scrollBehavior,
   routes: [
     {
-      path: '/',
+      path: '/participa',
       component: Booth,
       children: [
         { path: '', component: BoothBallot },
