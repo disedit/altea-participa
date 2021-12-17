@@ -17,7 +17,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/participa', 'HomeController@participa');
 Route::get('/about', 'HomeController@about');
 Route::get('/propose', 'HomeController@propose');
-Route::get('/booth/{route}', 'HomeController@participa');
+Route::get('/participa/booth/{route}', 'HomeController@participa');
 Route::get('/my_ip', 'HomeController@myIpAddress');
 Route::get('/legal', 'HomeController@legal');
 Route::get('/lang/{language}', 'LanguageController@switchLanguage');

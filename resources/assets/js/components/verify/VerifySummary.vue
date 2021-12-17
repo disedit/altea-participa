@@ -45,7 +45,7 @@
 
     methods: {
       goBack() {
-        Bus.$emit('goToStep', '/');
+        Bus.$emit('goToStep', '/participa');
       },
 
       expand() {

@@ -49,15 +49,15 @@
     beforeRouteUpdate (to, from, next) {
       let transitionName = 'slide-left';
 
-      if(from.path == '/booth/verify' && to.path == '/') transitionName = 'slide-right';
+      if(from.path == '/participa/booth/verify' && to.path == '/participa') transitionName = 'slide-right';
 
-      if(from.path == '/booth/receipt' && to.path == '/booth/verify'){
+      if(from.path == '/participa/booth/receipt' && to.path == '/participa/booth/verify'){
         // Should not be allowed. Redirect to first step
         this.clearBooth();
-        this.$router.push({ path: '/' });
+        this.$router.push({ path: '/participa' });
       }
 
-      if(from.path == '/booth/receipt' && to.path == '/'){
+      if(from.path == '/participa/booth/receipt' && to.path == '/'){
         // If going from receipt to first step, clear the form
         this.clearBooth();
       }
@@ -179,7 +179,7 @@
           ballot: this.selected,
           SID: this.ID
         }).then(response => {
-          this.$router.push({ path: '/booth/verify' });
+          this.$router.push({ path: '/participa/booth/verify' });
         }).catch(errors => {
           this.errors = errors
         }).then(() => Bus.$emit('BoothBallotLoading', false));
@@ -222,7 +222,7 @@
           SMS_code: this.smsCode
         }).then(response => {
           this.receipt = response.ballot;
-          this.$router.push({ path: '/booth/receipt' });
+          this.$router.push({ path: '/participa/booth/receipt' });
         }).catch(errors => {
           this.errors = errors
         }).then(() => Bus.$emit('VerifyPhoneLoading', false));
