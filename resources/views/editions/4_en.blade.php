@@ -277,9 +277,9 @@
           <div class="d-flex justify-content-center col-md-6 results-2017__execution">
               <div class="results-2017__execution__block">
                   <h6><span><i class="far fa-cogs" aria-hidden="true"></i> Status</span></h6>
-                  To be finished soon.
+                  Finished
                   <hr class="my-3" aria-hidden="true" />
-                  <small class="d-block mt-3">Last updated: September 17th, 2021</small>
+                  <small class="d-block mt-3">Last updated: December 17th, 2021</small>
               </div>
           </div>
           <div class="d-flex justify-content-center col-md-4">

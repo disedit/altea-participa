@@ -293,9 +293,9 @@
           <div class="d-flex justify-content-center col-md-6 results-2017__execution">
               <div class="results-2017__execution__block">
                   <h6><span><i class="far fa-cogs" aria-hidden="true"></i> Estat</span></h6>
-                  S’acabarà en poc temps
+                  Finalitzat
                   <hr class="my-3" aria-hidden="true" />
-                  <small class="d-block mt-3">Darrera actualització: 17 de setembre 2021</small>
+                  <small class="d-block mt-3">Darrera actualització: 17 de desembre 2021</small>
               </div>
           </div>
           <div class="d-flex justify-content-center col-md-4">
