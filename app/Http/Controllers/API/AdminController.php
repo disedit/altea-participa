@@ -140,7 +140,7 @@ class AdminController extends Controller
         $results = $edition->fullResults();
 
         /* Retreive the turnout */
-        $turnout = $edition->turnout()->count();
+        $turnout = $edition->votes_cast(); // CHANG THIS
         $census = $edition->voters()->count();
 
         $response = [

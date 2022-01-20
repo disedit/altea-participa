@@ -82,7 +82,7 @@ return [
     */
     'results' => 'Results and project statuses',
     'census' => 'Census',
-    'turnout' => 'Turnout',
+    'turnout' => 'Votes cast',
     'votes' => 'vote|votes',
     'ballots' => 'Votes',
     'top_results' => '[1] Top project|[2] Top two projects|[3] Top three projects|[4] Top four projects|[5,*] Top :num projects',

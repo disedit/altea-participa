@@ -143,6 +143,25 @@ class Edition extends Model
     }
 
     /**
+     * Count votes cast
+     */
+    public function votes_cast()
+    {
+        $votes_cast = 0;
+        $ballots = $this->ballots();
+
+        foreach($ballots as $ballot) {
+            $decodedBallot = $ballot->decrypt();
+
+            foreach($decodedBallot as $question => $options) {
+                $votes_cast += count($options);
+            }
+        }
+
+        return $votes_cast;
+    }
+
+    /**
      * Determine the phase of the vote
      *
      * @return boolean

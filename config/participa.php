@@ -74,7 +74,7 @@ return [
     'min_age' => 16,
 
     /* Whether to display total census number on public result pages */
-    'display_census_number' => true,
+    'display_census_number' => false,
 
     /* Should SMS verification be required for online voting? */
     'disable_SMS_verification' => false,

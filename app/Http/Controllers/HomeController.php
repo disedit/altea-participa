@@ -74,7 +74,7 @@ class HomeController extends Controller
         // If after end_date AND publish_results, show results
         if ($edition->resultsPublished()) {
             $results = $edition->fullResults();
-            $turnout = $edition->turnout()->count();
+            $turnout = $edition->votes_cast(); // CHANG THIS
             $census = $edition->voters()->count();
             $page = $edition->buildResultsPage();
 

@@ -32,46 +32,48 @@
           <tr>
             <th width="25%" class="text-right">Cens</th>
             <td width="25%">{{ census | formatNumber }}</td>
-            <th width="25%" class="text-right">Participació</th>
+            <th width="25%" class="text-right">Vots rebuts</th>
             <td width="25%">{{ turnout | formatNumber }} <span v-if="turnout > 0">({{ turnoutPercentage }})</span></td>
           </tr>
         </table>
 
-        <div v-for="result in results" v-if="turnout > 0" :key="result.id">
-          <h4>{{ result.question }}</h4>
-          <table class="table table-sm">
-            <colgroup>
-              <col width="50%" />
-              <col width="40%" />
-              <col width="10%" />
-            </colgroup>
+        <template v-if="turnout > 0">
+          <div v-for="result in results" :key="result.id">
+            <h4>{{ result.question }}</h4>
+            <table class="table table-sm">
+              <colgroup>
+                <col width="50%" />
+                <col width="40%" />
+                <col width="10%" />
+              </colgroup>
 
-            <tbody>
-              <tr v-for="option in result.options" :key="option.id">
-                <td>{{ option.option }}</td>
-                <td style="vertical-align: middle">
-                  <div class="progress">
-                    <div class="progress-bar"
-                       role="progressbar"
-                       :style="'width: ' + option.relative + '%'"
-                       :aria-valuenow="option.relative"
-                       aria-valuemin="0"
-                       aria-valuemax="100">
-                      <span v-if="option.percentage > 0">
-                        {{ option.percentage | formatNumber }}%
-                      </span>
+              <tbody>
+                <tr v-for="option in result.options" :key="option.id">
+                  <td>{{ option.option }}</td>
+                  <td style="vertical-align: middle">
+                    <div class="progress">
+                      <div class="progress-bar"
+                        role="progressbar"
+                        :style="'width: ' + option.relative + '%'"
+                        :aria-valuenow="option.relative"
+                        aria-valuemin="0"
+                        aria-valuemax="100">
+                        <span v-if="option.percentage > 0">
+                          {{ option.percentage | formatNumber }}%
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td class="text-right">
-                  <span>
-                    {{ option.points | formatNumber }}
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                  </td>
+                  <td class="text-right">
+                    <span>
+                      {{ option.points | formatNumber }}
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </template>
       </div>
       <div v-else class="text-center">
         <i class="far fa-spinner-third fa-spin fa-3x fa-fw mt-3"></i>

@@ -17,7 +17,7 @@ class ArchiveController extends Controller
     public function results(Edition $edition)
     {
         $results = $edition->fullResults();
-        $turnout = $edition->turnout()->count();
+        $turnout = $edition->votes_cast();
         $census = $edition->voters()->count();
         $votes = $edition->results()->get()->sum('points');
         $pastEditions = Edition::pastEditions();
