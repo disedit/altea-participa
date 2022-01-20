@@ -33,7 +33,7 @@
             <th width="25%" class="text-right">Cens</th>
             <td width="25%">{{ census | formatNumber }}</td>
             <th width="25%" class="text-right">Vots rebuts</th>
-            <td width="25%">{{ turnout | formatNumber }} <span v-if="turnout > 0">({{ turnoutPercentage }})</span></td>
+            <td width="25%">{{ turnout | formatNumber }} <span v-if="turnout > 0" class="d-none">({{ turnoutPercentage }})</span></td>
           </tr>
         </table>
 

@@ -154,7 +154,9 @@ class Edition extends Model
             $decodedBallot = $ballot->decrypt();
 
             foreach($decodedBallot as $question => $options) {
-                $votes_cast += count($options);
+                foreach($options as $option => $points) {
+                        $votes_cast += 1;
+                }
             }
         }
 
