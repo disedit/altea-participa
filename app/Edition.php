@@ -148,7 +148,7 @@ class Edition extends Model
     public function votes_cast()
     {
         $votes_cast = 0;
-        $ballots = $this->ballots();
+        $ballots = $this->ballots()->get();
 
         foreach($ballots as $ballot) {
             $decodedBallot = $ballot->decrypt();
