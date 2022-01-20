@@ -77,7 +77,7 @@
                                         <div class="progress-bar"></div>
                                     </div>
                                 </div>
-                                {{ number($option['points'], 0) }}
+                                {{ number($option['points'], 2) }}
                             </div>
 
                             <div class="project-status">

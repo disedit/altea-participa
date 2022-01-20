@@ -112,7 +112,7 @@
 
     filters: {
       formatNumber(number) {
-        return format({integerSeparator: '.', round: 0})(number);
+        return format({integerSeparator: '.', round: 2})(number);
       }
     },
 
