@@ -29,7 +29,7 @@
     "jump.js": "^1.0.2",
     "marked": "^0.7.0",
     "moment": "^2.22.2",
-    "node-sass": "4.14.1",
+    "node-sass": "7.0.0",
     "qs": "^6.9.6",
     "raven-js": "^3.26.4",
     "smooth-scroll": "^14.2.1",
