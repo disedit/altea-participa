@@ -1,14 +1,19 @@
 <template>
   <div class="docs">
-    <ul>
-      <li v-for="doc in docs" :key="doc.id">
-        <a :href="cms + doc.file.url" target="_blank" rel="noopener">
-          <i class="far fa-file-alt" />
-          <span class="title">{{ doc.title }}</span>
-          <span v-if="doc.etiqueta" class="flair">{{ doc.etiqueta }}</span>
-        </a>
-      </li>
-    </ul>
+    <div v-for="category in sortedDocs" :key="category.slug">
+      <div v-if="category.docs.length > 0">
+        <h3>{{ category.name }}</h3>
+        <ul class="mb-4">
+          <li v-for="doc in category.docs" :key="doc.id">
+            <a :href="cms + doc.file.url" target="_blank" rel="noopener">
+              <i class="far fa-file-alt" />
+              <span class="title">{{ doc.title }}</span>
+              <span v-if="doc.etiqueta" class="flair">{{ doc.etiqueta }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,13 +21,32 @@
   export default {
     data () {
       return {
-        docs: null,
-        cms: GlobalConfig.cms_url
+        docs: [],
+        cms: GlobalConfig.cms_url,
+        categories: [
+          { slug: 'plans', name: 'Plans', docs: [] },
+          { slug: 'ordenances', name: 'Ordenances', docs: [] },
+          { slug: 'reglaments', name: 'Reglaments', docs: [] },
+          { slug: 'altres', name: 'Altres', docs: [] }
+        ]
       }
     },
 
     mounted () {
       this.getDocuments();
+    },
+
+    computed: {
+      sortedDocs () {
+        const docs = [...this.categories]
+
+        this.docs.forEach((doc) => {
+          const catIndex = this.categories.findIndex((cat) => cat.slug === doc.category)
+          docs[catIndex].docs.push(doc)
+        })
+
+        return docs
+      }
     },
 
     methods: {
