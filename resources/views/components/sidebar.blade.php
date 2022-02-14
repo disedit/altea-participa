@@ -121,13 +121,13 @@
                 @foreach($pastEditions as $edition)
                     <li class="sidebar__list__item">
                         <a href="{{ secure_url('archive/' . $edition->id) }}">
-                            <i class="far fa-calendar-alt" aria-hidden="true"></i> <span>{{ human_month($edition->start_date) }}</span>
+                            <i class="far fa-calendar-alt" aria-hidden="true"></i> <span>{{ $edition->name }}</span>
                         </a>
                     </li>
                 @endforeach
                 <li class="sidebar__list__item">
                     <a href="{{ secure_url('archive/2017') }}">
-                        <i class="far fa-calendar-alt" aria-hidden="true"></i> <span>setembre 2017</span>
+                        <i class="far fa-calendar-alt" aria-hidden="true"></i> <span>Pressupostos Participatius 2017</span>
                     </a>
                 </li>
                 </ul>
