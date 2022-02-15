@@ -17,7 +17,7 @@
       $globalConfig = [
         'locale' => config('app.locale'),
         'participa' => [
-          'flair' => true,
+          'flair' => false,
           'title' => $edition->name,
           'description' => $edition->description,
           // TODO
