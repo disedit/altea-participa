@@ -29,6 +29,7 @@ Route::view('/associacions/{assoc?}', 'associations');
 Route::view('/altea-decideix', 'altea_decideix');
 Route::view('/activitats', 'activities');
 Route::view('/documents', 'docs');
+Route::view('/memoria-historica', 'memoria-historica');
 
 Auth::routes();
 

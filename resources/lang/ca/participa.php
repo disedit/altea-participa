@@ -48,7 +48,8 @@ return [
       'decideix' => 'Altea Decideix',
       'associations' => 'Associacions',
       'activities' => 'Activitats',
-      'docs' => 'Documents'
+      'docs' => 'Documents',
+      'memory' => 'Memòria històrica'
     ],
 
     /*

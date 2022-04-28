@@ -1,5 +1,5 @@
 window.axios = require('axios');
-window.Vue = require('vue');
+window.Vue = require('vue').default;
 
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';

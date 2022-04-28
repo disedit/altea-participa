@@ -3,7 +3,7 @@ window.Vue = require('vue').default;
 
 import VueI18n from 'vue-i18n';
 import Strapi from './strapi';
-import Activities from './components/activities/Activities';
+import Page from './components/pages/Page';
 
 import Catalan from './language/ca.js';
 import Spanish from './language/es.js';
@@ -26,9 +26,9 @@ const i18n = new VueI18n({
 
 const app = new Vue({
   components: {
-    Activities
+    Page
   },
   el: '#app',
   i18n,
-  template: '<activities />',
+  template: '<page />',
 });

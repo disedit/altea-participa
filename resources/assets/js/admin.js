@@ -1,6 +1,6 @@
 require('./bootstrap');
 
-window.Vue = require('vue');
+window.Vue = require('vue').default;
 window.Bus = new Vue();
 
 import Raven from 'raven-js';

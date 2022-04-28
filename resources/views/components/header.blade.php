@@ -44,6 +44,9 @@
         <li class="nav-item">
           <a href="/documents">@lang('participa.nav.docs')</a>
         </li>
+        <li class="nav-item">
+          <a href="/memoria-historica">@lang('participa.nav.memory')</a>
+        </li>
     </ul>
 
     <ul class="navbar-nav navbar-social ml-auto d-lg-none d-xl-flex" role="presenation">

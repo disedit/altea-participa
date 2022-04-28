@@ -48,7 +48,8 @@ return [
       'decideix' => 'Altea Decide',
       'associations' => 'Asociaciones',
       'activities' => 'Actividades',
-      'docs' => 'Documentos'
+      'docs' => 'Documentos',
+      'memory' => 'Memoria histórica'
     ],
 
     /*

@@ -1,5 +1,5 @@
 window.axios = require('axios');
-window.Vue = require('vue');
+window.Vue = require('vue').default;
 
 import VueI18n from 'vue-i18n';
 import Strapi from './strapi';
