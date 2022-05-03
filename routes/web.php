@@ -29,7 +29,6 @@ Route::view('/associacions/{assoc?}', 'associations');
 Route::view('/altea-decideix', 'altea_decideix');
 Route::view('/activitats', 'activities');
 Route::view('/documents', 'docs');
-Route::view('/memoria-historica', 'memoria-historica');
 
 Auth::routes();
 
@@ -44,6 +43,9 @@ Route::get('/ballot/{ballotRef}', 'BallotController@ballot');
 
 /* Admin */
 Route::get('/admin', 'AdminController@index')->middleware('auth');
+
+/* Pages */
+Route::view('{any}', 'pages')->where('any', '.*');;
 
 /* Force SSL */
 if (env('APP_ENV') === 'production') {

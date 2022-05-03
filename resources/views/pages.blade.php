@@ -4,7 +4,7 @@
 @section('thumbnail', '/images/thumbnail-decideix.jpg')
 
 @section('page-header')
-    <h2><span>@lang('participa.nav.memory')</span></h2>
+    <h2><span id="PageTitle">Carregant...</span></h2>
 @endsection
 
 @section('content')
@@ -19,7 +19,8 @@
             'name' => config('participa.municipality', 'Any City'),
             'contact_email' => config('participa.contact_email', 'participa@disedit.com'),
             'url' => config('app.url', ''),
-            'cms_url' => 'https://cms.alteaparticipa.es/'
+            'cms_url' => 'https://cms.alteaparticipa.es/',
+            'page' => request()->route('any'),
         ];
     @endphp
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

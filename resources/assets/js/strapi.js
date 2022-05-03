@@ -21,8 +21,8 @@ export default class Strapi {
     return this._call('get', `associations/?slug=${slug}`);
   }
 
-  getPage (title, lang = 'va') {
-    return this._call('get', `pagines/?titol_${lang}=${title}`);
+  getPage (title) {
+    return this._call('get', `pagines/?slug=${title}`);
   }
 
   getOpenProcesses () {
