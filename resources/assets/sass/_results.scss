@@ -188,7 +188,27 @@
     }
 
     &-value {
-      text-align: right;
+      font-weight: bold;
+      background: $green;
+      color: $white;
+      padding: .1rem .5rem;
+      border-radius: 0.5rem;
+
+      &.color-red {
+        background: $red;
+      }
+
+      &.color-orange {
+        background: $orange;
+      }
+
+      &.color-yellow {
+        background: $yellow;
+      }
+
+      &.color-teal {
+        background: $teal;
+      }
     }
 
     .cost {

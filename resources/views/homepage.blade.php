@@ -18,7 +18,7 @@
         'locale' => config('app.locale'),
         'participa' => [
           'flair' => false,
-          'title' => $edition->name,
+          'title' => 'Pressupostos Participatius',
           'description' => $edition->description,
           // TODO
           // 'phase' => $edition->phase(),

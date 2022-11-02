@@ -100,7 +100,7 @@
                                 <li>
                                   <span class="project-status-label">@lang('participa.project_status')</span>
                                   <span class="project-status-divider"></span>
-                                  <span class="project-status-value">
+                                  <span class="project-status-value color-{{ $option['color'] }}">
                                     {{ $option['status'] }}
                                   </span>
                                 </li>
