@@ -28,7 +28,9 @@
           </li>
         </ul>
         <div v-else class="associations associations--empty">
-          {{ $t('associations.no_assocs') }}
+          <slot>
+            {{ $t('associations.no_assocs') }}
+          </slot>
         </div>
       </div>
     </transition>
