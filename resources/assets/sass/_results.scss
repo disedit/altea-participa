@@ -221,6 +221,32 @@
   }
 }
 
+.project-statuses {
+  .year a {
+    display: block;
+    font-size: 4rem;
+    color: $gray-mid;
+
+    .full-results {
+      opacity: 0;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      color: $brand-primary;
+      text-decoration: none;
+
+      .full-results {
+        opacity: .5;
+      }
+    }
+  }
+
+  .results-list {
+    margin-bottom: 4rem;
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .project {
     column-gap: 1rem;

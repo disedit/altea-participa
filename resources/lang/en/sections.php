@@ -32,4 +32,13 @@ return [
     |--------------------------------------------------------------------------
     */
     'docs' => 'Documents',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Documents
+    |--------------------------------------------------------------------------
+    */
+    'projects' => 'Project tracking',
+    'projects_description' => 'Updated statuses of the projects that have been chosen in past editions',
+    'projects_full_results' => 'Full results'
 ];

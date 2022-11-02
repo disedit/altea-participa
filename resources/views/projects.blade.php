@@ -12,11 +12,16 @@
 @endsection
 
 @section('content')
-<div class="row results-page">
+<div class="row results-page project-statuses">
     <div class="col-md-10">
         <div class="results">
             @foreach($editions as $edition)
-                <h3><a href="/archive/{{ $edition->id }}">{{ date('Y', strtotime($edition->end_date)) }}</a></h3>
+                <h2 class="year">
+                    <a href="/archive/{{ $edition->id }}">
+                        {{ date('Y', strtotime($edition->end_date)) }}
+                        <span class="full-results">@lang('sections.projects_full_results') <i class="far fa-arrow-right"></i></span>
+                    </a>
+                </h2>
                 @foreach($edition->questions as $question)
                 <ol class="results-list">
                     @foreach ($question->options as $project)

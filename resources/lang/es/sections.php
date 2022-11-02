@@ -32,4 +32,13 @@ return [
     |--------------------------------------------------------------------------
     */
     'docs' => 'Documentos',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Documents
+    |--------------------------------------------------------------------------
+    */
+    'projects' => 'Estado de los proyectos',
+    'projects_description' => 'Seguimiento del estado de todos los proyectos elegidos en los presupuestos participativos',
+    'projects_full_results' => 'Resultados completos'
 ];

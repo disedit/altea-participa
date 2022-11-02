@@ -40,5 +40,5 @@ return [
     */
     'projects' => 'Estat dels projectes',
     'projects_description' => 'Seguiment de l\'estat tots els projectes triats als pressupostos participatius',
-
+    'projects_full_results' => 'Resultats complets'
 ];
