@@ -188,26 +188,30 @@
     }
 
     &-value {
-      font-weight: bold;
-      background: $green;
-      color: $white;
-      padding: .1rem .5rem;
-      border-radius: 0.5rem;
+      text-align: right;
 
-      &.color-red {
-        background: $red;
-      }
+      &.is-status {
+        font-weight: bold;
+        background: $green;
+        color: $white;
+        padding: .1rem .5rem;
+        border-radius: 0.5rem;
 
-      &.color-orange {
-        background: $orange;
-      }
+        &.color-red {
+          background: $red;
+        }
 
-      &.color-yellow {
-        background: $yellow;
-      }
+        &.color-orange {
+          background: $orange;
+        }
 
-      &.color-teal {
-        background: $teal;
+        &.color-yellow {
+          background: $yellow;
+        }
+
+        &.color-teal {
+          background: $teal;
+        }
       }
     }
 
