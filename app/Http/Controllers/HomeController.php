@@ -119,6 +119,15 @@ class HomeController extends Controller
     }
 
     /**
+     * Projects
+     */
+    public function projects()
+    {
+        $editions = Edition::orderBy('id', 'desc')->get();
+        return view('projects', compact('editions'));
+    }
+
+    /**
      * Returns the stand-alone sidebar to inject via AJAX
      *
      * @return \Illuminate\View\View

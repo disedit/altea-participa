@@ -49,7 +49,7 @@ return [
       'associations' => 'Associacions',
       'activities' => 'Activitats',
       'docs' => 'Documents',
-      'memory' => 'Memòria històrica'
+      'memory' => 'Memòria històrica',
     ],
 
     /*

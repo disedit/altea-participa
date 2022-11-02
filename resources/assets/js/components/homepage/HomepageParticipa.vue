@@ -1,6 +1,6 @@
 <template>
   <article class="homepage__card participa">
-    <a href="/participa" class="d-flex flex-column">
+    <a href="/projects" class="d-flex flex-column">
       <span class="participa__flair" v-if="participa.flair">{{ $t('participa.new_edition') }}</span>
       <div class="d-flex align-items-start">
         <h2 class="mr-4 chonky-title">{{ participa.title }}</h2>
@@ -15,7 +15,7 @@
         -->
       </div>
       <div class="participa__button">
-        <i class="far fa-pencil" />
+        <i class="far fa-info-circle" />
         {{ participa.button }}
       </div>
     </a>

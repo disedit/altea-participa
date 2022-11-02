@@ -30,7 +30,7 @@
           //  'end_month' => $endMonth
           // Meanwhile...
           'phase' => 'Votació',
-          'button' => 'Més informació',
+          'button' => 'Estat dels projectes triats',
           'date' => [
             'start_day' => '20',
             'end_day' => '20',

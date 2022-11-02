@@ -33,4 +33,12 @@ return [
     */
     'docs' => 'Documents',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Documents
+    |--------------------------------------------------------------------------
+    */
+    'projects' => 'Estat dels projectes',
+    'projects_description' => 'Seguiment de l\'estat tots els projectes triats als pressupostos participatius',
+
 ];

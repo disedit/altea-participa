@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\URL;
 
 Route::get('/', 'HomeController@index');
 Route::get('/participa', 'HomeController@participa');
+Route::get('/projects', 'HomeController@projects');
 Route::get('/about', 'HomeController@about');
 Route::get('/propose', 'HomeController@propose');
 Route::get('/participa/booth/{route}', 'HomeController@participa');
