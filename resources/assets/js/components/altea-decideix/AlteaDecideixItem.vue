@@ -62,6 +62,10 @@
 <style lang="scss" scoped>
   @import '../../../sass/_variables';
 
+  li {
+    display: flex;
+  }
+
   .process {
     display: block;
     background: $card-bg;

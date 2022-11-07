@@ -64,7 +64,7 @@
     &__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, minmax(300px, 30vh));
+      grid-template-rows: repeat(2, minmax(315px, 30vh));
       grid-template-areas:
         "participa participa decideix"
         "millora assocs assocs"
@@ -89,6 +89,9 @@
       &__social {
         grid-area: social;
         align-self: flex-start;
+        position: sticky;
+        top: 85px;
+        z-index: 100;
       }
 
       &__assocs {

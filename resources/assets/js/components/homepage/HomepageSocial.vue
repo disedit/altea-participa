@@ -75,10 +75,6 @@
     }
   }
 
-  .activities {
-
-  }
-
   .gva {
     img {
       display: block;
