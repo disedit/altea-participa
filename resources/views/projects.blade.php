@@ -13,10 +13,28 @@
 
 @section('content')
 <div class="row results-page project-statuses">
+    <div class="col-right col-md-2 d-none d-md-block">
+        <aside id="projects-index" class="navbar projects-index">
+            <h3>Edicions</h3>
+            <ul class="nav nav-pills">
+                @foreach($editions as $edition)
+                <li class="nav-item"><a class="nav-link" href="#ed{{ $edition->id }}">{{ date('Y', strtotime($edition->end_date)) }}</a></li>
+                @endforeach
+            </ul>
+        </aside>
+    </div>
     <div class="col-md-10">
-        <div class="results">
+        <aside id="projects-index" class="projects-index flex-column d-md-none navbar">
+            <h3>Edicions</h3>
+            <ul class="nav nav-pills">
+                @foreach($editions as $edition)
+                <li class="nav-item"><a class="nav-link" href="#ed{{ $edition->id }}">{{ date('Y', strtotime($edition->end_date)) }}</a></li>
+                @endforeach
+            </ul>
+        </aside>
+        <div class="results projects-content">
             @foreach($editions as $edition)
-                <h2 class="year">
+                <h2 class="year" id="ed{{ $edition->id }}">
                     <a href="/archive/{{ $edition->id }}">
                         {{ date('Y', strtotime($edition->end_date)) }}
                         <span class="full-results">@lang('sections.projects_full_results') <i class="far fa-arrow-right"></i></span>
@@ -116,6 +134,8 @@
                 $(".modal-title", this).text(option_title);
                 $(".modal-body").load('/api/option/' + option_id);
             });
+
+            $('body').scrollspy({ target: '#projects-index', offset: 200 })
         });
     </script>
 @endpush

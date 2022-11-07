@@ -24,7 +24,7 @@
     </article>
     <article class="homepage__card gva mt-4">
       <a href="https://gvaparticipa.gva.es/" class="gva">
-        <img src="../../../images/gvaparticipa.png" alt="GVA Participa">
+        <img src="https://gvaparticipa.gva.es/system/site_customization/images/images/000/000/001/original/logo435x85.png?1611748247" alt="GVA Participa">
       </a>
     </article>
   </div>
