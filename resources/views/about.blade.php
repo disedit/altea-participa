@@ -1,5 +1,9 @@
 @extends('layouts.public')
 
+@section('page-header')
+    <h2><span>Consulta</span></h2>
+@endsection
+
 @section('content')
 <div class="row">
     <div class="col-lg-8">
