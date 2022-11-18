@@ -40,7 +40,7 @@
 
     created() {
       this.boothMode = window.BoothMode;
-      this.disableSMSVerification = window.BoothConfig.disable_SMS_verification;
+      this.disableSMSVerification = window.BoothConfig.disable_SMS_verification || !window.BoothConfig.id_required;
       document.title = this.$t('verify_phone.heading') + ' - ' + window.BoothConfig.app_name;
     }
   }

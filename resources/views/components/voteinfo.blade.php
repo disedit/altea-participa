@@ -1,5 +1,6 @@
 @php
-  $compact = (Request::segment(1) === 'participa') ? false : true;
+  // $compact = (Request::segment(1) === 'participa') ? false : true;
+  $compact = true;
 @endphp
 
 <header class="vote-info {{ (!$compact) ? 'vote-info--full' : 'vote-info--compact' }} @hasSection('page-header') vote-info--page-header @endif" role="banner">
@@ -48,7 +49,7 @@
                             @yield('page-header-aside')
                         </div>
                     @else
-                        <div class="vote-info__calendar col-lg-6 d-none d-lg-block">
+                        <div class="vote-info__calendar col-lg-4 d-none d-lg-block">
                             @include('components/calendar')
                         </div>
                     @endif

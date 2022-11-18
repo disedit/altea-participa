@@ -9,7 +9,7 @@
       <div v-for="question in selected" :key="question.id">
         <h3>{{ question.question }}</h3>
         <ol :class="['options', { 'ranked-choice': question.vote_type === 'ranked-choice' }]">
-          <li v-for="(option, i) in question.options" :key="option.id">
+          <li v-for="option in question.options" :key="option.id">
             <i class="far fa-check-square" aria-hidden="true"></i>
             {{ option.option }}
           </li>

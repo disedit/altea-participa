@@ -9,6 +9,7 @@ use NotificationChannels\Messagebird\Exceptions\CouldNotSendNotification;
 use App\Http\Requests;
 use App\Http\Requests\VoteRequest;
 use App\Voter;
+use App\Edition;
 use App\Ballot;
 use App\Limit;
 
@@ -84,11 +85,18 @@ class BoothController extends Controller
     public function castBallot(VoteRequest $request)
     {
         $editionId  = $request->get('edition_id');
-        $SID        = $request->input('SID');
-        $voter      = Voter::findBySID($SID, $editionId);
+        $edition = Edition::find($editionId);
 
-        // Mark voter
-        $marked = $voter->mark($request);
+        if ($edition->id_required) {
+            $SID        = $request->input('SID');
+            $voter      = Voter::findBySID($SID, $editionId);
+
+            // Mark voter
+            $marked = $voter->mark($request);
+        } else {
+            $marked = true;
+            $voter = null;
+        }
 
         // Submit ballot
         if($marked) {

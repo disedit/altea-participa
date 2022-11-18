@@ -33,16 +33,17 @@
 
     data() {
       return {
-      ballot: {},
-      selected: [],
-      errors: {},
-      receipt: {},
-      ID: '',
-      phone: '',
-      countryCode: 34,
-      smsCode: '',
-      smsRequested: false,
-      transitionName: 'slide-left'
+        ballot: {},
+        selected: [],
+        errors: {},
+        receipt: {},
+        ID: '',
+        phone: '',
+        countryCode: 34,
+        smsCode: '',
+        smsRequested: false,
+        id_required: true,
+        transitionName: 'slide-left'
       }
     },
 
@@ -80,6 +81,7 @@
       Bus.$on('requestSMS', () => this.requestSMS());
       Bus.$on('castBallot', () => this.castBallot());
       Bus.$on('goToStep', (path) => this.$router.push({ path }));
+      this.id_required = window.BoothConfig.id_required
     },
 
     watch: {
@@ -160,7 +162,7 @@
 
         this.selected.forEach((question) => completed.push(question.max_options == question.options.length));
 
-        const shouldScroll = completed.every((value) => value === true);
+        const shouldScroll = completed.every((value) => value === true) && this.id_required;
 
         if(shouldScroll) {
           jump('.ballot-identification', {

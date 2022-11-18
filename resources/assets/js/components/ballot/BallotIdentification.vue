@@ -1,20 +1,22 @@
 <template>
   <div class="ballot-identification ballot-box">
-    <h3><i class="far fa-user" aria-hidden="true"></i> {{ $t('booth_identification.heading') }}</h3>
-    <p class="subheading" v-html="$t('booth_identification.subheading', { min_age, municipality })"></p>
-    <text-input
-      name="identification"
-      ref="identificationInput"
-      :label="$t('booth_identification.label')"
-      :tooltip="$t('booth_identification.tooltip')"
-      :required="true"
-      :value="identifier"
-      :autofocus="autofocus"
-      @update="updateID"
-      @focus="autofocus = true"
-      @blur="autofocus = false" />
+    <template v-if="id_required">
+      <h3><i class="far fa-user" aria-hidden="true"></i> {{ $t('booth_identification.heading') }}</h3>
+      <p class="subheading" v-html="$t('booth_identification.subheading', { min_age, municipality })"></p>
+      <text-input
+        name="identification"
+        ref="identificationInput"
+        :label="$t('booth_identification.label')"
+        :tooltip="$t('booth_identification.tooltip')"
+        :required="true"
+        :value="identifier"
+        :autofocus="autofocus"
+        @update="updateID"
+        @focus="autofocus = true"
+        @blur="autofocus = false" />
 
-    <hr aria-hidden="true" />
+      <hr aria-hidden="true" />
+    </template>
 
     <button :class="'btn btn-vote btn-primary btn-lg btn-block' + disabled" type="submit">
       <i v-if="disabled" class="far fa-spinner-third fa-spin" aria-hidden="true"></i>
@@ -46,7 +48,8 @@
         municipality: '',
         min_age: '16',
         anonymous_voting: false,
-        autofocus: false
+        autofocus: false,
+        id_required: true
       }
     },
 
@@ -54,6 +57,7 @@
       this.anonymous_voting = window.BoothConfig.anonymous_voting;
       this.municipality = window.BoothConfig.name;
       this.min_age = window.BoothConfig.min_age;
+      this.id_required = window.BoothConfig.id_required;
     },
 
     mounted() {

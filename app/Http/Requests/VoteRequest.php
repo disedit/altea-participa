@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use App\Voter;
+use App\Edition;
 use App\Rules\BallotValidity;
 use App\Rules\HasNotVoted;
 use App\Rules\OnCensus;
@@ -52,6 +53,7 @@ class VoteRequest extends FormRequest
     {
         $editionId = $this->get('edition_id');
         $SID = $this->input('SID');
+        $edition = Edition::find($editionId);
         $voter = Voter::findBySID($SID, $editionId);
 
         $isRequestSMS = $this->is('api/request_sms');
@@ -60,13 +62,16 @@ class VoteRequest extends FormRequest
         $smsIsDisabled = config('participa.disable_SMS_verification', false);
         $votingInPerson = ($this->user()) ? true : false;
         $verificationRequired = (!$votingInPerson && !$smsIsDisabled);
+        $isIdRequired = $edition->id_required;
 
         // Rules
-        $rules['SID'] = [
-            'required',
-            new OnCensus($voter),
-            new HasNotVoted($voter)
-        ];
+        if ($isIdRequired) {
+            $rules['SID'] = [
+                'required',
+                new OnCensus($voter),
+                new HasNotVoted($voter)
+            ];
+        }
 
         $rules['ballot'] = [
             new BallotValidity($editionId)
@@ -84,12 +89,12 @@ class VoteRequest extends FormRequest
         ];
 
         // SMS verification rules. Only when applicable.
-        if($isRequestSMS || $isCastBallot) {
+        if(($isRequestSMS || $isCastBallot) && $isIdRequired) {
             $rules['phone'] = $verificationRequired ? $phoneRules : '';
             $rules['country_code'] = $verificationRequired ? 'required|numeric' : '';
         }
 
-        if($isCastBallot) {
+        if($isCastBallot && $isIdRequired) {
             $rules['SMS_code'] = $verificationRequired ? $smsRules : '';
         }
 

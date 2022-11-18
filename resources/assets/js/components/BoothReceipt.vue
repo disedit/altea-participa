@@ -49,7 +49,7 @@
       <div class="further-actions">
         <a :href="council_url">{{ $t('booth_receipt.back_to_council') }}</a>
         <span aria-hidden="true">·</span>
-        <router-link to="/">{{ $t('booth_receipt.back_to_booth') }}</router-link>
+        <router-link to="/participa">{{ $t('booth_receipt.back_to_booth') }}</router-link>
       </div>
     </div>
   </div>

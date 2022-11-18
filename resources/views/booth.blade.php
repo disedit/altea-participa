@@ -4,6 +4,10 @@
 
 @extends('layouts.public')
 
+@section('page-header')
+    <h2><span>Consulta</span></h2>
+@endsection
+
 @section('content')
 <div class="{{ $inPerson ? 'booth-mode' : '' }}">
     <div aria-hidden="true" class="d-sm-none footer-languages languages">
@@ -25,6 +29,7 @@
             'twitter' => config('participa.twitter', 'infoDisedit'),
             'anonymous_voting' => config('participa.anonymous_voting', true),
             'min_age' => config('participa.min_age', 16),
+            'id_required' => $edition->id_required,
             'sms_max_attempts' => config('participa.sms_max_attempts', 3),
             'max_per_ip' => config('participa.max_per_ip', 3),
             'disable_SMS_verification' => config('participa.disable_SMS_verification', false),

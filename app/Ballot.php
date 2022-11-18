@@ -141,7 +141,7 @@ class Ballot extends Model
         /* Prevent identifiable information about voter from being saved */
         if(config('participa.anonymous_voting') === false) {
             $this->cast_at = date("Y-m-d H:i:s");
-            $this->voter_id = $voter->id;
+            $this->voter_id = ($voter) ? $voter->id : null;
             $this->ip_address = $request->ip();
             $this->user_agent = $request->header('User-Agent');
         }
