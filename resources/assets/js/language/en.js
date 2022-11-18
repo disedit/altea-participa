@@ -65,7 +65,9 @@ export default {
   },
   participa: {
     title: 'Participatory budget',
-    new_edition: 'New edition'
+    new_edition: 'New edition',
+    new_vote: 'New vote',
+    state: 'Status of chosen projects',
   },
   associations: {
     title: 'Associations',

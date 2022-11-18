@@ -18,8 +18,9 @@
         'locale' => config('app.locale'),
         'participa' => [
           'flair' => false,
-          'title' => 'Pressupostos Participatius',
+          'title' => $edition->name,
           'description' => $edition->description,
+          'state' => $edition->phase(),
           // TODO
           // 'phase' => $edition->phase(),
           // 'button' => 'Resultats',
@@ -30,12 +31,12 @@
           //  'end_month' => $endMonth
           // Meanwhile...
           'phase' => 'Votació',
-          'button' => 'Estat dels projectes triats',
+          'button' => 'Vota',
           'date' => [
-            'start_day' => '20',
-            'end_day' => '20',
-            'start_month' => 'des',
-            'end_month' => 'gen'
+            'start_day' => '21',
+            'end_day' => '24',
+            'start_month' => 'novembre',
+            'end_month' => 'nov'
           ]
         ]
       ];

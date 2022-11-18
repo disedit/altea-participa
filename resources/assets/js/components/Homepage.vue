@@ -2,6 +2,7 @@
   <main class="homepage">
     <div class="container">
       <ul class="homepage__grid">
+        <li class="homepage__grid__consulta"><homepage-consulta /></li>
         <li class="homepage__grid__participa"><homepage-participa /></li>
         <li class="homepage__grid__decideix"><homepage-decideix /></li>
         <li class="homepage__grid__social"><homepage-social /></li>
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+  import HomepageConsulta from './homepage/HomepageConsulta'
   import HomepageParticipa from './homepage/HomepageParticipa'
   import HomepageDecideix from './homepage/HomepageDecideix'
   import HomepageSocial from './homepage/HomepageSocial'
@@ -23,6 +25,7 @@
 
   export default {
     components: {
+      HomepageConsulta,
       HomepageParticipa,
       HomepageDecideix,
       HomepageSocial,
@@ -66,6 +69,7 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, minmax(315px, 30vh));
       grid-template-areas:
+        "consulta consulta consulta"
         "participa participa decideix"
         "millora assocs assocs"
         "social news news";
@@ -76,6 +80,10 @@
 
       li {
         display: flex;
+      }
+
+      &__consulta {
+        grid-area: consulta;
       }
 
       &__participa {
@@ -152,6 +160,7 @@
       &__grid {
         grid-template-columns: 1fr;
         grid-template-areas:
+          "consulta"
           "participa"
           "assocs"
           "decideix"
