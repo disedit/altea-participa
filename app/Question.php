@@ -16,7 +16,7 @@ class Question extends Model
      * @var array
      */
     public $translatedAttributes = [
-        'question', 'description'
+        'question', 'description', 'html'
     ];
 
     /**

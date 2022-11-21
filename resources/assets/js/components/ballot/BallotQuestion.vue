@@ -6,6 +6,7 @@
       <span v-if="displayNumber" class="number">{{ number }}</span>
       <h2 :id="'question-' + question.id">{{ question.question }}</h2>
       <p class="description">{{ question.description }}</p>
+      <div v-if="question.html" v-html="question.html"></div>
     </div>
     <div
       :class="{

@@ -14,6 +14,6 @@ class QuestionTranslation extends Model
      * @var array
      */
     protected $fillable = [
-        'option', 'description', 'motivation'
+        'question', 'description', 'html'
     ];
 }
