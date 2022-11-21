@@ -41,7 +41,8 @@
         const docs = [...this.categories]
 
         this.docs.forEach((doc) => {
-          const catIndex = this.categories.findIndex((cat) => cat.slug === doc.category)
+          console.log(doc)
+          const catIndex = docs.findIndex((cat) => cat.slug === doc.category)
           docs[catIndex].docs.push(doc)
         })
 

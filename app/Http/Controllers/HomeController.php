@@ -123,7 +123,7 @@ class HomeController extends Controller
      */
     public function projects()
     {
-        $editions = Edition::orderBy('id', 'desc')->get();
+        $editions = Edition::where('has_projects', 1)->orderBy('id', 'desc')->get();
         return view('projects', compact('editions'));
     }
 
