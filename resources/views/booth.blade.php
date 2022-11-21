@@ -8,6 +8,8 @@
     <h2><span>Consulta</span></h2>
 @endsection
 
+@section('thumbnail', '/docs/platja/thumbnail-platja.png')
+
 @section('content')
 <div class="{{ $inPerson ? 'booth-mode' : '' }}">
     <div aria-hidden="true" class="d-sm-none footer-languages languages">
