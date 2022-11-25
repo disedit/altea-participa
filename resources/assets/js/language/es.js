@@ -66,7 +66,7 @@ export default {
   participa: {
     title: 'Presupuestos participativos',
     new_edition: 'Nueva edición',
-    new_vote: 'Nueva votación',
+    new_vote: 'Resultados',
     state: 'Estado de los proyectos elegidos',
   },
   associations: {

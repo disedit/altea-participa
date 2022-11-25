@@ -66,7 +66,7 @@ export default {
   participa: {
     title: 'Pressupostos participatius',
     new_edition: 'Nova edició',
-    new_vote: 'Nova votació',
+    new_vote: 'Resultats',
     state: 'Estat dels projectes triats',
   },
   associations: {

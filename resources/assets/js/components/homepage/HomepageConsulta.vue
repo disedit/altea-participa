@@ -14,7 +14,7 @@
       </div>
       <div class="participa__button">
         <i class="far fa-box-ballot" />
-        {{ participa.state === 'prevote' ? "La votació s'obrirà el 21 de novembre" : "Vota" }}
+        {{ participa.state === 'prevote' ? "La votació s'obrirà el 21 de novembre" : "Resultats" }}
       </div>
     </a>
   </article>
