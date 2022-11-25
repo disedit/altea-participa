@@ -10,7 +10,7 @@ return [
     'locale' => 'ca',
     'twitter_locale' => 'es',
     'facebook_locale' => 'ca_ES',
-    'heading' => 'Tu decideixes en què inverteix l\'Ajuntament!',
+    'heading' => 'Consulta', // Tu decideixes en què inverteix l\'Ajuntament!
     'subheading' => 'El Govern d\'Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten.',
     'tweet' => 'He votat en què projectes vull que @EsAltea invertisca',
     'description' => 'Tu decideixes les inversions de l\'Ajuntament. El Govern d\'Altea t\'obri la possibilitat de participar activament en les decisions que més t\'afecten. Junts volem millorar Altea, i el teu vot compta!',
@@ -81,7 +81,7 @@ return [
     | Results
     |--------------------------------------------------------------------------
     */
-    'results' => 'Resultats i estat dels projectes',
+    'results' => 'Resultats',
     'census' => 'Cens',
     'turnout' => 'Vots rebuts',
     'votes' => 'vot|vots',
