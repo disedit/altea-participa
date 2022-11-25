@@ -296,6 +296,7 @@ class Edition extends Model
             $tab[$question->id] = [
                 'question' => $question->question,
                 'results_to_highlight' => $question->results_to_highlight,
+                'type' => $question->type,
                 'options' => $optionsWithResults
             ];
         }

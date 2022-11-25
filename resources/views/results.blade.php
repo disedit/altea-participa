@@ -58,17 +58,17 @@
                     $picture = (isset($pictures[0])) ? $pictures[0] : false;
                 @endphp
                     <li>
-                        <a class="project" href="#" data-toggle="modal" data-target="#optionModal" data-option-id="{{ $option['id'] }}" data-option-title="{{ $option['option'] }}">
+                        <a class="project {{ ($picture) ? 'has-thumb' : '' }}" href="#" data-toggle="modal" data-target="#optionModal" data-option-id="{{ $option['id'] }}" data-option-title="{{ $option['option'] }}">
+                            @if($picture)
                             <div class="project-thumb">
-                                @if($picture)
-                                    <img src="{{ $picture }}" alt="" />
-                                @endif
+                                <img src="{{ $picture }}" alt="" />
                             </div>
+                            @endif
                             <h4 class="project-title">
                                 {{ $option['option'] }}
                             </h4>
                             <div class="project-description">
-                                {{ $option['description'] }}
+                                {!! $option['description'] !!}
                             </div>
 
                             <div class="project-result">
@@ -77,7 +77,7 @@
                                         <div class="progress-bar"></div>
                                     </div>
                                 </div>
-                                {{ number($option['points'], 2) }}
+                                {{ ($block['type'] === 'ranked-choice') ? number($option['points'], 2) : number($option['points'], 0) }}
                             </div>
 
                             <div class="project-status">
