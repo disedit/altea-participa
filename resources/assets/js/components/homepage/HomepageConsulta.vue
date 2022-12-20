@@ -4,13 +4,13 @@
       <!--<span class="participa__flair">{{ $t('participa.new_vote') }}</span>-->
       <div class="d-flex align-items-start">
         <h2 class="mr-4 chonky-title">{{ participa.title }}</h2>
-          <div class="calendar ml-auto d-none d-md-block">
+          <!--<div class="calendar ml-auto d-none d-md-block">
             <div class="calendar__heading">{{ participa.phase }}</div>
             <div class="calendar__dates">
                 <div class="calendar__days"><strong>{{ participa.date.start_day }}</strong> - <strong>{{ participa.date.end_day }}</strong></div>
                 <div class="calendar__month">{{ participa.date.start_month }}</div>
             </div>
-          </div>
+          </div>-->
       </div>
       <div class="participa__button">
         <i class="far fa-box-ballot" />
@@ -59,6 +59,7 @@
   .chonky-title {
     font-size: calc(1.75rem + 1.25vw);
     padding-bottom: 2rem;
+    line-height: 1.1;
   }
 
   .calendar {

@@ -61,6 +61,7 @@
   .chonky-title {
     font-size: calc(1.75rem + 1.25vw);
     padding-bottom: 2rem;
+    line-height: 1.1;
   }
 
   .calendar {
