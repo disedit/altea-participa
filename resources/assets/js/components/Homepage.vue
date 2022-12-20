@@ -168,10 +168,10 @@
         grid-template-columns: 1fr;
         grid-template-areas:
           "elections"
-          "assocs"
+          "decidex"
           "consulta"
           "participa"
-          "decideix"
+          "assocs"
           "millora"
           "news"
           "social";
