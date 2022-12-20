@@ -168,7 +168,7 @@
         grid-template-columns: 1fr;
         grid-template-areas:
           "elections"
-          "decidex"
+          "decideix"
           "consulta"
           "participa"
           "assocs"
