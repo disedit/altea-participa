@@ -83,7 +83,15 @@ export default {
     open: 'Open processes',
     archived: 'Archived processes',
     no_open_processes: 'No open processes at this moment',
-    no_archived_processes: 'No archived processes yet'
+    no_archived_processes: 'No archived processes yet',
+    new_vote: 'New participation process',
+    active: 'Active participation process'
+  },
+  elections: {
+    info: 'Information',
+    title: 'Your right to vote in the 2023 Municipal Elections',
+    description: 'Internacional residents',
+    button: 'Download the informative leaflet'
   },
   activities: {
     title: 'Activities',

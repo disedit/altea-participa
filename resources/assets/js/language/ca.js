@@ -83,7 +83,15 @@ export default {
     open: 'Processos oberts',
     archived: 'Procesoss arxivats',
     no_open_processes: 'No hi ha processos oberts en aquests moments',
-    no_archived_processes: 'No hi ha processos arxivats encara'
+    no_archived_processes: 'No hi ha processos arxivats encara',
+    new_vote: 'Participació oberta',
+    active: 'Procés participatiu actiu'
+  },
+  elections: {
+    info: 'Informació',
+    title: 'Dret a vot a les Eleccions Municipals 2023',
+    description: 'Residents internacional',
+    button: 'Descarrega el pamflet informatiu'
   },
   activities: {
     title: 'Activitats',

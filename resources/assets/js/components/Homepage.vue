@@ -2,9 +2,10 @@
   <main class="homepage">
     <div class="container">
       <ul class="homepage__grid">
+        <li class="homepage__grid__elections"><homepage-elections /></li>
+        <li class="homepage__grid__decideix"><homepage-decideix /></li>
         <li class="homepage__grid__consulta"><homepage-consulta /></li>
         <li class="homepage__grid__participa"><homepage-participa /></li>
-        <li class="homepage__grid__decideix"><homepage-decideix /></li>
         <li class="homepage__grid__social"><homepage-social /></li>
         <li class="homepage__grid__assocs"><homepage-assocs /></li>
         <li class="homepage__grid__millora"><homepage-millora /></li>
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+  import HomepageElections from './homepage/HomepageElections'
   import HomepageConsulta from './homepage/HomepageConsulta'
   import HomepageParticipa from './homepage/HomepageParticipa'
   import HomepageDecideix from './homepage/HomepageDecideix'
@@ -25,6 +27,7 @@
 
   export default {
     components: {
+      HomepageElections,
       HomepageConsulta,
       HomepageParticipa,
       HomepageDecideix,
@@ -66,13 +69,13 @@
 
     &__grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(2, minmax(315px, 30vh));
       grid-template-areas:
-        "consulta consulta consulta"
-        "participa participa decideix"
-        "millora assocs assocs"
-        "social news news";
+        "elections elections elections elections decideix decideix"
+        "participa participa participa consulta consulta consulta"
+        "millora millora assocs assocs assocs assocs"
+        "social social news news news news";
       list-style: none;
       margin: 0;
       padding: 0;
@@ -80,6 +83,10 @@
 
       li {
         display: flex;
+      }
+
+      &__elections {
+        grid-area: elections;
       }
 
       &__consulta {
@@ -160,9 +167,10 @@
       &__grid {
         grid-template-columns: 1fr;
         grid-template-areas:
+          "elections"
+          "assocs"
           "consulta"
           "participa"
-          "assocs"
           "decideix"
           "millora"
           "news"

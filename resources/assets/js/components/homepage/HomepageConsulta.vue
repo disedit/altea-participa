@@ -1,7 +1,7 @@
 <template>
   <article class="homepage__card participa">
     <a href="/participa" class="d-flex flex-column">
-      <span class="participa__flair">{{ $t('participa.new_vote') }}</span>
+      <!--<span class="participa__flair">{{ $t('participa.new_vote') }}</span>-->
       <div class="d-flex align-items-start">
         <h2 class="mr-4 chonky-title">{{ participa.title }}</h2>
           <div class="calendar ml-auto d-none d-md-block">
@@ -68,21 +68,4 @@
       font-size: 1.15rem;
     }
   }
-
-  @keyframes pulse {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba($red, 0.7);
-  }
-
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba($red, 0);
-  }
-
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba($red, 0);
-  }
-}
 </style>
