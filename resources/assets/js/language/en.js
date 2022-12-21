@@ -91,7 +91,7 @@ export default {
     info: 'Information',
     title: 'Your right to vote in the 2023 Municipal Elections',
     description: 'Internacional residents',
-    button: 'Download the informative leaflet'
+    button: 'Further information'
   },
   activities: {
     title: 'Activities',

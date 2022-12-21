@@ -8,7 +8,7 @@
         <p class="mb-0">{{ $t('elections.description') }}</p>
       </div>
       <div class="elections__button">
-        <i class="far fa-file-download" />
+        <i class="far fa-info-circle" />
         {{ $t('elections.button') }}
       </div>
     </a>

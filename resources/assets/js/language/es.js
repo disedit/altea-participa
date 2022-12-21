@@ -91,7 +91,7 @@ export default {
     info: 'Información',
     title: 'Derecho a voto en las Eleccions Municipales 2023',
     description: 'Residentes internacionales',
-    button: 'Descargar pamfleto informativo'
+    button: 'Más información'
   },
   activities: {
     title: 'Actividades',
