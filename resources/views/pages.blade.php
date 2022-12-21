@@ -1,6 +1,5 @@
 @extends('layouts.public')
 
-@section('title', __('participa.nav.memory') . ' - ')
 @section('thumbnail', '/images/thumbnail-decideix.jpg')
 
 @section('page-header')
