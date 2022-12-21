@@ -1,6 +1,6 @@
 <template>
   <article class="homepage__card elections">
-    <a href="/docs/elections/triptico_votoresidentes_dipu_idiomas_ES-EN.pdf" class="d-flex flex-column">
+    <a href="/eleccions-2023" class="d-flex flex-column">
       <span class="elections__flair">{{ $t('elections.info') }}</span>
       <i class="elections__icon far fa-box-ballot"></i>
       <div class="mt-auto">
