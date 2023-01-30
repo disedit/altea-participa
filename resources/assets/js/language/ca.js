@@ -84,8 +84,8 @@ export default {
     archived: 'Procesoss arxivats',
     no_open_processes: 'No hi ha processos oberts en aquests moments',
     no_archived_processes: 'No hi ha processos arxivats encara',
-    new_vote: 'Participació oberta',
-    active: 'Procés participatiu actiu'
+    new_vote: 'Votació tancada',
+    active: 'Procés participatiu: '
   },
   elections: {
     info: 'Informació',

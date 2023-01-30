@@ -1,13 +1,19 @@
 <template>
   <div class="association-home">
-    <div v-if="categories" class="categories">
-      <ul>
+    <div class="row">
+      <div class="col-md-8 col-lg-9">
+        <div v-if="categories" class="categories">
+          <ul>
+            <association-category v-for="category in categories" :key="category.id" :category="category" />
+          </ul>
+        </div>
+        <div v-else-if="loading" class="loading">
+          <i class="far fa-circle-notch fa-spin"></i> {{ $t('global.loading') }}
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
         <associations-mar />
-        <association-category v-for="category in categories" :key="category.id" :category="category" />
-      </ul>
-    </div>
-    <div v-else-if="loading" class="loading">
-      <i class="far fa-circle-notch fa-spin"></i> {{ $t('global.loading') }}
+      </div>
     </div>
     <associations-docs />
   </div>
@@ -50,6 +56,9 @@
   @import '../../../sass/_variables';
 
   .categories ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
   }
