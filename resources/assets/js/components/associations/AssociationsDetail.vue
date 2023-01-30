@@ -4,7 +4,7 @@
       <i class="far fa-chevron-left" />
       {{ $t('associations.back') }}
     </router-link>
-    <article v-if="association" class="association">
+    <article v-if="association" :class="['association', `category-${association.category.color}`]">
       <div class="association__wrapper">
         <div class="association__category">
           <span>
@@ -134,6 +134,7 @@
 
 <style lang="scss" scoped>
   @import '../../../sass/_variables';
+  @import '../../../sass/_assoc-colors';
 
   .back-button {
     display: inline-flex;
@@ -293,6 +294,25 @@
           width: 100%;
           max-width: 10rem;
           max-height: 7rem;
+        }
+      }
+    }
+  }
+
+  @each $name, $color in $assoc-colors {
+    .category-#{$name} {
+      background: mix($color, $white, 15%);
+      color: darken($color, 15%);
+
+      a {
+        color: inherit;
+      }
+
+      .association {
+        &__category {
+          span {
+            background: $color;
+          }
         }
       }
     }

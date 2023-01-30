@@ -1,18 +1,20 @@
 <template>
-  <li class="category__item">
+  <li :class="['category__item', `category-${category.color}`]">
     <button
       :id="`title-${category.cat_slug}`"
       @click="expanded = !expanded"
       :aria-expanded="expanded ? 'true' : 'false'"
       :aria-controls="`detail-${category.cat_slug}`"
     >
-      <i :class="`category__icon far fa-fw fa-${category.icon}`" />
+      <div class="category__icon">
+        <i :class="`far fa-fw fa-${category.icon}`" />
+        <img v-if="category.logo" :src="cms + category.logo.url" :alt="category.logo.alternativeText" class="category__logo" />
+      </div>
       <span class="category__name">{{ name }}</span>
-      <img v-if="category.logo" :src="cms + category.logo.url" :alt="category.logo.alternativeText" class="category__logo" />
-      <i :class="['category__chev', 'far', { 'fa-chevron-down': expanded, 'fa-chevron-up': !expanded }]" />
     </button>
     <transition name="slide">
       <div
+        class="category__dropdown"
         v-show="expanded"
         :id="`detail-${category.cat_slug}`" 
         :aria-labelledby="`title-${category.cat_slug}`"
@@ -86,63 +88,53 @@
 
 <style lang="scss" scoped>
   @import '../../../sass/_variables';
+  @import '../../../sass/_assoc-colors';
 
   .category {
     &__item {
-      background: $card-bg;
-      color: $brand-primary;
+      color: $white;
       list-style: none;
       margin: 0;
       border-radius: .5rem;
-      margin-bottom: 1rem;
 
       button {
         position: relative;
         z-index: 10;
         width: 100%;
+        aspect-ratio: 1.25;
         display: flex;
+        flex-direction: column;
         appearance: none;
         background: transparent;
         font-weight: 900;
         color: inherit;
         border: 0;
         padding: 1rem;
-        font-size: 1.5rem;
-        align-items: center;
+        font-size: 1.75rem;
         border-radius: .5rem;
         transition: .25s ease;
         line-height: 1;
-
-        &[aria-expanded='true'] {
-          border-radius: .5rem .5rem 0 0;
-        }
-
-        &:hover {
-          background: lighten($brand-primary, 60%);
-        }
-
-        &:active {
-          background: lighten($brand-primary, 57%);
-        }
-
-        &:focus {
-          outline: 0;
-          box-shadow: 0 0 0 4px rgba($brand-primary, .5);
-        }
       }
     }
 
     &__name {
       text-align: left;
-      margin-right: auto;
+      margin-top: auto;
     }
 
     &__icon {
+      display: flex;
       margin-right: .5rem;
+      font-size: 2rem;
+      width: 100%;
+
+      img {
+        margin-left: auto;
+      }
     }
 
-    &__chev {
-      font-size: 1rem;
+    &__dropdown {
+      border-radius: 0 0 .5rem .5rem;
     }
 
     &__logo {
@@ -172,22 +164,10 @@
       a {
         display: block;
         padding: .5rem 1rem;
-        border-bottom: 1px rgba($brand-primary, .2) dashed;
 
         &:hover {
-          background: lighten($brand-primary, 60%);
-          color: $brand-primary;
           text-decoration: none;
           border-bottom-style: solid;
-        }
-
-        &:active {
-          background: lighten($brand-primary, 57%);
-        }
-
-        &:focus {
-          outline: 0;
-          box-shadow: 0 0 0 4px rgba($brand-primary, .5);
         }
       }
 
@@ -201,6 +181,57 @@
 
     &--empty {
       padding: 1rem;
+    }
+  }
+
+  @each $name, $color in $assoc-colors {
+    .category-#{$name} {
+      button {
+        background: $color;
+
+        &[aria-expanded='true'] {
+          border-radius: .5rem .5rem 0 0;
+        }
+
+        &:hover {
+          background: darken($color, 10%);
+        }
+
+        &:active {
+          background: darken($color, 15%);
+        }
+
+        &:focus {
+          outline: 0;
+          box-shadow: 0 0 0 4px rgba($color, .5);
+        }
+      }
+
+      .category__dropdown {
+        background: mix($color, $white, 30%);
+        color: darken($color, 20%);
+
+        a {
+          color: darken($color, 20%);
+          border-bottom: 1px rgba($color, .2) dashed;
+
+          &:hover {
+            background-color: mix($color, $white, 40%);
+            color: darken($color, 30%);
+          }
+
+          &:active {
+            background: mix($color, $white, 45%);
+          }
+
+          &:focus {
+            position: relative;
+            z-index: 2;
+            outline: 0;
+            box-shadow: 0 0 0 4px rgba($color, .75);
+          }
+        }
+      }
     }
   }
 </style>

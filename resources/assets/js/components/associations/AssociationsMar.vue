@@ -1,12 +1,8 @@
 <template>
-  <association-category :category="{
-    cat_name: `Espai per a les Associacions La Mar d'Associacions`,
-    cat_name_es: `Espacio para las Asociaciones La Mar d'Associacions`,
-    cat_name_en: `Space for associations La Mar d'Associacions`,
-    cat_slug: 'mar',
-    icon: 'house-flood',
-    associations: []
-    }">
+  <aside class="mar">
+    <i class="far fa-fw fa-house-flood" />
+    <h2>La Mar d'Associacions</h2>
+    <p>Espai per a les Associacions</p>
     <p>
       La <strong>Mar d'Associacions</strong> és un edifici de titularitat municipal amb més de 8 sales, de les quals
       7 es reserven a les associacions sol·licitants durant un període de 2 anys i son autogestionades
@@ -20,31 +16,25 @@
       inscrita en el Registre d’Associacions d’Altea podrà reunir-se si sol·licita prèviament la seua ocupació.
     </p>
 
-    <p>
-      <a
-        href="#"
-        @click.prevent="tab = 'form'"
-        :aria-pressed="tab === 'form' ? 'true' : 'false'"
-        :class="['btn', { 'btn-outline-primary': tab !== 'form', 'btn-primary': tab === 'form'}]">
-        <i class="far fa-bookmark"></i> Reserva la sala d'usos múltiples
-      </a>
-      <a
-        href="#"
-        @click.prevent="tab = 'calendar'"
-        :aria-pressed="tab === 'calendar' ? 'true' : 'false'"
-        :class="['btn', 'ml-2', { 'btn-outline-primary': tab !== 'calendar', 'btn-primary': tab === 'calendar'}]">
-        <i class="far fa-calendar-alt"></i> Calendari de disponibilitat
-      </a>
-    </p>
+    <button
+      v-b-modal.modal-form
+      :class="['btn btn-block btn-main', { 'btn-outline-primary': tab !== 'form', 'btn-primary': tab === 'form'}]">
+      <i class="far fa-bookmark"></i> Reserva la sala d'usos múltiples
+    </button>
+    <button
+      v-b-modal.modal-calendar
+      :class="['btn btn-block', { 'btn-outline-primary': tab !== 'calendar', 'btn-primary': tab === 'calendar'}]">
+      <i class="far fa-calendar-alt"></i> Calendari de disponibilitat
+    </button>
 
-    <div v-if="tab === 'calendar'">
+    <b-modal id="modal-calendar" size="lg" ok-only ok-title="Tanca" title="Calendari de disponibilitat">
       <iframe src="https://calendar.google.com/calendar/embed?src=reserva.sala.altea%40gmail.com&ctz=Europe%2FMadrid" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
+    </b-modal>
 
-    <div v-if="tab === 'form'">
+    <b-modal id="modal-form" size="lg" ok-only ok-title="Tanca" title="Reserva la sala d'usos múltiples">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFl0I0z6C0pblR4lnZO7yP2lvJWi1Z6yIzNS4HQ9Rvh_RGjA/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-  </association-category>
+    </b-modal>
+  </aside>
 </template>
 
 <script>
@@ -53,16 +43,35 @@
   export default {
     components: {
         AssociationCategory
-    },
-
-    data () {
-        return {
-            tab: null
-        }
     }
   }
 </script>
 
 <style lang="scss" scoped>
+@import '../../../sass/_variables';
 
+.mar {
+  color: $brand-primary;
+
+  .fa-house-flood {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    display: flex;
+    margin-bottom: .5rem;
+    text-align: left;
+    gap: .5rem;
+    align-items: baseline;
+
+    &-main {
+      font-weight: bold;
+    }
+  }
+}
 </style>

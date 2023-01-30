@@ -3,6 +3,7 @@ window.Vue = require('vue').default;
 
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
+import { ModalPlugin } from 'bootstrap-vue';
 
 import Strapi from './strapi';
 
@@ -18,6 +19,7 @@ window.Strapi = new Strapi();
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
+Vue.use(ModalPlugin);
 
 const scrollBehavior = (to, from, savedPosition) => {
   if (savedPosition) {
