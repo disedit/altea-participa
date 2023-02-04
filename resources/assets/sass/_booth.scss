@@ -103,50 +103,6 @@
   margin: 2rem auto 0 auto;
 }
 
-.option-modal {
-  .modal-title {
-    color: $brand-primary;
-    line-height: 1;
-    font-weight: 700;
-    font-size: 1.75rem;
-  }
-
-  h4 {
-    background: $white;
-    color: $gray-600;
-    font-size: 1rem;
-    margin: 1rem -1rem 0.5rem -1rem;
-    padding: 1rem 1rem 0 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-top: 1px $gray-lighter solid;
-    border-radius: 0;
-  }
-
-  .option-cost {
-    font-size: 2rem;
-  }
-
-  .option-attachments {
-    margin: 0;
-    padding: 0;
-
-    li {
-      list-style: none;
-    }
-  }
-
-  .option-pictures {
-    margin-top: 1rem;
-    margin-left: -1rem;
-  }
-
-  img {
-    width: 100%;
-    margin: 0.5rem 0;
-  }
-}
-
 .template-cards {
   .option {
     display: flex;

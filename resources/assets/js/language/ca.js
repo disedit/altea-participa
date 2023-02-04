@@ -6,7 +6,9 @@ export default {
   option: {
     cost: 'Cost',
     motivation: 'Motivació',
-    attachments: 'Documentació adjunta'
+    attachments: 'Documentació adjunta',
+    funding: 'Finançament',
+    status: 'Estat'
   },
   error: {
     heading: 'Error',
@@ -68,6 +70,8 @@ export default {
     new_edition: 'Nova edició',
     new_vote: 'Resultats',
     state: 'Estat dels projectes triats',
+    voters: 'Votants',
+    invested: 'Invertits'
   },
   associations: {
     title: 'Associacions',

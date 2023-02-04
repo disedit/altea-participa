@@ -6,13 +6,14 @@
         <li class="homepage__grid__elections"><homepage-elections /></li>
         <li class="homepage__grid__decideix"><homepage-decideix /></li>
         <li class="homepage__grid__consulta"><homepage-consulta /></li>
-        <li class="homepage__grid__participa"><homepage-participa /></li>
+        <!--<li class="homepage__grid__participa"><homepage-participa /></li>-->
         <li class="homepage__grid__social"><homepage-social /></li>
         <li class="homepage__grid__assocs"><homepage-assocs /></li>
         <li class="homepage__grid__millora"><homepage-millora /></li>
         <li class="homepage__grid__news"><homepage-news /></li>
       </ul>
     </div>
+    <option-modal />
   </main>
 </template>
 
@@ -26,6 +27,7 @@
   import HomepageAssocs from './homepage/HomepageAssocs'
   import HomepageMillora from './homepage/HomepageMillora'
   import HomepageNews from './homepage/HomepageNews'
+  import OptionModal from './helpers/OptionModal'
 
   export default {
     components: {
@@ -37,7 +39,8 @@
       HomepageSocial,
       HomepageAssocs,
       HomepageMillora,
-      HomepageNews
+      HomepageNews,
+      OptionModal
     }
   }
 </script>
@@ -76,9 +79,9 @@
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(2, minmax(315px, 30vh));
       grid-template-areas:
-        "elections elections elections elections decideix decideix"
-        "participa participa participa consulta consulta consulta"
-        "millora millora assocs assocs assocs assocs"
+        "assocs assocs assocs assocs decideix decideix"
+        "millora millora elections elections elections elections"
+        "consulta consulta consulta consulta consulta consulta"
         "social social news news news news";
       list-style: none;
       margin: 0;
@@ -171,11 +174,10 @@
       &__grid {
         grid-template-columns: 1fr;
         grid-template-areas:
+          "assocs"
           "elections"
           "decideix"
           "consulta"
-          "participa"
-          "assocs"
           "millora"
           "news"
           "social";

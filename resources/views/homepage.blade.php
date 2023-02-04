@@ -17,6 +17,8 @@
       $globalConfig = [
         'locale' => config('app.locale'),
         'projects' => $projects,
+        'voters' => 5940,
+        'invested' => 1118631,
         'participa' => [
           'flair' => false,
           'title' => $edition->name,
@@ -47,6 +49,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script>
       window.GlobalConfig = {!! json_encode($globalConfig) !!};
+      window.BoothConfig = {!! json_encode(['locale' => config('app.locale')]) !!};
     </script>
     <script src="{{ mix('js/homepage.js') }}"></script>
     @endpush

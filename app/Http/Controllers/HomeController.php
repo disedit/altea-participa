@@ -40,7 +40,7 @@ class HomeController extends Controller
         $pastEditions = Edition::pastEditions();
         $projects = Edition::with(['options' => function ($query) {
             return $query->join('option_translations', 'options.id', '=', 'option_translations.option_id')
-                ->where('option_translations.locale', 'ca')
+                ->where('option_translations.locale', config('app.locale'))
                 ->whereNotNull('status');
         }])->where('has_projects', 1)->orderBy('id', 'desc')->get()
             ->map(function ($edition) {
@@ -50,11 +50,15 @@ class HomeController extends Controller
                     'projects' => $edition->options->map(function ($option) {
                         return [
                             'id' => $option->id,
-                            'name' => $option->option,
+                            'option' => $option->option,
                             'status' => $option->status,
                             'funding' => $option->funding,
                             'cost' => $option->cost,
-                            'color' => $option->color
+                            'color' => $option->color,
+                            'description' => $option->description,
+                            'attachments' => $option->attachments,
+                            'pictures' => $option->pictures,
+                            'motivation' => $option->motivation,
                         ];
                     })
                 ];

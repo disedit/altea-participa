@@ -2,7 +2,7 @@
   <b-modal id="optionModal" ref="optionModal" v-model="active" @hidden="close" class="option-modal">
     <div slot="modal-title" class="title">{{ option.option }}</div>
 
-    <div class="option-modal-body">
+    <div class="option-modal-body option-modal">
       <div v-html="optionDescription"></div>
 
       <h4 v-if="option.motivation">{{ $t('option.motivation') }}</h4>
@@ -11,6 +11,16 @@
       <div v-if="option.cost > 0">
         <h4 class="mb-0">{{ $t('option.cost') }}</h4>
         <span class="option-cost">{{ option.cost | formatCurrency }}</span>
+      </div>
+
+      <div v-if="option.funding">
+        <h4 class="mb-0">{{ $t('option.funding') }}</h4>
+        <span class="option-funding">{{ option.funding }}</span>
+      </div>
+
+      <div v-if="option.status">
+        <h4 class="mb-0">{{ $t('option.status') }}</h4>
+        <span class="option-state">{{ option.status }}</span>
       </div>
 
       <div v-if="option.attachments">
@@ -62,8 +72,8 @@
 
     filters: {
       formatCurrency: function(value) {
-        if(window.BoothConfig.locale == 'es'
-        || window.BoothConfig.locale == 'ca') {
+        if(window.BoothConfig?.locale == 'es'
+        || window.BoothConfig?.locale == 'ca') {
           return format({ suffix: '€', integerSeparator: '.', round: 0 })(value);
         }
 
@@ -87,6 +97,7 @@
       },
 
       optionDescription: function() {
+        if (!this.option.description) return
         return this.option.description
           .replaceAll('[img]', '<img src="')
           .replaceAll('[/img]', '" alt="" />')

@@ -1,9 +1,11 @@
 window.axios = require('axios');
 window.Vue = require('vue').default;
+window.Bus = new Vue();
 
 import VueI18n from 'vue-i18n';
 import Strapi from './strapi';
 import Participa from './api';
+import { ModalPlugin } from 'bootstrap-vue';
 
 import Homepage from './components/Homepage';
 
@@ -15,6 +17,7 @@ window.Strapi = new Strapi();
 window.Participa = new Participa();
 
 Vue.use(VueI18n);
+Vue.use(ModalPlugin);
 
 const messages = {
   en: English,
