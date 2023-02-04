@@ -1,6 +1,7 @@
 <template>
   <main class="homepage">
-    <div class="container">
+    <homepage-projects />
+    <div class="container-fluid container-xl">
       <ul class="homepage__grid">
         <li class="homepage__grid__elections"><homepage-elections /></li>
         <li class="homepage__grid__decideix"><homepage-decideix /></li>
@@ -16,6 +17,7 @@
 </template>
 
 <script>
+  import HomepageProjects from './homepage/HomepageProjects'
   import HomepageElections from './homepage/HomepageElections'
   import HomepageConsulta from './homepage/HomepageConsulta'
   import HomepageParticipa from './homepage/HomepageParticipa'
@@ -27,6 +29,7 @@
 
   export default {
     components: {
+      HomepageProjects,
       HomepageElections,
       HomepageConsulta,
       HomepageParticipa,
@@ -44,6 +47,7 @@
 
   .homepage {
     display: flex;
+    flex-direction: column;
     position: relative;
     min-height: 100vh;
     background-image: url('../../images/altea.jpg');

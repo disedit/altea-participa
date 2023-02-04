@@ -38,8 +38,29 @@ class HomeController extends Controller
 
         $edition = $this->edition;
         $pastEditions = Edition::pastEditions();
+        $projects = Edition::with(['options' => function ($query) {
+            return $query->join('option_translations', 'options.id', '=', 'option_translations.option_id')
+                ->where('option_translations.locale', 'ca')
+                ->whereNotNull('status');
+        }])->where('has_projects', 1)->orderBy('id', 'desc')->get()
+            ->map(function ($edition) {
+                return [
+                    'id' => $edition->id,
+                    'year' => date('Y', strtotime($edition->start_date)),
+                    'projects' => $edition->options->map(function ($option) {
+                        return [
+                            'id' => $option->id,
+                            'name' => $option->option,
+                            'status' => $option->status,
+                            'funding' => $option->funding,
+                            'cost' => $option->cost,
+                            'color' => $option->color
+                        ];
+                    })
+                ];
+            });
 
-        return view('homepage', compact('edition', 'pastEditions'));
+        return view('homepage', compact('edition', 'pastEditions', 'projects'));
     }
 
     /**
