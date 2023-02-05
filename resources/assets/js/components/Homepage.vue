@@ -3,7 +3,7 @@
     <homepage-projects />
     <div class="container-fluid container-xl">
       <ul class="homepage__grid">
-        <li class="homepage__grid__elections"><homepage-elections /></li>
+        <!--<li class="homepage__grid__elections"><homepage-elections /></li>-->
         <li class="homepage__grid__decideix"><homepage-decideix /></li>
         <li class="homepage__grid__consulta"><homepage-consulta /></li>
         <!--<li class="homepage__grid__participa"><homepage-participa /></li>-->
@@ -19,9 +19,9 @@
 
 <script>
   import HomepageProjects from './homepage/HomepageProjects'
-  import HomepageElections from './homepage/HomepageElections'
+  // import HomepageElections from './homepage/HomepageElections'
   import HomepageConsulta from './homepage/HomepageConsulta'
-  import HomepageParticipa from './homepage/HomepageParticipa'
+  // import HomepageParticipa from './homepage/HomepageParticipa'
   import HomepageDecideix from './homepage/HomepageDecideix'
   import HomepageSocial from './homepage/HomepageSocial'
   import HomepageAssocs from './homepage/HomepageAssocs'
@@ -32,9 +32,9 @@
   export default {
     components: {
       HomepageProjects,
-      HomepageElections,
+      // HomepageElections,
       HomepageConsulta,
-      HomepageParticipa,
+      // HomepageParticipa,
       HomepageDecideix,
       HomepageSocial,
       HomepageAssocs,
@@ -80,8 +80,7 @@
       grid-template-rows: repeat(2, minmax(315px, 30vh));
       grid-template-areas:
         "assocs assocs assocs assocs decideix decideix"
-        "millora millora elections elections elections elections"
-        "consulta consulta consulta consulta consulta consulta"
+        "millora millora consulta consulta consulta consulta"
         "social social news news news news";
       list-style: none;
       margin: 0;
@@ -175,7 +174,6 @@
         grid-template-columns: 1fr;
         grid-template-areas:
           "assocs"
-          "elections"
           "decideix"
           "consulta"
           "millora"

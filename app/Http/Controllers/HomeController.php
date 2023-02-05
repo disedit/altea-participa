@@ -39,9 +39,12 @@ class HomeController extends Controller
         $edition = $this->edition;
         $pastEditions = Edition::pastEditions();
         $projects = Edition::with(['options' => function ($query) {
-            return $query->join('option_translations', 'options.id', '=', 'option_translations.option_id')
+            return $query
+                ->join('option_translations', 'options.id', '=', 'option_translations.option_id')
+                ->join('results', 'options.id', '=', 'results.option_id')
                 ->where('option_translations.locale', config('app.locale'))
-                ->whereNotNull('status');
+                ->whereNotNull('status')
+                ->orderBy('results.points', 'desc');
         }])->where('has_projects', 1)->orderBy('id', 'desc')->get()
             ->map(function ($edition) {
                 return [
@@ -59,6 +62,7 @@ class HomeController extends Controller
                             'attachments' => $option->attachments,
                             'pictures' => $option->pictures,
                             'motivation' => $option->motivation,
+                            'points' => $option->points
                         ];
                     })
                 ];
