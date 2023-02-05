@@ -49,7 +49,7 @@ class HomeController extends Controller
             ->map(function ($edition) {
                 return [
                     'id' => $edition->id,
-                    'year' => date('Y', strtotime($edition->start_date)),
+                    'year' => date('Y', strtotime($edition->end_date)),
                     'projects' => $edition->options->map(function ($option) {
                         return [
                             'id' => $option->id,
