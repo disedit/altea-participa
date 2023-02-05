@@ -54,7 +54,6 @@
     position: relative;
     min-height: 100vh;
     padding-top: 10rem;
-    padding-bottom: 4rem;
     align-items: center;
     justify-content: center;
 
@@ -85,6 +84,10 @@
       left: 0;
       z-index: 1;
       background: linear-gradient(rgba(0, 43, 149, 0.5), rgba(0, 43, 149, 0.2));
+    }
+
+    .container-fluid {
+      margin-bottom: 4rem;
     }
 
     &__grid {
