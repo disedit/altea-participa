@@ -139,7 +139,10 @@
 
     &__logo {
       height: 2.25rem;
-      margin: -.5rem 1rem -.5rem;
+      margin: -.5rem;
+      background: white;
+      padding: .5rem;
+      border-radius: .25rem;
     }
 
     &__description {
@@ -231,6 +234,26 @@
             box-shadow: 0 0 0 4px rgba($color, .75);
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .category {
+      &__item {
+        button {
+          aspect-ratio: 2;
+        }
+      }
+    }
+
+    .associations {
+      li a,
+      &--empty {
+        font-size: 1.25rem;
+        line-height: 1.25;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
       }
     }
   }
