@@ -53,16 +53,29 @@
     flex-direction: column;
     position: relative;
     min-height: 100vh;
-    background-image: url('../../images/altea.jpg');
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
     padding-top: 10rem;
     padding-bottom: 4rem;
     align-items: center;
     justify-content: center;
 
     &::before {
+      content: '';
+      display: block;
+      position: sticky;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      height: 100vh;
+      width: 100%;
+      background-image: url('../../images/altea.jpg');
+      background-size: cover;
+      background-position: center top;
+      margin-top: -100vh
+    }
+
+    &::after {
       content: '';
       display: block;
       position: absolute;

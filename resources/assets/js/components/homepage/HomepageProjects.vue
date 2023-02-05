@@ -267,14 +267,16 @@ $colors: ('green': $green, 'orange': $orange, 'teal': $teal);
     grid-template-areas:
       "card"
       "statuses";
-    gap: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 0;
 
     &__card {
-      margin: .5rem;
+      margin: 0 1rem;
 
       &__numbers {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
       }
     }
 
