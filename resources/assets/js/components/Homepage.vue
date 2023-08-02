@@ -219,8 +219,19 @@
     position: relative;
     z-index: 10;
     width: 100%;
-    padding: .5rem .75rem;
+    padding: 1rem;
     border-radius: .25rem;
-    display: block;
+    display: flex;
+    line-height: 1.1;
+    transition: .25s ease;
+
+    i {
+      margin-left: auto;
+    }
+
+    &:hover {
+      text-decoration: none;
+      transform: translateY(-.25rem);
+    }
   }
 </style>
