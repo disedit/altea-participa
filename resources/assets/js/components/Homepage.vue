@@ -1,5 +1,17 @@
 <template>
   <main class="homepage">
+    <div class="container-fluid container-xl" style="margin-bottom: 2rem;">
+      <a v-if="$i18n.locale === 'es'" href="https://docs.google.com/forms/d/e/1FAIpQLSftqbwjI2DkZHkZt3U2GkrVN3J0lEELQ3wiBRgkqB6ZD3JW3w/viewform" class="new-poll-alert">
+        <strong style="margin-right: 1rem">Nueva encuesta</strong>
+        Estudio de capacidad de carga de la Serra de Bèrnia
+        <i class="far fa-arrow-right"></i>
+      </a>
+      <a v-else href="https://docs.google.com/forms/d/e/1FAIpQLSfGMYVPK7uBGB1xcj1aetbgF2dXrWBI0Y2A9lnjrhkOnR2X5g/viewform" class="new-poll-alert">
+        <strong style="margin-right: 1rem">Nova enquesta</strong>
+        Estudi de capacitat de càrrega de la Serra de Bèrnia
+        <i class="far fa-arrow-right"></i>
+      </a>
+    </div>
     <homepage-projects />
     <div class="container-fluid container-xl">
       <ul class="homepage__grid">
@@ -200,5 +212,15 @@
         margin: 2rem 0;
       }
     }
+  }
+
+  .new-poll-alert {
+    background: #f1c40f;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    display: block;
   }
 </style>
