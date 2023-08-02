@@ -88,7 +88,7 @@ export default {
     archived: 'Procesos archivados',
     no_open_processes: 'No hay procesos abiertos en estos momentos',
     no_archived_processes: 'No hay procesos archivados',
-    new_vote: 'Votación cerrada',
+    new_vote: 'Encuesta abierta',
     active: 'Proceso participativo:'
   },
   elections: {

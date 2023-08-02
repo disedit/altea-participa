@@ -88,7 +88,7 @@ export default {
     archived: 'Procesoss arxivats',
     no_open_processes: 'No hi ha processos oberts en aquests moments',
     no_archived_processes: 'No hi ha processos arxivats encara',
-    new_vote: 'Votació tancada',
+    new_vote: 'Enquesta oberta',
     active: 'Procés participatiu: '
   },
   elections: {
