@@ -40,7 +40,7 @@ export default class Strapi {
       _where: [
         { _or: [{ archived: true }, { autoarchive_lt: this._now() }] },
       ],
-      _sort: 'createdBy:ASC'
+      _sort: 'id:desc'
     })
     return this._call('get', 'altea-decideix/?' + query)
   }
