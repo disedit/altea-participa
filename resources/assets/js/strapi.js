@@ -39,7 +39,8 @@ export default class Strapi {
     const query = qs.stringify({ 
       _where: [
         { _or: [{ archived: true }, { autoarchive_lt: this._now() }] },
-      ]
+      ],
+      _sort: 'createdBy:ASC'
     })
     return this._call('get', 'altea-decideix/?' + query)
   }
