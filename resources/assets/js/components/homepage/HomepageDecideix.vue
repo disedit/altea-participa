@@ -5,7 +5,7 @@
       <i class="far fa-megaphone mb-2" />
       <h2 class="mt-auto">{{ $t('altea_decideix.title') }}</h2>
       <p class="mb-0"><strong>{{ $t('altea_decideix.active') }}</strong> Pacte de les Alcaldies pel Clima i l'Energia</p>
-      <p class="mb-0">{{ $t('altea_decideix.description') }}</p>
+      <!--<p class="mb-0">{{ $t('altea_decideix.description') }}</p>-->
     </a>
   </article>
 </template>
