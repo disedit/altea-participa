@@ -1,14 +1,14 @@
 <template>
   <main class="homepage">
     <div class="container-fluid container-xl" style="margin-bottom: 2rem;">
-      <a v-if="$i18n.locale === 'es'" href="https://docs.google.com/forms/d/e/1FAIpQLSfqZe7GQwRo6vMgxAunEtoQMFOcy8xFuI0BGVNZ-pYxPZ6mGg/viewform" class="new-poll-alert">
-        <strong style="margin-right: 1rem">Nueva encuesta</strong>
-        Pacto de las Alcaldías por el Clima y la Energía
+      <a v-if="$i18n.locale === 'es'" href="/altea-decideix" class="new-poll-alert">
+        <strong style="margin-right: 1rem">Nuevas encuestas</strong>
+        Destino Turístico Inteligente, Pacto de las Alcaldías por el Clima y la Energía
         <i class="far fa-arrow-right"></i>
       </a>
-      <a v-else href="https://docs.google.com/forms/d/e/1FAIpQLSfqZe7GQwRo6vMgxAunEtoQMFOcy8xFuI0BGVNZ-pYxPZ6mGg/viewform" class="new-poll-alert">
-        <strong style="margin-right: 1rem">Nova enquesta</strong>
-        Pacte de les Alcaldies pel Clima i l'Energia
+      <a v-else href="/altea-decideix" class="new-poll-alert">
+        <strong style="margin-right: 1rem">Noves enquestes</strong>
+        Destinació Turística Intel·ligent, Pacte de les Alcaldies pel Clima i l'Energia
         <i class="far fa-arrow-right"></i>
       </a>
     </div>
