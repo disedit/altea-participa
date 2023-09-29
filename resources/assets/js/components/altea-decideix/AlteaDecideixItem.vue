@@ -4,7 +4,7 @@
       <div v-if="flair" class="process__flair"><span>{{ flair }}</span> <i class="far fa-external-link" /></div>
       <h4 class="process__title">{{ title }}</h4>
       <div v-if="process.thumbnail" class="process__thumbnail">
-        <img :src="cms + process.thumbnail.formats.thumbnail.url" :alt="process.thumbnail.alternativeText" />
+        <img :src="cms + process.thumbnail.formats.medium.url" :alt="process.thumbnail.alternativeText" />
       </div>
       <p v-if="description" class="process__description">{{ description }}</p>
     </a>

@@ -3,7 +3,7 @@
     <a :href="activity.link" target="_blank" rel="noopener" class="activity">
       <h4 class="activity__title">{{ title }}</h4>
       <div v-if="activity.photo" class="activity__thumbnail">
-        <img :src="cms + activity.photo.formats.thumbnail.url" :alt="activity.photo.alternativeText" />
+        <img :src="cms + activity.photo.formats.medium.url" :alt="activity.photo.alternativeText" />
       </div>
       <p v-if="description" class="activity__description">{{ description }}</p>
       <p v-if="button" class="activity__button">{{ button }}</p>
