@@ -20,7 +20,8 @@ export default {
   },
   booth_identification: {
     heading: 'Identification',
-    subheading: 'You can vote if you are over <strong>{min_age} years</strong> of age and currently reside in <strong>{municipality}</strong>',
+    // ubheading: 'You can vote if you are over <strong>{min_age} years</strong> of age and currently reside in <strong>{municipality}</strong>',
+    subheading: 'You can vote if you are <strong>over 16 and under 30 years of age</strong> and currently reside in <strong>{municipality}</strong>',
     label: 'DNI, NIE or Passport',
     tooltip: 'Passport only for foreign residents',
     button: 'Vote',
@@ -69,6 +70,7 @@ export default {
     title: 'Participatory budget',
     new_edition: 'New edition',
     new_vote: 'Results',
+    upcoming_vote: 'Próxima votación',
     state: 'Status of chosen projects',
     voters: 'Voters',
     invested: 'Invested'
@@ -115,5 +117,9 @@ export default {
   altea_news: {
     title: 'News',
     more: 'More stories'
+  },
+  home: {
+    more_info: 'More information',
+    results: 'Results'
   }
 };

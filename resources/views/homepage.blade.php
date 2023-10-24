@@ -36,9 +36,9 @@
           'phase' => 'Votació',
           'button' => 'Vota',
           'date' => [
-            'start_day' => '21',
-            'end_day' => '24',
-            'start_month' => 'novembre',
+            'start_day' => '30',
+            'end_day' => '3',
+            'start_month' => 'oct',
             'end_month' => 'nov'
           ]
         ]

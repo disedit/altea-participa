@@ -96,7 +96,7 @@ class Edition extends Model
         if($withBallot) {
             $edition->with(['questions' => function($questionsQuery) {
                 $questionsQuery->with(['options' => function($optionsQuery) {
-                    $optionsQuery->orderByRaw('rand()'); // Fix this later
+                    // $optionsQuery->orderByRaw('rand()'); // Fix this later
                 }])->orderBy('id', 'asc');
             }]);
         }

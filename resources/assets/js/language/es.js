@@ -20,7 +20,8 @@ export default {
   },
   booth_identification: {
     heading: 'Identificación',
-    subheading: 'Puedes votar si tienes más de <strong>{min_age} años</strong> y estás empadronado en <strong>{municipality}</strong>',
+    //subheading: 'Puedes votar si tienes más de <strong>{min_age} años</strong> y estás empadronado en <strong>{municipality}</strong>',
+    subheading: 'Puedes votar si tienes <strong>entre 16 y 30 años</strong> y estás empadronado en <strong>{municipality}</strong>',
     label: 'DNI, NIE o Pasaporte',
     tooltip: 'Pasaporte sólo si eres residente extranjero',
     button: 'Vota',
@@ -69,6 +70,7 @@ export default {
     title: 'Presupuestos participativos',
     new_edition: 'Nueva edición',
     new_vote: 'Resultados',
+    upcoming_vote: 'Upcoming vote',
     state: 'Estado de los proyectos elegidos',
     voters: 'Votantes',
     invested: 'Invertidos'
@@ -115,5 +117,9 @@ export default {
   altea_news: {
     title: 'Noticias',
     more: 'Más noticias'
+  },
+  home: {
+    more_info: 'Más información',
+    results: 'Resultados'
   }
 };

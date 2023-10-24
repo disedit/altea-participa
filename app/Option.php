@@ -16,7 +16,7 @@ class Option extends Model
      * @var array
      */
     public $translatedAttributes = [
-        'option', 'description', 'motivation', 'status', 'funding', 'color'
+        'option', 'description', 'motivation', 'status', 'funding', 'color', 'flair'
     ];
 
     /**

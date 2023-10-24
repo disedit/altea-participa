@@ -138,6 +138,8 @@
   }
 }
 
+$flair-colors: ('green': $green, 'orange': $orange, 'teal': $teal, 'red': $red, 'purple': $purple);
+
 .options-widget {
   &:last {
     border-bottom: 0;
@@ -151,13 +153,25 @@
   }
 
   .card-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.25rem;
-
     .option {
       margin: 0;
       height: 100%;
+
+      &__flair {
+        display: inline-block;
+        padding: .25rem .75rem;
+        border-radius: .5rem;
+        color: $brand-primary;
+        font-size: .85rem;
+        margin-top: .75rem;
+        box-decoration-break: clone;
+
+        @each $name, $color in $flair-colors {
+          &.flair-#{$name} {
+            background: rgba($color, .25);
+          }
+        }
+      }
     }
   }
 

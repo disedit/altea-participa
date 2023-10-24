@@ -1,20 +1,20 @@
 <template>
   <article class="homepage__card participa">
     <a href="/participa" class="d-flex flex-column">
-      <!--<span class="participa__flair">{{ $t('participa.new_vote') }}</span>-->
+      <span class="participa__flair">{{ $t('participa.upcoming_vote') }}</span>
       <div class="d-flex align-items-start">
         <h2 class="mr-4 chonky-title">{{ participa.title }}</h2>
-          <!--<div class="calendar ml-auto d-none d-md-block">
+          <div class="calendar ml-auto mb-4 d-none d-md-block">
             <div class="calendar__heading">{{ participa.phase }}</div>
             <div class="calendar__dates">
                 <div class="calendar__days"><strong>{{ participa.date.start_day }}</strong> - <strong>{{ participa.date.end_day }}</strong></div>
-                <div class="calendar__month">{{ participa.date.start_month }}</div>
+                <div class="calendar__month">{{ participa.date.start_month }} - {{ participa.date.end_month }}</div>
             </div>
-          </div>-->
+          </div>
       </div>
       <div class="participa__button">
         <i class="far fa-box-ballot" />
-        {{ participa.state === 'prevote' ? "La votació s'obrirà el 21 de novembre" : "Resultats" }}
+        {{ participa.state === 'prevote' ? $t('home.more_info') : $t('home.results') }}
       </div>
     </a>
   </article>
@@ -34,6 +34,9 @@
   @import '../../../sass/_variables';
 
   .participa {
+    min-height: 275px;
+    margin-top: 4rem;
+
     &__button {
       background: mix($brand-primary, $white, 10%);
       margin: auto -2rem -2rem -2rem;

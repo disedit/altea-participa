@@ -20,7 +20,8 @@ export default {
   },
   booth_identification: {
     heading: 'Identificació',
-    subheading: 'Pots votar si tens més de <strong>{min_age} anys</strong> i estàs empadronat a <strong>{municipality}</strong>',
+    // subheading: 'Pots votar si tens més de <strong>{min_age} anys</strong> i estàs empadronat a <strong>{municipality}</strong>',
+    subheading: 'Pots votar si tens <strong>entre 16 i 30 anys</strong> i estàs empadronat a <strong>Altea</strong>',
     label: 'DNI, NIE o Passport',
     tooltip: 'Passaport només si eres resident estranger',
     button: 'Vota',
@@ -69,6 +70,7 @@ export default {
     title: 'Pressupostos participatius',
     new_edition: 'Nova edició',
     new_vote: 'Resultats',
+    upcoming_vote: 'Propera votació',
     state: 'Estat dels projectes triats',
     voters: 'Votants',
     invested: 'Invertits'
@@ -115,5 +117,9 @@ export default {
   altea_news: {
     title: 'Notícies',
     more: 'Més notícies'
+  },
+  home: {
+    more_info: 'Més informació',
+    results: 'Resultats'
   }
 };

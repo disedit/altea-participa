@@ -14,6 +14,6 @@ class OptionTranslation extends Model
      * @var array
      */
     protected $fillable = [
-        'option', 'description', 'motivation', 'status'
+        'option', 'description', 'motivation', 'status', 'flair'
     ];
 }

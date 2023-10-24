@@ -11,13 +11,14 @@
         Destinació Turística Intel·ligent, Pacte de les Alcaldies pel Clima i l'Energia
         <i class="far fa-arrow-right"></i>
       </a>
+      <homepage-consulta />
     </div>
     <homepage-projects />
     <div class="container-fluid container-xl">
       <ul class="homepage__grid">
         <!--<li class="homepage__grid__elections"><homepage-elections /></li>-->
         <li class="homepage__grid__decideix"><homepage-decideix /></li>
-        <li class="homepage__grid__consulta"><homepage-consulta /></li>
+        <!--<li class="homepage__grid__consulta"><homepage-consulta /></li>-->
         <!--<li class="homepage__grid__participa"><homepage-participa /></li>-->
         <li class="homepage__grid__social"><homepage-social /></li>
         <li class="homepage__grid__assocs"><homepage-assocs /></li>
@@ -108,7 +109,7 @@
       grid-template-rows: repeat(2, minmax(315px, 30vh));
       grid-template-areas:
         "assocs assocs assocs assocs decideix decideix"
-        "millora millora consulta consulta consulta consulta"
+        "millora millora news news news news"
         "social social news news news news";
       list-style: none;
       margin: 0;
@@ -203,7 +204,6 @@
         grid-template-areas:
           "assocs"
           "decideix"
-          "consulta"
           "millora"
           "news"
           "social";

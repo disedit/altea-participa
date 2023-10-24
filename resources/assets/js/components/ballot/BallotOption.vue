@@ -19,6 +19,9 @@
         <span v-if="ranked" :class="['ranked-choice-checkbox', { selected }]">{{ selected || '' }}</span>
         <span class="option-name" :id="'option-' + option.id">{{ option.option }}</span>
         <span v-if="displayCost && option.cost > 0" class="option-cost">{{ option.cost | formatCurrency }}</span>
+        <div class="mt-2">
+          <span v-if="option.flair" :class="['flair', `flair-${option.color}`]">{{ option.flair }}</span>
+        </div>
       </span>
     </div>
     <a href="#" ref="info" v-if="option.description" class="option-info" @click.prevent="displayInfo">{{ $t('booth_option.more_info') }}</a>
@@ -125,6 +128,31 @@
       &.selected {
         border-color: white;
       }
+    }
+  }
+
+
+  $colors: ('green': $green, 'orange': $orange, 'teal': $teal, 'red': $red, 'purple': $purple);
+
+  .flair {
+    padding: .25rem .75rem;
+    border-radius: .5rem;
+    color: $brand-primary;
+    font-size: .85rem;
+    white-space: nowrap;
+    box-decoration-break: clone;
+
+    @each $name, $color in $colors {
+      &.flair-#{$name} {
+        background: rgba($color, .25);
+      }
+    }
+  }
+
+  .selected {
+    .flair {
+      color: rgba($white, .75);
+      background: rgba($white, .25);
     }
   }
 </style>

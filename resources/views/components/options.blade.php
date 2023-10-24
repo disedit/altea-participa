@@ -9,6 +9,10 @@
                         @if($question->display_cost)
                             <div class="option__cost">{{ number($option->cost, 0) . '€' }}</div>
                         @endif
+
+                        @if($option->flair)
+                            <span class="option__flair flair-{{ $option->color }} mt-2">{{ $option->flair }}</span>
+                        @endif
                     </a>
                 </div>
             @endforeach
