@@ -24,7 +24,7 @@
         </div>
       </span>
     </div>
-    <a href="#" ref="info" v-if="option.description" class="option-info" @click.prevent="displayInfo">{{ $t('booth_option.more_info') }}</a>
+    <a href="#" ref="info" v-if="option.description || option.pictures" class="option-info" @click.prevent="displayInfo">{{ $t('booth_option.more_info') }}</a>
   </div>
 </template>
 
