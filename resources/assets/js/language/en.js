@@ -69,8 +69,9 @@ export default {
   participa: {
     title: 'Participatory budget',
     new_edition: 'New edition',
-    new_vote: 'Results',
-    upcoming_vote: 'Próxima votación',
+    new_vote: 'New vote',
+    vote_now: 'Vote',
+    upcoming_vote: 'Upcoming vote',
     state: 'Status of chosen projects',
     voters: 'Voters',
     invested: 'Invested'
@@ -120,6 +121,11 @@ export default {
   },
   home: {
     more_info: 'More information',
-    results: 'Results'
+    results: 'Results',
+    proposals: 'Submit your proposal',
+    vote: 'Vote',
+    "awaiting-results": 'Vote closed',
+    results: 'Results',
+    prevote: 'More information'
   }
 };
