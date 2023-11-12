@@ -69,7 +69,8 @@ export default {
   participa: {
     title: 'Pressupostos participatius',
     new_edition: 'Nova edició',
-    new_vote: 'Resultats',
+    new_vote: 'Votació oberta',
+    vote_now: 'Vota',
     upcoming_vote: 'Propera votació',
     state: 'Estat dels projectes triats',
     voters: 'Votants',
@@ -120,6 +121,11 @@ export default {
   },
   home: {
     more_info: 'Més informació',
-    results: 'Resultats'
+    results: 'Resultats',
+    proposals: 'Envia la teua proposta',
+    vote: 'Vota',
+    "awaiting-results": 'Votació tancada',
+    results: 'Resultats',
+    prevote: 'Més informació'
   }
 };

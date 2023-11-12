@@ -69,8 +69,9 @@ export default {
   participa: {
     title: 'Presupuestos participativos',
     new_edition: 'Nueva edición',
-    new_vote: 'Resultados',
-    upcoming_vote: 'Upcoming vote',
+    new_vote: 'Nueva votación',
+    vote_now: 'Vota',
+    upcoming_vote: 'Próxima votación',
     state: 'Estado de los proyectos elegidos',
     voters: 'Votantes',
     invested: 'Invertidos'
@@ -120,6 +121,11 @@ export default {
   },
   home: {
     more_info: 'Más información',
-    results: 'Resultados'
+    results: 'Resultados',
+    proposals: 'Envía tu propuesta',
+    vote: 'Votar',
+    "awaiting-results": 'Votación cerrada',
+    results: 'Resultados',
+    prevote: 'Más información'
   }
-};
+}
