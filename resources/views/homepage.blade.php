@@ -37,7 +37,7 @@
           'button' => 'Vota',
           'date' => [
             'start_day' => '30',
-            'end_day' => '3',
+            'end_day' => '13',
             'start_month' => 'oct',
             'end_month' => 'nov'
           ]
