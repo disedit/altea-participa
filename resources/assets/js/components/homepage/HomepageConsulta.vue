@@ -1,7 +1,7 @@
 <template>
   <article class="homepage__card participa">
     <a href="/participa" class="d-flex flex-column">
-      <span class="participa__flair">{{ $t('participa.new_vote') }}</span>
+      <!--<span class="participa__flair">{{ $t('participa.new_vote') }}</span>-->
       <div class="d-flex align-items-start">
         <h2 class="mr-4 chonky-title">{{ participa.title }}</h2>
           <div class="calendar ml-auto mb-4 d-none d-md-block">
