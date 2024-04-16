@@ -27,6 +27,11 @@
         <img src="https://gvaparticipa.gva.es/system/site_customization/images/images/000/000/001/original/logo435x85.png?1611748247" alt="GVA Participa">
       </a>
     </article>
+    <article class="homepage__card xarxasalut mt-4">
+      <a href="mailto:xarxasalutaltea@gmail.com" class="gva">
+        <img src="/images/xarxasalut.jpg" alt="Xarxa Salut">
+      </a>
+    </article>
   </div>
 </template>
 
