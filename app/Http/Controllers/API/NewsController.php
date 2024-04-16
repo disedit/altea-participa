@@ -23,7 +23,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $url = 'https://alteadigital.es/wp-json/wp/v2/posts/?categories=390&_embed&per_page=3';
+        $url = 'https://alteadigital.es/wp-json/wp/v2/posts/?categories=390&_embed&per_page=4';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_URL,$url);
