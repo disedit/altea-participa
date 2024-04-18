@@ -3,12 +3,12 @@
     <div class="container-fluid container-xl" style="margin-bottom: 2rem;">
       <a v-if="$i18n.locale === 'es'" href="/altea-decideix" class="new-poll-alert">
         <strong style="margin-right: 1rem">Nueva encuesta</strong>
-        Estudi d'impacte de les vivendes turístiques
+        Estudio de impacto de las viviendas turísticas
         <i class="far fa-arrow-right"></i>
       </a>
       <a v-else href="/altea-decideix" class="new-poll-alert">
         <strong style="margin-right: 1rem">Nova enquesta</strong>
-        Estudio de impacto de las viviendas turísticas
+        Estudi d'impacte de les vivendes turístiques
         <i class="far fa-arrow-right"></i>
       </a>
       <homepage-consulta />
