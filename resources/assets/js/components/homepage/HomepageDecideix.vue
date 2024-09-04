@@ -4,7 +4,7 @@
       <span class="decideix__flair">{{ $t('altea_decideix.new_vote') }}</span>
       <i class="far fa-megaphone mb-2" />
       <h2 class="mt-auto">{{ $t('altea_decideix.title') }}</h2>
-      <p class="mb-0"><strong><!--{{ $t('altea_decideix.active') }}-->Enquesta:</strong> Estudi d'impacte de les vivendes turístiques</p>
+      <p class="mb-0"><strong><!--{{ $t('altea_decideix.active') }}-->Enquesta:</strong> Millorar el riu Algar</p>
       <!--<p class="mb-0">{{ $t('altea_decideix.description') }}</p>-->
     </a>
   </article>
