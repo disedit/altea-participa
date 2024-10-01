@@ -3,12 +3,12 @@
     <div class="container-fluid container-xl" style="margin-bottom: 2rem;">
       <a v-if="$i18n.locale === 'es'" href="/altea-decideix" class="new-poll-alert">
         <strong style="margin-right: 1rem">Nueva encuesta</strong>
-        Mejorar el río Algar
+        Cuestionario para la priorización de los objetivos para el desarrollo sostenible (ODS)
         <i class="far fa-arrow-right"></i>
       </a>
       <a v-else href="/altea-decideix" class="new-poll-alert">
         <strong style="margin-right: 1rem">Nova enquesta</strong>
-        Millorar el riu Algar
+        Qüestionari per a la prioritzacio dels objectius per al desenvolupament sostenible (ODS)
         <i class="far fa-arrow-right"></i>
       </a>
       <homepage-consulta />
