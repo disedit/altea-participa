@@ -22,6 +22,11 @@
       <i class="far fa-bookmark"></i> Reserva la sala d'usos múltiples
     </button>
     <button
+      v-b-modal.modal-aula
+      :class="['btn btn-block btn-main', { 'btn-outline-primary': tab !== 'form', 'btn-primary': tab === 'aula'}]">
+      <i class="far fa-bookmark"></i> Reserva l'aula d'usos múltiples
+    </button>
+    <button
       v-b-modal.modal-calendar
       :class="['btn btn-block', { 'btn-outline-primary': tab !== 'calendar', 'btn-primary': tab === 'calendar'}]">
       <i class="far fa-calendar-alt"></i> Calendari de disponibilitat
@@ -32,6 +37,10 @@
     </b-modal>
 
     <b-modal id="modal-form" size="lg" ok-only ok-title="Tanca" title="Reserva la sala d'usos múltiples">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFl0I0z6C0pblR4lnZO7yP2lvJWi1Z6yIzNS4HQ9Rvh_RGjA/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </b-modal>
+
+    <b-modal id="modal-aula" size="lg" ok-only ok-title="Tanca" title="Reserva l'aula d'usos múltiples">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFl0I0z6C0pblR4lnZO7yP2lvJWi1Z6yIzNS4HQ9Rvh_RGjA/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </b-modal>
   </aside>
