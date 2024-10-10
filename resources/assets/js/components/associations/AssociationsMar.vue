@@ -87,6 +87,11 @@
 
     &-main {
       font-weight: bold;
+      background: white;
+
+      &:hover {
+        background: $brand-primary;
+      }
     }
   }
 
