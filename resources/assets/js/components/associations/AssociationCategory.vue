@@ -101,7 +101,7 @@
         position: relative;
         z-index: 10;
         width: 100%;
-        aspect-ratio: 1.25;
+        aspect-ratio: 2;
         display: flex;
         flex-direction: column;
         appearance: none;
