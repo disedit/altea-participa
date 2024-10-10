@@ -12,7 +12,7 @@
     </p>
 
     <p>
-      D’altra banda, hi ha disponible una <strong>sala d’usos múltiples</strong> on qualsevol associació
+      D’altra banda, hi ha disponible una <strong>sala i una aula d’usos múltiples</strong> on qualsevol associació
       inscrita en el Registre d’Associacions d’Altea podrà reunir-se si sol·licita prèviament la seua ocupació.
     </p>
 
@@ -21,11 +21,17 @@
       :class="['btn btn-block btn-main', { 'btn-outline-primary': tab !== 'form', 'btn-primary': tab === 'form'}]">
       <i class="far fa-bookmark"></i> Reserva la sala d'usos múltiples
     </button>
+    <div class="button-info">
+      Capacitat: <strong>30 persones</strong>
+    </div>
     <button
       v-b-modal.modal-aula
       :class="['btn btn-block btn-main', { 'btn-outline-primary': tab !== 'form', 'btn-primary': tab === 'aula'}]">
       <i class="far fa-bookmark"></i> Reserva l'aula d'usos múltiples
     </button>
+    <div class="button-info">
+      Capacitat: <strong>15 persones</strong>
+    </div>
     <button
       v-b-modal.modal-calendar
       :class="['btn btn-block', { 'btn-outline-primary': tab !== 'calendar', 'btn-primary': tab === 'calendar'}]">
@@ -37,7 +43,7 @@
     </b-modal>
 
     <b-modal id="modal-form" size="lg" ok-only ok-title="Tanca" title="Reserva la sala d'usos múltiples">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFl0I0z6C0pblR4lnZO7yP2lvJWi1Z6yIzNS4HQ9Rvh_RGjA/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUFATsARuXZvrNjiyD7U-h61c-Cp00fuAbI6VSZztNNLKHiw/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </b-modal>
 
     <b-modal id="modal-aula" size="lg" ok-only ok-title="Tanca" title="Reserva l'aula d'usos múltiples">
@@ -73,14 +79,25 @@
 
   .btn {
     display: flex;
-    margin-bottom: .5rem;
     text-align: left;
     gap: .5rem;
     align-items: baseline;
+    border-radius: .5rem;
+    position: relative;
 
     &-main {
       font-weight: bold;
     }
+  }
+
+  .button-info {
+    background: #10069f1f;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 0 0 .5rem .5rem;
+    font-size: .85rem;
+    margin-top: -0.5rem;
+    padding-top: 1rem;
   }
 }
 </style>
