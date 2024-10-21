@@ -5,7 +5,7 @@
         <h3>{{ category.name }}</h3>
         <ul class="mb-4">
           <li v-for="doc in category.docs" :key="doc.id">
-            <a :href="cms + doc.file.url" target="_blank" rel="noopener">
+            <a :href="doc.file.url ? `${cms + doc.file.url}` : doc.file_url" target="_blank" rel="noopener">
               <i class="far fa-file-alt" />
               <span class="title">{{ doc.title }}</span>
               <span v-if="doc.etiqueta" class="flair">{{ doc.etiqueta }}</span>
