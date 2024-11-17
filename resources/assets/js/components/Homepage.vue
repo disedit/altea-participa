@@ -1,16 +1,7 @@
 <template>
   <main class="homepage">
     <div class="container-fluid container-xl" style="margin-bottom: 2rem;">
-      <a v-if="$i18n.locale === 'es'" href="/altea-decideix" class="new-poll-alert">
-        <strong style="margin-right: 1rem">Nueva encuesta</strong>
-        Reforma integral del Pabellón Garganes
-        <i class="far fa-arrow-right"></i>
-      </a>
-      <a v-else href="/altea-decideix" class="new-poll-alert">
-        <strong style="margin-right: 1rem">Nova enquesta</strong>
-        Reforma integral del Pavelló Garganes
-        <i class="far fa-arrow-right"></i>
-      </a>
+      <homepage-alert />
       <homepage-consulta />
     </div>
     <homepage-projects />
@@ -31,6 +22,7 @@
 </template>
 
 <script>
+  import HomepageAlert from './homepage/HomepageAlert'
   import HomepageProjects from './homepage/HomepageProjects'
   // import HomepageElections from './homepage/HomepageElections'
   import HomepageConsulta from './homepage/HomepageConsulta'
@@ -44,6 +36,7 @@
 
   export default {
     components: {
+      HomepageAlert,
       HomepageProjects,
       // HomepageElections,
       HomepageConsulta,

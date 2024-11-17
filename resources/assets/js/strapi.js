@@ -30,7 +30,20 @@ export default class Strapi {
       _where: [
         { _or: [{ archived_null: true }, { archived: false }] },
         { _or: [{ autoarchive_null: true }, { autoarchive_gte: this._now() }] },
-      ]
+      ],
+      _sort: 'id:DESC',
+    })
+    return this._call('get', 'altea-decideix/?' + query)
+  }
+
+  getLastOpenProcess () {
+    const query = qs.stringify({ 
+      _where: [
+        { _or: [{ archived_null: true }, { archived: false }] },
+        { _or: [{ autoarchive_null: true }, { autoarchive_gte: this._now() }] },
+      ],
+      _sort: 'id:DESC',
+      _limit: 1
     })
     return this._call('get', 'altea-decideix/?' + query)
   }
