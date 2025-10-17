@@ -8,7 +8,7 @@
             <div class="calendar__heading">{{ participa.phase }}</div>
             <div class="calendar__dates">
                 <div class="calendar__days"><strong>{{ participa.date.start_day }}</strong> - <strong>{{ participa.date.end_day }}</strong></div>
-                <div class="calendar__month">{{ participa.date.start_month }} - {{ participa.date.end_month }}</div>
+                <div class="calendar__month">{{ participa.date.start_month === participa.date.end_month ? participa.date.start_month : `${participa.date.start_month} - ${ participa.date.end_month}` }}</div>
             </div>
           </div>
       </div>

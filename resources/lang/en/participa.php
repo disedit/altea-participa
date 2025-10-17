@@ -10,7 +10,7 @@ return [
     'locale' => 'en',
     'twitter_locale' => 'en',
     'facebook_locale' => 'en_GB',
-    'heading' => 'You have a say on the Council\'s decisions!', // You have a say on the Council\'s decisions!
+    'heading' => 'Participatory Budget', // You have a say on the Council\'s decisions!
     'subheading' => 'The Town Council of Altea lets you take an active part in the decisions that affect you the most.',
     'tweet' => 'I have voted on which projects I want @EsAltea to invest in',
     'description' => 'You have a say on the Council\'s decisions. The City Council of Altea lets you take an active part in the decisions that affect you the most.',
