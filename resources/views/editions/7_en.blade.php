@@ -4,7 +4,7 @@
 
   <p class="about-block__subtitle">
       Citizens have a direct say on part of the Council's investments
-      with a budget of up to €120,000
+      with a budget of up to 50,000
   </p>
 
   <p>
@@ -189,7 +189,7 @@
   <p class="about-block__highlight">
       <i class="far fa-question-circle"></i>
       Citizens will decide what <strong>projects they deem
-      best for Altea</strong>, with a combined cost of up to <strong>€120,000</strong>.
+      best for Altea</strong>, with a combined cost of up to <strong>50,000</strong>.
   </p>
 
   <h4 class="options-title">Submitted proposals</h4>
@@ -210,7 +210,7 @@
 
       <h4>Who can vote?</h4>
       <p>
-          All citizens who are <strong>16 years of age or older and are
+          All citizens who are <strong>18 years of age or older and are
           residents of Altea</strong>.
       </p>
 

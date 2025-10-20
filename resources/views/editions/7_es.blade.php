@@ -3,7 +3,7 @@
   <img src="/images/choice-2.svg" class="about-block__thumbnail" alt="" aria-hidden="true" />
 
   <p class="about-block__subtitle">
-      La ciudadanía decide directamente parte de las inversiones municipales con un presupuesto de 120.000€
+      La ciudadanía decide directamente parte de las inversiones municipales con un presupuesto de 50.000€
   </p>
 
   <p>
@@ -164,7 +164,7 @@
   <h3 id="about-3">¿Qué vamos a decidir?</h3>
   <p class="about-block__highlight">
       <i class="far fa-question-circle"></i>
-      La ciudadanía decidirá qué <strong>propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión máxima de <strong>120.000€</strong>.
+      La ciudadanía decidirá qué <strong>propuestas se consideran mejores para el pueblo de Altea</strong>, con una inversión máxima de <strong>50.000€</strong>.
   </p>
 
   <h4 class="options-title">Propuestas presentadas</h4>
@@ -184,7 +184,7 @@
 
       <h4>¿Quién puede votar?</h4>
       <p>
-          Podrán votar en este proceso aquellas personas mayores de 16 años empadronadas en Altea.
+          Podrán votar en este proceso aquellas personas mayores de 18 años empadronadas en Altea.
       </p>
 
       <h4>¿Qué se votará?</h4>

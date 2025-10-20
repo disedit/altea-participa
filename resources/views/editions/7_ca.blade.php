@@ -4,7 +4,7 @@
 
   <p class="about-block__subtitle">
       La ciutadania decideix directament part de les inversions municipals
-      amb un pressupost de 120.000€
+      amb un pressupost de 50.000€
   </p>
 
   <p>
@@ -199,7 +199,7 @@
   <p class="about-block__highlight">
       <i class="far fa-question-circle"></i>
       La ciutadania decidirà quines <strong>propostes es consideren millors
-      per al poble d’Altea</strong>, amb una inversió máxima de <strong>120.000€</strong>.
+      per al poble d’Altea</strong>, amb una inversió máxima de <strong>50.000€</strong>.
   </p>
 
     <h4 class="options-title">Propostes presentades</h4>
@@ -220,7 +220,7 @@
 
       <h4>Qui pot votar?</h4>
       <p>
-          Podran votar en aquest procés aquelles persones majors de 16 anys
+          Podran votar en aquest procés aquelles persones majors de 18 anys
           empadronades a Altea.
       </p>
 
@@ -384,8 +384,8 @@
                           <div class="calendar">
                               <div class="calendar__heading">Avaluació</div>
                               <div class="calendar__dates">
-                                  <div class="calendar__days"><strong>18</strong> - <strong>18</strong></div>
-                                  <div class="calendar__month">oct / nov</div>
+                                  <div class="calendar__days"><strong>10</strong> - <strong>1</strong></div>
+                                  <div class="calendar__month">nov / dec</div>
                               </div>
                           </div>
                       </div>
