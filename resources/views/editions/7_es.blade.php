@@ -11,7 +11,7 @@
   </p>
 
   <p>
-      Ya empezamos <a href="{{ url('/archive/2017') }}">hace cinco años</a> con este formato de presupuestos participativos y en esta cuarta edición, el proceso de participación será mucho más amplio, dinámico y fácil.
+      Ya empezamos <a href="{{ url('/archive/2017') }}">hace ocho años</a> con este formato de presupuestos participativos y en esta cuarta edición, el proceso de participación será mucho más amplio, dinámico y fácil.
   </p>
 
   <p>
@@ -20,7 +20,7 @@
 
   <div id="about-1-more" class="about-block__01-hidden">
       <p>
-          A tal efecto, el Equipo de Gobierno ha decidido que los 10 proyectos que se sometan a votación hayan sido propuestos por la ciudadanía. En el mes de septiembre de 2021, se abrirá un plazo de tres semanas para que los ciudadanos/as presenten sus propuestas de inversiones. Estas propuestas serán evaluadas y analizadas por los Técnicos Municipales donde cada propuesta tendrá un presupuesto estimado y a quien beneficiaría, así como el motivo por el que quedarán desestimadas.
+          A tal efecto, el Equipo de Gobierno ha decidido que los 10 proyectos que se sometan a votación hayan sido propuestos por la ciudadanía. En el mes de octubre de 2025, se abrirá un plazo de tres semanas para que los ciudadanos/as presenten sus propuestas de inversiones. Estas propuestas serán evaluadas y analizadas por los Técnicos Municipales donde cada propuesta tendrá un presupuesto estimado y a quien beneficiaría, así como el motivo por el que quedarán desestimadas.
       </p>
 
       <p>
@@ -58,8 +58,8 @@
               <div class="calendar">
                   <div class="calendar__heading">Propuestas</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>22 - 24</strong></div>
-                      <div class="calendar__month">sep / oct</div>
+                      <div class="calendar__days"><strong>22 - 10</strong></div>
+                      <div class="calendar__month">oct / nov</div>
                   </div>
               </div>
           </div>
@@ -76,13 +76,13 @@
           <img src="/images/path.svg" alt="" />
       </div>
 
-      {{--<div class="phase phase-25">
+      <div class="phase phase-25">
           <div class="phase__calendar">
               <div class="calendar">
                   <div class="calendar__heading">Evaluación</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>18</strong> - <strong>18</strong></div>
-                      <div class="calendar__month">oct / nov</div>
+                      <div class="calendar__days"><strong>10</strong> - <strong>1</strong></div>
+                      <div class="calendar__month">nov / dic</div>
                   </div>
               </div>
           </div>
@@ -93,8 +93,8 @@
 
       <div class="phase__path mt-0">
           <img src="/images/path-2.svg" alt="" style="transform: rotate(180deg);" />
-      </div>--}}
-
+      </div>
+{{--
         <div class="phase">
           <div class="phase__calendar">
               <div class="calendar">
@@ -140,8 +140,8 @@
               <div class="calendar calendar--red">
                   <div class="calendar__heading">Votación</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>20</strong> - <strong>20</strong></div>
-                      <div class="calendar__month">dic. / ene.</div>
+                      <div class="calendar__days"><strong>1</strong> - <strong>12</strong></div>
+                      <div class="calendar__month">diciembre</div>
                   </div>
               </div>
           </div>
@@ -199,7 +199,7 @@
 
       <h4>Inicio y fin de la votación</h4>
       <p>
-        Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 20 de diciembre de 2021 y concluirá el día 20 de enero de 2022 a las 23:59.
+        Se ha establecido un periodo de votación que empezará, vía internet, a las 12 horas de la noche del día 1 de diciembre de 2025 y concluirá el día 12 de diciembre de 2025 a las 23:59.
       </p>
 
       <h4>Resultado de la votación</h4>
@@ -222,14 +222,14 @@
 <section id="archive" aria-labelledby="about-5" class="about-block about-block--last">
   <h3 id="about-5">Archivo</h3>
   <div>
-      <h4 class="mb-4">Resultados de 2020</h4>
+      <h4 class="mb-4">Resultados de 2022</h4>
       <div class="row results results-2017 results-2017--compact mt-3">
           <div class="d-flex justify-content-center col-md-4">
               <div class="results__card results__card--winner">
                   <span class="results__card__number d-none d-md-inline">1</span>
-                  <h5><span>Alumbrado Camí Fondo</span> <i class="far fa-check" aria-hidden="true"></i></h5>
+                  <h5><span>Aula estudi 24h</span> <i class="far fa-check" aria-hidden="true"></i></h5>
                   <div class="results__votes">
-                      <div class="results__points">441 votos</div>
+                      <div class="results__points">170 votos</div>
                       <div class="progress">
                           <div class="d-flex" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" role="progressbar">
                               <div class="progress-bar"></div>
@@ -241,7 +241,7 @@
           <div class="d-flex justify-content-center col-md-6 results-2017__execution">
               <div class="results-2017__execution__block">
                   <h6><span><i class="far fa-cogs" aria-hidden="true"></i> Estado</span></h6>
-                  Finalizado
+                  En proceso de adjudicación licitación.
                   <hr class="my-3" aria-hidden="true" />
                   <small class="d-block mt-3">Última actualización: 17 diciembre 2021</small>
               </div>
@@ -249,9 +249,9 @@
           <div class="d-flex justify-content-center col-md-4">
               <div class="results__card">
                   <span class="results__card__number d-none d-md-inline">2</span>
-                  <h5>Pump Track</h5>
+                  <h5>Projecte d'ampliació i millora de voreres</h5>
                   <div class="results__votes">
-                      <div class="results__points">419</div>
+                      <div class="results__points">151</div>
                       <div class="progress">
                           <div class="d-flex" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" role="progressbar">
                               <div class="progress-bar"></div>
@@ -263,9 +263,9 @@
           <div class="d-flex justify-content-center col-md-4">
               <div class="results__card">
                   <span class="results__card__number d-none d-md-inline">3</span>
-                  <h5>Mejora de los Parques Infantiles</h5>
+                  <h5>Parc de calisténia</h5>
                   <div class="results__votes">
-                      <div class="results__points">414 votos</div>
+                      <div class="results__points">132 votos</div>
                       <div class="progress">
                           <div class="d-flex" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" role="progressbar">
                               <div class="progress-bar"></div>
@@ -277,13 +277,13 @@
           <div class="d-flex justify-content-center col-md-6 results-2017__execution">
               <div class="results-2017__execution__block">
                   <ol start="4" class="results-2017__descending-list">
-                      <li>Trituradora de compostaje (264 votos)</li>
-                      <li>Mejoras en Altea la Vella (255 votos)</li>
-                      <li>Acondicionamiento de la Calle Costa Blanca y Pasaje Llaurador (238 votos)</li>
+                      <li>Millora de parcs infantils (128 votos)</li>
+                      <li>Aparcament Altea la Vella (106 votos)</li>
+                      <li>Retenció de plàstics generats al carrer (104 votos)</li>
                   </ol>
                   <hr class="my-3" aria-hidden="true" />
-                  <a href="{{ url('/archive/3') }}">
-                      <i class="far fa-chart-bar" aria-hidden="true"></i> Resultados completos de 2020
+                  <a href="{{ url('/archive/4') }}">
+                      <i class="far fa-chart-bar" aria-hidden="true"></i> Resultados completos de 2022
                   </a>
               </div>
           </div>

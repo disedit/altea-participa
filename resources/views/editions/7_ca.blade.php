@@ -87,7 +87,7 @@
               <div class="calendar">
                   <div class="calendar__heading">Propostes</div>
                   <div class="calendar__dates">
-                      <div class="calendar__days"><strong>20 - 10</strong></div>
+                      <div class="calendar__days"><strong>22 - 10</strong></div>
                       <div class="calendar__month">oct / nov</div>
                   </div>
               </div>

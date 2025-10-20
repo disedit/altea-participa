@@ -25,7 +25,8 @@
         <li class="nav-item">
           <a href="/participa">@lang('participa.nav.budget')</a>
           <ul class="nav-submenu">
-            <li><a href="/participa">2021</a></li>
+            <li><a href="/participa">2026</a></li>
+            <li><a href="/archive/4">2021</a></li>
             <li><a href="/archive/3">2020</a></li>
             <li><a href="/archive/2">2019</a></li>
             <li><a href="/archive/1">2018</a></li>
