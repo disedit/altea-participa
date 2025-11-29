@@ -42,12 +42,12 @@
       </a>
   </p>
 </section>
-
+{{--
 <section id="propose" aria-labelledby="propose-h" class="about-block about-block--propose">
     <h3 id="propose-h">Envía tu propuesta</h3>
     <div style="width:100%;height:500px;" data-fillout-id="4ugBcTgWNYus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div><script src="https://server.fillout.com/embed/v1/"></script>
 </section>
-
+--}}
 <section id="calendar" aria-labelledby="about-2" class="about-block about-block--calendar">
   {{--<h3 id="about-2">Acto de presentación</h3>
 

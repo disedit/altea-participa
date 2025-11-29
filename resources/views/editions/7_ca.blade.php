@@ -72,11 +72,26 @@
   </p>
 </section>
 
+<section id="proposals" aria-labelledby="about-3" class="about-block about-block--proposals">
+  <h3 id="about-3">Què anem a decidir?</h3>
+  <p class="about-block__highlight">
+      <i class="far fa-question-circle"></i>
+      La ciutadania decidirà quines <strong>propostes es consideren millors
+      per al poble d’Altea</strong>, amb una inversió máxima de <strong>50.000€</strong>.
+  </p>
+
+    <h4 class="options-title">Propostes presentades</h4>
+    [options]
+
+  <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
+</section>
+
+{{--
 <section id="propose" aria-labelledby="propose-h" class="about-block about-block--propose">
     <h3 id="propose-h">Envia la teua proposta</h3>
     <div style="width:100%;height:500px;" data-fillout-id="4ugBcTgWNYus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div><script src="https://server.fillout.com/embed/v1/"></script>
 </section>
-
+--}}
 <section id="calendar" aria-labelledby="about-2" class="about-block about-block--calendar">
   {{--<h3 id="about-2">Acte de presentació</h3>
 
@@ -197,20 +212,6 @@
   </a>
 
   <p class="about-block__fine-print mt-4 mb-0">* Les dates del calendari poden sofrir variacions</p>
-</section>
-
-<section id="proposals" aria-labelledby="about-3" class="about-block about-block--proposals">
-  <h3 id="about-3">Què anem a decidir?</h3>
-  <p class="about-block__highlight">
-      <i class="far fa-question-circle"></i>
-      La ciutadania decidirà quines <strong>propostes es consideren millors
-      per al poble d’Altea</strong>, amb una inversió máxima de <strong>50.000€</strong>.
-  </p>
-
-    <h4 class="options-title">Propostes presentades</h4>
-    [options]
-
-  <img src="/images/creation.svg" class="about-block__phases-thumbnail" alt="" aria-hidden="true" />
 </section>
 
 <section id="info" aria-labelledby="about-4" class="about-block about-block--info">
