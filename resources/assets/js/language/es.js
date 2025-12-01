@@ -21,7 +21,7 @@ export default {
   booth_identification: {
     heading: 'Identificación',
     //subheading: 'Puedes votar si tienes más de <strong>{min_age} años</strong> y estás empadronado en <strong>{municipality}</strong>',
-    subheading: 'Puedes votar si tienes <strong>entre 16 y 30 años</strong> y estás empadronado en <strong>{municipality}</strong>',
+    subheading: 'Puedes votar si tienes <strong>entre 18 y 30 años</strong> y estás empadronado en <strong>{municipality}</strong>',
     label: 'DNI, NIE o Pasaporte',
     tooltip: 'Pasaporte sólo si eres residente extranjero',
     button: 'Vota',
