@@ -20,8 +20,8 @@ export default {
   },
   booth_identification: {
     heading: 'Identification',
-    // ubheading: 'You can vote if you are over <strong>{min_age} years</strong> of age and currently reside in <strong>{municipality}</strong>',
-    subheading: 'You can vote if you are <strong>over 18 and under 30 years of age</strong> and currently reside in <strong>{municipality}</strong>',
+    subheading: 'You can vote if you are over <strong>18 years</strong> of age and currently reside in <strong>{municipality}</strong>',
+    // subheading: 'You can vote if you are <strong>over 18 and under 30 years of age</strong> and currently reside in <strong>{municipality}</strong>',
     label: 'DNI, NIE or Passport',
     tooltip: 'Passport only for foreign residents',
     button: 'Vote',

@@ -20,8 +20,8 @@ export default {
   },
   booth_identification: {
     heading: 'Identificació',
-    // subheading: 'Pots votar si tens més de <strong>{min_age} anys</strong> i estàs empadronat a <strong>{municipality}</strong>',
-    subheading: 'Pots votar si tens <strong>entre 18 i 30 anys</strong> i estàs empadronat a <strong>Altea</strong>',
+    subheading: 'Pots votar si tens més de <strong>18 anys</strong> i estàs empadronat a <strong>{municipality}</strong>',
+    // subheading: 'Pots votar si tens <strong>entre 18 i 30 anys</strong> i estàs empadronat a <strong>Altea</strong>',
     label: 'DNI, NIE o Passport',
     tooltip: 'Passaport només si eres resident estranger',
     button: 'Vota',
