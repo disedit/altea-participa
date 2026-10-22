@@ -26,7 +26,7 @@ class AddIdRequiredToEditionsTable extends Migration
     public function down()
     {
         Schema::table('editions', function (Blueprint $table) {
-            $table->dropColumn('editions');
+            $table->dropColumn('id_required');
         });
     }
 }

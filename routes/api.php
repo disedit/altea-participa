@@ -1,37 +1,41 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\API\AdminController;
+use App\Http\Controllers\API\BallotController;
+use App\Http\Controllers\API\BoothController;
+use App\Http\Controllers\API\NewsController;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
+| These routes are loaded with the "api" middleware group and the "/api"
+| prefix (see bootstrap/app.php).
 |
 */
 
-/* Booth funcitonality */
-Route::post('/precheck', 'API\BoothController@precheck');
-Route::post('/request_sms', 'API\BoothController@requestSms');
-Route::post('/cast_ballot', 'API\BoothController@castBallot');
+/* Booth functionality */
+Route::post('/precheck', [BoothController::class, 'precheck']);
+Route::post('/request_sms', [BoothController::class, 'requestSms']);
+Route::post('/cast_ballot', [BoothController::class, 'castBallot']);
 
 /* Front page blocks */
-Route::get('/sidebar', 'HomeController@sidebar');
-Route::get('/option/{option}', 'HomeController@option');
+Route::get('/sidebar', [HomeController::class, 'sidebar']);
+Route::get('/option/{option}', [HomeController::class, 'option']);
 
 /* Ballot helpers */
-Route::get('/ballot', 'API\BallotController@ballotJSON');
-Route::get('/ballot/qr/{ref}', 'API\BallotController@ballotQR');
+Route::get('/ballot', [BallotController::class, 'ballotJSON']);
+Route::get('/ballot/qr/{ref}', [BallotController::class, 'ballotQR']);
 
 /* Admin area */
-Route::post('/annul_ballot', 'API\AdminController@annulBallot')->middleware('auth:api');
-Route::post('/id_lookup', 'API\AdminController@lookUp')->middleware('auth:api');
-Route::post('/unblock', 'API\AdminController@unblock')->middleware('auth:api');
-Route::get('/results', 'API\AdminController@results')->middleware('auth:api');
-Route::get('/reports', 'API\AdminController@reports')->middleware('auth:api');
+Route::post('/annul_ballot', [AdminController::class, 'annulBallot'])->middleware('auth:api');
+Route::post('/id_lookup', [AdminController::class, 'lookUp'])->middleware('auth:api');
+Route::post('/unblock', [AdminController::class, 'unblock'])->middleware('auth:api');
+Route::get('/results', [AdminController::class, 'results'])->middleware('auth:api');
+Route::get('/reports', [AdminController::class, 'reports'])->middleware('auth:api');
 
 /* News */
-Route::get('/stories', 'API\NewsController@index');
+Route::get('/stories', [NewsController::class, 'index']);

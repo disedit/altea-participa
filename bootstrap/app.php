@@ -1,55 +1,70 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Create The Application
-|--------------------------------------------------------------------------
-|
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
-| the IoC container for the system binding all of the various parts.
-|
-*/
+use App\Edition;
+use App\Http\Middleware\InPerson;
+use App\Http\Middleware\IpLimit;
+use App\Http\Middleware\Language;
+use App\Http\Middleware\VoteOpen;
+use Illuminate\Console\Scheduling\Schedule;
+use Illuminate\Cookie\Middleware\EncryptCookies;
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Configuration\Exceptions;
+use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
+use Illuminate\Foundation\Http\Middleware\TrimStrings;
+use Illuminate\Routing\Middleware\SubstituteBindings;
+use Illuminate\Routing\Middleware\ThrottleRequests;
+use Illuminate\Support\Facades\Schema;
 
-$app = new Illuminate\Foundation\Application(
-    realpath(__DIR__.'/../')
-);
+return Application::configure(basePath: dirname(__DIR__))
+    ->withRouting(
+        web: __DIR__.'/../routes/web.php',
+        api: __DIR__.'/../routes/api.php',
+        commands: __DIR__.'/../routes/console.php',
+    )
+    ->withMiddleware(function (Middleware $middleware): void {
+        // The app never trimmed or nulled input before; keep it that way.
+        $middleware->remove([
+            TrimStrings::class,
+            ConvertEmptyStringsToNull::class,
+        ]);
 
-/*
-|--------------------------------------------------------------------------
-| Bind Important Interfaces
-|--------------------------------------------------------------------------
-|
-| Next, we need to bind some important interfaces into the container so
-| we will be able to resolve them when needed. The kernels serve the
-| incoming requests to this application from both the web and CLI.
-|
-*/
+        $middleware->appendToGroup('web', Language::class);
 
-$app->singleton(
-    Illuminate\Contracts\Http\Kernel::class,
-    App\Http\Kernel::class
-);
+        // The API reads the encrypted "language" cookie, so it needs EncryptCookies.
+        $middleware->group('api', [
+            ThrottleRequests::class.':60,1',
+            SubstituteBindings::class,
+            EncryptCookies::class,
+            Language::class,
+        ]);
 
-$app->singleton(
-    Illuminate\Contracts\Console\Kernel::class,
-    App\Console\Kernel::class
-);
+        $middleware->group('booth', [
+            VoteOpen::class,
+            InPerson::class,
+            IpLimit::class,
+        ]);
 
-$app->singleton(
-    Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class
-);
+        $middleware->redirectUsersTo('/admin');
+    })
+    ->withSchedule(function (Schedule $schedule): void {
+        if (! Schema::hasTable('editions')) {
+            return;
+        }
 
-/*
-|--------------------------------------------------------------------------
-| Return The Application
-|--------------------------------------------------------------------------
-|
-| This script returns the application instance. The instance is given to
-| the calling script so we can separate the building of the instances
-| from the actual running of the application and sending responses.
-|
-*/
+        // Calculate and cache the current edition's results when it closes
+        $edition = Edition::current();
 
-return $app;
+        if ($edition) {
+            $endDate = strtotime($edition->end_date);
+            $minute = (int) date('i', $endDate);
+            $hour = date('G', $endDate);
+            $day = date('j', $endDate);
+            $month = date('n', $endDate);
+
+            $schedule->command('results:cache')->cron("$minute $hour $day $month *");
+        }
+    })
+    ->withExceptions(function (Exceptions $exceptions): void {
+        //
+    })->create();

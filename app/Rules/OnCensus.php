@@ -2,48 +2,31 @@
 
 namespace App\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
 use App\Limit;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class OnCensus implements Rule
+class OnCensus implements ValidationRule
 {
-    /* The voter instance */
-    protected $voter;
-
     /**
      * Create a new rule instance.
      *
-     * @return void
+     * @param  \App\Voter|null  $voter
      */
-    public function __construct($voter)
+    public function __construct(protected $voter)
     {
-        $this->voter = $voter;
     }
 
     /**
      * Checks if ID exists on the current edition census
      * If an ID does not exist, it logs the error to prevent
-     * brutce force attacks to guess valid IDs
-     *
-     * @return bool
+     * brute force attacks to guess valid IDs
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        if(!$this->voter) {
+        if (! $this->voter) {
             Limit::logAction('IDFailedLookUp', null, $value);
-            return false;
+            $fail(__('validation.custom.SID.on_census'));
         }
-
-        return true;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validation.custom.SID.on_census');
     }
 }

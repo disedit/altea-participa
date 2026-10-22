@@ -42,7 +42,7 @@ class BoothController extends Controller
      */
     public function requestSms(VoteRequest $request)
     {
-        $editionId  = $request->get('edition_id');
+        $editionId  = $request->attributes->get('edition_id');
         $inPerson   = $request->user();
         $flag        = null;
         $SID        = $request->input('SID');
@@ -84,7 +84,7 @@ class BoothController extends Controller
      */
     public function castBallot(VoteRequest $request)
     {
-        $editionId  = $request->get('edition_id');
+        $editionId  = $request->attributes->get('edition_id');
         $edition = Edition::find($editionId);
 
         if ($edition->id_required) {

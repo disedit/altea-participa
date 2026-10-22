@@ -1,26 +1,35 @@
 <?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
-/*
-|--------------------------------------------------------------------------
-| Model Factories
-|--------------------------------------------------------------------------
-|
-| Here you may define all of your model factories. Model factories give
-| you a convenient way to create models for testing and seeding your
-| database. Just tell the factory how a default model should look.
-|
-*/
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\User>
+ */
+class UserFactory extends Factory
+{
+    /**
+     * The current password being used by the factory.
+     */
+    protected static ?string $password;
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\User::class, function (Faker\Generator $faker) {
-    static $password;
-    return [
-        'name' => $faker->name,
-        'username' => $faker->unique()->userName,
-        'email' => $faker->unique()->email,
-        'password' => $password ?: $password = bcrypt('secret'),
-        'is_superadmin' => 1,
-        'remember_token' => Str::random(10),
-    ];
-});
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => fake()->name(),
+            'username' => fake()->unique()->userName(),
+            'email' => fake()->unique()->email(),
+            'password' => static::$password ??= Hash::make('secret'),
+            'is_superadmin' => 1,
+            'remember_token' => Str::random(10),
+        ];
+    }
+}

@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use App\Voter;
 use App\Ballot;
@@ -12,13 +14,13 @@ class BallotSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         // Get 30% of the census
         $census = Voter::all()->count();
         $thirtyPercent = 30 * $census / 100;
 
-        $voters = Voter::orderByRaw('rand()')->limit($thirtyPercent)->get()->each(function($voter) {
+        $voters = Voter::inRandomOrder()->limit((int) $thirtyPercent)->get()->each(function($voter) {
             $voter->ballot_cast = 1;
             $voter->ballot_time = date('Y-m-d H:i:s');
             $voter->signature = $voter->createSignature();
@@ -48,7 +50,7 @@ class BallotSeeder extends Seeder
     private function generateRandomBallot($editionId)
     {
         $ballot = [];
-        $faker = Faker\Factory::create();
+        $faker = fake();
 
         $questions = Question::where('edition_id', $editionId)->get();
 

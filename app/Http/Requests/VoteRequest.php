@@ -51,7 +51,7 @@ class VoteRequest extends FormRequest
      */
     public function rules()
     {
-        $editionId = $this->get('edition_id');
+        $editionId = $this->attributes->get('edition_id');
         $SID = $this->input('SID');
         $edition = Edition::find($editionId);
         $voter = Voter::findBySID($SID, $editionId);
@@ -109,8 +109,8 @@ class VoteRequest extends FormRequest
      */
     public function cleanPhone($countryCode, $phone)
     {
-        $countryCode = filter_var($countryCode, FILTER_SANITIZE_STRING);
-        $phone = filter_var($phone, FILTER_SANITIZE_STRING);
+        $countryCode = static::sanitize($countryCode);
+        $phone = static::sanitize($phone);
 
         $countryCode = ($countryCode) ? $countryCode : '34';
         $phone = $countryCode . '.' . $phone;
@@ -130,7 +130,7 @@ class VoteRequest extends FormRequest
      */
     public static function hashSID($value)
     {
-        $value = filter_var($value, FILTER_SANITIZE_STRING);
+        $value = static::sanitize($value);
 
         // Improve this with regex?
         $value = str_replace(" ", "", $value);
@@ -144,4 +144,17 @@ class VoteRequest extends FormRequest
         return $value;
     }
 
+    /**
+     * Strip tags and encode quotes, like the removed FILTER_SANITIZE_STRING filter did.
+     *
+     * @return string
+     */
+    protected static function sanitize($value)
+    {
+        if (! is_scalar($value)) {
+            return '';
+        }
+
+        return str_replace(['"', "'"], ['&#34;', '&#39;'], strip_tags((string) $value));
+    }
 }

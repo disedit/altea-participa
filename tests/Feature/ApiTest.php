@@ -5,6 +5,8 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\VerifySMS;
 use Carbon\Carbon;
 use App\Edition;
 use App\Voter;
@@ -14,9 +16,9 @@ class ApiTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function setUp()
+    protected function setUp(): void
     {
-        Parent::setUp();
+        parent::setUp();
 
         $this->artisan('db:seed');
     }
@@ -52,7 +54,9 @@ class ApiTest extends TestCase
 
     public function test_it_requests_an_sms_code()
     {
-        $voter = $this->newVoter();;
+        Notification::fake();
+
+        $voter = $this->newVoter();
         $response = $this->json('POST', '/api/request_sms', [
             'SID' => $voter['SID'],
             'country_code' => 34,
@@ -63,6 +67,8 @@ class ApiTest extends TestCase
                  ->assertJson([
                      'success' => true
                  ]);
+
+        Notification::assertSentTo($voter['object'], VerifySMS::class);
     }
 
     public function test_it_casts_a_ballot_as_online_voter()

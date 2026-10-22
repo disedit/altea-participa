@@ -10,13 +10,6 @@ class Limit extends Model
     use SoftDeletes;
 
     /**
-     * The attributes that should be mutated to dates.
-     *
-     * @var array
-     */
-    protected $dates = ['deleted_at'];
-
-    /**
      * Get the edition that the log belongs to.
      */
     public function edition()
@@ -118,7 +111,7 @@ class Limit extends Model
      */
     public static function ip()
     {
-        return (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : \Request::ip();
+        return (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : request()->ip();
     }
 
     /**
@@ -127,6 +120,6 @@ class Limit extends Model
      * @return string
      */
     public static function userAgent() {
-        return \Request::header('User-Agent');
+        return request()->header('User-Agent');
     }
 }

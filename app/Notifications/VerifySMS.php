@@ -3,7 +3,7 @@
 namespace App\Notifications;
 
 use Illuminate\Notifications\Notification;
-use NotificationChannels\Messagebird\MessagebirdChannel;
+use App\Notifications\Channels\MessagebirdSmsChannel;
 use NotificationChannels\Messagebird\MessagebirdMessage;
 
 class VerifySMS extends Notification
@@ -17,7 +17,7 @@ class VerifySMS extends Notification
      */
     public function via($notifiable)
     {
-        return [MessagebirdChannel::class];
+        return [MessagebirdSmsChannel::class];
     }
 
     /**

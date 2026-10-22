@@ -107,13 +107,13 @@ class BoothTest extends DuskTestCase
      */
     public function test_an_invalid_ID_displays_an_error()
     {
-        $faker = \Faker\Factory::create();
+        $faker = fake();
 
         $this->browse(function (Browser $browser) use ($faker) {
             $browser->visit(new Booth)
                     ->waitFor('.booth')
                     ->fillOutBallot()
-                    ->type('identification', $faker->numberBetween(10000000,99999999) . $faker->randomLetter)
+                    ->type('identification', $faker->numberBetween(10000000,99999999) . $faker->randomLetter())
                     ->press('@vote')
                     ->waitFor('#errorsModal')
                     ->assertVisible('#errorsModal');

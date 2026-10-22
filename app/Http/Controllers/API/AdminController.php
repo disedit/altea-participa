@@ -27,7 +27,7 @@ class AdminController extends Controller
 
         $user = Auth::user();
         $edition = Edition::current();
-        $confirm = $request->get('confirm');
+        $confirm = $request->input('confirm');
 
         $rules['SID'] = 'required|min:5';
 
@@ -125,7 +125,7 @@ class AdminController extends Controller
         $lastTally = cache('last_tally_finished_' . $edition->id);
         $nextTally = $lastTally + (60 * 30); // 30 minutes
 
-        if (time() > $nextTally || $request->get('force')) {
+        if (time() > $nextTally || $request->input('force')) {
             Artisan::call('results:cache');
             $output = Artisan::output();
             $integrity = stripos($output, 'Result integrity check failed');

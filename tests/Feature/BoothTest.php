@@ -13,9 +13,9 @@ class BoothTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function setUp()
+    protected function setUp(): void
     {
-        Parent::setUp();
+        parent::setUp();
 
         $this->artisan('db:seed');
     }

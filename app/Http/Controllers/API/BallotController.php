@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 
 use App\Edition;
 use App\Ballot;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use BaconQrCode\Renderer\Image\SvgImageBackEnd;
+use BaconQrCode\Renderer\ImageRenderer;
+use BaconQrCode\Renderer\RendererStyle\RendererStyle;
+use BaconQrCode\Writer;
 
 class BallotController extends Controller
 {
@@ -29,7 +32,8 @@ class BallotController extends Controller
      */
     public function ballotQR($ref)
     {
-        $qr = QrCode::size(200)->generate(secure_url('ballot/' . $ref));
+        $renderer = new ImageRenderer(new RendererStyle(200, 0), new SvgImageBackEnd);
+        $qr = (new Writer($renderer))->writeString(secure_url('ballot/' . $ref));
 
         return response($qr)->header('Content-Type', 'image/svg+xml');
     }

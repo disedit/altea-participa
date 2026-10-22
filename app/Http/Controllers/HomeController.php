@@ -81,7 +81,7 @@ class HomeController extends Controller
         $now = time();
         $edition = $this->edition;
         $pastEditions = Edition::pastEditions();
-        $forceOpen = $request->get('force_open');
+        $forceOpen = $request->input('force_open');
 
         // If within voting window dates, show voting booth
         if ($edition->isOpen() || $forceOpen) {

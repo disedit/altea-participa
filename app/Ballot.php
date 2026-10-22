@@ -132,7 +132,7 @@ class Ballot extends Model
     {
         $userId = ($request->user()) ? $request->user()->id : null;
 
-        $this->edition_id = $request->get('edition_id');
+        $this->edition_id = $request->attributes->get('edition_id');
         $this->ref = $this->createRef();
         $this->ballot = $this->createBallot($request->input('ballot'));
         $this->signature = $this->createSignature();

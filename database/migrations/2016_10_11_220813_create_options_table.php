@@ -18,7 +18,7 @@ class CreateOptionsTable extends Migration
             $table->integer('question_id')->unsigned();
             $table->text('attachments')->nullable();
             $table->text('pictures')->nullable();
-            $table->double('cost', 10, 2)->nullable();
+            $table->double('cost')->nullable();
             $table->string('salt');
             $table->timestamps();
 

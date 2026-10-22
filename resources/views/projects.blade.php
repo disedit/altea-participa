@@ -45,7 +45,7 @@
                     @foreach ($question->options as $project)
                     @php
                         if (!$project->status) continue;
-                        $pictures = explode("\n", $project->pictures);
+                        $pictures = explode("\n", $project->pictures ?? '');
                         $picture = (isset($pictures[0])) ? $pictures[0] : false;
                     @endphp
                         <li>

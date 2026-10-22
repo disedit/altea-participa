@@ -16,15 +16,12 @@ Wildcard Participa is an __online voting system__ aimed at city councils.
 - __Accessibility__: Site optimized for people with disabilities, such as the visually impaired.
 
 ## Requirements
-Wildcard Participa uses Laravel 5.4, which has the following requirements:
+Wildcard Participa uses Laravel 13, which has the following requirements:
 
-- PHP >= 7.0.0
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
-- MySQL, PostgreSQL, SQLite or SQL Server
+- PHP >= 8.5
+- Composer 2
+- OpenSSL, PDO, Mbstring, Tokenizer, XML, Ctype and JSON PHP extensions
+- MySQL 8.0+ (or MariaDB 10.3+, PostgreSQL, SQLite or SQL Server)
 
 ## Installation
 

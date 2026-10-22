@@ -1,6 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\URL;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ArchiveController;
+use App\Http\Controllers\BallotController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LanguageController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,15 +19,15 @@ use Illuminate\Support\Facades\URL;
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::get('/participa', 'HomeController@participa');
-Route::get('/projects', 'HomeController@projects');
-Route::get('/about', 'HomeController@about');
-Route::get('/propose', 'HomeController@propose');
-Route::get('/participa/booth/{route}', 'HomeController@participa');
-Route::get('/my_ip', 'HomeController@myIpAddress');
-Route::get('/legal', 'HomeController@legal');
-Route::get('/lang/{language}', 'LanguageController@switchLanguage');
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/participa', [HomeController::class, 'participa']);
+Route::get('/projects', [HomeController::class, 'projects']);
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/propose', [HomeController::class, 'propose']);
+Route::get('/participa/booth/{route}', [HomeController::class, 'participa']);
+Route::get('/my_ip', [HomeController::class, 'myIpAddress']);
+Route::get('/legal', [HomeController::class, 'legal']);
+Route::get('/lang/{language}', [LanguageController::class, 'switchLanguage']);
 Route::redirect('/es', '/lang/es/?home', 301);
 Route::redirect('/en', '/lang/en/?home', 301);
 
@@ -34,21 +40,16 @@ Route::view('/documents', 'docs');
 Auth::routes();
 
 /* Archive */
-Route::get('/archive/2017', 'ArchiveController@archive2017');
-Route::get('/archive/{edition}', 'ArchiveController@results');
-Route::get('/archive/{edition}/about', 'ArchiveController@about');
+Route::get('/archive/2017', [ArchiveController::class, 'archive2017']);
+Route::get('/archive/{edition}', [ArchiveController::class, 'results']);
+Route::get('/archive/{edition}/about', [ArchiveController::class, 'about']);
 
 /* Ballot lookup */
-Route::get('/ballot/lookup', 'BallotController@ballotLookUp');
-Route::get('/ballot/{ballotRef}', 'BallotController@ballot');
+Route::get('/ballot/lookup', [BallotController::class, 'ballotLookUp']);
+Route::get('/ballot/{ballotRef}', [BallotController::class, 'ballot']);
 
 /* Admin */
-Route::get('/admin', 'AdminController@index')->middleware('auth');
+Route::get('/admin', [AdminController::class, 'index'])->middleware('auth');
 
 /* Pages */
-Route::view('{any}', 'pages')->where('any', '.*');;
-
-/* Force SSL */
-if (env('APP_ENV') === 'production') {
-    URL::forceScheme('https');
-}
+Route::view('{any}', 'pages')->where('any', '.*');

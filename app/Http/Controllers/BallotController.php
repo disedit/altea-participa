@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Edition;
 use App\Ballot;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class BallotController extends Controller
 {
@@ -29,8 +28,8 @@ class BallotController extends Controller
      */
     public function ballotLookUp(Request $request)
     {
-        if($request->get('ref')) {
-            return redirect('ballot/' . $request->get('ref'));
+        if($request->input('ref')) {
+            return redirect('ballot/' . $request->input('ref'));
         }
 
         return redirect('/');

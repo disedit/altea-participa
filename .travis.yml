@@ -3,12 +3,12 @@ language: php
 os: osx
 
 php:
-  - 7.2
+  - 8.5
 
 before_script:
   - cp .env.testing .env
   - composer self-update
-  - composer install --prefer-source --no-interaction --dev
+  - composer install --prefer-source --no-interaction
   - php artisan key:generate
   - php artisan migrate
   - nvm install stable
@@ -20,7 +20,7 @@ before_install:
 
 script:
   - npm run production
-  - phpunit
+  - vendor/bin/phpunit
 
 services:
   - mysql

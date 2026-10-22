@@ -13,3 +13,5 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 .env
+/.phpunit.cache
+.phpunit.result.cache
