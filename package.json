@@ -13,7 +13,6 @@
     "cross-env": "^5.2.0",
     "laravel-mix": "6.*",
     "lodash": "^4.17.15",
-    "node-sass": "^7.0.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.50.0",
     "sass-loader": "^12.1.0",
@@ -42,5 +41,11 @@
   },
   "optionalDependencies": {
     "@fortawesome/fontawesome-pro": "^5.2.0"
+  },
+  "overrides": {
+    "webpack": "~5.105.4"
+  },
+  "resolutions": {
+    "webpack": "~5.105.4"
   }
 }
